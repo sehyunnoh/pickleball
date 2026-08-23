@@ -1,7 +1,8 @@
 "use client";
 
 import { useId, useMemo, useRef, useState } from "react";
-import LiteYouTube, { formatSeconds } from "./LiteYouTube";
+import LiteYouTube from "./LiteYouTube";
+import { formatSeconds } from "@/lib/format";
 import { VIDEO_TYPES, VIDEO_TYPE_LABELS, type Video, type VideoType } from "@/lib/schema";
 
 /**

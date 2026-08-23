@@ -60,8 +60,25 @@
   "leadsTo": ["transition-zone-footwork", "reset"],
   "relatedTerms": ["kitchen", "transition-zone", "shake-and-bake"],
 
-  "videos": [],
+  "videos": [
+    {
+      "youtubeId": "ivv-cQ03v8s",
+      "title": "World #1 Ben Johns Teaches the Third Shot Drop!",
+      "channel": "The Pickleball Clinic",
+      "type": "instruction",
+      "start": 20,
+      "curatedAt": "2026-08-23"
+    },
+    {
+      "youtubeId": "OcOCOFiCNSM",
+      "title": "6 Ways to Hit a Third Shot Drop",
+      "channel": "PlayPickleball.com",
+      "type": "instruction",
+      "start": 21,
+      "curatedAt": "2026-08-23"
+    }
+  ],
 
-  "status": "draft",
+  "status": "published",
   "updatedAt": "2026-08-23"
 }

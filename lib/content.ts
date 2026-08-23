@@ -101,15 +101,28 @@ function parseAll<T>(
   return parsed;
 }
 
+/**
+ * Cached for the build, never in dev.
+ *
+ * Content files are plain JSON read through `fs`, so nothing invalidates a
+ * module-level cache when one changes — the dev server would keep serving the
+ * version it read at boot. Writing content is the bulk of the work on this
+ * project (DEVELOPMENT_PLAN.md §6), so an edit has to show up on refresh.
+ * Re-reading a few dozen small files per request costs nothing.
+ */
 let techniqueCache: Map<string, Technique> | null = null;
 let termCache: Map<string, Term> | null = null;
 
+const CACHE = process.env.NODE_ENV === "production";
+
 function allTechniquesIncludingDrafts(): Map<string, Technique> {
+  if (!CACHE) return parseAll(TECHNIQUES_DIR, TechniqueSchema, "technique");
   techniqueCache ??= parseAll(TECHNIQUES_DIR, TechniqueSchema, "technique");
   return techniqueCache;
 }
 
 function allTerms(): Map<string, Term> {
+  if (!CACHE) return parseAll(GLOSSARY_DIR, TermSchema, "glossary");
   termCache ??= parseAll(GLOSSARY_DIR, TermSchema, "glossary");
   return termCache;
 }

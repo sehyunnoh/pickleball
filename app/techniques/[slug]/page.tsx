@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import DifficultyBadge from "@/components/DifficultyBadge";
-import LiteYouTube, { formatSeconds } from "@/components/LiteYouTube";
+import LiteYouTube from "@/components/LiteYouTube";
 import VideoGrid from "@/components/VideoGrid";
 import {
   getHeroVideo,
@@ -12,6 +12,7 @@ import {
   resolveTermRefs,
   type Ref,
 } from "@/lib/content";
+import { formatSeconds } from "@/lib/format";
 
 type Params = { slug: string };
 

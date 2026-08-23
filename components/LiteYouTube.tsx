@@ -87,10 +87,3 @@ export default function LiteYouTube({
     </div>
   );
 }
-
-/** "1:14" / "12:03" — used for start/end labels and clip length. */
-export function formatSeconds(total: number): string {
-  const m = Math.floor(total / 60);
-  const s = total % 60;
-  return `${m}:${String(s).padStart(2, "0")}`;
-}
