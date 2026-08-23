@@ -1,0 +1,67 @@
+{
+  "slug": "third-shot-drop",
+  "name": "Third Shot Drop",
+  "aka": ["3rd shot drop", "the drop"],
+
+  "category": "transition",
+  "difficulty": "intermediate",
+  "courtZone": ["baseline", "transition"],
+  "situation": ["third-shot", "rally"],
+  "handedness": "both",
+
+  "summary": "The third shot drop is a soft, arcing shot hit from near the baseline that lands inside the opponents' kitchen. Because it lands low and slow, they cannot attack it, which buys you the seconds you need to walk forward and join your partner at the net. It is the shot that turns the serving team's disadvantage into an even rally.",
+
+  "whenToUse": [
+    "You are on the serving team and the return has pushed you back near the baseline.",
+    "Both opponents are already set at the kitchen line, ready to volley anything you drive.",
+    "The return landed deep, so a drive would have to travel through both of them to work.",
+    "You want to get to the net, and a drop is the only third shot you can safely walk in behind."
+  ],
+
+  "howTo": [
+    "Start moving forward as the return drops, so you meet the ball inside the baseline rather than behind it.",
+    "Bend your knees to get low. Do not bend at the waist.",
+    "Take a short, low backswing — the paddle stays below your waist.",
+    "Contact the ball out in front of you and below waist height, lifting through it with your shoulder.",
+    "Keep the wrist quiet and let your legs and shoulder supply the lift.",
+    "Follow the ball forward into the transition zone and split-step before your opponent makes contact."
+  ],
+
+  "commonMistakes": [
+    "Hitting it flat and firm, so the ball peaks after it crosses the net and drops at chest height for the opponent.",
+    "Standing tall and chopping down at the ball, which drives it into the net.",
+    "Aiming at the kitchen line itself. Aim a few feet inside it — your margin for error lives behind the line, not on it.",
+    "Sprinting to the kitchen the instant you hit, and getting caught with your feet still moving when the ball comes back.",
+    "Flicking the wrist to create lift, which makes depth different on every attempt."
+  ],
+
+  "drills": [
+    {
+      "name": "Drop to a towel",
+      "description": "Your partner feeds from the kitchen line. You drop from the baseline, aiming to land the ball on a towel laid a few feet inside their kitchen. Count only the drops that land on or touch the towel.",
+      "reps": "3 sets of 20 feeds",
+      "players": 2
+    },
+    {
+      "name": "Drop and advance",
+      "description": "Same feed, but after each drop take two steps forward and split-step. Your partner keeps feeding until you reach the kitchen line, then you reset to the baseline and start again.",
+      "reps": "10 trips to the kitchen",
+      "players": 2
+    },
+    {
+      "name": "Solo self-feed drops",
+      "description": "Stand at the baseline with a bucket of balls. Bounce a ball, let it drop below your waist, and lift it into the kitchen. No partner and no return, so you can think about knee bend and contact point instead of the rally.",
+      "reps": "5 minutes",
+      "players": 1
+    }
+  ],
+
+  "prerequisites": ["dink-straight"],
+  "leadsTo": ["transition-zone-footwork", "reset"],
+  "relatedTerms": ["kitchen", "transition-zone", "shake-and-bake"],
+
+  "videos": [],
+
+  "status": "draft",
+  "updatedAt": "2026-08-23"
+}

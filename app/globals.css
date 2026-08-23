@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------------
+   Design tokens (M1-2) — calm study-material tone.
+   Light is the base; dark redefines only the values, so components almost
+   never need a `dark:` variant. Difficulty colours are always paired with a
+   text label in the UI — colour alone must never carry meaning (WCAG 1.4.1).
+   --------------------------------------------------------------------------- */
+:root {
+  --bg: #ffffff;
+  --surface: #f7f8f7;
+  --text: #161a1d;
+  --text-muted: #5b6470;
+  --accent: #2f7a4d;
+  --accent-hover: #256240;
+  --accent-soft: #e8f3ec;
+  --border: #e3e6e4;
+
+  --difficulty-beginner: #2f7a4d;
+  --difficulty-beginner-soft: #e8f3ec;
+  --difficulty-intermediate: #8a5a00;
+  --difficulty-intermediate-soft: #fdf3e0;
+  --difficulty-advanced: #b3261e;
+  --difficulty-advanced-soft: #fceceb;
+
+  /* Long-form reading measure. The whole site is explanatory prose. */
+  --measure: 68ch;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e1116;
+    --surface: #171b21;
+    --text: #e8eaed;
+    --text-muted: #9aa4b2;
+    --accent: #5fb583;
+    --accent-hover: #7cc79b;
+    --accent-soft: #17301f;
+    --border: #262c34;
+
+    --difficulty-beginner: #7cc79b;
+    --difficulty-beginner-soft: #17301f;
+    --difficulty-intermediate: #e0b062;
+    --difficulty-intermediate-soft: #2e2415;
+    --difficulty-advanced: #f2887f;
+    --difficulty-advanced-soft: #331c1a;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-text: var(--text);
+  --color-muted: var(--text-muted);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-soft: var(--accent-soft);
+  --color-border: var(--border);
+
+  /* No web fonts: a self-hosted or Google font costs LCP on mobile, which is
+     the primary scenario (phone, at the court). */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* A single visible focus treatment for every interactive element. */
+:where(a, button, [tabindex]:not([tabindex="-1"])):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
