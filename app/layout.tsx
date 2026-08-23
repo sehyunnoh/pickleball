@@ -1,11 +1,33 @@
 import type { Metadata } from "next";
+import { Fraunces, Newsreader } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 
+/**
+ * Two families, both variable, both self-hosted at build time by next/font —
+ * no request leaves the origin and there is no DNS lookup or TLS handshake to
+ * pay for.
+ *
+ * Fraunces is drawn rather than drafted; at display sizes that irregularity is
+ * most of what separates this from a framework default. Newsreader is built
+ * for reading long passages on a screen, which is all this site asks of it.
+ */
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-fraunces",
+});
+
+const newsreader = Newsreader({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-newsreader",
+});
+
 export const metadata: Metadata = {
   title: {
-    default: "Pickleball Technique Hub",
-    template: "%s · Pickleball Technique Hub",
+    default: "Pickleball Technique",
+    template: "%s · Pickleball Technique",
   },
   description:
     "Learn one pickleball shot at a time: what it is, when to use it, how to hit it — with hand-picked video clips timestamped to the moment that shows it.",
@@ -17,23 +39,30 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="h-full">
+    <html
+      lang="en"
+      className={`h-full ${fraunces.variable} ${newsreader.variable}`}
+    >
       <body className="flex min-h-full flex-col bg-bg text-text">
         <a
           href="#main"
-          className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:rounded focus:bg-accent-soft focus:px-3 focus:py-2 focus:text-accent"
+          className="label sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:bg-accent-soft focus:px-3 focus:py-2 focus:text-accent"
         >
           Skip to content
         </a>
 
-        <header className="border-b border-border">
-          <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-4">
-            <Link href="/" className="font-semibold tracking-tight hover:text-accent">
-              Pickleball<span className="text-accent">·</span>Technique Hub
+        {/* A running head with a rule under it, the way a manual opens a page. */}
+        <header className="border-b border-rule">
+          <div className="mx-auto flex max-w-[78rem] items-baseline justify-between gap-6 px-6 py-5">
+            <Link
+              href="/"
+              className="font-display text-lg font-medium hover:text-accent"
+            >
+              Pickleball Technique
             </Link>
-            <nav aria-label="Main" className="flex gap-4 text-sm text-muted">
-              <Link href="/techniques" className="hover:text-accent">
-                Techniques
+            <nav aria-label="Main">
+              <Link href="/techniques" className="label hover:text-accent">
+                Index
               </Link>
               {/* Glossary lands in M4-6, once there is content behind it. */}
             </nav>
@@ -44,9 +73,9 @@ export default function RootLayout({
           {children}
         </main>
 
-        <footer className="mt-16 border-t border-border">
-          <div className="mx-auto max-w-5xl px-4 py-8 text-sm text-muted">
-            <p>
+        <footer className="mt-24 border-t border-border">
+          <div className="mx-auto max-w-[78rem] px-6 py-10">
+            <p className="max-w-[46ch] text-sm leading-relaxed text-muted">
               Videos are embedded from YouTube and remain the property of their
               creators. Nothing here is hosted or re-uploaded.
             </p>

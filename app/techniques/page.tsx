@@ -4,7 +4,7 @@ import DifficultyBadge from "@/components/DifficultyBadge";
 import { getTechniques } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Techniques",
+  title: "Index",
   description: "Every pickleball technique covered on this site.",
 };
 
@@ -17,23 +17,27 @@ export default function TechniquesPage() {
   const techniques = getTechniques();
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-8">
-      <h1 className="text-3xl font-semibold tracking-tight">Techniques</h1>
+    <div className="mx-auto max-w-[78rem] px-6 py-12 md:py-16">
+      <h1 className="font-display text-[clamp(2.25rem,5vw,3.25rem)] leading-tight font-medium">
+        Index
+      </h1>
 
       {techniques.length === 0 ? (
-        <p className="mt-6 text-muted">Nothing published yet.</p>
+        <p className="mt-8 text-muted">Nothing published yet.</p>
       ) : (
-        <ul className="mt-6 divide-y divide-border border-y border-border">
+        <ul className="mt-12 border-t border-rule">
           {techniques.map((t) => (
-            <li key={t.slug} className="py-4">
-              <Link
-                href={`/techniques/${t.slug}`}
-                className="flex flex-wrap items-center gap-3 font-medium text-accent hover:underline"
-              >
-                {t.name}
+            <li key={t.slug} className="border-b border-border py-6">
+              <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+                <Link
+                  href={`/techniques/${t.slug}`}
+                  className="font-display text-2xl hover:text-accent"
+                >
+                  {t.name}
+                </Link>
                 <DifficultyBadge difficulty={t.difficulty} />
-              </Link>
-              <p className="mt-1 max-w-[var(--measure)] text-sm leading-relaxed text-muted">
+              </div>
+              <p className="mt-2 max-w-[var(--measure)] leading-relaxed text-muted">
                 {t.summary}
               </p>
             </li>

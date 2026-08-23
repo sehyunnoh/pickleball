@@ -112,10 +112,23 @@ selects videos and sets timestamps.
 
 ## Design constraints
 
-Calm study-material tone, not high-contrast sports. White base, court-green accent
-(`#2f7a4d`), system-ui fonts (no webfonts — LCP), 68ch body width, mobile-first
-(phone-on-the-court is the main scenario), dark mode required. Difficulty is never
-signaled by color alone — always pair with a text label.
+**The reference is a printed coaching manual, not a web app.** Hold that line —
+the default Tailwind card (`rounded-lg border bg-surface p-4`) is what the design
+was deliberately moved away from, and reaching for it again undoes the work.
+
+- **Structure comes from rules, whitespace and type**, not from boxes. Hairline
+  `border-border` between list items; heavier `border-rule` for structural
+  divisions. Rounded corners and pill badges are out.
+- **Type**: Fraunces (display) and Newsreader (body), variable, self-hosted via
+  next/font. Monospace is the system stack and is only ever used for the small
+  uppercase labels — see the `.label` utility in `globals.css`.
+- **Palette**: warm paper (`#fbfaf7`) and ink (`#1a1714`), not white and black.
+  Green (`#2c6b47`) is kept scarce so it still signals something.
+- **Layout is asymmetric**: sticky metadata rail in a left column, prose in the
+  right, section numbers hanging in the gutter between them.
+- 66ch measure, mobile-first (phone-on-the-court is the main scenario), dark mode
+  required. Difficulty is never signalled by colour alone — always pair with a
+  text label.
 
 Targets: Lighthouse mobile Performance ≥ 90, Accessibility ≥ 95, WCAG 2.1 AA.
 

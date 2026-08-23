@@ -3,7 +3,12 @@
 import { useId, useMemo, useRef, useState } from "react";
 import LiteYouTube from "./LiteYouTube";
 import { formatSeconds } from "@/lib/format";
-import { VIDEO_TYPES, VIDEO_TYPE_LABELS, type Video, type VideoType } from "@/lib/schema";
+import {
+  VIDEO_TYPES,
+  VIDEO_TYPE_LABELS,
+  type Video,
+  type VideoType,
+} from "@/lib/schema";
 
 /**
  * The "Watch it" section: curated clips grouped by what they show.
@@ -23,7 +28,8 @@ export default function VideoGrid({ videos }: { videos: Video[] }) {
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
   const tabs: (VideoType | "all")[] = ["all", ...availableTypes];
-  const shown = active === "all" ? videos : videos.filter((v) => v.type === active);
+  const shown =
+    active === "all" ? videos : videos.filter((v) => v.type === active);
 
   // Roving focus: a tablist is one tab stop, arrows move between tabs.
   function onKeyDown(e: React.KeyboardEvent, index: number) {
@@ -37,9 +43,9 @@ export default function VideoGrid({ videos }: { videos: Video[] }) {
 
   if (videos.length === 0) {
     return (
-      <p className="rounded-lg border border-dashed border-border bg-surface px-4 py-6 text-sm text-muted">
-        No curated clips yet. Every clip on this site is picked and
-        timestamped by hand, so this section stays empty until it is.
+      <p className="border-y border-border py-8 text-sm text-muted">
+        No curated clips yet. Every clip on this site is picked and timestamped
+        by hand, so this section stays empty until it is.
       </p>
     );
   }
@@ -47,7 +53,11 @@ export default function VideoGrid({ videos }: { videos: Video[] }) {
   return (
     <div>
       {tabs.length > 2 && (
-        <div role="tablist" aria-label="Filter clips by type" className="mb-4 flex flex-wrap gap-2">
+        <div
+          role="tablist"
+          aria-label="Filter clips by type"
+          className="mb-6 flex flex-wrap gap-5"
+        >
           {tabs.map((t, i) => {
             const selected = active === t;
             return (
@@ -63,10 +73,10 @@ export default function VideoGrid({ videos }: { videos: Video[] }) {
                 tabIndex={selected ? 0 : -1}
                 onClick={() => setActive(t)}
                 onKeyDown={(e) => onKeyDown(e, i)}
-                className={`cursor-pointer rounded-full border px-3 py-1 text-sm transition-colors ${
+                className={`label cursor-pointer border-b-2 pb-1 transition-colors ${
                   selected
-                    ? "border-accent bg-accent-soft font-medium text-accent"
-                    : "border-border text-muted hover:border-accent hover:text-accent"
+                    ? "border-accent text-accent"
+                    : "border-transparent text-muted hover:text-accent"
                 }`}
               >
                 {t === "all" ? "All" : VIDEO_TYPE_LABELS[t]}
@@ -79,7 +89,7 @@ export default function VideoGrid({ videos }: { videos: Video[] }) {
       <div
         id={`${tabId}-panel`}
         role="tabpanel"
-        className="grid gap-6 sm:grid-cols-2"
+        className="grid gap-x-10 gap-y-8 sm:grid-cols-2"
       >
         {shown.map((v) => (
           <figure key={v.youtubeId} className="min-w-0">
@@ -89,16 +99,18 @@ export default function VideoGrid({ videos }: { videos: Video[] }) {
               start={v.start}
               end={v.end}
             />
-            <figcaption className="mt-2 text-sm">
-              <span className="font-medium">{v.title}</span>
-              <span className="block text-muted">
+            <figcaption className="mt-3 text-sm">
+              <span className="block leading-snug">{v.title}</span>
+              <span className="label mt-1.5 block text-muted">
                 {v.channel}
                 {" · "}
                 {VIDEO_TYPE_LABELS[v.type]}
                 {" · "}
                 {clipLabel(v)}
               </span>
-              {v.note && <span className="mt-1 block text-muted">{v.note}</span>}
+              {v.note && (
+                <span className="mt-2 block text-muted italic">{v.note}</span>
+              )}
             </figcaption>
           </figure>
         ))}

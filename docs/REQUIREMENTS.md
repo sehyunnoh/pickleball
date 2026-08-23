@@ -382,7 +382,10 @@ Tailwind CSS v4
 콘텐츠: content/**/*.json  (검증: Zod 스키마, 빌드 시 fail-fast)
 검색: Fuse.js + 빌드 타임 인덱스 생성
 그래프: 자체 SVG
-임베드: lite-youtube-embed
+임베드: 자체 facade 컴포넌트 (lite-youtube-embed 대신 직접 구현 — start/end 제어)
+폰트: Fraunces(디스플레이) + Newsreader(본문), next/font 셀프 호스팅
+      ※ v0.1의 "웹폰트 없음" 결정은 v0.2에서 뒤집음. 디자인 톤을 타이포로
+        만들기로 했고, next/font는 외부 요청이 없어 LCP 비용이 크지 않다.
 배포: Vercel (main 브랜치 자동 배포)
 CI: GitHub Actions — 스키마 검증, 링크 체크, 주 1회 fetch:videos → PR 자동 생성
 ```

@@ -1,49 +1,48 @@
 @import "tailwindcss";
 
 /* ---------------------------------------------------------------------------
-   Design tokens (M1-2) — calm study-material tone.
-   Light is the base; dark redefines only the values, so components almost
-   never need a `dark:` variant. Difficulty colours are always paired with a
-   text label in the UI — colour alone must never carry meaning (WCAG 1.4.1).
+   Design tokens — a coaching manual, not a web app.
+   Warm paper rather than #ffffff, ink rather than #000, hairline rules instead
+   of card borders, and green kept scarce so it still means something when it
+   appears. Light is the base; dark redefines only the values, so components
+   almost never need a `dark:` variant.
    --------------------------------------------------------------------------- */
 :root {
-  --bg: #ffffff;
-  --surface: #f7f8f7;
-  --text: #161a1d;
-  --text-muted: #5b6470;
-  --accent: #2f7a4d;
-  --accent-hover: #256240;
-  --accent-soft: #e8f3ec;
-  --border: #e3e6e4;
+  --bg: #fbfaf7;
+  --surface: #f3f0e9;
+  --text: #1a1714;
+  --text-muted: #6b6459;
+  --accent: #2c6b47;
+  --accent-hover: #1f5335;
+  --accent-soft: #e6efe7;
+  --border: #ddd7cb;
+  /* A second, heavier rule for structural divisions — the line under a running
+     head in a printed book. */
+  --rule: #1a1714;
 
-  --difficulty-beginner: #2f7a4d;
-  --difficulty-beginner-soft: #e8f3ec;
-  --difficulty-intermediate: #8a5a00;
-  --difficulty-intermediate-soft: #fdf3e0;
-  --difficulty-advanced: #b3261e;
-  --difficulty-advanced-soft: #fceceb;
+  --difficulty-beginner: #2c6b47;
+  --difficulty-intermediate: #8a5a0d;
+  --difficulty-advanced: #a83228;
 
-  /* Long-form reading measure. The whole site is explanatory prose. */
-  --measure: 68ch;
+  /* The site is long-form explanation; line length matters more than width. */
+  --measure: 66ch;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0e1116;
-    --surface: #171b21;
-    --text: #e8eaed;
-    --text-muted: #9aa4b2;
-    --accent: #5fb583;
-    --accent-hover: #7cc79b;
-    --accent-soft: #17301f;
-    --border: #262c34;
+    --bg: #131210;
+    --surface: #1c1a17;
+    --text: #ece9e2;
+    --text-muted: #9b9488;
+    --accent: #74b98f;
+    --accent-hover: #93cba8;
+    --accent-soft: #1b2a20;
+    --border: #302c26;
+    --rule: #ece9e2;
 
-    --difficulty-beginner: #7cc79b;
-    --difficulty-beginner-soft: #17301f;
-    --difficulty-intermediate: #e0b062;
-    --difficulty-intermediate-soft: #2e2415;
-    --difficulty-advanced: #f2887f;
-    --difficulty-advanced-soft: #331c1a;
+    --difficulty-beginner: #74b98f;
+    --difficulty-intermediate: #d9a95e;
+    --difficulty-advanced: #e08a7e;
   }
 }
 
@@ -56,11 +55,16 @@
   --color-accent-hover: var(--accent-hover);
   --color-accent-soft: var(--accent-soft);
   --color-border: var(--border);
+  --color-rule: var(--rule);
 
-  /* No web fonts: a self-hosted or Google font costs LCP on mobile, which is
-     the primary scenario (phone, at the court). */
-  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  /* Fraunces for display, Newsreader for reading — both self-hosted through
+     next/font, so there is no third-party request. Monospace is the system
+     stack: it only ever sets small uppercase labels, where the platform face
+     is indistinguishable from a downloaded one and costs nothing. */
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-body: var(--font-newsreader), Georgia, "Times New Roman", serif;
+  --font-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas,
+    "Liberation Mono", monospace;
 }
 
 html {
@@ -76,13 +80,38 @@ html {
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-/* A single visible focus treatment for every interactive element. */
+/* Fraunces carries optical sizing and a little drawn irregularity; both want
+   to be turned up at display sizes and left alone at small ones. */
+.font-display {
+  font-optical-sizing: auto;
+  letter-spacing: -0.015em;
+}
+
+/**
+ * The small uppercase labels that run down the metadata rail and caption the
+ * diagrams. Tracking is what makes them read as labels rather than as shouting.
+ */
+.label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  line-height: 1.4;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* Numerals in tables and step lists should line up in columns. */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
 :where(a, button, [tabindex]:not([tabindex="-1"])):focus-visible {
   outline: 2px solid var(--accent);
-  outline-offset: 2px;
-  border-radius: 2px;
+  outline-offset: 3px;
 }

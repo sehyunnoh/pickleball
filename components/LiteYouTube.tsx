@@ -44,7 +44,7 @@ export default function LiteYouTube({
   const src = `https://www.youtube-nocookie.com/embed/${youtubeId}?${params}`;
 
   return (
-    <div className="relative aspect-video w-full overflow-hidden rounded-lg border border-border bg-black">
+    <div className="relative aspect-video w-full overflow-hidden border border-border bg-black">
       {activated ? (
         <iframe
           className="absolute inset-0 h-full w-full"
@@ -73,7 +73,7 @@ export default function LiteYouTube({
             unoptimized
           />
           <span className="absolute inset-0 bg-black/10 transition-colors group-hover:bg-black/25" />
-          <span className="absolute top-1/2 left-1/2 flex h-14 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-xl bg-black/70 transition-colors group-hover:bg-[#ff0000]">
+          <span className="absolute top-1/2 left-1/2 flex h-14 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center bg-black/70 transition-colors group-hover:bg-[#ff0000]">
             <svg
               viewBox="0 0 24 24"
               className="h-7 w-7 fill-white"

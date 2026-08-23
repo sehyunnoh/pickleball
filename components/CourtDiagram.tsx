@@ -78,10 +78,25 @@ export default function CourtDiagram({
 
       {/* Court lines */}
       <g stroke="var(--border)" strokeWidth={0.2} fill="none">
-        <line x1={NEAR_KITCHEN_LINE} y1={0} x2={NEAR_KITCHEN_LINE} y2={COURT_WIDTH} />
-        <line x1={FAR_KITCHEN_LINE} y1={0} x2={FAR_KITCHEN_LINE} y2={COURT_WIDTH} />
+        <line
+          x1={NEAR_KITCHEN_LINE}
+          y1={0}
+          x2={NEAR_KITCHEN_LINE}
+          y2={COURT_WIDTH}
+        />
+        <line
+          x1={FAR_KITCHEN_LINE}
+          y1={0}
+          x2={FAR_KITCHEN_LINE}
+          y2={COURT_WIDTH}
+        />
         {/* Centre line runs from each baseline up to the kitchen, not through it */}
-        <line x1={0} y1={COURT_WIDTH / 2} x2={NEAR_KITCHEN_LINE} y2={COURT_WIDTH / 2} />
+        <line
+          x1={0}
+          y1={COURT_WIDTH / 2}
+          x2={NEAR_KITCHEN_LINE}
+          y2={COURT_WIDTH / 2}
+        />
         <line
           x1={FAR_KITCHEN_LINE}
           y1={COURT_WIDTH / 2}
@@ -152,13 +167,15 @@ export default function CourtDiagram({
               strokeDasharray="0.8 0.6"
               rx={0.4}
             />
+            {/* Below the box, not inside it: a target is only a few feet
+                across, and a label centred in it runs over whoever is
+                standing nearby. */}
             <text
               x={x}
-              y={y + 0.5}
+              y={y + t.width / 2 + 1.6}
               textAnchor="middle"
               fontSize={label}
               fill="var(--accent)"
-              fontWeight="600"
             >
               {t.label}
             </text>

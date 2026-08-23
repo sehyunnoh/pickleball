@@ -19,17 +19,23 @@ export default function ComparisonTable({
 }) {
   return (
     <div className="overflow-x-auto">
-      <table className="w-full min-w-[30rem] border-collapse text-sm">
+      <table className="w-full min-w-[34rem] border-collapse text-left">
         <caption className="sr-only">{comparison.title}</caption>
         <thead>
-          <tr className="border-b border-border">
-            <th scope="col" className="w-1/5 px-3 py-2 text-left font-medium text-muted">
+          <tr className="border-y border-rule">
+            <th
+              scope="col"
+              className="label w-1/5 py-3 pr-4 align-bottom text-muted"
+            >
               <span className="sr-only">Aspect</span>
             </th>
-            <th scope="col" className="px-3 py-2 text-left font-medium text-accent">
+            <th
+              scope="col"
+              className="label py-3 pr-4 align-bottom text-accent"
+            >
               {selfLabel}
             </th>
-            <th scope="col" className="px-3 py-2 text-left font-medium">
+            <th scope="col" className="label py-3 pr-4 align-bottom text-muted">
               {otherHref ? (
                 <Link href={otherHref} className="text-accent hover:underline">
                   {comparison.otherLabel}
@@ -42,15 +48,20 @@ export default function ComparisonTable({
         </thead>
         <tbody>
           {comparison.rows.map((row) => (
-            <tr key={row.label} className="border-b border-border last:border-0">
+            <tr
+              key={row.label}
+              className="border-b border-border last:border-0"
+            >
               <th
                 scope="row"
-                className="px-3 py-2.5 text-left align-top font-medium text-muted"
+                className="label w-1/5 py-4 pr-4 text-left align-top font-normal text-muted"
               >
                 {row.label}
               </th>
-              <td className="px-3 py-2.5 align-top leading-relaxed">{row.self}</td>
-              <td className="px-3 py-2.5 align-top leading-relaxed text-muted">
+              <td className="py-4 pr-4 align-top leading-relaxed">
+                {row.self}
+              </td>
+              <td className="py-4 pr-4 align-top leading-relaxed text-muted">
                 {row.other}
               </td>
             </tr>
