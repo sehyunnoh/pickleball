@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { COURT_LENGTH, COURT_WIDTH } from "./court";
 
 /**
  * Content schemas — the single source of truth for everything in `content/`.
@@ -91,12 +92,95 @@ export const VideoSchema = z
     path: ["end"],
   });
 
+/* ------------------------------------------------------------------ *
+ * Court diagrams
+ *
+ * Authored in feet on a real court (see lib/court.ts): [lateral, depth],
+ * lateral 0–20 across, depth 0 at your baseline to 44 at theirs.
+ * ------------------------------------------------------------------ */
+
+const PointSchema = z.tuple([
+  z.number().min(-3).max(COURT_WIDTH + 3),
+  z.number().min(-5).max(COURT_LENGTH + 5),
+]);
+
+export const COURT_ROLES = ["you", "partner", "opponent", "feeder"] as const;
+
+export const CourtPlayerSchema = z.strictObject({
+  role: z.enum(COURT_ROLES),
+  at: PointSchema,
+});
+
+/** A physical target on the court — a towel, a cone, a taped box. */
+export const CourtTargetSchema = z.strictObject({
+  label: z.string().min(1),
+  at: PointSchema,
+  width: z.number().positive().max(COURT_WIDTH).default(4),
+  depth: z.number().positive().max(COURT_LENGTH).default(3),
+});
+
+export const ShotPathSchema = z.strictObject({
+  from: PointSchema,
+  to: PointSchema,
+  /**
+   * Where the ball reaches its highest point, as a fraction of the way from
+   * `from` to `to`. Compare it against where the path crosses the net: peaking
+   * before the net is what makes a drop unattackable, and peaking after it is
+   * the single most common way the shot fails.
+   */
+  peakAt: z.number().min(0.05).max(0.95).default(0.5),
+  /** Height of that peak in feet, for the side-on view. */
+  peakHeight: z.number().positive().max(30).default(8),
+});
+
+export const CourtDiagramSchema = z.strictObject({
+  players: z.array(CourtPlayerSchema).default([]),
+  shot: ShotPathSchema.optional(),
+  /** The same shot hit badly. Drawn dashed alongside the good one. */
+  mistake: z
+    .strictObject({ label: z.string().min(1), path: ShotPathSchema })
+    .optional(),
+  /** Where someone moves after the shot. */
+  movement: z
+    .array(
+      z.strictObject({
+        role: z.enum(COURT_ROLES),
+        from: PointSchema,
+        to: PointSchema,
+      }),
+    )
+    .default([]),
+  targets: z.array(CourtTargetSchema).default([]),
+});
+
 export const DrillSchema = z.strictObject({
   name: z.string().min(1),
   description: z.string().min(1),
   /** Free text, not a number: "3 sets of 20", "5 minutes". */
   reps: z.string().min(1),
   players: z.int().min(1).max(4),
+  /** Optional setup diagram: who stands where, what you aim at. */
+  court: CourtDiagramSchema.optional(),
+});
+
+/**
+ * A side-by-side against the shot people confuse this one with. The decision
+ * "drop or drive?" is most of what an improver actually gets wrong, and a
+ * table answers it faster than two pages of prose do.
+ */
+export const ComparisonSchema = z.strictObject({
+  title: z.string().min(1),
+  otherLabel: z.string().min(1),
+  otherSlug: slug.optional(),
+  rows: z
+    .array(
+      z.strictObject({
+        label: z.string().min(1),
+        self: z.string().min(1),
+        other: z.string().min(1),
+      }),
+    )
+    .min(2),
 });
 
 export const TechniqueSchema = z
@@ -118,6 +202,11 @@ export const TechniqueSchema = z
     howTo: z.array(z.string().min(1)).min(3).max(8),
     commonMistakes: z.array(z.string().min(1)).min(1),
     drills: z.array(DrillSchema).default([]),
+
+    /** Top-down setup plus the shot's shape. Optional: a few techniques are
+     *  pure movement or strategy and have nothing useful to draw. */
+    court: CourtDiagramSchema.optional(),
+    comparison: ComparisonSchema.optional(),
 
     /** These two fields are the skill-tree edges. There is no separate graph
      *  file — the tree is derived from them. */
@@ -212,3 +301,9 @@ export type VideoType = (typeof VIDEO_TYPES)[number];
 export type Difficulty = (typeof DIFFICULTIES)[number];
 export type Category = (typeof CATEGORIES)[number];
 export type AutoVideo = z.infer<typeof AutoVideoSchema>;
+export type CourtDiagram = z.infer<typeof CourtDiagramSchema>;
+export type CourtPlayer = z.infer<typeof CourtPlayerSchema>;
+export type CourtTarget = z.infer<typeof CourtTargetSchema>;
+export type ShotPath = z.infer<typeof ShotPathSchema>;
+export type Comparison = z.infer<typeof ComparisonSchema>;
+export type CourtRole = (typeof COURT_ROLES)[number];

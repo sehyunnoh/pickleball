@@ -58,6 +58,14 @@ lib/content.ts             load + validate + derive the skill-tree graph
 scripts/                   the CLI tools above
 ```
 
+**Diagrams are data, not drawings.** `lib/court.ts` holds court geometry in
+feet; technique and drill JSON carry `[lateral, depth]` coordinates (0–20 across,
+0 at your baseline to 44 at theirs), and `components/CourtDiagram.tsx` /
+`ShotProfile.tsx` render inline SVG from them. No charting library. The division
+of labour is deliberate: **diagrams show position and trajectory, video shows
+body mechanics.** Do not try to draw form — paddle angle, knee bend — that is
+what the curated clips are for. See `docs/REQUIREMENTS.md` §7.1.1.
+
 **Single source of truth for the graph.** There is no separate graph file. The
 skill tree is derived from `prerequisites` / `leadsTo` on the technique files.
 Same for search: the Fuse.js index is built from content at build time.

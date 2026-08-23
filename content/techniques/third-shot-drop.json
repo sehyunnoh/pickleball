@@ -40,21 +40,99 @@
       "name": "Drop to a towel",
       "description": "Your partner feeds from the kitchen line. You drop from the baseline, aiming to land the ball on a towel laid a few feet inside their kitchen. Count only the drops that land on or touch the towel.",
       "reps": "3 sets of 20 feeds",
-      "players": 2
+      "players": 2,
+      "court": {
+        "players": [
+          { "role": "you", "at": [10, 1] },
+          { "role": "feeder", "at": [10, 30] }
+        ],
+        "targets": [{ "label": "towel", "at": [9, 26], "width": 5, "depth": 3 }]
+      }
     },
     {
       "name": "Drop and advance",
       "description": "Same feed, but after each drop take two steps forward and split-step. Your partner keeps feeding until you reach the kitchen line, then you reset to the baseline and start again.",
       "reps": "10 trips to the kitchen",
-      "players": 2
+      "players": 2,
+      "court": {
+        "players": [
+          { "role": "you", "at": [10, 1] },
+          { "role": "feeder", "at": [10, 30] }
+        ],
+        "movement": [{ "role": "you", "from": [10, 1], "to": [10, 14] }]
+      }
     },
     {
       "name": "Solo self-feed drops",
       "description": "Stand at the baseline with a bucket of balls. Bounce a ball, let it drop below your waist, and lift it into the kitchen. No partner and no return, so you can think about knee bend and contact point instead of the rally.",
       "reps": "5 minutes",
-      "players": 1
+      "players": 1,
+      "court": {
+        "players": [{ "role": "you", "at": [10, 1] }],
+        "targets": [
+          { "label": "kitchen", "at": [10, 26], "width": 16, "depth": 5 }
+        ]
+      }
     }
   ],
+
+  "court": {
+    "players": [
+      { "role": "you", "at": [14, 1] },
+      { "role": "partner", "at": [5, 1] },
+      { "role": "opponent", "at": [5, 30] },
+      { "role": "opponent", "at": [15, 30] }
+    ],
+    "shot": {
+      "from": [14, 1],
+      "to": [8, 26],
+      "peakAt": 0.36,
+      "peakHeight": 9
+    },
+    "mistake": {
+      "label": "Peaks after the net, so it is still rising as it crosses and drops at chest height in front of them.",
+      "path": {
+        "from": [14, 1],
+        "to": [9, 34],
+        "peakAt": 0.66,
+        "peakHeight": 8
+      }
+    },
+    "movement": [{ "role": "you", "from": [14, 1], "to": [12, 14] }]
+  },
+
+  "comparison": {
+    "title": "Drop or drive?",
+    "otherLabel": "Third Shot Drive",
+    "otherSlug": "third-shot-drive",
+    "rows": [
+      {
+        "label": "What it is for",
+        "self": "Buying time to walk to the kitchen line.",
+        "other": "Forcing a weak reply or an outright error."
+      },
+      {
+        "label": "Best when",
+        "self": "Both opponents are set at the kitchen and ready.",
+        "other": "One of them is still moving, or the return sat up short."
+      },
+      {
+        "label": "Contact point",
+        "self": "Below the waist, out in front, low to high.",
+        "other": "Around waist height, driving through the ball."
+      },
+      {
+        "label": "If it goes wrong",
+        "self": "It sits up and you get attacked.",
+        "other": "It comes back faster than you can recover for."
+      },
+      {
+        "label": "Where you end up",
+        "self": "At the kitchen line, in the rally.",
+        "other": "Still back, often hitting a fifth shot drop anyway."
+      }
+    ]
+  },
 
   "prerequisites": ["dink-straight"],
   "leadsTo": ["transition-zone-footwork", "reset"],

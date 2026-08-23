@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import ComparisonTable from "@/components/ComparisonTable";
+import CourtDiagram from "@/components/CourtDiagram";
 import DifficultyBadge from "@/components/DifficultyBadge";
 import LiteYouTube from "@/components/LiteYouTube";
+import ShotProfile from "@/components/ShotProfile";
 import VideoGrid from "@/components/VideoGrid";
 import {
   getHeroVideo,
@@ -12,7 +15,14 @@ import {
   resolveTermRefs,
   type Ref,
 } from "@/lib/content";
+import {
+  COURT_WIDTH,
+  netCrossingFraction,
+  zoneAt,
+  type Point,
+} from "@/lib/court";
 import { formatSeconds } from "@/lib/format";
+import type { Drill, ShotPath, Technique } from "@/lib/schema";
 
 type Params = { slug: string };
 
@@ -170,6 +180,16 @@ export default async function TechniquePage({
                   className="rounded-lg border border-border bg-surface p-4"
                 >
                   <h3 className="font-medium">{drill.name}</h3>
+                  {drill.court && (
+                    <div className="my-3">
+                      <CourtDiagram
+                        diagram={drill.court}
+                        title={`${drill.name}: court setup`}
+                        description={drillDescription(drill)}
+                        compact
+                      />
+                    </div>
+                  )}
                   <p className="mt-1 text-sm leading-relaxed text-muted">
                     {drill.description}
                   </p>
@@ -183,6 +203,73 @@ export default async function TechniquePage({
           </Section>
         )}
       </div>
+
+      {/* The shape of the shot. Deliberately alongside the prose, not instead
+          of it: the text is what search and screen readers read, the diagrams
+          are what a player scanning on a phone actually looks at. */}
+      {technique.court && (
+        <section className="mt-12" aria-labelledby="shape">
+          <h2 id="shape" className="mb-4 text-xl font-semibold tracking-tight">
+            The shape of the shot
+          </h2>
+          <div className="grid gap-6 lg:grid-cols-2">
+            <figure className="rounded-lg border border-border p-4">
+              <CourtDiagram
+                diagram={technique.court}
+                title={`${technique.name}: court positions and ball path`}
+                description={courtDescription(technique)}
+              />
+              <figcaption className="mt-3 text-sm text-muted">
+                Seen from above. You are on the left; the ball travels right.
+              </figcaption>
+            </figure>
+
+            {technique.court.shot && (
+              <figure className="rounded-lg border border-border p-4">
+                <ShotProfile
+                  shot={technique.court.shot}
+                  mistake={technique.court.mistake}
+                  title={`${technique.name}: height of the ball across the net`}
+                  description={profileDescription(technique)}
+                />
+                <figcaption className="mt-3 space-y-2 text-sm text-muted">
+                  <p>Seen from the sideline. Watch where the ball peaks.</p>
+                  {technique.court.mistake && (
+                    <p className="flex items-start gap-2">
+                      <span
+                        aria-hidden="true"
+                        className="mt-2 inline-block h-0 w-6 shrink-0 border-t-2 border-dashed border-[var(--difficulty-advanced)]"
+                      />
+                      <span>{technique.court.mistake.label}</span>
+                    </p>
+                  )}
+                </figcaption>
+              </figure>
+            )}
+          </div>
+        </section>
+      )}
+
+      {technique.comparison && (
+        <section className="mt-12" aria-labelledby="comparison">
+          <h2
+            id="comparison"
+            className="mb-4 text-xl font-semibold tracking-tight"
+          >
+            {technique.comparison.title}
+          </h2>
+          <ComparisonTable
+            comparison={technique.comparison}
+            selfLabel={technique.name}
+            otherHref={
+              technique.comparison.otherSlug &&
+              getTechnique(technique.comparison.otherSlug)
+                ? `/techniques/${technique.comparison.otherSlug}`
+                : null
+            }
+          />
+        </section>
+      )}
 
       {/* 6. Watch it — the full curated set. Auto-fetched suggestions get their
              own clearly-labelled block here in M2-4. */}
@@ -281,6 +368,85 @@ function RefColumn({ title, refs }: { title: string; refs: Ref[] }) {
  * Unwritten neighbours render as plain text rather than as a link into a 404 —
  * the skill tree is authored ahead of the content that fills it in.
  */
+/* ------------------------------------------------------------------ *
+ * Alternative text for the diagrams.
+ *
+ * Every diagram restates in words what it shows. The prose sections already
+ * carry the coaching, so these stay factual and spatial — who is where, what
+ * goes where — instead of repeating the teaching points.
+ * ------------------------------------------------------------------ */
+
+function courtDescription(technique: Technique): string {
+  const c = technique.court;
+  if (!c) return "";
+  const parts: string[] = [];
+  if (c.players.length) {
+    parts.push(
+      `Players: ${c.players
+        .map((p) => `${p.role} in the ${describePoint(p.at)}`)
+        .join(", ")}.`,
+    );
+  }
+  if (c.shot) {
+    parts.push(
+      `The shot travels from the ${describePoint(c.shot.from)} to the ${describePoint(
+        c.shot.to,
+      )}.`,
+    );
+  }
+  if (c.movement.length) {
+    parts.push(
+      `Afterwards ${c.movement
+        .map((m) => `${m.role} moves to the ${describePoint(m.to)}`)
+        .join(", ")}.`,
+    );
+  }
+  return parts.join(" ");
+}
+
+function profileDescription(technique: Technique): string {
+  const c = technique.court;
+  if (!c?.shot) return "";
+  const good = `The ball peaks ${peakSide(c.shot)} at about ${Math.round(
+    c.shot.peakHeight,
+  )} feet, then lands in ${zoneAt(c.shot.to[1])}.`;
+  if (!c.mistake) return good;
+  return `${good} The dashed line is the same shot peaking ${peakSide(
+    c.mistake.path,
+  )} and landing in ${zoneAt(c.mistake.path.to[1])}.`;
+}
+
+function drillDescription(drill: Drill): string {
+  const c = drill.court;
+  if (!c) return "";
+  const players = c.players
+    .map((p) => `${p.role} in the ${describePoint(p.at)}`)
+    .join(", ");
+  const targets = c.targets.length
+    ? ` Target: ${c.targets
+        .map((t) => `${t.label} in the ${describePoint(t.at)}`)
+        .join(", ")}.`
+    : "";
+  return `${players}.${targets}`;
+}
+
+function describePoint(point: Point): string {
+  const [lateral, depth] = point;
+  const side =
+    lateral < COURT_WIDTH / 3
+      ? "left of"
+      : lateral > (COURT_WIDTH * 2) / 3
+        ? "right of"
+        : "middle of";
+  return `${side} ${zoneAt(depth)}`;
+}
+
+/** Whether a shot reaches its apex before or after it crosses the net. */
+function peakSide(path: ShotPath): string {
+  const crossing = netCrossingFraction(path.from, path.to);
+  return path.peakAt < crossing ? "before the net" : "after the net";
+}
+
 function RefLink({ refItem }: { refItem: Ref }) {
   if (!refItem.href) {
     return (

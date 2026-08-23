@@ -191,6 +191,49 @@ Phase 2에서 `/tours`, `/tours/[slug]`, `/calendar` 추가 예정.
 - `start`/`end`가 이 사이트의 핵심 자산이다. "영상 링크"가 아니라 "**구간** 링크".
 - `status: draft`인 항목은 빌드에서 제외 → 미완성 기술을 안전하게 커밋 가능.
 
+### 7.1.1 다이어그램 필드 (v0.2에서 추가)
+
+기술 페이지가 글만 길어지는 문제 때문에 추가. **몸의 폼은 그리지 않는다** —
+그건 영상이 담당한다. 다이어그램이 담당하는 건 **위치와 궤적**뿐이다.
+
+좌표는 실제 코트 피트 단위 `[lateral, depth]`:
+`lateral` 0(왼쪽 사이드라인)–20(오른쪽), `depth` 0(내 베이스라인)–44(상대 베이스라인).
+네트 22, 키친 라인 15와 29. 렌더는 **가로 방향**(왼쪽=나, 오른쪽=상대).
+
+```jsonc
+{
+  "court": {
+    "players": [{ "role": "you", "at": [14, 1] }],   // you | partner | opponent | feeder
+    "shot": {
+      "from": [14, 1], "to": [8, 26],
+      "peakAt": 0.36,      // 경로상 정점 위치 (0~1). 네트 통과 지점보다 작으면 "네트 앞에서 정점"
+      "peakHeight": 9      // 피트
+    },
+    "mistake": { "label": "...", "path": { /* 같은 형식 */ } },  // 점선으로 병기
+    "movement": [{ "role": "you", "from": [14, 1], "to": [12, 14] }],
+    "targets": [{ "label": "towel", "at": [9, 26], "width": 5, "depth": 3 }]
+  },
+  "comparison": {
+    "title": "Drop or drive?",
+    "otherLabel": "Third Shot Drive",
+    "otherSlug": "third-shot-drive",
+    "rows": [{ "label": "What it is for", "self": "...", "other": "..." }]
+  }
+}
+```
+
+`drills[]`도 각각 `court`를 가질 수 있다 (피더 위치, 타겟 위치, 이동 경로).
+
+**설계 의도**
+
+- `peakAt`이 핵심이다. 드롭이 실패하는 방식 대부분이 "네트 넘어가서 정점"이고,
+  그건 글 다섯 줄보다 그림 한 장이 정확하다. `mistake`를 점선으로 겹쳐 그린다.
+- 전부 optional. 순수 movement/strategy 기술은 그릴 게 없다.
+- 렌더는 자체 인라인 SVG (§12의 "그래프: 자체 SVG"와 동일 방침). 모든 색은
+  디자인 토큰이라 다크모드가 자동으로 따라온다.
+- 각 다이어그램은 `<title>`/`<desc>`로 좌표를 문장으로 다시 설명한다.
+  본문 글은 그대로 유지하므로 스크린리더·검색엔진 쪽 손실이 없다.
+
 ### 7.2 Term (`content/glossary/*.json`)
 
 ```jsonc
