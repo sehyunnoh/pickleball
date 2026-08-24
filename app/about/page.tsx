@@ -122,7 +122,7 @@ export default function AboutPage() {
 
       <Section title="What is collected about you">
         <p>
-          Nothing. There are no accounts, no sign-in, no comments and no
+          Almost nothing. There are no accounts, no sign-in, no comments and no
           newsletter. The site is a set of static pages.
         </p>
         <p>
@@ -132,9 +132,16 @@ export default function AboutPage() {
           browser clears it.
         </p>
         <p>
-          There is currently no analytics on this site. That is likely to change
-          — and when it does, this page will say so before it happens, and
-          visitors in places that require consent will be asked for it first.
+          Visits are counted with Google Analytics, but only if you agree to it
+          first &mdash; the bar at the foot of the page asks once, the default
+          is no, and until you say yes nothing is loaded and no cookie is set.{" "}
+          <Link
+            href="/privacy"
+            className="text-accent underline decoration-accent/30 underline-offset-4 hover:decoration-accent"
+          >
+            Privacy
+          </Link>{" "}
+          spells out what it records and lets you change your mind.
         </p>
       </Section>
 

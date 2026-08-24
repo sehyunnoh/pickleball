@@ -1,26 +1,28 @@
+"use client";
+
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { GA_ID, useConsent } from "@/lib/consent";
 
 /**
  * Google Analytics 4, or nothing at all.
  *
- * Rendering is gated on `NEXT_PUBLIC_GA_ID` so that dev servers, previews and
- * anyone's local build stay clean — you should not be able to pollute the
- * production numbers by running `npm run dev`. Set the variable only on the
- * production deployment.
+ * Two gates, both of which have to open:
  *
- * `@next/third-parties` loads gtag.js after hydration rather than blocking
- * first paint, and GA4 records a pageview whenever the history state changes,
- * so client-side navigation between technique pages is counted without any
- * wiring of our own.
+ * 1. `NEXT_PUBLIC_GA_ID` is set. It is set only on the production deployment,
+ *    so dev servers and previews cannot pollute the numbers.
+ * 2. The reader has said yes. GA4 sets cookies and processes personal data,
+ *    and for EEA and UK visitors that requires consent *before* the tag fires
+ *    (REQUIREMENTS.md §16). Consent Mode with denied defaults would still put
+ *    gtag.js on the page; not rendering it at all is simpler to reason about
+ *    and matches how the video embeds already behave — if you never click,
+ *    the third party is never contacted.
  *
- * NOTE ON CONSENT: GA4 sets cookies and processes personal data. This site is
- * written for a global English-speaking audience, which means EEA and UK
- * visitors, which means consent is legally required *before* the tag fires.
- * Nothing here implements that yet — see docs/REQUIREMENTS.md §16. Until it
- * does, leaving the variable unset is the safe default, and it is unset.
+ * `@next/third-parties` loads the script after hydration rather than blocking
+ * first paint, and GA4 counts a pageview on every history change, so
+ * client-side navigation between technique pages needs no wiring of our own.
  */
 export default function Analytics() {
-  const id = process.env.NEXT_PUBLIC_GA_ID;
-  if (!id) return null;
-  return <GoogleAnalytics gaId={id} />;
+  const { consent } = useConsent();
+  if (!GA_ID || consent !== "granted") return null;
+  return <GoogleAnalytics gaId={GA_ID} />;
 }

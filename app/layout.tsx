@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Newsreader } from "next/font/google";
 import Link from "next/link";
 import Analytics from "@/components/Analytics";
+import ConsentBanner from "@/components/ConsentBanner";
 import SearchDialog from "@/components/SearchDialog";
 import { getTechniques, getTerms } from "@/lib/content";
 import { buildSearchIndex } from "@/lib/search";
@@ -120,6 +121,9 @@ export default function RootLayout({
               <Link href="/about" className="label hover:text-accent">
                 About
               </Link>
+              <Link href="/privacy" className="label hover:text-accent">
+                Privacy
+              </Link>
               <Link href="/courts" className="label hover:text-accent">
                 Courts
               </Link>
@@ -130,6 +134,7 @@ export default function RootLayout({
           </div>
         </footer>
 
+        <ConsentBanner />
         <Analytics />
       </body>
     </html>
