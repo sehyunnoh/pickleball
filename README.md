@@ -52,6 +52,10 @@ npm run add:video -- --technique reset --url "https://youtu.be/xxxx?t=95" --type
 # Runs before every build.
 npm run validate
 
+# Regenerate docs/CURATION.md, the worksheet for picking clips. Anything
+# already typed into a picks block is preserved.
+npm run curation:sheet
+
 # Are the curated clips still alive and still embeddable?
 npm run check:links
 

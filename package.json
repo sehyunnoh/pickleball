@@ -12,7 +12,8 @@
     "new:technique": "tsx scripts/new-technique.ts",
     "add:video": "tsx scripts/add-video.ts",
     "fetch:videos": "tsx scripts/fetch-videos.ts",
-    "check:links": "tsx scripts/check-links.ts"
+    "check:links": "tsx scripts/check-links.ts",
+    "curation:sheet": "tsx scripts/curation-sheet.ts"
   },
   "dependencies": {
     "@next/third-parties": "^16.3.2",
