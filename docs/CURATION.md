@@ -52,7 +52,19 @@ slow-motion clip or a clear example from a real game.
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:volley-serve -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only volley-serve`._
+<details>
+<summary>6 candidates from <code>pickleball Volley Serve tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 9:38 | How to Serve A Pickleball \| Beginner's Guide | ThatPickleballGuy - Kyle Koszuta | https://youtu.be/BmdnJNCEwxI |
+| 2 | 8:51 | 7 EASY Steps to a Powerful & Consistent Pickleball Serve | Troy Akin Pickleball | https://youtu.be/0ptN5X5nKzo |
+| 3 | 9:30 | The Last Pickleball Serve Tutorial You Will Ever Need - Enhance Pickleball | Enhance Pickleball | https://youtu.be/tnyUYMjmtzM |
+| 4 | 5:08 | Which Pickleball Serve Should You Use? Drop Serve vs. Volley Serve Training | The Pickleball Clinic | https://youtu.be/hWKOzYoeL90 |
+| 5 | 5:01 | How To Serve Like a PRO In Pickleball (Earn Free Points) | tanner.pickleball | https://youtu.be/WrN2CL8qhrA |
+| 6 | 7:46 | 5 Tips for PERFECT Pickleball Serve Technique | PrimeTime Pickleball | https://youtu.be/fThStvI53oA |
+
+</details>
 
 ---
 
@@ -100,7 +112,19 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only volley-serve`
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:return-and-advance -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only return-and-advance`._
+<details>
+<summary>6 candidates from <code>pickleball Return and Advance tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 5:47 | The SECRET to Returning Serves in Pickleball | The Pickleball Clinic | https://youtu.be/aBG-mIYNP2E |
+| 2 | 8:35 | 5 Advanced Pickleball Return Strategies to Outplay Your Opponents | ThatPickleballGuy - Kyle Koszuta | https://youtu.be/p27Gq140UjQ |
+| 3 | 7:18 | How to Improve Your Pickleball Return | Enhance Pickleball | https://youtu.be/n99hEiwbMnk |
+| 4 | 6:22 | The PERFECT Pickleball Return of Serve: Rules and Tips To Level Up | PlayPickleball.com | https://youtu.be/OxNnewWzUC4 |
+| 5 | 10:51 | The Pickleball Return Masterclass: This is the return the pros use… | Roscoe Bellamy | https://youtu.be/IKlupKNBC4o |
+| 6 | 4:56 | The Best Way to Return Serves in 2025 | John Cincola Pickleball | https://youtu.be/ZyeZown9rTc |
+
+</details>
 
 ---
 
@@ -141,7 +165,19 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only third-shot-dr
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:third-shot-drive -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only third-shot-drive`._
+<details>
+<summary>6 candidates from <code>pickleball Third Shot Drive tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 9:40 | A 3rd Shot Drive Strategy MasterClass | ThatPickleballGuy - Kyle Koszuta | https://youtu.be/WAP-wN5Wjjw |
+| 2 | 18:58 | 7 Steps to a Deadly 3rd Shot Drive | ThatPickleballGuy - Kyle Koszuta | https://youtu.be/UkyN4pHQZyQ |
+| 3 | 1:09 | How to Hit a Third Shot Drive Like Collin Johns | Pickleball 360 | https://youtu.be/JZpMT1h5L2k |
+| 4 | 2:02 | Pickleball Third Shot Drive: How (and WHY) to Use This Shot with Catherine Parenteau | Selkirk TV | https://youtu.be/0fVIkq1_6Ao |
+| 5 | 3:34 | What is the Third Shot Drive in Pickleball?! Why is it so effective and how to hit it! | Pickleball Warehouse | https://youtu.be/_Ia9Np4egjM |
+| 6 | 8:04 | Third Shot Drive or Drop? Advanced Third Shot Strategy from a Pro | The Flying Pickle Academy | https://youtu.be/iTwzvZ3bQlk |
+
+</details>
 
 ---
 
@@ -189,7 +225,18 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only third-shot-dr
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:dink-crosscourt -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only dink-crosscourt`._
+<details>
+<summary>5 candidates from <code>pickleball cross court dink tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 4:01 | Mastering the Pickleball Cross-Court Dink | Selkirk TV | https://youtu.be/o8i3o_ImVZ4 |
+| 2 | 8:05 | Learn Pickleball Dinking: Golden Rule Strategies | John Cincola Pickleball | https://youtu.be/40ap9ZC7EdI |
+| 3 | 3:15 | How to Hit a Forehand Dink Like a PRO! | The Pickleball Clinic | https://youtu.be/RjPwfV-IHts |
+| 4 | 8:20 | NEVER Lose Another Dink Battle With These 8 Tips 🎯 | Enhance Pickleball | https://youtu.be/nRo0mvVA-DM |
+| 5 | 1:41 | World #1 Ben Johns Teaches You to MASTER Your Backhand Dinks | The Pickleball Clinic | https://youtu.be/86qHTDv70DE |
+
+</details>
 
 ---
 
@@ -207,7 +254,18 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only dink-crosscou
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:reset -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only reset`._
+<details>
+<summary>5 candidates from <code>pickleball reset the ball soft hands tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 8:12 | How to Develop Soft Hands in Pickleball | Enhance Pickleball | https://youtu.be/i2dqQq5gf-s |
+| 2 | 8:09 | How to Master The Reset in Pickleball | Enhance Pickleball | https://youtu.be/B2JYosKGZfs |
+| 3 | 4:46 | HOW to Hit a RESET \| The Pickleball Clinic | The Pickleball Clinic | https://youtu.be/hwirvU2N-k4 |
+| 4 | 4:23 | Fix Your Pickleball Backhand In 5 EASY STEPS - Enhance Pickleball | Enhance Pickleball | https://youtu.be/M-fU4cQz95Q |
+| 5 | 3:02 | How Baseball Soft Hands Can Improve Your Pickleball Skills | Selkirk TV | https://youtu.be/f_MX3skfhr8 |
+
+</details>
 
 ---
 
@@ -225,7 +283,19 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only reset`._
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:block-counter -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only block-counter`._
+<details>
+<summary>6 candidates from <code>pickleball counter attack at the kitchen line tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 6:35 | How To Improve Your Blocks and Counters \| Catherine Parenteau Pickleball Tutorial | Catherine Parenteau | https://youtu.be/RUxfG7cpA60 |
+| 2 | 6:40 | Control & Attack Your Opponent From The Kitchen Line in Pickleball | tanner.pickleball | https://youtu.be/NNITCcvp-0Q |
+| 3 | 14:59 | 7 Kitchen Strategies to Avoid Getting Crushed in Pickleball | ThatPickleballGuy - Kyle Koszuta | https://youtu.be/JxVFdb1PixU |
+| 4 | 6:10 | The Pickleball Counter Attack: The Most Ignored Pickleball Weapon | PlayPickleball.com | https://youtu.be/-nnYRxM87FA |
+| 5 | 1:32 | How to Improve Your Counter Attack Game with Ben Johns | Pickleball 360 | https://youtu.be/YV96lik_vuA |
+| 6 | 22:11 | Counter ATTACK Like a 5.0 After This Video! | Briones Pickleball Academy | https://youtu.be/64MjM5w2A5w |
+
+</details>
 
 ---
 
@@ -243,7 +313,19 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only block-counter
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:punch-volley -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only punch-volley`._
+<details>
+<summary>6 candidates from <code>pickleball Punch Volley tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 7:15 | Tired of Hitting into the Net? Roll and Punch Volley Masterclass from a Pickleball Pro | The Flying Pickle Academy | https://youtu.be/e-H2pxPiZ70 |
+| 2 | 3:04 | How to Hit a Backhand PUNCH VOLLEY! | The Pickleball Clinic | https://youtu.be/AW_qcxFlbvY |
+| 3 | 5:27 | 4 Secrets to Better Punch Volleys in Pickleball // Punch Volley Pickleball Tips | High Five Pickleball | https://youtu.be/NaiROowET2M |
+| 4 | 1:01 | Technique for a punch volley! 👊👊👊 #pickleball #pickleballtips #pickleballaddict #pickleballer | Callie Smith | https://youtu.be/DIWPK1emJ5Y |
+| 5 | 5:59 | How to put away shots with a pickleball punch volley | Pickleball Kitchen | https://youtu.be/Vm-sA2LiCZk |
+| 6 | 14:13 | How To Volley Like a Pro in Pickleball | Enhance Pickleball | https://youtu.be/g5fkSrkpGSg |
+
+</details>
 
 ---
 
@@ -261,7 +343,19 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only punch-volley`
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:speed-up -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only speed-up`._
+<details>
+<summary>6 candidates from <code>pickleball speed up off the dink tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 13:49 | Everything to Know About "Speed Ups" In Pickleball | ThatPickleballGuy - Kyle Koszuta | https://youtu.be/pCXvUVoBcVo |
+| 2 | 8:20 | NEVER Lose Another Dink Battle With These 8 Tips 🎯 | Enhance Pickleball | https://youtu.be/nRo0mvVA-DM |
+| 3 | 8:01 | The Forehand Speed Up Secret: Hit LESS of the Ball | Richard Pickleball | https://youtu.be/Typnxn4TDLQ |
+| 4 | 7:06 | Stop Hitting Speed-Ups Like This | Cori Elliott | https://youtu.be/_SfgYNxkrxQ |
+| 5 | 9:48 | Win More Points with the Off Bounce Forehand Speed Up | Richard Pickleball | https://youtu.be/7XJnsV6dNGY |
+| 6 | 6:24 | DOMINATE Doubles: MASTER Pickleball Speed Up Defense | John Cincola Pickleball | https://youtu.be/R3g_SFd_Lm4 |
+
+</details>
 
 ---
 
@@ -279,7 +373,19 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only speed-up`._
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:overhead-smash -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only overhead-smash`._
+<details>
+<summary>6 candidates from <code>pickleball overhead smash technique tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 4:30 | How to Hit a PERFECT Pickleball SMASH In 3 Easy Steps (Get More POWER & CONSISTENCY in 4 Minutes) | High Five Pickleball | https://youtu.be/F_M5r7O5jjg |
+| 2 | 6:58 | The SECRET To SMASHING Overheads in Pickleball \| Briones Pickleball | Briones Pickleball Academy | https://youtu.be/q-XaNjRPcnI |
+| 3 | 5:23 | Coach Simone \| How to Hit Overheads | Simone Jardim Pickleball | https://youtu.be/TDoVXMmWxNA |
+| 4 | 1:05 | How to hit an overhead smash in pickleball! #pickleballtips #pickleball | tanner.pickleball | https://youtu.be/ms2q1LqCGsM |
+| 5 | 11:52 | Pickleball Overhead Smash Secrets (from a pro) | Roscoe Bellamy | https://youtu.be/JmrywKWRg3w |
+| 6 | 6:47 | The Overhead: how to use ANGLES and PLACEMENT to FINISH POINTS | Ignatowich HQ | https://youtu.be/lE8CFm_iY0A |
+
+</details>
 
 ---
 
@@ -297,7 +403,19 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only overhead-smas
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:offensive-lob -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only offensive-lob`._
+<details>
+<summary>6 candidates from <code>pickleball offensive lob tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 16:53 | How & When to Lob in Pickleball! | Enhance Pickleball | https://youtu.be/KCAjD1oS7jQ |
+| 2 | 2:58 | MASTERING the Art of the Pickleball Lob 🙌 (Players Never DO THIS)❗️ | Selkirk TV | https://youtu.be/NH3Hu6qwW1c |
+| 3 | 1:34 | how to lob like a pickleball pro like Anna Bright 😎 #pickleball #pickleballtips #pickleballers | Asia Pickleball TV | https://youtu.be/gD-dWO8hAxw |
+| 4 | 9:15 | Coach Simone \| How to Hit Offensive Lobs | Simone Jardim Pickleball | https://youtu.be/wxOAYGicRzQ |
+| 5 | 4:14 | Ultimate Offensive Lob Drill \| Pickleball | PrimeTime Pickleball | https://youtu.be/Nv-uBitJ52c |
+| 6 | 7:10 | Sky Lob \| The Defensive Skill Every Pickleball Player MUST Learn | ThatPickleballGuy - Kyle Koszuta | https://youtu.be/Kbl0Q0BorQk |
+
+</details>
 
 ---
 
@@ -315,7 +433,19 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only offensive-lob
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:atp -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only atp`._
+<details>
+<summary>6 candidates from <code>pickleball around the post ATP tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 5:25 | Learn this Pickleball Shot to TRANSFORM Your Game \| Around The Post (ATP) | ThatPickleballGuy - Kyle Koszuta | https://youtu.be/oFrz13ngYrw |
+| 2 | 5:48 | Around The Post (ATP) Defense \| Stopping the Toughest Shot in Pickleball | ThatPickleballGuy - Kyle Koszuta | https://youtu.be/kw3djKxJL0I |
+| 3 | 6:58 | How to do the ATP (Around The Post) shot in pickleball | Pickleball Kitchen | https://youtu.be/meCKgqC8poM |
+| 4 | 6:06 | How To Hit An Around The Post (ATP) Shot | PrimeTime Pickleball | https://youtu.be/ZSDys-0t0nE |
+| 5 | 2:02 | How to Hit an ATP: The Coolest Shot In Pickleball | The Pickleball Clinic | https://youtu.be/RZ0JD7DFWwY |
+| 6 | 6:41 | Hit ATPs Like a Pickleball Pro! | Mari Humberg Pickleball | https://youtu.be/Tfov86LnuB4 |
+
+</details>
 
 ---
 
@@ -333,7 +463,17 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only atp`._
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:erne -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only erne`._
+<details>
+<summary>4 candidates from <code>pickleball erne shot tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 9:42 | Master the Erne: A MUST HAVE WEAPON in Your Pickleball Game | ThatPickleballGuy - Kyle Koszuta | https://youtu.be/ShAIo7efwyA |
+| 2 | 1:43 | Master the Pickleball Erne in Under 2 Minutes! | Josh J Pickleball | https://youtu.be/HEStMD-dUxM |
+| 3 | 1:27 | When and How to Hit an Erne Shot in Pickleball | The Art of Pickleball | https://youtu.be/gAhfufMJ5gc |
+| 4 | 2:23 | Ben Johns Teaches Simone "The Erne" | Simone Jardim Pickleball | https://youtu.be/rXhdjgYSAtI |
+
+</details>
 
 ---
 
@@ -351,7 +491,15 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only erne`._
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:bert -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only bert`._
+<details>
+<summary>2 candidates from <code>pickleball what is a bert tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 9:42 | Master the Erne: A MUST HAVE WEAPON in Your Pickleball Game | ThatPickleballGuy - Kyle Koszuta | https://youtu.be/ShAIo7efwyA |
+| 2 | 3:22 | Erne 101: What Every Pickleball Player Should Know | Curt In Motion | https://youtu.be/WG-g2L-am08 |
+
+</details>
 
 ---
 
@@ -369,7 +517,14 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only bert`._
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:shake-and-bake -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only shake-and-bake`._
+<details>
+<summary>1 candidates from <code>pickleball shake and bake tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 15:41 | Learn The Deadliest Strategy in Pickleball (Shake & Bake) | Enhance Pickleball | https://youtu.be/QMzXVfQq68E |
+
+</details>
 
 ---
 
@@ -417,7 +572,19 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only shake-and-bak
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:transition-zone-footwork -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only transition-zone-footwork`._
+<details>
+<summary>6 candidates from <code>pickleball Transition Zone Footwork tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 6:06 | Transition Tips That Will Change Your Game \| Catherine Parenteau | Catherine Parenteau | https://youtu.be/sA8b4CIulcw |
+| 2 | 18:43 | Footwork Masterclass: How to Move & Where to Stand in Pickleball | Enhance Pickleball | https://youtu.be/YM9ozyidTY8 |
+| 3 | 6:21 | A Secret for PERFECT Pickleball Footwork & 3 Drills to Get to 5.0 | The Pickleball Clinic | https://youtu.be/pUR6ToL21aU |
+| 4 | 2:40 | How to Dominate the Transition Zone \| The Pickleball Clinic | The Pickleball Clinic | https://youtu.be/mJr0ADEgb04 |
+| 5 | 10:54 | Mari Humberg Teaches Perfect Footwork in Pickleball | tanner.pickleball | https://youtu.be/UdOZHxTiniw |
+| 6 | 3:29 | 6 Pro Tips to Help You DOMINATE the Transition Zone | The Pickleball Clinic | https://youtu.be/jHHiQ49RKjI |
+
+</details>
 
 ---
 

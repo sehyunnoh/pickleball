@@ -190,5 +190,634 @@
         "duration": "PT10M35S"
       }
     ]
+  },
+  "volley-serve": {
+    "fetchedAt": "2026-08-24T17:44:05.787Z",
+    "query": "pickleball Volley Serve tutorial",
+    "results": [
+      {
+        "youtubeId": "BmdnJNCEwxI",
+        "title": "How to Serve A Pickleball | Beginner's Guide",
+        "channel": "ThatPickleballGuy - Kyle Koszuta",
+        "publishedAt": "2023-05-08T22:00:09Z",
+        "duration": "PT9M38S"
+      },
+      {
+        "youtubeId": "0ptN5X5nKzo",
+        "title": "7 EASY Steps to a Powerful & Consistent Pickleball Serve",
+        "channel": "Troy Akin Pickleball",
+        "publishedAt": "2025-07-21T21:00:00Z",
+        "duration": "PT8M51S"
+      },
+      {
+        "youtubeId": "tnyUYMjmtzM",
+        "title": "The Last Pickleball Serve Tutorial You Will Ever Need - Enhance Pickleball",
+        "channel": "Enhance Pickleball",
+        "publishedAt": "2022-09-06T11:00:38Z",
+        "duration": "PT9M30S"
+      },
+      {
+        "youtubeId": "hWKOzYoeL90",
+        "title": "Which Pickleball Serve Should You Use? Drop Serve vs. Volley Serve Training",
+        "channel": "The Pickleball Clinic",
+        "publishedAt": "2025-05-07T22:43:11Z",
+        "duration": "PT5M8S"
+      },
+      {
+        "youtubeId": "WrN2CL8qhrA",
+        "title": "How To Serve Like a PRO In Pickleball (Earn Free Points)",
+        "channel": "tanner.pickleball",
+        "publishedAt": "2024-06-17T19:00:06Z",
+        "duration": "PT5M1S"
+      },
+      {
+        "youtubeId": "fThStvI53oA",
+        "title": "5 Tips for PERFECT Pickleball Serve Technique",
+        "channel": "PrimeTime Pickleball",
+        "publishedAt": "2020-02-14T15:00:09Z",
+        "duration": "PT7M46S"
+      }
+    ]
+  },
+  "return-and-advance": {
+    "fetchedAt": "2026-08-24T17:44:07.621Z",
+    "query": "pickleball Return and Advance tutorial",
+    "results": [
+      {
+        "youtubeId": "aBG-mIYNP2E",
+        "title": "The SECRET to Returning Serves in Pickleball",
+        "channel": "The Pickleball Clinic",
+        "publishedAt": "2024-06-03T13:31:08Z",
+        "duration": "PT5M47S"
+      },
+      {
+        "youtubeId": "p27Gq140UjQ",
+        "title": "5 Advanced Pickleball Return Strategies to Outplay Your Opponents",
+        "channel": "ThatPickleballGuy - Kyle Koszuta",
+        "publishedAt": "2024-01-04T19:00:20Z",
+        "duration": "PT8M35S"
+      },
+      {
+        "youtubeId": "n99hEiwbMnk",
+        "title": "How to Improve Your Pickleball Return",
+        "channel": "Enhance Pickleball",
+        "publishedAt": "2022-09-02T13:34:00Z",
+        "duration": "PT7M18S"
+      },
+      {
+        "youtubeId": "OxNnewWzUC4",
+        "title": "The PERFECT Pickleball Return of Serve: Rules and Tips To Level Up",
+        "channel": "PlayPickleball.com",
+        "publishedAt": "2024-02-21T20:51:29Z",
+        "duration": "PT6M22S"
+      },
+      {
+        "youtubeId": "IKlupKNBC4o",
+        "title": "The Pickleball Return Masterclass: This is the return the pros use…",
+        "channel": "Roscoe Bellamy",
+        "publishedAt": "2025-06-23T22:45:00Z",
+        "duration": "PT10M51S"
+      },
+      {
+        "youtubeId": "ZyeZown9rTc",
+        "title": "The Best Way to Return Serves in 2025",
+        "channel": "John Cincola Pickleball",
+        "publishedAt": "2025-03-18T22:00:23Z",
+        "duration": "PT4M56S"
+      }
+    ]
+  },
+  "third-shot-drive": {
+    "fetchedAt": "2026-08-24T17:44:09.553Z",
+    "query": "pickleball Third Shot Drive tutorial",
+    "results": [
+      {
+        "youtubeId": "WAP-wN5Wjjw",
+        "title": "A 3rd Shot Drive Strategy MasterClass",
+        "channel": "ThatPickleballGuy - Kyle Koszuta",
+        "publishedAt": "2024-08-06T23:00:22Z",
+        "duration": "PT9M40S"
+      },
+      {
+        "youtubeId": "UkyN4pHQZyQ",
+        "title": "7 Steps to a Deadly 3rd Shot Drive",
+        "channel": "ThatPickleballGuy - Kyle Koszuta",
+        "publishedAt": "2025-06-04T20:00:16Z",
+        "duration": "PT18M58S"
+      },
+      {
+        "youtubeId": "JZpMT1h5L2k",
+        "title": "How to Hit a Third Shot Drive Like Collin Johns",
+        "channel": "Pickleball 360",
+        "publishedAt": "2026-05-18T20:36:56Z",
+        "duration": "PT1M9S"
+      },
+      {
+        "youtubeId": "0fVIkq1_6Ao",
+        "title": "Pickleball Third Shot Drive: How (and WHY) to Use This Shot with Catherine Parenteau",
+        "channel": "Selkirk TV",
+        "publishedAt": "2024-07-15T12:49:20Z",
+        "duration": "PT2M2S"
+      },
+      {
+        "youtubeId": "_Ia9Np4egjM",
+        "title": "What is the Third Shot Drive in Pickleball?! Why is it so effective and how to hit it!",
+        "channel": "Pickleball Warehouse",
+        "publishedAt": "2025-03-06T14:30:26Z",
+        "duration": "PT3M34S"
+      },
+      {
+        "youtubeId": "iTwzvZ3bQlk",
+        "title": "Third Shot Drive or Drop? Advanced Third Shot Strategy from a Pro",
+        "channel": "The Flying Pickle Academy",
+        "publishedAt": "2025-02-26T20:11:05Z",
+        "duration": "PT8M4S"
+      }
+    ]
+  },
+  "dink-crosscourt": {
+    "fetchedAt": "2026-08-24T17:44:11.418Z",
+    "query": "pickleball cross court dink tutorial",
+    "results": [
+      {
+        "youtubeId": "o8i3o_ImVZ4",
+        "title": "Mastering the Pickleball Cross-Court Dink",
+        "channel": "Selkirk TV",
+        "publishedAt": "2025-02-07T13:37:06Z",
+        "duration": "PT4M1S"
+      },
+      {
+        "youtubeId": "40ap9ZC7EdI",
+        "title": "Learn Pickleball Dinking: Golden Rule Strategies",
+        "channel": "John Cincola Pickleball",
+        "publishedAt": "2023-11-03T20:00:01Z",
+        "duration": "PT8M5S"
+      },
+      {
+        "youtubeId": "RjPwfV-IHts",
+        "title": "How to Hit a Forehand Dink Like a PRO!",
+        "channel": "The Pickleball Clinic",
+        "publishedAt": "2024-01-08T16:19:19Z",
+        "duration": "PT3M15S"
+      },
+      {
+        "youtubeId": "nRo0mvVA-DM",
+        "title": "NEVER Lose Another Dink Battle With These 8 Tips 🎯",
+        "channel": "Enhance Pickleball",
+        "publishedAt": "2023-07-01T15:30:10Z",
+        "duration": "PT8M20S"
+      },
+      {
+        "youtubeId": "86qHTDv70DE",
+        "title": "World #1 Ben Johns Teaches You to MASTER Your Backhand Dinks",
+        "channel": "The Pickleball Clinic",
+        "publishedAt": "2024-05-01T13:44:26Z",
+        "duration": "PT1M41S"
+      }
+    ]
+  },
+  "reset": {
+    "fetchedAt": "2026-08-24T17:44:13.230Z",
+    "query": "pickleball reset the ball soft hands tutorial",
+    "results": [
+      {
+        "youtubeId": "i2dqQq5gf-s",
+        "title": "How to Develop Soft Hands in Pickleball",
+        "channel": "Enhance Pickleball",
+        "publishedAt": "2022-10-31T17:18:09Z",
+        "duration": "PT8M12S"
+      },
+      {
+        "youtubeId": "B2JYosKGZfs",
+        "title": "How to Master The Reset in Pickleball",
+        "channel": "Enhance Pickleball",
+        "publishedAt": "2022-12-31T19:09:32Z",
+        "duration": "PT8M9S"
+      },
+      {
+        "youtubeId": "hwirvU2N-k4",
+        "title": "HOW to Hit a RESET | The Pickleball Clinic",
+        "channel": "The Pickleball Clinic",
+        "publishedAt": "2023-09-06T16:44:29Z",
+        "duration": "PT4M46S"
+      },
+      {
+        "youtubeId": "M-fU4cQz95Q",
+        "title": "Fix Your Pickleball Backhand In 5 EASY STEPS - Enhance Pickleball",
+        "channel": "Enhance Pickleball",
+        "publishedAt": "2022-07-12T20:21:52Z",
+        "duration": "PT4M23S"
+      },
+      {
+        "youtubeId": "f_MX3skfhr8",
+        "title": "How Baseball Soft Hands Can Improve Your Pickleball Skills",
+        "channel": "Selkirk TV",
+        "publishedAt": "2025-05-16T13:39:23Z",
+        "duration": "PT3M2S"
+      }
+    ]
+  },
+  "block-counter": {
+    "fetchedAt": "2026-08-24T17:44:15.149Z",
+    "query": "pickleball counter attack at the kitchen line tutorial",
+    "results": [
+      {
+        "youtubeId": "RUxfG7cpA60",
+        "title": "How To Improve Your Blocks and Counters | Catherine Parenteau Pickleball Tutorial",
+        "channel": "Catherine Parenteau",
+        "publishedAt": "2024-05-13T21:00:06Z",
+        "duration": "PT6M35S"
+      },
+      {
+        "youtubeId": "NNITCcvp-0Q",
+        "title": "Control & Attack Your Opponent From The Kitchen Line in Pickleball",
+        "channel": "tanner.pickleball",
+        "publishedAt": "2024-05-13T20:00:06Z",
+        "duration": "PT6M40S"
+      },
+      {
+        "youtubeId": "JxVFdb1PixU",
+        "title": "7 Kitchen Strategies to Avoid Getting Crushed in Pickleball",
+        "channel": "ThatPickleballGuy - Kyle Koszuta",
+        "publishedAt": "2023-06-20T18:00:14Z",
+        "duration": "PT14M59S"
+      },
+      {
+        "youtubeId": "-nnYRxM87FA",
+        "title": "The Pickleball Counter Attack: The Most Ignored Pickleball Weapon",
+        "channel": "PlayPickleball.com",
+        "publishedAt": "2024-10-09T20:39:20Z",
+        "duration": "PT6M10S"
+      },
+      {
+        "youtubeId": "YV96lik_vuA",
+        "title": "How to Improve Your Counter Attack Game with Ben Johns",
+        "channel": "Pickleball 360",
+        "publishedAt": "2026-05-14T18:46:29Z",
+        "duration": "PT1M32S"
+      },
+      {
+        "youtubeId": "64MjM5w2A5w",
+        "title": "Counter ATTACK Like a 5.0 After This Video!",
+        "channel": "Briones Pickleball Academy",
+        "publishedAt": "2024-08-09T14:00:08Z",
+        "duration": "PT22M11S"
+      }
+    ]
+  },
+  "punch-volley": {
+    "fetchedAt": "2026-08-24T17:44:17.100Z",
+    "query": "pickleball Punch Volley tutorial",
+    "results": [
+      {
+        "youtubeId": "e-H2pxPiZ70",
+        "title": "Tired of Hitting into the Net? Roll and Punch Volley Masterclass from a Pickleball Pro",
+        "channel": "The Flying Pickle Academy",
+        "publishedAt": "2025-03-12T21:00:06Z",
+        "duration": "PT7M15S"
+      },
+      {
+        "youtubeId": "AW_qcxFlbvY",
+        "title": "How to Hit a Backhand PUNCH VOLLEY!",
+        "channel": "The Pickleball Clinic",
+        "publishedAt": "2023-02-07T17:23:35Z",
+        "duration": "PT3M4S"
+      },
+      {
+        "youtubeId": "NaiROowET2M",
+        "title": "4 Secrets to Better Punch Volleys in Pickleball // Punch Volley Pickleball Tips",
+        "channel": "High Five Pickleball",
+        "publishedAt": "2023-04-29T00:49:06Z",
+        "duration": "PT5M27S"
+      },
+      {
+        "youtubeId": "DIWPK1emJ5Y",
+        "title": "Technique for a punch volley! 👊👊👊 #pickleball #pickleballtips #pickleballaddict #pickleballer",
+        "channel": "Callie Smith",
+        "publishedAt": "2023-09-20T02:48:53Z",
+        "duration": "PT1M1S"
+      },
+      {
+        "youtubeId": "Vm-sA2LiCZk",
+        "title": "How to put away shots with a pickleball punch volley",
+        "channel": "Pickleball Kitchen",
+        "publishedAt": "2019-02-14T18:54:41Z",
+        "duration": "PT5M59S"
+      },
+      {
+        "youtubeId": "g5fkSrkpGSg",
+        "title": "How To Volley Like a Pro in Pickleball",
+        "channel": "Enhance Pickleball",
+        "publishedAt": "2023-09-03T18:00:24Z",
+        "duration": "PT14M13S"
+      }
+    ]
+  },
+  "speed-up": {
+    "fetchedAt": "2026-08-24T17:44:18.918Z",
+    "query": "pickleball speed up off the dink tutorial",
+    "results": [
+      {
+        "youtubeId": "pCXvUVoBcVo",
+        "title": "Everything to Know About \"Speed Ups\" In Pickleball",
+        "channel": "ThatPickleballGuy - Kyle Koszuta",
+        "publishedAt": "2023-10-17T20:00:12Z",
+        "duration": "PT13M49S"
+      },
+      {
+        "youtubeId": "nRo0mvVA-DM",
+        "title": "NEVER Lose Another Dink Battle With These 8 Tips 🎯",
+        "channel": "Enhance Pickleball",
+        "publishedAt": "2023-07-01T15:30:10Z",
+        "duration": "PT8M20S"
+      },
+      {
+        "youtubeId": "Typnxn4TDLQ",
+        "title": "The Forehand Speed Up Secret: Hit LESS of the Ball",
+        "channel": "Richard Pickleball",
+        "publishedAt": "2026-07-06T01:24:13Z",
+        "duration": "PT8M1S"
+      },
+      {
+        "youtubeId": "_SfgYNxkrxQ",
+        "title": "Stop Hitting Speed-Ups Like This",
+        "channel": "Cori Elliott",
+        "publishedAt": "2026-01-20T16:30:24Z",
+        "duration": "PT7M6S"
+      },
+      {
+        "youtubeId": "7XJnsV6dNGY",
+        "title": "Win More Points with the Off Bounce Forehand Speed Up",
+        "channel": "Richard Pickleball",
+        "publishedAt": "2025-06-21T04:00:08Z",
+        "duration": "PT9M48S"
+      },
+      {
+        "youtubeId": "R3g_SFd_Lm4",
+        "title": "DOMINATE Doubles: MASTER Pickleball Speed Up Defense",
+        "channel": "John Cincola Pickleball",
+        "publishedAt": "2023-11-11T21:00:16Z",
+        "duration": "PT6M24S"
+      }
+    ]
+  },
+  "overhead-smash": {
+    "fetchedAt": "2026-08-24T17:44:37.479Z",
+    "query": "pickleball overhead smash technique tutorial",
+    "results": [
+      {
+        "youtubeId": "F_M5r7O5jjg",
+        "title": "How to Hit a PERFECT Pickleball SMASH In 3 Easy Steps (Get More POWER & CONSISTENCY in 4 Minutes)",
+        "channel": "High Five Pickleball",
+        "publishedAt": "2023-03-17T11:00:11Z",
+        "duration": "PT4M30S"
+      },
+      {
+        "youtubeId": "q-XaNjRPcnI",
+        "title": "The SECRET To SMASHING Overheads in Pickleball | Briones Pickleball",
+        "channel": "Briones Pickleball Academy",
+        "publishedAt": "2022-09-10T23:00:18Z",
+        "duration": "PT6M58S"
+      },
+      {
+        "youtubeId": "TDoVXMmWxNA",
+        "title": "Coach Simone | How to Hit Overheads",
+        "channel": "Simone Jardim Pickleball",
+        "publishedAt": "2019-10-05T14:00:04Z",
+        "duration": "PT5M23S"
+      },
+      {
+        "youtubeId": "ms2q1LqCGsM",
+        "title": "How to hit an overhead smash in pickleball! #pickleballtips #pickleball",
+        "channel": "tanner.pickleball",
+        "publishedAt": "2025-05-24T15:24:35Z",
+        "duration": "PT1M5S"
+      },
+      {
+        "youtubeId": "JmrywKWRg3w",
+        "title": "Pickleball Overhead Smash Secrets (from a pro)",
+        "channel": "Roscoe Bellamy",
+        "publishedAt": "2025-04-14T20:04:15Z",
+        "duration": "PT11M52S"
+      },
+      {
+        "youtubeId": "lE8CFm_iY0A",
+        "title": "The Overhead: how to use ANGLES and PLACEMENT to FINISH POINTS",
+        "channel": "Ignatowich HQ",
+        "publishedAt": "2024-06-24T00:57:22Z",
+        "duration": "PT6M47S"
+      }
+    ]
+  },
+  "offensive-lob": {
+    "fetchedAt": "2026-08-24T17:44:39.277Z",
+    "query": "pickleball offensive lob tutorial",
+    "results": [
+      {
+        "youtubeId": "KCAjD1oS7jQ",
+        "title": "How & When to Lob in Pickleball!",
+        "channel": "Enhance Pickleball",
+        "publishedAt": "2024-03-30T14:00:21Z",
+        "duration": "PT16M53S"
+      },
+      {
+        "youtubeId": "NH3Hu6qwW1c",
+        "title": "MASTERING the Art of the Pickleball Lob 🙌 (Players Never DO THIS)❗️",
+        "channel": "Selkirk TV",
+        "publishedAt": "2023-10-03T13:11:24Z",
+        "duration": "PT2M58S"
+      },
+      {
+        "youtubeId": "gD-dWO8hAxw",
+        "title": "how to lob like a pickleball pro like Anna Bright 😎 #pickleball #pickleballtips #pickleballers",
+        "channel": "Asia Pickleball TV",
+        "publishedAt": "2025-10-11T05:10:08Z",
+        "duration": "PT1M34S"
+      },
+      {
+        "youtubeId": "wxOAYGicRzQ",
+        "title": "Coach Simone | How to Hit Offensive Lobs",
+        "channel": "Simone Jardim Pickleball",
+        "publishedAt": "2019-10-03T14:00:08Z",
+        "duration": "PT9M15S"
+      },
+      {
+        "youtubeId": "Nv-uBitJ52c",
+        "title": "Ultimate Offensive Lob Drill | Pickleball",
+        "channel": "PrimeTime Pickleball",
+        "publishedAt": "2018-01-30T20:56:39Z",
+        "duration": "PT4M14S"
+      },
+      {
+        "youtubeId": "Kbl0Q0BorQk",
+        "title": "Sky Lob | The Defensive Skill Every Pickleball Player MUST Learn",
+        "channel": "ThatPickleballGuy - Kyle Koszuta",
+        "publishedAt": "2023-07-05T17:00:10Z",
+        "duration": "PT7M10S"
+      }
+    ]
+  },
+  "transition-zone-footwork": {
+    "fetchedAt": "2026-08-24T17:44:41.076Z",
+    "query": "pickleball Transition Zone Footwork tutorial",
+    "results": [
+      {
+        "youtubeId": "sA8b4CIulcw",
+        "title": "Transition Tips That Will Change Your Game | Catherine Parenteau",
+        "channel": "Catherine Parenteau",
+        "publishedAt": "2025-05-30T19:00:58Z",
+        "duration": "PT6M6S"
+      },
+      {
+        "youtubeId": "YM9ozyidTY8",
+        "title": "Footwork Masterclass: How to Move & Where to Stand in Pickleball",
+        "channel": "Enhance Pickleball",
+        "publishedAt": "2023-08-26T18:00:12Z",
+        "duration": "PT18M43S"
+      },
+      {
+        "youtubeId": "pUR6ToL21aU",
+        "title": "A Secret for PERFECT Pickleball Footwork & 3 Drills to Get to 5.0",
+        "channel": "The Pickleball Clinic",
+        "publishedAt": "2024-02-21T22:35:31Z",
+        "duration": "PT6M21S"
+      },
+      {
+        "youtubeId": "mJr0ADEgb04",
+        "title": "How to Dominate the Transition Zone | The Pickleball Clinic",
+        "channel": "The Pickleball Clinic",
+        "publishedAt": "2025-03-13T13:56:04Z",
+        "duration": "PT2M40S"
+      },
+      {
+        "youtubeId": "UdOZHxTiniw",
+        "title": "Mari Humberg Teaches Perfect Footwork in Pickleball",
+        "channel": "tanner.pickleball",
+        "publishedAt": "2025-10-22T18:00:36Z",
+        "duration": "PT10M54S"
+      },
+      {
+        "youtubeId": "jHHiQ49RKjI",
+        "title": "6 Pro Tips to Help You DOMINATE the Transition Zone",
+        "channel": "The Pickleball Clinic",
+        "publishedAt": "2024-12-22T18:33:52Z",
+        "duration": "PT3M29S"
+      }
+    ]
+  },
+  "atp": {
+    "fetchedAt": "2026-08-24T17:44:42.915Z",
+    "query": "pickleball around the post ATP tutorial",
+    "results": [
+      {
+        "youtubeId": "oFrz13ngYrw",
+        "title": "Learn this Pickleball Shot to TRANSFORM Your Game | Around The Post (ATP)",
+        "channel": "ThatPickleballGuy - Kyle Koszuta",
+        "publishedAt": "2023-01-19T20:00:07Z",
+        "duration": "PT5M25S"
+      },
+      {
+        "youtubeId": "kw3djKxJL0I",
+        "title": "Around The Post (ATP) Defense | Stopping the Toughest Shot in Pickleball",
+        "channel": "ThatPickleballGuy - Kyle Koszuta",
+        "publishedAt": "2023-07-17T20:00:26Z",
+        "duration": "PT5M48S"
+      },
+      {
+        "youtubeId": "meCKgqC8poM",
+        "title": "How to do the ATP (Around The Post) shot in pickleball",
+        "channel": "Pickleball Kitchen",
+        "publishedAt": "2019-09-27T18:06:02Z",
+        "duration": "PT6M58S"
+      },
+      {
+        "youtubeId": "ZSDys-0t0nE",
+        "title": "How To Hit An Around The Post (ATP) Shot",
+        "channel": "PrimeTime Pickleball",
+        "publishedAt": "2018-06-26T08:00:01Z",
+        "duration": "PT6M6S"
+      },
+      {
+        "youtubeId": "RZ0JD7DFWwY",
+        "title": "How to Hit an ATP: The Coolest Shot In Pickleball",
+        "channel": "The Pickleball Clinic",
+        "publishedAt": "2023-08-08T19:16:14Z",
+        "duration": "PT2M2S"
+      },
+      {
+        "youtubeId": "Tfov86LnuB4",
+        "title": "Hit ATPs Like a Pickleball Pro!",
+        "channel": "Mari Humberg Pickleball",
+        "publishedAt": "2026-03-05T23:00:29Z",
+        "duration": "PT6M41S"
+      }
+    ]
+  },
+  "erne": {
+    "fetchedAt": "2026-08-24T17:44:44.794Z",
+    "query": "pickleball erne shot tutorial",
+    "results": [
+      {
+        "youtubeId": "ShAIo7efwyA",
+        "title": "Master the Erne: A MUST HAVE WEAPON in Your Pickleball Game",
+        "channel": "ThatPickleballGuy - Kyle Koszuta",
+        "publishedAt": "2023-04-24T22:00:09Z",
+        "duration": "PT9M42S"
+      },
+      {
+        "youtubeId": "HEStMD-dUxM",
+        "title": "Master the Pickleball Erne in Under 2 Minutes!",
+        "channel": "Josh J Pickleball",
+        "publishedAt": "2024-08-01T11:00:26Z",
+        "duration": "PT1M43S"
+      },
+      {
+        "youtubeId": "gAhfufMJ5gc",
+        "title": "When and How to Hit an Erne Shot in Pickleball",
+        "channel": "The Art of Pickleball",
+        "publishedAt": "2023-01-03T16:31:29Z",
+        "duration": "PT1M27S"
+      },
+      {
+        "youtubeId": "rXhdjgYSAtI",
+        "title": "Ben Johns Teaches Simone \"The Erne\"",
+        "channel": "Simone Jardim Pickleball",
+        "publishedAt": "2021-05-02T13:22:58Z",
+        "duration": "PT2M23S"
+      }
+    ]
+  },
+  "bert": {
+    "fetchedAt": "2026-08-24T17:45:50.549Z",
+    "query": "pickleball what is a bert tutorial",
+    "results": [
+      {
+        "youtubeId": "ShAIo7efwyA",
+        "title": "Master the Erne: A MUST HAVE WEAPON in Your Pickleball Game",
+        "channel": "ThatPickleballGuy - Kyle Koszuta",
+        "publishedAt": "2023-04-24T22:00:09Z",
+        "duration": "PT9M42S"
+      },
+      {
+        "youtubeId": "WG-g2L-am08",
+        "title": "Erne 101: What Every Pickleball Player Should Know",
+        "channel": "Curt In Motion",
+        "publishedAt": "2025-04-11T19:00:01Z",
+        "duration": "PT3M22S"
+      }
+    ]
+  },
+  "shake-and-bake": {
+    "fetchedAt": "2026-08-24T17:45:52.349Z",
+    "query": "pickleball shake and bake tutorial",
+    "results": [
+      {
+        "youtubeId": "QMzXVfQq68E",
+        "title": "Learn The Deadliest Strategy in Pickleball (Shake & Bake)",
+        "channel": "Enhance Pickleball",
+        "publishedAt": "2024-05-25T18:03:08Z",
+        "duration": "PT15M41S"
+      }
+    ]
   }
 }
