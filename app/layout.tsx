@@ -106,11 +106,27 @@ export default function RootLayout({
         </main>
 
         <footer className="mt-24 border-t border-border">
-          <div className="mx-auto max-w-[78rem] px-6 py-10">
+          <div className="mx-auto flex max-w-[78rem] flex-wrap justify-between gap-x-12 gap-y-6 px-6 py-10">
             <p className="max-w-[46ch] text-sm leading-relaxed text-muted">
               Videos are embedded from YouTube and remain the property of their
-              creators. Nothing here is hosted or re-uploaded.
+              creators. Nothing here is hosted or re-uploaded. Court listings
+              come from the Town of Oakville; this site is not affiliated with
+              the town.
             </p>
+            <nav
+              aria-label="Secondary"
+              className="flex flex-wrap gap-x-5 gap-y-2"
+            >
+              <Link href="/about" className="label hover:text-accent">
+                About
+              </Link>
+              <Link href="/courts" className="label hover:text-accent">
+                Courts
+              </Link>
+              <Link href="/glossary" className="label hover:text-accent">
+                Glossary
+              </Link>
+            </nav>
           </div>
         </footer>
 

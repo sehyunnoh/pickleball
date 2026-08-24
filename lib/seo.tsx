@@ -31,6 +31,13 @@ export function siteUrl(): string {
 
 export const SITE_NAME = "Pickleball Technique";
 
+/**
+ * Where corrections go. Empty by default and the About page simply omits the
+ * section — publishing somebody's personal address is their call to make, not
+ * a default to inherit.
+ */
+export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "";
+
 function absolute(path: string): string {
   return `${siteUrl()}${path}`;
 }
