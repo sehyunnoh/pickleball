@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, Newsreader } from "next/font/google";
 import Link from "next/link";
+import Analytics from "@/components/Analytics";
 import SearchDialog from "@/components/SearchDialog";
 import { getTechniques, getTerms } from "@/lib/content";
 import { buildSearchIndex } from "@/lib/search";
@@ -95,6 +96,8 @@ export default function RootLayout({
             </p>
           </div>
         </footer>
+
+        <Analytics />
       </body>
     </html>
   );

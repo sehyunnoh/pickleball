@@ -14,9 +14,10 @@ npm install
 npm run dev      # http://localhost:3000
 ```
 
-No environment variables are needed to run the site. `YOUTUBE_API_KEY` in
-`.env.local` is only used by the build-time curation scripts (M2), never at
-runtime.
+No environment variables are needed to run the site — see `.env.example` for
+what the optional ones do. `YOUTUBE_API_KEY` is used only by the build-time
+curation scripts, never at runtime, and `NEXT_PUBLIC_GA_ID` should be set on
+the production deployment only.
 
 ## Content
 
