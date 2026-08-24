@@ -16,7 +16,7 @@
     "You have arrived at the net behind a return or a drop and the rally is still alive.",
     "The ball is being dinked and neither team has anything to attack.",
     "Your partner has been pulled wide and the middle is opening up.",
-    "You are tempted to back up for a ball at your feet \u2014 this is the moment the position matters most."
+    "You are tempted to back up for a ball at your feet — this is the moment the position matters most."
   ],
   "howTo": [
     "Stand with your toes two or three inches behind the line, close enough to reach a dink without stepping in.",
@@ -28,14 +28,14 @@
   "commonMistakes": [
     "Standing a foot or two behind the line, which turns every dink into an awkward half-volley.",
     "Creeping onto or over the line, so any ball you volley is a fault.",
-    "Letting the paddle drop to your waist between shots \u2014 it cannot get back up in time for a speed-up.",
+    "Letting the paddle drop to your waist between shots — it cannot get back up in time for a speed-up.",
     "Staying put while your partner slides across, which leaves a lane straight up the middle.",
     "Backing up to play a low ball instead of bending your knees and resetting it from where you are."
   ],
   "drills": [
     {
       "name": "Toes on the line",
-      "description": "Your partner dinks at you from their kitchen. Play twenty balls without your feet leaving the line \u2014 no backing up, no stepping in. When you cannot reach a ball, bend instead of stepping.",
+      "description": "Your partner dinks at you from their kitchen. Play twenty balls without your feet leaving the line — no backing up, no stepping in. When you cannot reach a ball, bend instead of stepping.",
       "reps": "3 sets of 20",
       "players": 2,
       "court": {
@@ -59,7 +59,7 @@
     },
     {
       "name": "Move as one",
-      "description": "Two of you hold the kitchen line while a feeder sends the ball from side to side. Keep roughly eight feet between you and slide together \u2014 if the gap changes, the feeder stops and you reset.",
+      "description": "Two of you hold the kitchen line while a feeder sends the ball from side to side. Keep roughly eight feet between you and slide together — if the gap changes, the feeder stops and you reset.",
       "reps": "5 minutes",
       "players": 3,
       "court": {
@@ -185,7 +185,8 @@
     "split-step"
   ],
   "leadsTo": [
-    "dink-straight"
+    "dink-straight",
+    "erne"
   ],
   "relatedTerms": [
     "kitchen",

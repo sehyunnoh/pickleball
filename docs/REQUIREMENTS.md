@@ -21,8 +21,8 @@
 
 | 항목 | 결정 |
 |---|---|
-| 타겟 / 언어 | 글로벌, **영어 단일 언어** |
-| Phase 1 범위 | **기술 라이브러리 + 용어 사전만.** 시합 정보는 Phase 2로 미룸 |
+| 타겟 / 언어 | **온타리오주 옥빌에서 피클볼을 하는 사람들.** 언어는 영어 단일 (v0.3에서 글로벌 → 로컬로 변경) |
+| Phase 1 범위 | **기술 라이브러리 + 용어 사전 + 옥빌 코트 정보.** 시합 정보는 Phase 2로 미룸 |
 | 영상 수집 | **수동 큐레이션이 원칙**, YouTube Data API는 "더 보기" 보조용 |
 | 스택 | **Next.js (App Router) + TypeScript + Tailwind CSS**, Vercel 배포 |
 | 데이터 저장 | Phase 1은 **DB 없음.** 레포 내 JSON 파일 + SSG |
@@ -52,11 +52,13 @@
 - **스킬 트리 뷰**: 선행 기술 → 후행 기술 그래프
 - **클라이언트 검색**: 기술명/별칭/용어 대상 (Fuse.js, 인덱스 프리빌드)
 - **SEO**: 기술별 정적 페이지, OG 이미지, JSON-LD (HowTo / VideoObject)
+- **옥빌 코트 목록**: 실내 커뮤니티 센터 + 전용 실외 코트, 출처 링크와 확인 날짜 병기
 - **다크모드**, 모바일 우선 반응형
 
 ### 4.2 제외 (Out of scope — 명시적으로 안 함)
 
 - 시합/대회 정보 (→ Phase 2)
+- 코트 예약·드롭인 시간표 (타운 시스템이 이미 함. 우리는 링크만 건다)
 - 사용자 계정, 로그인, 서버 저장 (진도 체크는 localStorage만)
 - 댓글, 커뮤니티, UGC
 - 영상 파일 호스팅 (항상 YouTube iframe 임베드. 다운로드/재업로드 절대 안 함)
@@ -74,6 +76,7 @@
 /skill-tree             기술 선후관계 그래프
 /glossary               용어 사전 (A–Z + 검색)
 /glossary/[slug]        용어 상세 (짧음. 관련 기술로 유도)
+/courts                 옥빌에서 칠 수 있는 곳 (실내/실외)
 /paths/[slug]           학습 경로 (예: "Get to the kitchen") — Phase 1 후반
 /about                  사이트 소개, 데이터 출처, 기여 방법
 ```
@@ -246,6 +249,32 @@ Phase 2에서 `/tours`, `/tours/[slug]`, `/calendar` 추가 예정.
   "relatedTechniques": ["dink-crosscourt", "reset"]
 }
 ```
+
+### 7.2.1 Venue (`content/venues/*.json`) — v0.3에서 추가
+
+```jsonc
+{
+  "slug": "sixteen-mile-community-centre",
+  "name": "Sixteen Mile Community Centre",
+  "kind": "indoor",              // indoor | outdoor
+  "courts": 6,
+  "dedicated": false,            // 전용 라인/네트인가, 테니스와 공용인가
+  "access": ["drop-in", "program"],  // drop-in | program | permit | membership | first-come
+  "address": "...",              // 선택 — 확인된 것만
+  "lights": true,                // 선택, 실외 전용
+  "notes": "...",                // 선택
+  "sourceUrl": "https://www.oakville.ca/...",
+  "checkedAt": "2026-08-24"
+}
+```
+
+**설계 의도**
+
+- `sourceUrl`과 `checkedAt`은 **필수**다. 코트 정보는 계절·예약 상황에 따라
+  금방 낡는다. 잠긴 체육관으로 사람을 보내는 건 아무것도 안 알려주는 것보다 나쁘다.
+- 우리는 **출처가 아니라 사본**이다. 페이지에 그렇게 명시하고 타운 페이지로 링크한다.
+- 드롭인 시간표는 담지 않는다. 타운 시스템이 이미 하고 있고, 우리가 복제하면
+  반드시 틀린다.
 
 ### 7.3 자동 수집 영상 (`data/generated/videos-auto.json`)
 

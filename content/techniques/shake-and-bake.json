@@ -1,0 +1,161 @@
+{
+  "slug": "shake-and-bake",
+  "name": "Shake and Bake",
+  "aka": [
+    "shake and bake"
+  ],
+  "category": "strategy",
+  "difficulty": "intermediate",
+  "courtZone": [
+    "baseline",
+    "transition",
+    "kitchen"
+  ],
+  "situation": [
+    "third-shot",
+    "rally"
+  ],
+  "handedness": "both",
+  "summary": "Shake and bake is a two-person play: one partner drives hard from the back while the other charges the net to put away the block that comes off it. It is the main alternative to the third shot drop, and it works because a firm block off a hard drive tends to float — somebody just has to be there when it does.",
+  "whenToUse": [
+    "Your partner is driving the third or fifth shot rather than dropping it.",
+    "The drive is going at a body or a backhand, where a clean block is hardest.",
+    "You are the partner closer to the net and can reach the kitchen line before the block arrives.",
+    "The other team blocks rather than resets. Against soft hands this play hands them the point."
+  ],
+  "howTo": [
+    "Read the drive as your partner commits to it, not after it lands.",
+    "Move forward hard on the drive, paddle already up in front of your chest.",
+    "Split-step as the blocker makes contact. Arriving at speed with your feet still moving is how this play fails.",
+    "Take the floating block out of the air and hit it down at the nearer opponent's feet.",
+    "If nothing floats, stop at the kitchen line and play the next ball soft."
+  ],
+  "commonMistakes": [
+    "Charging on a drive that was never going to force a weak block, and getting passed down the line.",
+    "Arriving in the transition zone still running, so the block lands at your feet.",
+    "Both partners crashing, which leaves nobody back for the lob.",
+    "Swinging big at the poach instead of punching down. The ball is already there; it only needs direction.",
+    "Running it every single point, until they simply reset the drive and dink past you."
+  ],
+  "drills": [
+    {
+      "name": "Drive and crash",
+      "description": "One partner drives from the baseline, you start in the transition zone and crash on the drive, and a third player blocks. Score only the balls you put away from inside the kitchen line.",
+      "reps": "3 sets of 15 drives",
+      "players": 3,
+      "court": {
+        "players": [
+          {
+            "role": "partner",
+            "at": [
+              6,
+              1
+            ]
+          },
+          {
+            "role": "you",
+            "at": [
+              14,
+              12
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              10,
+              29.5
+            ]
+          }
+        ],
+        "movement": [
+          {
+            "role": "you",
+            "from": [
+              14,
+              12
+            ],
+            "to": [
+              13,
+              14.5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Read it, do not guess it",
+      "description": "Your partner decides at the last moment whether to drive or drop, without telling you. You crash on the drive and stay back on the drop. Missing the read in either direction is the error being trained out.",
+      "reps": "20 balls",
+      "players": 3
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "partner",
+        "at": [
+          6,
+          1
+        ]
+      },
+      {
+        "role": "you",
+        "at": [
+          14,
+          12
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          6,
+          29.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          14,
+          29.5
+        ]
+      }
+    ],
+    "shot": {
+      "from": [
+        6,
+        1
+      ],
+      "to": [
+        6,
+        28
+      ],
+      "peakAt": 0.5,
+      "peakHeight": 4.5
+    },
+    "movement": [
+      {
+        "role": "you",
+        "from": [
+          14,
+          12
+        ],
+        "to": [
+          13,
+          14.5
+        ]
+      }
+    ]
+  },
+  "prerequisites": [
+    "third-shot-drive"
+  ],
+  "leadsTo": [],
+  "relatedTerms": [
+    "kitchen-line",
+    "pop-up",
+    "banger"
+  ],
+  "videos": [],
+  "status": "draft",
+  "updatedAt": "2026-08-24"
+}

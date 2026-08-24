@@ -1,0 +1,12 @@
+{
+  "slug": "iroquois-ridge-community-centre",
+  "name": "Iroquois Ridge Community Centre",
+  "kind": "indoor",
+  "dedicated": false,
+  "access": [
+    "program"
+  ],
+  "sourceUrl": "https://www.oakville.ca/parks-recreation-culture/programs-activities/pickleball/",
+  "checkedAt": "2026-08-24",
+  "notes": "Seasonal lessons only at the moment — no drop-in play here."
+}

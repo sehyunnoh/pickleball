@@ -1,0 +1,165 @@
+{
+  "slug": "atp",
+  "name": "Around the Post (ATP)",
+  "aka": [
+    "ATP",
+    "around the post"
+  ],
+  "category": "specialty",
+  "difficulty": "advanced",
+  "courtZone": [
+    "kitchen",
+    "sideline"
+  ],
+  "situation": [
+    "rally"
+  ],
+  "handedness": "both",
+  "summary": "An around-the-post shot goes past the outside of the net post instead of over the net, and lands in. It is legal, it does not have to clear anything, and because the ball is already wide and low it is often the highest-percentage answer to a sharp cross-court dink. Most players never look for it, which is why it keeps working.",
+  "whenToUse": [
+    "A cross-court dink or drive has pulled you wide and the ball is drifting outside the sideline.",
+    "The ball is below the height of the net — that is what makes going around it possible.",
+    "You can get your body outside the court to meet it, rather than reaching across yourself.",
+    "The opponents are still recovering from the angle they just created."
+  ],
+  "howTo": [
+    "Read it early: the moment the ball crosses the sideline, run to get outside it.",
+    "Keep running through the ball rather than reaching — your feet have to take you past it.",
+    "Let it drop. Lower is better here, because the net is no longer in the way.",
+    "Swing flat and across your body, aiming at the open court rather than at a line.",
+    "Follow through toward where you want it to land. There is nothing to lift over."
+  ],
+  "commonMistakes": [
+    "Reaching from inside the court instead of running around the ball, which leaves you falling away from it.",
+    "Lifting it as though the net were still in front of you — it is beside you, and the extra height sends it long.",
+    "Hesitating and taking it too high, at which point going over the net was the better shot.",
+    "Hitting it too hard. The angle is doing the work and the court is already open.",
+    "Not calling it, so your partner chases too and you both end up on one sideline."
+  ],
+  "drills": [
+    {
+      "name": "Wide feed ATPs",
+      "description": "Your partner stands at their kitchen and feeds deliberately wide and low, past your sideline. You run around it and hit around the post. Twenty on the forehand side, then twenty on the backhand.",
+      "reps": "2 sets of 20 per side",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              17,
+              14.5
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              5,
+              29.5
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "label": "feed lands here",
+            "at": [
+              21,
+              20
+            ],
+            "width": 3,
+            "depth": 5
+          }
+        ]
+      }
+    },
+    {
+      "name": "Widen until it goes out",
+      "description": "Dink cross-court with a partner and both of you keep widening the angle a little each time. Whenever a ball drifts outside the sideline, the receiver must attempt the ATP rather than reaching back over the net.",
+      "reps": "10 minutes",
+      "players": 2
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          19,
+          15
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          6,
+          14.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          5,
+          29.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          13,
+          29.5
+        ]
+      }
+    ],
+    "shot": {
+      "from": [
+        22,
+        19
+      ],
+      "to": [
+        6,
+        27
+      ],
+      "peakAt": 0.4,
+      "peakHeight": 3.5
+    },
+    "mistake": {
+      "label": "Lifted as if the net were still in the way. The post is beside you, so the extra height only sends it long.",
+      "path": {
+        "from": [
+          22,
+          19
+        ],
+        "to": [
+          8,
+          40
+        ],
+        "peakAt": 0.5,
+        "peakHeight": 9
+      }
+    },
+    "movement": [
+      {
+        "role": "you",
+        "from": [
+          19,
+          15
+        ],
+        "to": [
+          22,
+          18
+        ]
+      }
+    ]
+  },
+  "prerequisites": [
+    "dink-crosscourt"
+  ],
+  "leadsTo": [],
+  "relatedTerms": [
+    "kitchen",
+    "kitchen-line"
+  ],
+  "videos": [],
+  "status": "draft",
+  "updatedAt": "2026-08-24"
+}

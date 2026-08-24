@@ -1,6 +1,6 @@
 import Link from "next/link";
 import DifficultyBadge from "@/components/DifficultyBadge";
-import { getTechniques, getTerms } from "@/lib/content";
+import { getTechniques, getTerms, getVenues } from "@/lib/content";
 import { CATEGORIES, type Category } from "@/lib/schema";
 
 /**
@@ -31,6 +31,8 @@ const CATEGORY_BLURB: Record<Category, string> = {
 export default function Home() {
   const techniques = getTechniques();
   const terms = getTerms();
+  const venues = getVenues();
+  const courtCount = venues.reduce((n, v) => n + (v.courts ?? 0), 0);
 
   // The roots of the skill tree: nothing has to come first.
   const startHere = techniques.filter((t) => t.prerequisites.length === 0);
@@ -57,8 +59,9 @@ export default function Home() {
           actually shows it.
         </p>
         <p className="mt-4 max-w-[54ch] leading-relaxed text-muted">
-          Written for players around 3.0 to 4.0 who know the rules and want one
-          specific shot to stop failing.
+          Written for players in Oakville, Ontario who know the rules and want
+          one specific shot to stop failing — and who need somewhere to go and
+          hit it.
         </p>
 
         <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3">
@@ -69,10 +72,16 @@ export default function Home() {
             Browse every shot
           </Link>
           <Link
+            href="/courts"
+            className="label border-b-2 border-transparent pb-1 text-muted hover:border-border hover:text-text"
+          >
+            Where to play in Oakville
+          </Link>
+          <Link
             href="/skill-tree"
             className="label border-b-2 border-transparent pb-1 text-muted hover:border-border hover:text-text"
           >
-            See the order to learn them
+            The order to learn them
           </Link>
         </div>
       </section>
@@ -163,6 +172,25 @@ export default function Home() {
           ))}
         </ul>
       </section>
+
+      {venues.length > 0 && (
+        <section className="border-t border-rule py-16" aria-labelledby="play">
+          <h2 id="play" className="font-display text-2xl">
+            Somewhere to hit it
+          </h2>
+          <p className="mt-3 max-w-[52ch] leading-relaxed text-muted">
+            {courtCount} pickleball courts around Oakville — which community
+            centres have indoor gyms, and which parks have dedicated outdoor
+            courts rather than lines painted over tennis.
+          </p>
+          <Link
+            href="/courts"
+            className="label mt-5 inline-block border-b-2 border-accent pb-1 text-accent"
+          >
+            Where to play
+          </Link>
+        </section>
+      )}
 
       {terms.length > 0 && (
         <section

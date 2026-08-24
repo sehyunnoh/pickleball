@@ -5,9 +5,11 @@ import {
   RoadmapSchema,
   TechniqueSchema,
   TermSchema,
+  VenueSchema,
   type Roadmap,
   type Technique,
   type Term,
+  type Venue,
 } from "./schema";
 
 /**
@@ -24,6 +26,7 @@ import {
 const CONTENT_DIR = path.join(process.cwd(), "content");
 const TECHNIQUES_DIR = path.join(CONTENT_DIR, "techniques");
 const GLOSSARY_DIR = path.join(CONTENT_DIR, "glossary");
+const VENUES_DIR = path.join(CONTENT_DIR, "venues");
 
 /**
  * Drafts are excluded from production builds so unfinished techniques can be
@@ -129,6 +132,20 @@ export function loadAllTechniques(): Map<string, Technique> {
 
 export function loadAllTerms(): Map<string, Term> {
   return parseAll(GLOSSARY_DIR, TermSchema, "glossary");
+}
+
+/**
+ * Places to play, indoor first and then by size — the question is "where can I
+ * play tonight", and a six-court gym answers it better than a single outdoor
+ * court does.
+ */
+export function getVenues(): Venue[] {
+  return [...parseAll(VENUES_DIR, VenueSchema, "venue").values()].sort(
+    (a, b) =>
+      Number(b.kind === "indoor") - Number(a.kind === "indoor") ||
+      (b.courts ?? 0) - (a.courts ?? 0) ||
+      a.name.localeCompare(b.name),
+  );
 }
 
 /** What Phase 1 plans to cover. See RoadmapSchema for why this exists. */

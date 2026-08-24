@@ -30,7 +30,7 @@ const newsreader = Newsreader({
 });
 
 const DESCRIPTION =
-  "Learn one pickleball shot at a time: what it is, when to use it, how to hit it — with hand-picked video clips timestamped to the moment that shows it.";
+  "Pickleball technique for players in Oakville, Ontario. One shot at a time — what it is, when to use it, how to hit it, with hand-picked video clips timestamped to the moment that shows it. Plus every indoor and outdoor court in town.";
 
 export const metadata: Metadata = {
   // Everything relative in a page's metadata resolves against this, so the
@@ -86,6 +86,9 @@ export default function RootLayout({
             <nav aria-label="Main" className="flex items-baseline gap-5">
               <Link href="/techniques" className="label hover:text-accent">
                 Index
+              </Link>
+              <Link href="/courts" className="label hover:text-accent">
+                Courts
               </Link>
               <Link href="/skill-tree" className="label hover:text-accent">
                 Tree

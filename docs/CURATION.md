@@ -33,8 +33,8 @@ slow-motion clip or a clear example from a real game.
 ## Where it stands
 
 - **P0 progress:** 1 of 19 published
-- **Waiting on you:** 4 technique(s) below
-- **Not drafted yet:** 25 (they appear here once I write them)
+- **Waiting on you:** 8 technique(s) below
+- **Not drafted yet:** 21 (they appear here once I write them)
 
 ---
 
@@ -121,6 +121,78 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only third-shot-dr
 
 ---
 
+## Around the Post (ATP)
+
+`atp` · specialty · advanced · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:atp -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:atp -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only atp`._
+
+---
+
+## Erne
+
+`erne` · specialty · advanced · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:erne -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:erne -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only erne`._
+
+---
+
+## Bert
+
+`bert` · specialty · advanced · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:bert -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:bert -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only bert`._
+
+---
+
+## Shake and Bake
+
+`shake-and-bake` · strategy · intermediate · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:shake-and-bake -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:shake-and-bake -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only shake-and-bake`._
+
+---
+
 ## Split Step
 
 `split-step` · movement · beginner · **⏳ needs clips**
@@ -202,12 +274,8 @@ section above as each batch is written.
 - Overhead / Smash `overhead-smash` · P0
 - Offensive Lob `offensive-lob` · P0
 - Defensive Lob `defensive-lob` · P1
-- Around the Post (ATP) `atp` · P0
-- Erne `erne` · P0
-- Bert `bert` · P1
 - Poach `poach` · P1
 - Stacking `stacking` · P1
-- Shake and Bake `shake-and-bake` · P0
 - Transition Zone Footwork `transition-zone-footwork` · P0
 - Chicken Wing Defense `chicken-wing-defense` · P1
 - Lob Defense / Switching `lob-defense-switching` · P1

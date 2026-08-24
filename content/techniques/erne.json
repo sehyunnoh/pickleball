@@ -1,0 +1,154 @@
+{
+  "slug": "erne",
+  "name": "Erne",
+  "aka": [
+    "ernie"
+  ],
+  "category": "specialty",
+  "difficulty": "advanced",
+  "courtZone": [
+    "kitchen",
+    "sideline"
+  ],
+  "situation": [
+    "rally"
+  ],
+  "handedness": "both",
+  "summary": "An erne is a volley taken beside the net while standing outside the sideline, rather than in the kitchen. You get there either by jumping around the kitchen or by stepping around it before the ball is struck. Because you are level with the net and the ball has not dropped, a dink that would have been perfectly safe becomes a putaway.",
+  "whenToUse": [
+    "An opponent is dinking predictably to the same spot near your sideline.",
+    "You have time to move before they swing. An erne is set up, never reacted to.",
+    "The ball will arrive at or above net height beside the post.",
+    "You want the threat on the table — even a failed attempt stops them aiming there."
+  ],
+  "howTo": [
+    "Decide before they hit. Watch their paddle and commit early.",
+    "Either step around the kitchen and set your feet outside the sideline, or jump from inside it and land outside.",
+    "Land completely clear of the court, with no part of you touching the kitchen or its line.",
+    "Meet the ball in front with a short punch. The angle is the weapon, not the swing.",
+    "Aim at the feet of the nearer opponent, or at the gap between the two of them.",
+    "Recover to the kitchen line immediately — you have just left your half empty."
+  ],
+  "commonMistakes": [
+    "Touching the kitchen or its line on the way through, which is a fault however good the volley was.",
+    "Jumping from outside and landing inside the kitchen. It is the landing that counts.",
+    "Going too early, so they simply dink into the middle you abandoned.",
+    "Swinging hard at a ball that is only just at net height, and burying it in the tape.",
+    "Watching it instead of recovering, so the next ball goes behind you."
+  ],
+  "drills": [
+    {
+      "name": "Set the trap",
+      "description": "Your partner dinks cross-court to the same spot every time. You alternate: play three normally, then take the fourth as an erne. You are rehearsing the decision, not the volley.",
+      "reps": "4 sets of 8",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              18,
+              14.5
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              5,
+              29.5
+            ]
+          }
+        ],
+        "movement": [
+          {
+            "role": "you",
+            "from": [
+              18,
+              14.5
+            ],
+            "to": [
+              22,
+              19
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Feet only, no ball",
+      "description": "No ball at all. Practise the move around and outside the kitchen until you land clean every time without looking down. Have someone watch your feet and call any touch on the line.",
+      "reps": "3 sets of 10 per side",
+      "players": 2
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          22,
+          20
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          7,
+          14.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          5,
+          29.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          14,
+          29.5
+        ]
+      }
+    ],
+    "shot": {
+      "from": [
+        22,
+        20
+      ],
+      "to": [
+        6,
+        27
+      ],
+      "peakAt": 0.25,
+      "peakHeight": 4
+    },
+    "movement": [
+      {
+        "role": "you",
+        "from": [
+          17,
+          14.5
+        ],
+        "to": [
+          22,
+          20
+        ]
+      }
+    ]
+  },
+  "prerequisites": [
+    "kitchen-line-positioning"
+  ],
+  "leadsTo": [
+    "bert"
+  ],
+  "relatedTerms": [
+    "kitchen",
+    "kitchen-line"
+  ],
+  "videos": [],
+  "status": "draft",
+  "updatedAt": "2026-08-24"
+}
