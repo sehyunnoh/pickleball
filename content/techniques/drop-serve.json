@@ -1,0 +1,162 @@
+{
+  "slug": "drop-serve",
+  "name": "Drop Serve",
+  "aka": [
+    "bounce serve"
+  ],
+  "category": "serve",
+  "difficulty": "beginner",
+  "courtZone": [
+    "baseline"
+  ],
+  "situation": [
+    "serve"
+  ],
+  "handedness": "both",
+  "summary": "The drop serve lets you drop the ball, let it bounce, and hit the serve off the bounce. Because the ball has bounced, none of the volley serve restrictions apply — no below-the-waist contact, no upward swing, no paddle-below-wrist. That freedom is why it is worth knowing even if you serve well already.",
+  "whenToUse": [
+    "You want topspin on the serve, which the volley serve motion makes awkward.",
+    "The below-the-waist rule keeps costing you faults, or you are worried it will.",
+    "You are returning from an injury and a normal service motion hurts.",
+    "You want a second serve shape to show, so the returner cannot settle."
+  ],
+  "howTo": [
+    "Hold the ball out and let it fall from its natural height — you may not toss it up or throw it down.",
+    "Let it bounce anywhere behind the baseline, as high or low as it lands.",
+    "Step in and hit it like a groundstroke, with any swing you like.",
+    "Brush up the back of the ball if you want topspin, which makes it dip and kick.",
+    "Aim deep, toward the returner's backhand, as with any serve.",
+    "Recover behind the baseline and split-step as they return."
+  ],
+  "commonMistakes": [
+    "Tossing the ball up or bouncing it down, both of which make the serve a fault.",
+    "Letting it bounce so low that the contact point is uncomfortable — release from higher.",
+    "Assuming the below-the-waist rule still applies and hitting a cramped serve anyway.",
+    "Trying so much topspin that the serve lands halfway up the service box.",
+    "Using it as a novelty rather than picking one serve and getting good at it."
+  ],
+  "drills": [
+    {
+      "name": "Drop, bounce, deep",
+      "description": "Twenty serves from the drop, all aimed at the deep third of the service box. Have somebody watch the release and call any toss or throw-down, because it is hard to feel.",
+      "reps": "3 sets of 20",
+      "players": 1,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              14,
+              -1
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "label": "deep third",
+            "at": [
+              6,
+              41
+            ],
+            "width": 9,
+            "depth": 5
+          }
+        ]
+      }
+    },
+    {
+      "name": "Same target, two serves",
+      "description": "Alternate a volley serve and a drop serve at the same target. If the drop serve is consistently shorter, you are lifting rather than driving through it.",
+      "reps": "20 pairs",
+      "players": 1
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          14,
+          -1
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          5,
+          -1
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          5,
+          45
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          14,
+          14.5
+        ]
+      }
+    ],
+    "shot": {
+      "from": [
+        14,
+        -1
+      ],
+      "to": [
+        5,
+        40
+      ],
+      "peakAt": 0.45,
+      "peakHeight": 8
+    }
+  },
+  "comparison": {
+    "title": "Drop serve or volley serve?",
+    "otherLabel": "Volley Serve",
+    "otherSlug": "volley-serve",
+    "rows": [
+      {
+        "label": "How the ball starts",
+        "self": "Dropped from your hand and allowed to bounce.",
+        "other": "Struck out of the air before it bounces."
+      },
+      {
+        "label": "Restrictions",
+        "self": "None on the swing — the bounce removes them.",
+        "other": "Below the waist, paddle below the wrist, upward swing."
+      },
+      {
+        "label": "Spin",
+        "self": "Topspin is straightforward.",
+        "other": "Hard to generate much of anything."
+      },
+      {
+        "label": "Fault risk",
+        "self": "Only in the release: no toss, no throw-down.",
+        "other": "Contact height and paddle angle, judged live."
+      },
+      {
+        "label": "Worth it when",
+        "self": "You want spin or the height rule keeps catching you.",
+        "other": "You already have a repeatable deep serve."
+      }
+    ]
+  },
+  "prerequisites": [
+    "volley-serve"
+  ],
+  "leadsTo": [],
+  "relatedTerms": [
+    "fault",
+    "topspin",
+    "baseline"
+  ],
+  "videos": [],
+  "status": "draft",
+  "updatedAt": "2026-08-24"
+}

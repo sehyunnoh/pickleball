@@ -1,0 +1,166 @@
+{
+  "slug": "defensive-lob",
+  "name": "Defensive Lob",
+  "aka": [
+    "reset lob"
+  ],
+  "category": "defense",
+  "difficulty": "intermediate",
+  "courtZone": [
+    "transition",
+    "baseline"
+  ],
+  "situation": [
+    "defense"
+  ],
+  "handedness": "both",
+  "summary": "A defensive lob is a high ball hit from trouble to buy time. It does not try to win the point — it tries to end the attack you are under and give you the seconds to get your feet back under you. Most players reach for a low percentage counter instead and lose the rally there.",
+  "whenToUse": [
+    "You have been pushed back off the kitchen line and are scrambling.",
+    "A ball is at full stretch and any controlled shot is out of reach.",
+    "Your partner is out of position and the team needs several seconds.",
+    "Outdoors with wind or low sun behind you, which makes an overhead harder for them."
+  ],
+  "howTo": [
+    "Get the paddle under the ball, however awkward the position.",
+    "Open the face and lift with the legs and shoulder rather than the wrist.",
+    "Send it high — height is the entire point, because height is time.",
+    "Aim deep and toward the backhand side, away from a comfortable overhead.",
+    "Use the time you bought: recover to a defensive position beside your partner.",
+    "Expect the overhead and get low with the paddle up rather than backing away."
+  ],
+  "commonMistakes": [
+    "Lobbing short, which is the easiest overhead they will get all game.",
+    "Lifting with the wrist, which makes the height different every time.",
+    "Lobbing to the forehand side out of habit.",
+    "Standing and watching instead of using the time to recover.",
+    "Lobbing when a reset was available — a defensive lob gives the point away more often than it saves it."
+  ],
+  "drills": [
+    {
+      "name": "Under pressure, high and deep",
+      "description": "Your partner drives at you while you stand in the transition zone. You lob every ball, aiming past the service line on the backhand side. Anything that lands short of it does not count.",
+      "reps": "3 sets of 15",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              11,
+              9
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              11,
+              29.5
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "label": "deep backhand",
+            "at": [
+              5,
+              40
+            ],
+            "width": 8,
+            "depth": 6
+          }
+        ]
+      }
+    },
+    {
+      "name": "Lob then recover",
+      "description": "Same feed, but after every lob you have to sprint back to a defensive position beside your partner before they hit the overhead. The lob is only worth what you do with the time.",
+      "reps": "10 lobs",
+      "players": 3
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          12,
+          9
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          5,
+          12
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          6,
+          29.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          14,
+          29.5
+        ]
+      }
+    ],
+    "shot": {
+      "from": [
+        12,
+        9
+      ],
+      "to": [
+        5,
+        41
+      ],
+      "peakAt": 0.5,
+      "peakHeight": 20
+    },
+    "mistake": {
+      "label": "Short and low: it lands mid-court and they are already under it.",
+      "path": {
+        "from": [
+          12,
+          9
+        ],
+        "to": [
+          8,
+          31
+        ],
+        "peakAt": 0.5,
+        "peakHeight": 10
+      }
+    },
+    "movement": [
+      {
+        "role": "you",
+        "from": [
+          12,
+          9
+        ],
+        "to": [
+          12,
+          3
+        ]
+      }
+    ]
+  },
+  "prerequisites": [
+    "reset"
+  ],
+  "leadsTo": [],
+  "relatedTerms": [
+    "lob",
+    "transition-zone",
+    "neutral-ball"
+  ],
+  "videos": [],
+  "status": "draft",
+  "updatedAt": "2026-08-24"
+}

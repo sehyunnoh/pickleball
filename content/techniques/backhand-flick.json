@@ -1,0 +1,142 @@
+{
+  "slug": "backhand-flick",
+  "name": "Backhand Flick",
+  "aka": [
+    "backhand roll",
+    "flick"
+  ],
+  "category": "attack",
+  "difficulty": "advanced",
+  "courtZone": [
+    "kitchen"
+  ],
+  "situation": [
+    "rally"
+  ],
+  "handedness": "backhand",
+  "summary": "The backhand flick is a speed-up hit off the backhand side using the wrist rather than the arm. Because almost nothing changes in your stance before it, it is the hardest attack in the game to read — and the backhand side is where opponents least expect one to come from.",
+  "whenToUse": [
+    "A dink has come to your backhand slightly high, at or above knee height.",
+    "The opponent has been dinking to your backhand comfortably and has stopped watching.",
+    "You are in a cross-court dink rally where the angle to their body is already open.",
+    "Your partner is set at the line and ready for the exchange it starts."
+  ],
+  "howTo": [
+    "Keep the continental grip you were already dinking with — no change, no tell.",
+    "Take the ball early and in front of your body, not beside your hip.",
+    "Load the wrist back slightly, keeping the forearm quiet.",
+    "Snap the wrist up and through the ball, brushing up the back of it for topspin.",
+    "Aim at the near shoulder or the hip, where a backhand block is hardest.",
+    "Return the paddle to the middle immediately — the counter comes back fast."
+  ],
+  "commonMistakes": [
+    "Winding up the arm as well as the wrist, which telegraphs it a full beat early.",
+    "Flicking a ball below the knee, where the wrist has to lift it and it arrives soft.",
+    "Hitting flat instead of with topspin, so the ball flies past the baseline.",
+    "Letting the contact point drift behind you, which turns power into a mis-hit.",
+    "Flicking every high backhand until they simply stop dinking there."
+  ],
+  "drills": [
+    {
+      "name": "Wrist only",
+      "description": "Your partner dinks to your backhand. Flick with the arm held still against your body, so only the wrist can move. It feels ridiculous and it isolates exactly the motion you need.",
+      "reps": "3 sets of 20",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              6,
+              14.5
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              14,
+              29.5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Disguise check",
+      "description": "Dink cross-court to your backhand. Flick roughly one ball in five. Your partner calls out the moment they read it — if the calls are coming before contact, the arm is moving too early.",
+      "reps": "10 minutes",
+      "players": 2
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          6,
+          14.5
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          14,
+          14.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          6,
+          29.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          15,
+          29.5
+        ]
+      }
+    ],
+    "shot": {
+      "from": [
+        6,
+        14.5
+      ],
+      "to": [
+        15,
+        28
+      ],
+      "peakAt": 0.3,
+      "peakHeight": 4.5
+    },
+    "mistake": {
+      "label": "Flicked flat off a low ball: no topspin to bring it down, so it clears their shoulder and lands out.",
+      "path": {
+        "from": [
+          6,
+          14.5
+        ],
+        "to": [
+          15,
+          46
+        ],
+        "peakAt": 0.5,
+        "peakHeight": 7
+      }
+    }
+  },
+  "prerequisites": [
+    "speed-up"
+  ],
+  "leadsTo": [],
+  "relatedTerms": [
+    "topspin",
+    "hands-battle",
+    "continental-grip"
+  ],
+  "videos": [],
+  "status": "draft",
+  "updatedAt": "2026-08-24"
+}

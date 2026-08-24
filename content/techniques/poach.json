@@ -1,0 +1,182 @@
+{
+  "slug": "poach",
+  "name": "Poach",
+  "aka": [
+    "crossing",
+    "taking the middle"
+  ],
+  "category": "strategy",
+  "difficulty": "intermediate",
+  "courtZone": [
+    "kitchen"
+  ],
+  "situation": [
+    "rally"
+  ],
+  "handedness": "both",
+  "summary": "Poaching is stepping across to take a ball that was heading for your partner. Done at the right moment it turns a neutral dink into a putaway; done at the wrong one it leaves half the court open. The judgement, not the volley, is the skill.",
+  "whenToUse": [
+    "The ball is floating through the middle at or above net height.",
+    "Your partner is being pulled wide and is reaching, not set.",
+    "You are the one with the forehand in the middle.",
+    "You can get there and still be balanced — a poach you have to lunge for is not one."
+  ],
+  "howTo": [
+    "Watch the ball off their paddle, not your partner.",
+    "Move across on a diagonal rather than sideways, so you finish moving forward.",
+    "Take it in front of your body with a short punch, not a swing.",
+    "Hit down at the nearest opponent's feet or into the space between them.",
+    "Call it — one word, early and loud, so your partner covers behind you.",
+    "Keep going through to the side you have crossed into and let your partner take yours."
+  ],
+  "commonMistakes": [
+    "Poaching a ball below the net, where you have travelled several feet to hit a dink.",
+    "Going silently, so both of you arrive at the same ball or neither does.",
+    "Reaching across without moving the feet, which leaks the volley into the net.",
+    "Poaching and then trying to get back, which leaves you nowhere at all.",
+    "Doing it constantly, at which point they aim down the line you keep abandoning."
+  ],
+  "drills": [
+    {
+      "name": "Middle balls only",
+      "description": "Two of you at the kitchen line against a feeder who sends balls deliberately through the middle at varying heights. Only the high ones may be poached, and you must call every one.",
+      "reps": "10 minutes",
+      "players": 3,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              13,
+              14.5
+            ]
+          },
+          {
+            "role": "partner",
+            "at": [
+              6,
+              14.5
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              10,
+              29.5
+            ]
+          }
+        ],
+        "movement": [
+          {
+            "role": "you",
+            "from": [
+              13,
+              14.5
+            ],
+            "to": [
+              9,
+              14.5
+            ]
+          },
+          {
+            "role": "partner",
+            "from": [
+              6,
+              14.5
+            ],
+            "to": [
+              4,
+              14.5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cross and stay",
+      "description": "Same drill, but after every poach the pair has to finish the rally with the sides swapped. It builds the habit of covering rather than scrambling back.",
+      "reps": "15 rallies",
+      "players": 3
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          9,
+          14.5
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          4,
+          14.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          6,
+          29.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          14,
+          29.5
+        ]
+      }
+    ],
+    "shot": {
+      "from": [
+        9,
+        14.5
+      ],
+      "to": [
+        14,
+        27
+      ],
+      "peakAt": 0.25,
+      "peakHeight": 4
+    },
+    "movement": [
+      {
+        "role": "you",
+        "from": [
+          13,
+          14.5
+        ],
+        "to": [
+          9,
+          14.5
+        ]
+      },
+      {
+        "role": "partner",
+        "from": [
+          6,
+          14.5
+        ],
+        "to": [
+          4,
+          14.5
+        ]
+      }
+    ]
+  },
+  "prerequisites": [
+    "punch-volley"
+  ],
+  "leadsTo": [],
+  "relatedTerms": [
+    "middle",
+    "switching",
+    "doubles"
+  ],
+  "videos": [],
+  "status": "draft",
+  "updatedAt": "2026-08-24"
+}

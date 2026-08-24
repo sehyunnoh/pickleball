@@ -22,7 +22,7 @@
     "Your opponent has been pulled off the line and you want to keep them there."
   ],
   "howTo": [
-    "Bend your knees to get down to the ball \u2014 the paddle comes up to it, never down onto it.",
+    "Bend your knees to get down to the ball — the paddle comes up to it, never down onto it.",
     "Hold the grip loosely and open the paddle face slightly.",
     "Contact the ball out in front of your body and below your waist.",
     "Push through the ball with your shoulder and keep the wrist still.",
@@ -31,7 +31,7 @@
   ],
   "commonMistakes": [
     "Standing tall and swinging down at the ball, which sends it into the net every time.",
-    "Aiming at the net tape instead of a spot on the floor beyond it \u2014 you have to clear the net, so aim past it.",
+    "Aiming at the net tape instead of a spot on the floor beyond it — you have to clear the net, so aim past it.",
     "Landing the dink deep, near their kitchen line, where it comes up at a comfortable height to attack.",
     "Adding wrist to fine-tune the touch, which makes every dink land somewhere different.",
     "Watching your own shot instead of resetting the paddle for the reply."
@@ -201,7 +201,8 @@
     "dink-crosscourt",
     "speed-up",
     "reset",
-    "third-shot-drop"
+    "third-shot-drop",
+    "dead-dink"
   ],
   "relatedTerms": [
     "kitchen",

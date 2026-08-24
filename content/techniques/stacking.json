@@ -1,0 +1,165 @@
+{
+  "slug": "stacking",
+  "name": "Stacking",
+  "aka": [
+    "stack"
+  ],
+  "category": "strategy",
+  "difficulty": "intermediate",
+  "courtZone": [
+    "baseline",
+    "kitchen"
+  ],
+  "situation": [
+    "serve",
+    "return"
+  ],
+  "handedness": "n/a",
+  "summary": "Stacking is lining both partners up on the same side before the ball is struck, then moving to the positions you actually want once it is. It exists so a pair can keep the same player on the same side of the court all game — most often to keep two forehands in the middle, or a left-hander's forehand there.",
+  "whenToUse": [
+    "One of you is left-handed, so both forehands can cover the middle.",
+    "One partner is clearly stronger and you want them on the side more balls come to.",
+    "One of you has a backhand you would rather hide from the middle.",
+    "You are comfortable enough with the score and the positions not to get confused."
+  ],
+  "howTo": [
+    "Decide before the game which side each of you wants to finish on, and stay with it.",
+    "When serving, the server stands where the score requires; the partner stands on the side they want to end up on.",
+    "The server crosses to their preferred side immediately after contact.",
+    "When returning, the non-returner stands off the court on the side they want, and the returner crosses after hitting.",
+    "Call it out. A quiet stack is how a team ends up with both players in one service court.",
+    "If it goes wrong mid-game, stop stacking rather than trying to fix it point by point."
+  ],
+  "commonMistakes": [
+    "Stacking without agreeing the target positions first, so both of you cross to the same place.",
+    "Forgetting the server still has to stand in the correct service court — stacking does not change the serving rules.",
+    "Getting the score wrong and stacking off the wrong side, which is a fault waiting to happen.",
+    "Stacking every point when only the return side actually needed it.",
+    "Using it to hide a weakness so completely that the weakness never improves."
+  ],
+  "drills": [
+    {
+      "name": "Walk it through, no ball",
+      "description": "Set the score out loud and walk through the positions for serving and returning, both even and odd. No ball at all. Ten minutes of this saves a whole game of confusion.",
+      "reps": "10 minutes",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              14,
+              -1
+            ]
+          },
+          {
+            "role": "partner",
+            "at": [
+              16,
+              8
+            ]
+          }
+        ],
+        "movement": [
+          {
+            "role": "you",
+            "from": [
+              14,
+              -1
+            ],
+            "to": [
+              5,
+              6
+            ]
+          },
+          {
+            "role": "partner",
+            "from": [
+              16,
+              8
+            ],
+            "to": [
+              15,
+              12
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Stack the return only",
+      "description": "Play games where you stack on return but not on serve. It is the half that matters most and the half that is hardest to get wrong.",
+      "reps": "2 games",
+      "players": 4
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          14,
+          -1
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          16,
+          8
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          6,
+          45
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          14,
+          14.5
+        ]
+      }
+    ],
+    "movement": [
+      {
+        "role": "you",
+        "from": [
+          14,
+          -1
+        ],
+        "to": [
+          5,
+          6
+        ]
+      },
+      {
+        "role": "partner",
+        "from": [
+          16,
+          8
+        ],
+        "to": [
+          15,
+          12
+        ]
+      }
+    ]
+  },
+  "prerequisites": [
+    "kitchen-line-positioning"
+  ],
+  "leadsTo": [],
+  "relatedTerms": [
+    "doubles",
+    "mixed-doubles",
+    "middle",
+    "server-number"
+  ],
+  "videos": [],
+  "status": "draft",
+  "updatedAt": "2026-08-24"
+}

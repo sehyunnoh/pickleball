@@ -162,7 +162,9 @@
   "prerequisites": [
     "reset"
   ],
-  "leadsTo": [],
+  "leadsTo": [
+    "chicken-wing-defense"
+  ],
   "relatedTerms": [
     "hands-battle",
     "kitchen-line",

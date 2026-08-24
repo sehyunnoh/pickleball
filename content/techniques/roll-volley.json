@@ -1,0 +1,185 @@
+{
+  "slug": "roll-volley",
+  "name": "Roll Volley",
+  "aka": [
+    "topspin volley",
+    "roll"
+  ],
+  "category": "attack",
+  "difficulty": "advanced",
+  "courtZone": [
+    "kitchen",
+    "transition"
+  ],
+  "situation": [
+    "rally"
+  ],
+  "handedness": "both",
+  "summary": "A roll volley takes a ball out of the air below net height and brushes topspin up the back of it, so it dips down at the opponent's feet instead of sailing long. It is how you attack a ball that is not really attackable, and it is the shot that lets you keep moving forward through the transition zone.",
+  "whenToUse": [
+    "A ball is coming at you around knee to waist height and a punch would send it long.",
+    "You are moving forward through the transition zone and want to press rather than reset.",
+    "The opponents are at the kitchen line, so a dipping ball lands at their shoelaces.",
+    "You have grit on the paddle and outdoor conditions that hold spin."
+  ],
+  "howTo": [
+    "Start the paddle below the ball with a relaxed arm and an open face.",
+    "Take the ball in front of your body, out of the air, before it drops further.",
+    "Brush up and forward through the back of the ball, low to high.",
+    "Let the paddle head accelerate through contact rather than pushing the handle.",
+    "Aim at their feet — the spin brings the ball down inside the court for you.",
+    "Recover the paddle to the middle, because a good roll draws a fast reply."
+  ],
+  "commonMistakes": [
+    "Pushing flat through the ball, which is a punch volley and goes long from that height.",
+    "Rolling a ball that was already above the net, where a punch was simpler and better.",
+    "Swinging so hard the contact point ends up beside the hip.",
+    "Rolling from too far back, where even a dipping ball has time to come up again.",
+    "Attempting it with a smooth, worn paddle face that cannot hold the spin."
+  ],
+  "drills": [
+    {
+      "name": "Knee-high rolls",
+      "description": "Your partner feeds balls out of the air at knee height from their kitchen. You roll every one at their feet. Score only the ones that land inside the kitchen line.",
+      "reps": "3 sets of 20",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              11,
+              13
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              11,
+              29.5
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "label": "their feet",
+            "at": [
+              11,
+              27
+            ],
+            "width": 8,
+            "depth": 4
+          }
+        ]
+      }
+    },
+    {
+      "name": "Roll on the way in",
+      "description": "Start at the baseline and move forward while your partner feeds. Roll every ball you can take out of the air and reset every one that drops too low. It teaches the choice, which is the hard part.",
+      "reps": "10 trips",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              11,
+              2
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              11,
+              29.5
+            ]
+          }
+        ],
+        "movement": [
+          {
+            "role": "you",
+            "from": [
+              11,
+              2
+            ],
+            "to": [
+              11,
+              14
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          12,
+          12
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          5,
+          14.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          6,
+          29.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          14,
+          29.5
+        ]
+      }
+    ],
+    "shot": {
+      "from": [
+        12,
+        12
+      ],
+      "to": [
+        13,
+        27
+      ],
+      "peakAt": 0.3,
+      "peakHeight": 5
+    },
+    "mistake": {
+      "label": "Pushed flat instead of brushed: from below net height the ball has to rise, and it carries past the baseline.",
+      "path": {
+        "from": [
+          12,
+          12
+        ],
+        "to": [
+          13,
+          43
+        ],
+        "peakAt": 0.5,
+        "peakHeight": 7
+      }
+    }
+  },
+  "prerequisites": [
+    "punch-volley"
+  ],
+  "leadsTo": [],
+  "relatedTerms": [
+    "topspin",
+    "grit",
+    "transition-zone"
+  ],
+  "videos": [],
+  "status": "draft",
+  "updatedAt": "2026-08-24"
+}

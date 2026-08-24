@@ -1,0 +1,171 @@
+{
+  "slug": "chicken-wing-defense",
+  "name": "Chicken Wing Defense",
+  "aka": [
+    "chicken wing"
+  ],
+  "category": "defense",
+  "difficulty": "intermediate",
+  "courtZone": [
+    "kitchen"
+  ],
+  "situation": [
+    "defense",
+    "rally"
+  ],
+  "handedness": "backhand",
+  "summary": "The chicken wing is the position you end up in when a ball is driven at the shoulder of your paddle arm: the elbow lifts, the wrist collapses, and whatever comes off the paddle floats. Good players aim there on purpose. The defence is footwork and paddle position, not a stronger arm.",
+  "whenToUse": [
+    "A speed-up is coming at your dominant-side shoulder or hip.",
+    "You are at the kitchen line with no time to step around the ball.",
+    "The opponents have worked out where your awkward spot is and keep going back to it.",
+    "You are in a hands battle and the exchange is arriving at your body."
+  ],
+  "howTo": [
+    "Start with the paddle up and slightly toward your dominant shoulder — most body balls arrive there.",
+    "Take the ball with a backhand, not a forehand, whenever it is inside your shoulder line.",
+    "Move your feet away from the ball rather than folding your arm around it: a small step opens the whole shot up.",
+    "Keep the elbow down and in front, and let the paddle face do the blocking.",
+    "Absorb rather than counter — the goal is a ball that dies in their kitchen.",
+    "Reset the paddle to the middle before the next one arrives."
+  ],
+  "commonMistakes": [
+    "Turning it into a forehand, which is what raises the elbow in the first place.",
+    "Standing still and reaching, so the contact point ends up behind the shoulder.",
+    "Trying to counter hard out of a cramped position, which floats the ball up.",
+    "Holding the paddle low at rest, which means it has to travel up and across.",
+    "Blaming the shot rather than the position — this is a footwork problem."
+  ],
+  "drills": [
+    {
+      "name": "Body bag",
+      "description": "Your partner speeds up deliberately at your paddle-side shoulder, over and over. Block every one with a backhand. No forehands allowed however tempting.",
+      "reps": "3 sets of 20",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              11,
+              14.5
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              11,
+              29.5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "One step out",
+      "description": "Same feed, but you must take one small step away from the ball before every block. It proves how much room a single step buys.",
+      "reps": "3 sets of 15",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              11,
+              14.5
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              11,
+              29.5
+            ]
+          }
+        ],
+        "movement": [
+          {
+            "role": "you",
+            "from": [
+              11,
+              14.5
+            ],
+            "to": [
+              14,
+              14.5
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          11,
+          14.5
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          5,
+          14.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          6,
+          29.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          12,
+          29.5
+        ]
+      }
+    ],
+    "shot": {
+      "from": [
+        12,
+        29.5
+      ],
+      "to": [
+        11,
+        15
+      ],
+      "peakAt": 0.3,
+      "peakHeight": 4
+    },
+    "movement": [
+      {
+        "role": "you",
+        "from": [
+          11,
+          14.5
+        ],
+        "to": [
+          14,
+          14.5
+        ]
+      }
+    ]
+  },
+  "prerequisites": [
+    "block-counter"
+  ],
+  "leadsTo": [],
+  "relatedTerms": [
+    "hands-battle",
+    "ready-position",
+    "pop-up"
+  ],
+  "videos": [],
+  "status": "draft",
+  "updatedAt": "2026-08-24"
+}

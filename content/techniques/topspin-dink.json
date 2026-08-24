@@ -1,0 +1,170 @@
+{
+  "slug": "topspin-dink",
+  "name": "Topspin Dink",
+  "aka": [
+    "rolling dink"
+  ],
+  "category": "soft-game",
+  "difficulty": "advanced",
+  "courtZone": [
+    "kitchen"
+  ],
+  "situation": [
+    "rally"
+  ],
+  "handedness": "both",
+  "summary": "A topspin dink is brushed up the back of the ball so it dips sharply and kicks forward off the bounce. It arrives lower than a flat dink and jumps away from the opponent, which turns a neutral exchange into one where they are reaching. It also needs a paddle with grit left on it.",
+  "whenToUse": [
+    "You are steady in a dink rally and want to make one of theirs harder to lift.",
+    "The opponent is standing tall or has their paddle low.",
+    "You want a dink that can be hit with more pace and still land short.",
+    "Playing outdoors, where the harder ball takes spin better."
+  ],
+  "howTo": [
+    "Set up exactly as for a flat dink — same low stance, same contact out in front.",
+    "Start the paddle below the ball with the face slightly open.",
+    "Brush up the back of the ball rather than pushing through it.",
+    "Accelerate the paddle head upward, but keep the arm relaxed.",
+    "Aim short into their kitchen; the spin brings it down for you.",
+    "Recover the paddle high, because a topspin dink invites a speed-up back."
+  ],
+  "commonMistakes": [
+    "Swiping across the ball instead of up it, which produces sidespin and no dip.",
+    "Adding pace instead of spin, so the ball lands past the kitchen line.",
+    "Using it on a ball below your knees, where there is no room to brush upward.",
+    "Trying it with a worn-out paddle face and wondering why nothing dips.",
+    "Rolling every dink, which flattens out the rally and hands them a rhythm."
+  ],
+  "drills": [
+    {
+      "name": "Brush and count",
+      "description": "Cross-court dink rally where every ball you hit must have visible topspin. Your partner calls out any that arrives flat. Count consecutive spun dinks that land inside the kitchen.",
+      "reps": "3 attempts at a run of 20",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              15,
+              14.5
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              5,
+              29.5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dip test",
+      "description": "Lay a towel two feet inside their kitchen. Hit topspin dinks with obvious pace and score only the ones that still land on the towel. If pace and depth go up together, you are pushing rather than brushing.",
+      "reps": "3 sets of 20",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              15,
+              14.5
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              5,
+              29.5
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "label": "towel",
+            "at": [
+              5,
+              24
+            ],
+            "width": 4,
+            "depth": 2
+          }
+        ]
+      }
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          15,
+          14.5
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          6,
+          14.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          5,
+          29.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          14,
+          29.5
+        ]
+      }
+    ],
+    "shot": {
+      "from": [
+        15,
+        14.5
+      ],
+      "to": [
+        5,
+        24.5
+      ],
+      "peakAt": 0.35,
+      "peakHeight": 4
+    },
+    "mistake": {
+      "label": "Brushed across rather than up: it carries instead of dipping and lands past their kitchen line.",
+      "path": {
+        "from": [
+          15,
+          14.5
+        ],
+        "to": [
+          5,
+          30
+        ],
+        "peakAt": 0.5,
+        "peakHeight": 5.5
+      }
+    }
+  },
+  "prerequisites": [
+    "dink-crosscourt"
+  ],
+  "leadsTo": [],
+  "relatedTerms": [
+    "topspin",
+    "grit",
+    "dinking-rally"
+  ],
+  "videos": [],
+  "status": "draft",
+  "updatedAt": "2026-08-24"
+}

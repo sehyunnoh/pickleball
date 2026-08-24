@@ -189,7 +189,8 @@
     "third-shot-drop"
   ],
   "leadsTo": [
-    "block-counter"
+    "block-counter",
+    "defensive-lob"
   ],
   "relatedTerms": [
     "transition-zone",

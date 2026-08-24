@@ -1,0 +1,151 @@
+{
+  "slug": "dead-dink",
+  "name": "Dead Dink",
+  "aka": [
+    "no-pace dink"
+  ],
+  "category": "soft-game",
+  "difficulty": "intermediate",
+  "courtZone": [
+    "kitchen"
+  ],
+  "situation": [
+    "rally"
+  ],
+  "handedness": "both",
+  "summary": "A dead dink has no spin and almost no pace: it clears the net, lands short, and stops. Because the opponent gets nothing to work with, they have to generate everything themselves, and that is where the mistakes come from. It is the least glamorous shot on this site and one of the most effective.",
+  "whenToUse": [
+    "You are up against somebody who feeds on pace and spin.",
+    "The rally is fast and you want it slow again without giving anything away.",
+    "You have been pulled slightly off balance and need one safe ball.",
+    "The opponent has just hit something spectacular and is still admiring it."
+  ],
+  "howTo": [
+    "Get low and take the ball out in front, below the waist, as with any dink.",
+    "Hold the grip loose and let the paddle almost stop at contact.",
+    "Push the ball rather than swing at it — think of placing it over the net.",
+    "Land it in the first two or three feet of their kitchen, as short as you dare.",
+    "Recover the paddle up, because a dead ball is also an invitation to attack."
+  ],
+  "commonMistakes": [
+    "Decelerating so much that the ball hits the net — dead does not mean weak.",
+    "Landing it deep, where the lack of pace makes it an easy ball to speed up.",
+    "Gripping tightly, which puts pace back on the ball without meaning to.",
+    "Using it when you are already under pressure, where a reset is the shot.",
+    "Playing nothing but dead dinks, which is patient right up until it is predictable."
+  ],
+  "drills": [
+    {
+      "name": "Two bounces in the kitchen",
+      "description": "Dink straight ahead and score only the balls that would bounce twice inside their kitchen if nobody played them. It is the clearest measure there is of a genuinely dead ball.",
+      "reps": "3 sets of 20",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              13,
+              14.5
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              13,
+              29.5
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "label": "short kitchen",
+            "at": [
+              13,
+              24
+            ],
+            "width": 6,
+            "depth": 3
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pace off, pace on",
+      "description": "Your partner alternates a hard dink and a soft one. You return every one dead, regardless of what arrived. Absorbing pace is the whole skill.",
+      "reps": "3 sets of 20",
+      "players": 2
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          13,
+          14.5
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          6,
+          14.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          6,
+          29.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          13,
+          29.5
+        ]
+      }
+    ],
+    "shot": {
+      "from": [
+        13,
+        14.5
+      ],
+      "to": [
+        13,
+        24
+      ],
+      "peakAt": 0.45,
+      "peakHeight": 4
+    },
+    "mistake": {
+      "label": "Too much pace left on it: the ball carries deep, sits up, and comes back as a speed-up.",
+      "path": {
+        "from": [
+          13,
+          14.5
+        ],
+        "to": [
+          13,
+          29
+        ],
+        "peakAt": 0.5,
+        "peakHeight": 5.5
+      }
+    }
+  },
+  "prerequisites": [
+    "dink-straight"
+  ],
+  "leadsTo": [],
+  "relatedTerms": [
+    "dink",
+    "neutral-ball",
+    "soft-game"
+  ],
+  "videos": [],
+  "status": "draft",
+  "updatedAt": "2026-08-24"
+}

@@ -33,8 +33,8 @@ slow-motion clip or a clear example from a real game.
 ## Where it stands
 
 - **P0 progress:** 1 of 19 published
-- **Waiting on you:** 19 technique(s) below
-- **Not drafted yet:** 10 (they appear here once I write them)
+- **Waiting on you:** 29 technique(s) below
+- **Not drafted yet:** 0 (they appear here once I write them)
 
 ---
 
@@ -65,6 +65,24 @@ slow-motion clip or a clear example from a real game.
 | 6 | 7:46 | 5 Tips for PERFECT Pickleball Serve Technique | PrimeTime Pickleball | https://youtu.be/fThStvI53oA |
 
 </details>
+
+---
+
+## Drop Serve
+
+`drop-serve` · serve · beginner · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:drop-serve -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:drop-serve -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only drop-serve`._
 
 ---
 
@@ -240,6 +258,42 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only third-shot-dr
 
 ---
 
+## Topspin Dink
+
+`topspin-dink` · soft-game · advanced · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:topspin-dink -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:topspin-dink -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only topspin-dink`._
+
+---
+
+## Dead Dink
+
+`dead-dink` · soft-game · intermediate · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:dead-dink -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:dead-dink -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only dead-dink`._
+
+---
+
 ## Reset
 
 `reset` · defense · intermediate · **⏳ needs clips**
@@ -329,6 +383,24 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only third-shot-dr
 
 ---
 
+## Roll Volley
+
+`roll-volley` · attack · advanced · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:roll-volley -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:roll-volley -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only roll-volley`._
+
+---
+
 ## Speed-up
 
 `speed-up` · attack · intermediate · **⏳ needs clips**
@@ -356,6 +428,24 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only third-shot-dr
 | 6 | 6:24 | DOMINATE Doubles: MASTER Pickleball Speed Up Defense | John Cincola Pickleball | https://youtu.be/R3g_SFd_Lm4 |
 
 </details>
+
+---
+
+## Backhand Flick
+
+`backhand-flick` · attack · advanced · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:backhand-flick -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:backhand-flick -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only backhand-flick`._
 
 ---
 
@@ -416,6 +506,24 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only third-shot-dr
 | 6 | 7:10 | Sky Lob \| The Defensive Skill Every Pickleball Player MUST Learn | ThatPickleballGuy - Kyle Koszuta | https://youtu.be/Kbl0Q0BorQk |
 
 </details>
+
+---
+
+## Defensive Lob
+
+`defensive-lob` · defense · intermediate · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:defensive-lob -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:defensive-lob -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only defensive-lob`._
 
 ---
 
@@ -500,6 +608,42 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only third-shot-dr
 | 2 | 3:22 | Erne 101: What Every Pickleball Player Should Know | Curt In Motion | https://youtu.be/WG-g2L-am08 |
 
 </details>
+
+---
+
+## Poach
+
+`poach` · strategy · intermediate · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:poach -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:poach -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only poach`._
+
+---
+
+## Stacking
+
+`stacking` · strategy · intermediate · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:stacking -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:stacking -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only stacking`._
 
 ---
 
@@ -618,18 +762,38 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only third-shot-dr
 
 ---
 
-## Not drafted yet
+## Chicken Wing Defense
 
-These have no text yet, so there is nothing to attach clips to. They get a
-section above as each batch is written.
+`chicken-wing-defense` · defense · intermediate · **⏳ needs clips**
 
-- Drop Serve `drop-serve` · P1
-- Topspin Dink `topspin-dink` · P1
-- Dead Dink `dead-dink` · P1
-- Roll Volley `roll-volley` · P1
-- Backhand Flick `backhand-flick` · P1
-- Defensive Lob `defensive-lob` · P1
-- Poach `poach` · P1
-- Stacking `stacking` · P1
-- Chicken Wing Defense `chicken-wing-defense` · P1
-- Lob Defense / Switching `lob-defense-switching` · P1
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:chicken-wing-defense -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:chicken-wing-defense -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only chicken-wing-defense`._
+
+---
+
+## Lob Defense / Switching
+
+`lob-defense-switching` · defense · advanced · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:lob-defense-switching -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:lob-defense-switching -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only lob-defense-switching`._
+
+---

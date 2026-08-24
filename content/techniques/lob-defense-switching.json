@@ -1,0 +1,183 @@
+{
+  "slug": "lob-defense-switching",
+  "name": "Lob Defense / Switching",
+  "aka": [
+    "running down the lob"
+  ],
+  "category": "defense",
+  "difficulty": "advanced",
+  "courtZone": [
+    "kitchen",
+    "transition",
+    "baseline"
+  ],
+  "situation": [
+    "defense"
+  ],
+  "handedness": "n/a",
+  "summary": "When a lob goes over your head, the pair has to decide in about a second who chases it and whether you swap sides. Getting the ball back is only half of it — the other half is that the two of you end up in the right places afterwards, which almost always means switching.",
+  "whenToUse": [
+    "A lob has gone over one of you and neither can reach it without turning.",
+    "The ball is over the head of the partner who is furthest from it.",
+    "You are the one with a clear run at it and your partner is not.",
+    "Any lob at all, really — the decision has to be automatic, not negotiated."
+  ],
+  "howTo": [
+    "Whoever can reach it calls it immediately: one word, loud, before moving.",
+    "Turn and run rather than backpedalling — you cannot get there facing forward.",
+    "If you can get under it, hit an overhead; if you can only reach it, lob it back high and deep.",
+    "The partner who did not chase slides across to cover the side that was vacated.",
+    "Stay switched. Sorting the sides out later is far cheaper than doing it mid-rally.",
+    "Recover forward together once the ball is neutral again."
+  ],
+  "commonMistakes": [
+    "Both partners turning for it, which leaves nobody anywhere.",
+    "Backpedalling, which is slow and is how people land on their wrists.",
+    "Chasing it down brilliantly and then both standing on the same side of the court.",
+    "Trying to switch back immediately, in the middle of the point.",
+    "Not calling it, on the assumption your partner can see what you are doing."
+  ],
+  "drills": [
+    {
+      "name": "Call it and go",
+      "description": "Two of you at the kitchen line, a feeder lobbing to random sides. Whoever chases must call it before moving and the other must switch. Any rally where nobody called is a loss regardless of what happened to the ball.",
+      "reps": "15 lobs",
+      "players": 3,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              13,
+              14.5
+            ]
+          },
+          {
+            "role": "partner",
+            "at": [
+              6,
+              14.5
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              10,
+              29.5
+            ]
+          }
+        ],
+        "movement": [
+          {
+            "role": "you",
+            "from": [
+              13,
+              14.5
+            ],
+            "to": [
+              5,
+              2
+            ]
+          },
+          {
+            "role": "partner",
+            "from": [
+              6,
+              14.5
+            ],
+            "to": [
+              12,
+              14.5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Turn, do not backpedal",
+      "description": "No partner needed. A feeder lobs and you practise turning and running to the ball rather than shuffling backwards. Have somebody watch and stop you the moment your feet go backwards.",
+      "reps": "3 sets of 10",
+      "players": 2
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          5,
+          3
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          12,
+          14.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          6,
+          29.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          14,
+          29.5
+        ]
+      }
+    ],
+    "shot": {
+      "from": [
+        5,
+        3
+      ],
+      "to": [
+        10,
+        40
+      ],
+      "peakAt": 0.5,
+      "peakHeight": 18
+    },
+    "movement": [
+      {
+        "role": "you",
+        "from": [
+          13,
+          14.5
+        ],
+        "to": [
+          5,
+          3
+        ]
+      },
+      {
+        "role": "partner",
+        "from": [
+          6,
+          14.5
+        ],
+        "to": [
+          12,
+          14.5
+        ]
+      }
+    ]
+  },
+  "prerequisites": [
+    "overhead-smash"
+  ],
+  "leadsTo": [],
+  "relatedTerms": [
+    "lob",
+    "switching",
+    "middle"
+  ],
+  "videos": [],
+  "status": "draft",
+  "updatedAt": "2026-08-24"
+}

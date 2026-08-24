@@ -172,7 +172,9 @@
   "prerequisites": [
     "punch-volley"
   ],
-  "leadsTo": [],
+  "leadsTo": [
+    "lob-defense-switching"
+  ],
   "relatedTerms": [
     "pop-up",
     "kitchen",
