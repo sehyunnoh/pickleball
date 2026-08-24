@@ -1,0 +1,15 @@
+{
+  "slug": "let-serve",
+  "term": "Let serve",
+  "aka": [
+    "net serve"
+  ],
+  "definition": "A serve that clips the net and lands in. It used to be replayed; since 2021 it is simply in play, so keep moving rather than waiting for a call.",
+  "seeAlso": [
+    "replay",
+    "fault"
+  ],
+  "relatedTechniques": [
+    "volley-serve"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "volley-llama",
+  "term": "Volley llama",
+  "aka": [],
+  "definition": "A kitchen fault: volleying while standing in the non-volley zone. The name is nonsense and the fault is real.",
+  "seeAlso": [
+    "kitchen-fault",
+    "kitchen"
+  ],
+  "relatedTechniques": [
+    "kitchen-line-positioning"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "service-court",
+  "term": "Service court",
+  "aka": [
+    "service box"
+  ],
+  "definition": "One of the two boxes on each side, bounded by the kitchen line, the baseline, the centerline and a sideline. The serve has to land in the one diagonally opposite you.",
+  "seeAlso": [
+    "centerline",
+    "fault"
+  ],
+  "relatedTechniques": [
+    "volley-serve"
+  ]
+}

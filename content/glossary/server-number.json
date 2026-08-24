@@ -1,0 +1,15 @@
+{
+  "slug": "server-number",
+  "term": "Server number",
+  "aka": [
+    "first server",
+    "second server"
+  ],
+  "definition": "The third number in the score. Each team gets two serves per turn except the very first turn of the game, which is why it starts 0-0-2.",
+  "seeAlso": [
+    "score-calling",
+    "side-out",
+    "serving-team"
+  ],
+  "relatedTechniques": []
+}

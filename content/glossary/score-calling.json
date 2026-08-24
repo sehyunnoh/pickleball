@@ -1,0 +1,13 @@
+{
+  "slug": "score-calling",
+  "term": "Calling the score",
+  "aka": [],
+  "definition": "Saying all three numbers out loud before you serve: your score, their score, then the server number. Getting it wrong is not a fault, but nobody will know where you are.",
+  "seeAlso": [
+    "server-number",
+    "side-out"
+  ],
+  "relatedTechniques": [
+    "volley-serve"
+  ]
+}

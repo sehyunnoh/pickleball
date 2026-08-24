@@ -1,0 +1,14 @@
+{
+  "slug": "foot-fault",
+  "term": "Foot fault",
+  "aka": [],
+  "definition": "Touching a line you are not allowed to touch at the moment you hit. On serve that is the baseline; at the net it is the kitchen line while volleying.",
+  "seeAlso": [
+    "fault",
+    "kitchen-fault"
+  ],
+  "relatedTechniques": [
+    "volley-serve",
+    "kitchen-line-positioning"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "groundstroke",
+  "term": "Groundstroke",
+  "aka": [],
+  "definition": "A ball hit after it has bounced. The serve, the return and the third shot are all groundstrokes, because the two-bounce rule leaves no choice.",
+  "seeAlso": [
+    "volley",
+    "two-bounce-rule"
+  ],
+  "relatedTechniques": [
+    "deep-return",
+    "third-shot-drop"
+  ]
+}

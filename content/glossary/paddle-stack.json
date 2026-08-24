@@ -1,0 +1,14 @@
+{
+  "slug": "paddle-stack",
+  "term": "Paddle stack",
+  "aka": [
+    "the stack",
+    "paddle queue"
+  ],
+  "definition": "The queue at open play: you put your paddle in the rack or on the fence, and the next four paddles form the next game. Read the local rules before you put yours down — every venue does it slightly differently.",
+  "seeAlso": [
+    "open-play",
+    "challenge-court"
+  ],
+  "relatedTechniques": []
+}

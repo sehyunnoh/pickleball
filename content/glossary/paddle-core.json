@@ -1,0 +1,15 @@
+{
+  "slug": "paddle-core",
+  "term": "Core",
+  "aka": [
+    "polymer core"
+  ],
+  "definition": "The honeycomb material inside the paddle, almost always polymer. A thicker core, 16mm rather than 13mm, absorbs more pace and makes soft shots easier.",
+  "seeAlso": [
+    "paddle",
+    "paddle-face"
+  ],
+  "relatedTechniques": [
+    "reset"
+  ]
+}

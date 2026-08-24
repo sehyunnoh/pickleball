@@ -1,0 +1,12 @@
+{
+  "slug": "skill-rating",
+  "term": "Skill rating",
+  "aka": [
+    "2.5, 3.0, 3.5, 4.0"
+  ],
+  "definition": "The self-assessed or club-assigned band people use to sort games: 2.5 is a beginner, 3.0 knows the rules and can sustain a rally, 3.5 dinks and drops on purpose, 4.0 does it under pressure.",
+  "seeAlso": [
+    "dupr"
+  ],
+  "relatedTechniques": []
+}

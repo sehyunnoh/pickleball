@@ -1,0 +1,15 @@
+{
+  "slug": "grit",
+  "term": "Grit",
+  "aka": [
+    "surface texture"
+  ],
+  "definition": "The roughness on the paddle face that lets it bite the ball and create spin. It wears out, and a paddle that has lost its grit spins noticeably less.",
+  "seeAlso": [
+    "paddle-face",
+    "topspin"
+  ],
+  "relatedTechniques": [
+    "topspin-dink"
+  ]
+}

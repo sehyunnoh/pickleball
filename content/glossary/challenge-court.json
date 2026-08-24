@@ -1,0 +1,13 @@
+{
+  "slug": "challenge-court",
+  "term": "Challenge court",
+  "aka": [
+    "winners court"
+  ],
+  "definition": "A court where the winning pair stays on and the next pair in the queue comes up. Faster games, and it concentrates the stronger players on one court.",
+  "seeAlso": [
+    "open-play",
+    "paddle-stack"
+  ],
+  "relatedTechniques": []
+}

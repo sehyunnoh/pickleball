@@ -1,0 +1,12 @@
+{
+  "slug": "serving-team",
+  "term": "Serving team",
+  "aka": [],
+  "definition": "The pair whose turn it is to serve. In traditional scoring only they can score points, so a rally you win while receiving buys you the serve rather than a point.",
+  "seeAlso": [
+    "side-out",
+    "rally-scoring",
+    "receiving-team"
+  ],
+  "relatedTechniques": []
+}

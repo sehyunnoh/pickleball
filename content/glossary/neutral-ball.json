@@ -1,0 +1,16 @@
+{
+  "slug": "neutral-ball",
+  "term": "Neutral ball",
+  "aka": [
+    "unattackable ball"
+  ],
+  "definition": "A ball low enough that nobody can hit down on it. Neither team has the advantage, which is exactly what a reset is trying to get back to.",
+  "seeAlso": [
+    "attackable-ball",
+    "soft-game"
+  ],
+  "relatedTechniques": [
+    "reset",
+    "dink-straight"
+  ]
+}
