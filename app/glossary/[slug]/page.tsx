@@ -8,6 +8,7 @@ import {
   resolveTermRefs,
   type Ref,
 } from "@/lib/content";
+import { JsonLd, termJsonLd } from "@/lib/seo";
 
 type Params = { slug: string };
 
@@ -25,7 +26,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const term = getTerm(slug);
   if (!term) return {};
-  return { title: term.term, description: term.definition };
+  return {
+    title: term.term,
+    description: term.definition,
+    alternates: { canonical: `/glossary/${term.slug}` },
+  };
 }
 
 /**
@@ -49,6 +54,8 @@ export default async function TermPage({
 
   return (
     <article className="mx-auto max-w-[64rem] px-6 py-12 md:py-16">
+      <JsonLd data={termJsonLd(term)} />
+
       <p className="label text-muted">
         <Link href="/glossary" className="hover:text-accent">
           Glossary

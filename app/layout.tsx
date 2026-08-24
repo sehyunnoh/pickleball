@@ -5,6 +5,7 @@ import Analytics from "@/components/Analytics";
 import SearchDialog from "@/components/SearchDialog";
 import { getTechniques, getTerms } from "@/lib/content";
 import { buildSearchIndex } from "@/lib/search";
+import { SITE_NAME, siteUrl } from "@/lib/seo";
 import "./globals.css";
 
 /**
@@ -28,13 +29,26 @@ const newsreader = Newsreader({
   variable: "--font-newsreader",
 });
 
+const DESCRIPTION =
+  "Learn one pickleball shot at a time: what it is, when to use it, how to hit it — with hand-picked video clips timestamped to the moment that shows it.";
+
 export const metadata: Metadata = {
+  // Everything relative in a page's metadata resolves against this, so the
+  // canonicals and share cards are absolute wherever the site is deployed.
+  metadataBase: new URL(siteUrl()),
   title: {
-    default: "Pickleball Technique",
-    template: "%s · Pickleball Technique",
+    default: SITE_NAME,
+    template: `%s · ${SITE_NAME}`,
   },
-  description:
-    "Learn one pickleball shot at a time: what it is, when to use it, how to hit it — with hand-picked video clips timestamped to the moment that shows it.",
+  description: DESCRIPTION,
+  applicationName: SITE_NAME,
+  openGraph: {
+    siteName: SITE_NAME,
+    type: "website",
+    locale: "en",
+    description: DESCRIPTION,
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 export default function RootLayout({

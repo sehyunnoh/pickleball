@@ -23,6 +23,7 @@ import {
   type Point,
 } from "@/lib/court";
 import { formatSeconds } from "@/lib/format";
+import { JsonLd, techniqueJsonLd } from "@/lib/seo";
 import type { Drill, ShotPath, Technique } from "@/lib/schema";
 
 type Params = { slug: string };
@@ -45,6 +46,13 @@ export async function generateMetadata({
   return {
     title: technique.name,
     description: technique.summary,
+    alternates: { canonical: `/techniques/${technique.slug}` },
+    openGraph: {
+      title: `${technique.name} — how to hit it`,
+      description: technique.summary,
+      type: "article",
+      modifiedTime: technique.updatedAt,
+    },
   };
 }
 
@@ -72,6 +80,8 @@ export default async function TechniquePage({
 
   return (
     <article className="mx-auto max-w-[64rem] px-6 py-12 md:py-16">
+      <JsonLd data={techniqueJsonLd(technique)} />
+
       {technique.status === "draft" && (
         <p className="label mb-10 border-l-2 border-[var(--difficulty-intermediate)] py-1 pl-3 text-[var(--difficulty-intermediate)]">
           Draft — excluded from production builds
