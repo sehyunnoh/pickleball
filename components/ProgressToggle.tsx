@@ -32,7 +32,7 @@ export default function ProgressToggle({
           className={`flex h-5 w-5 shrink-0 items-center justify-center border transition-colors ${
             on
               ? "border-accent bg-accent text-bg"
-              : "border-border group-hover:border-accent"
+              : "border-control group-hover:border-accent"
           }`}
         >
           {on ? "✓" : ""}

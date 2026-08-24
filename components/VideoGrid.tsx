@@ -89,6 +89,7 @@ export default function VideoGrid({ videos }: { videos: Video[] }) {
       <div
         id={`${tabId}-panel`}
         role="tabpanel"
+        aria-labelledby={`${tabId}-tab-${active}`}
         className="grid gap-x-10 gap-y-8 sm:grid-cols-2"
       >
         {shown.map((v) => (
