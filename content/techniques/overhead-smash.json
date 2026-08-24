@@ -1,0 +1,184 @@
+{
+  "slug": "overhead-smash",
+  "name": "Overhead / Smash",
+  "aka": [
+    "overhead",
+    "smash",
+    "put-away"
+  ],
+  "category": "attack",
+  "difficulty": "intermediate",
+  "courtZone": [
+    "kitchen",
+    "transition"
+  ],
+  "situation": [
+    "rally"
+  ],
+  "handedness": "forehand",
+  "summary": "The overhead is how you finish a ball that has been lobbed or popped up above your head. The shot itself is not hard — the footwork under it is. Most missed overheads are missed because the player never got behind the ball.",
+  "whenToUse": [
+    "A dink has popped up high enough that you can take it above your head.",
+    "You have been lobbed and can get behind the ball rather than reaching back for it.",
+    "The opponents are both at the kitchen line, so a ball at their feet ends the rally.",
+    "You are inside the transition zone or closer — from the baseline the angle is not there."
+  ],
+  "howTo": [
+    "Turn sideways immediately and move with side-steps, not by backpedalling.",
+    "Get behind the ball so it drops in front of your hitting shoulder, not on top of your head.",
+    "Point at the ball with your free hand to keep the tracking honest.",
+    "Reach up and contact it high with a snap from the shoulder and wrist.",
+    "Hit down at a gap or at their feet, not at maximum pace.",
+    "Recover forward to the kitchen line — a defended overhead comes back short."
+  ],
+  "commonMistakes": [
+    "Backpedalling with your feet square, which is both slow and how people land on their backs.",
+    "Letting the ball get behind your head, so the smash goes into the net or straight up.",
+    "Swinging as hard as possible at a ball that only needed to be placed.",
+    "Smashing from the baseline, where every angle is covered and the ball comes back.",
+    "Watching it and standing still instead of moving in behind it."
+  ],
+  "drills": [
+    {
+      "name": "Side-step and smash",
+      "description": "Your partner lobs deliberately from the kitchen. You turn sideways and side-step back under it — no backpedalling allowed. If your feet ever square up, that repetition does not count.",
+      "reps": "3 sets of 12",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              10,
+              14.5
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              10,
+              29.5
+            ]
+          }
+        ],
+        "movement": [
+          {
+            "role": "you",
+            "from": [
+              10,
+              14.5
+            ],
+            "to": [
+              10,
+              8
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Place it, do not crush it",
+      "description": "Same lob feed, but score only smashes that land inside their kitchen. Anything hit hard and deep scores nothing, however satisfying it was.",
+      "reps": "3 sets of 12",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              10,
+              12
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              10,
+              29.5
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "label": "kitchen",
+            "at": [
+              10,
+              25
+            ],
+            "width": 14,
+            "depth": 5
+          }
+        ]
+      }
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          11,
+          11
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          5,
+          14.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          6,
+          29.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          14,
+          29.5
+        ]
+      }
+    ],
+    "shot": {
+      "from": [
+        11,
+        11
+      ],
+      "to": [
+        13,
+        26
+      ],
+      "peakAt": 0.1,
+      "peakHeight": 8
+    },
+    "movement": [
+      {
+        "role": "you",
+        "from": [
+          11,
+          14.5
+        ],
+        "to": [
+          11,
+          11
+        ]
+      }
+    ]
+  },
+  "prerequisites": [
+    "punch-volley"
+  ],
+  "leadsTo": [],
+  "relatedTerms": [
+    "pop-up",
+    "kitchen",
+    "transition-zone"
+  ],
+  "videos": [],
+  "status": "draft",
+  "updatedAt": "2026-08-24"
+}

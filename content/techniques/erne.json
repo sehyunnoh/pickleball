@@ -139,7 +139,8 @@
     ]
   },
   "prerequisites": [
-    "kitchen-line-positioning"
+    "kitchen-line-positioning",
+    "transition-zone-footwork"
   ],
   "leadsTo": [
     "bert"

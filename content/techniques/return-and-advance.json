@@ -1,0 +1,175 @@
+{
+  "slug": "return-and-advance",
+  "name": "Return and Advance",
+  "aka": [
+    "return and run"
+  ],
+  "category": "return",
+  "difficulty": "beginner",
+  "courtZone": [
+    "baseline",
+    "transition",
+    "kitchen"
+  ],
+  "situation": [
+    "return"
+  ],
+  "handedness": "both",
+  "summary": "Return and advance is the habit of walking to the kitchen line behind every return, rather than admiring it. The two-bounce rule means the serving team cannot volley your return, so you have a free walk up the court that they do not get. Not taking it is the most common unforced positional error in recreational pickleball.",
+  "whenToUse": [
+    "Every return. This is not a decision, it is what a return is for.",
+    "Your return was deep, which buys you the extra second to get all the way in.",
+    "Your partner is already at the kitchen line and you are the one holding the team back.",
+    "The serving team is a driving team — being at the net early is what takes the drive away."
+  ],
+  "howTo": [
+    "Hit the return deep and high enough to give yourself time.",
+    "Start moving before the ball lands, not when it does.",
+    "Walk through the transition zone rather than sprinting and skidding.",
+    "Split-step as they make contact on the third shot, wherever you happen to be.",
+    "If the third shot is at your feet, stop and reset it rather than backing up.",
+    "Take the last steps to the line only once the ball is going somewhere harmless."
+  ],
+  "commonMistakes": [
+    "Watching the return land before starting to move, which costs the two seconds you needed.",
+    "Sprinting all the way in without a split-step, then getting a ball at your ankles at full speed.",
+    "Stopping in the middle of the transition zone by default, which is the one place you do not want to stand.",
+    "Backing up to the baseline when the third shot is low, which surrenders everything the return earned.",
+    "Advancing while your partner stays back, leaving the two of you strung out diagonally."
+  ],
+  "drills": [
+    {
+      "name": "Beat the count",
+      "description": "Your partner serves, then counts to three out loud and freezes. You return and walk in, and you must be past the transition zone before they reach three. If you are not, either the return was too flat or you started late.",
+      "reps": "10 serves",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              13,
+              -2
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              7,
+              45
+            ]
+          }
+        ],
+        "movement": [
+          {
+            "role": "you",
+            "from": [
+              13,
+              -2
+            ],
+            "to": [
+              13,
+              14
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Return, split, reset",
+      "description": "Return, advance, and your partner deliberately plays the third shot at your feet while you are still in the transition zone. Stop, split-step, and reset it into their kitchen instead of backing up.",
+      "reps": "3 sets of 10",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              13,
+              10
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              10,
+              33
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          13,
+          -2
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          6,
+          14.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          7,
+          45
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          14,
+          45
+        ]
+      }
+    ],
+    "shot": {
+      "from": [
+        13,
+        -2
+      ],
+      "to": [
+        11,
+        41
+      ],
+      "peakAt": 0.5,
+      "peakHeight": 11
+    },
+    "movement": [
+      {
+        "role": "you",
+        "from": [
+          13,
+          -2
+        ],
+        "to": [
+          13,
+          14.5
+        ]
+      }
+    ]
+  },
+  "prerequisites": [
+    "deep-return"
+  ],
+  "leadsTo": [
+    "third-shot-drop",
+    "third-shot-drive"
+  ],
+  "relatedTerms": [
+    "two-bounce-rule",
+    "transition-zone",
+    "kitchen-line"
+  ],
+  "videos": [],
+  "status": "draft",
+  "updatedAt": "2026-08-24"
+}

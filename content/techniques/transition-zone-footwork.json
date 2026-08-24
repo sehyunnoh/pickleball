@@ -1,0 +1,173 @@
+{
+  "slug": "transition-zone-footwork",
+  "name": "Transition Zone Footwork",
+  "aka": [
+    "moving through the middle"
+  ],
+  "category": "movement",
+  "difficulty": "intermediate",
+  "courtZone": [
+    "transition"
+  ],
+  "situation": [
+    "rally",
+    "defense"
+  ],
+  "handedness": "n/a",
+  "summary": "The transition zone is the stretch between the baseline and the kitchen line, and it is the worst place on the court to be standing still. Getting through it is a sequence of short moves and split-steps rather than a run, and the whole skill is being stopped and low whenever the opponent makes contact.",
+  "whenToUse": [
+    "You are moving forward behind a drop or a return.",
+    "A ball has pushed you back off the kitchen line and you have to get in again.",
+    "You are caught mid-court and the ball is coming at your feet.",
+    "Any time you are between the two lines, which is the answer nobody likes."
+  ],
+  "howTo": [
+    "Move forward only while the ball is travelling away from you.",
+    "Take two or three steps at a time, not a sprint — you have to be able to stop.",
+    "Split-step every time the opponent is about to make contact, wherever you have got to.",
+    "Land low with the paddle out in front, ready to reset rather than to attack.",
+    "Play the ball at your feet from where you are: bend, absorb, drop it into their kitchen.",
+    "Only take the final steps to the line once the ball you hit is unattackable."
+  ],
+  "commonMistakes": [
+    "Running the whole way in one go and arriving with your feet moving.",
+    "Standing upright in the middle of the zone, where every ball arrives at your shoelaces.",
+    "Backing up to the baseline the moment a ball is low, which surrenders the ground you paid for.",
+    "Moving forward while the ball is coming toward you rather than while it is going away.",
+    "Reaching down with the paddle instead of bending the knees, which pops the reset up."
+  ],
+  "drills": [
+    {
+      "name": "Three steps and freeze",
+      "description": "Start at the baseline. Your partner feeds from the kitchen. You may take three steps between feeds and must be split-stepped and still on every contact. Any feed that catches you moving resets you to the baseline.",
+      "reps": "10 trips to the line",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              10,
+              1
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              10,
+              29.5
+            ]
+          }
+        ],
+        "movement": [
+          {
+            "role": "you",
+            "from": [
+              10,
+              1
+            ],
+            "to": [
+              10,
+              14
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Feet at your feet",
+      "description": "Stand in the middle of the transition zone. Your partner drives deliberately at your shoelaces. Bend and reset every one into their kitchen without stepping backwards. This is the position the whole skill exists for.",
+      "reps": "3 sets of 20",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              10,
+              10
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              10,
+              29.5
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          12,
+          6
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          5,
+          14.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          6,
+          29.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          14,
+          29.5
+        ]
+      }
+    ],
+    "movement": [
+      {
+        "role": "you",
+        "from": [
+          12,
+          1
+        ],
+        "to": [
+          12,
+          8
+        ]
+      },
+      {
+        "role": "you",
+        "from": [
+          12,
+          9
+        ],
+        "to": [
+          12,
+          14
+        ]
+      }
+    ]
+  },
+  "prerequisites": [
+    "third-shot-drop",
+    "split-step"
+  ],
+  "leadsTo": [
+    "erne"
+  ],
+  "relatedTerms": [
+    "transition-zone",
+    "kitchen-line",
+    "baseline"
+  ],
+  "videos": [],
+  "status": "draft",
+  "updatedAt": "2026-08-24"
+}

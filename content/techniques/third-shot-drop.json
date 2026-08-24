@@ -1,23 +1,28 @@
 {
   "slug": "third-shot-drop",
   "name": "Third Shot Drop",
-  "aka": ["3rd shot drop", "the drop"],
-
+  "aka": [
+    "3rd shot drop",
+    "the drop"
+  ],
   "category": "transition",
   "difficulty": "intermediate",
-  "courtZone": ["baseline", "transition"],
-  "situation": ["third-shot", "rally"],
+  "courtZone": [
+    "baseline",
+    "transition"
+  ],
+  "situation": [
+    "third-shot",
+    "rally"
+  ],
   "handedness": "both",
-
   "summary": "The third shot drop is a soft, arcing shot hit from near the baseline that lands inside the opponents' kitchen. Because it lands low and slow, they cannot attack it, which buys you the seconds you need to walk forward and join your partner at the net. It is the shot that turns the serving team's disadvantage into an even rally.",
-
   "whenToUse": [
     "You are on the serving team and the return has pushed you back near the baseline.",
     "Both opponents are already set at the kitchen line, ready to volley anything you drive.",
     "The return landed deep, so a drive would have to travel through both of them to work.",
     "You want to get to the net, and a drop is the only third shot you can safely walk in behind."
   ],
-
   "howTo": [
     "Start moving forward as the return drops, so you meet the ball inside the baseline rather than behind it.",
     "Bend your knees to get low. Do not bend at the waist.",
@@ -26,7 +31,6 @@
     "Keep the wrist quiet and let your legs and shoulder supply the lift.",
     "Follow the ball forward into the transition zone and split-step before your opponent makes contact."
   ],
-
   "commonMistakes": [
     "Hitting it flat and firm, so the ball peaks after it crosses the net and drops at chest height for the opponent.",
     "Standing tall and chopping down at the ball, which drives it into the net.",
@@ -34,7 +38,6 @@
     "Sprinting to the kitchen the instant you hit, and getting caught with your feet still moving when the ball comes back.",
     "Flicking the wrist to create lift, which makes depth different on every attempt."
   ],
-
   "drills": [
     {
       "name": "Drop to a towel",
@@ -43,10 +46,32 @@
       "players": 2,
       "court": {
         "players": [
-          { "role": "you", "at": [10, 1] },
-          { "role": "feeder", "at": [10, 30] }
+          {
+            "role": "you",
+            "at": [
+              10,
+              1
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              10,
+              30
+            ]
+          }
         ],
-        "targets": [{ "label": "towel", "at": [9, 26], "width": 5, "depth": 3 }]
+        "targets": [
+          {
+            "label": "towel",
+            "at": [
+              9,
+              26
+            ],
+            "width": 5,
+            "depth": 3
+          }
+        ]
       }
     },
     {
@@ -56,10 +81,34 @@
       "players": 2,
       "court": {
         "players": [
-          { "role": "you", "at": [10, 1] },
-          { "role": "feeder", "at": [10, 30] }
+          {
+            "role": "you",
+            "at": [
+              10,
+              1
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              10,
+              30
+            ]
+          }
         ],
-        "movement": [{ "role": "you", "from": [10, 1], "to": [10, 14] }]
+        "movement": [
+          {
+            "role": "you",
+            "from": [
+              10,
+              1
+            ],
+            "to": [
+              10,
+              14
+            ]
+          }
+        ]
       }
     },
     {
@@ -68,39 +117,101 @@
       "reps": "5 minutes",
       "players": 1,
       "court": {
-        "players": [{ "role": "you", "at": [10, 1] }],
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              10,
+              1
+            ]
+          }
+        ],
         "targets": [
-          { "label": "kitchen", "at": [10, 26], "width": 16, "depth": 5 }
+          {
+            "label": "kitchen",
+            "at": [
+              10,
+              26
+            ],
+            "width": 16,
+            "depth": 5
+          }
         ]
       }
     }
   ],
-
   "court": {
     "players": [
-      { "role": "you", "at": [14, 1] },
-      { "role": "partner", "at": [5, 1] },
-      { "role": "opponent", "at": [5, 30] },
-      { "role": "opponent", "at": [15, 30] }
+      {
+        "role": "you",
+        "at": [
+          14,
+          1
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          5,
+          1
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          5,
+          30
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          15,
+          30
+        ]
+      }
     ],
     "shot": {
-      "from": [14, 1],
-      "to": [8, 26],
+      "from": [
+        14,
+        1
+      ],
+      "to": [
+        8,
+        26
+      ],
       "peakAt": 0.36,
       "peakHeight": 9
     },
     "mistake": {
       "label": "Peaks after the net, so it is still rising as it crosses and drops at chest height in front of them.",
       "path": {
-        "from": [14, 1],
-        "to": [9, 34],
+        "from": [
+          14,
+          1
+        ],
+        "to": [
+          9,
+          34
+        ],
         "peakAt": 0.66,
         "peakHeight": 8
       }
     },
-    "movement": [{ "role": "you", "from": [14, 1], "to": [12, 14] }]
+    "movement": [
+      {
+        "role": "you",
+        "from": [
+          14,
+          1
+        ],
+        "to": [
+          12,
+          14
+        ]
+      }
+    ]
   },
-
   "comparison": {
     "title": "Drop or drive?",
     "otherLabel": "Third Shot Drive",
@@ -133,11 +244,18 @@
       }
     ]
   },
-
-  "prerequisites": ["dink-straight"],
-  "leadsTo": ["transition-zone-footwork", "reset"],
-  "relatedTerms": ["kitchen", "transition-zone"],
-
+  "prerequisites": [
+    "dink-straight",
+    "return-and-advance"
+  ],
+  "leadsTo": [
+    "transition-zone-footwork",
+    "reset"
+  ],
+  "relatedTerms": [
+    "kitchen",
+    "transition-zone"
+  ],
   "videos": [
     {
       "youtubeId": "ivv-cQ03v8s",
@@ -156,7 +274,6 @@
       "curatedAt": "2026-08-23"
     }
   ],
-
   "status": "published",
   "updatedAt": "2026-08-23"
 }

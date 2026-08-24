@@ -1,0 +1,201 @@
+{
+  "slug": "third-shot-drive",
+  "name": "Third Shot Drive",
+  "aka": [
+    "the drive"
+  ],
+  "category": "transition",
+  "difficulty": "intermediate",
+  "courtZone": [
+    "baseline",
+    "transition"
+  ],
+  "situation": [
+    "third-shot",
+    "rally"
+  ],
+  "handedness": "both",
+  "summary": "The third shot drive is a hard, flat shot from the baseline aimed at an opponent rather than at space. It does not try to get you to the net the way a drop does — it tries to force a weak block that your partner can put away. Used well it is a weapon; used every time it is why the other team never has to move.",
+  "whenToUse": [
+    "The return landed short and you can step inside the baseline to take it.",
+    "One opponent is still moving forward and not yet set at the kitchen line.",
+    "You are driving at a body or a backhand, where a clean block is hardest.",
+    "Your partner is ready to crash the net behind it — a drive without a shake and bake is half a play."
+  ],
+  "howTo": [
+    "Take the ball after the bounce, out in front, at around waist height.",
+    "Shorten the backswing. This is a punch through the ball, not a tennis groundstroke.",
+    "Drive low over the net, aiming at the opponent rather than at the sideline.",
+    "Hit through the contact and finish with the paddle in front of you.",
+    "Move forward behind it and split-step, because the block comes back fast.",
+    "If the block floats, take it out of the air; if it lands low, reset and start again."
+  ],
+  "commonMistakes": [
+    "Driving from behind the baseline off a deep return, where the ball has to travel too far and arrives comfortable.",
+    "Aiming at the lines instead of at a person. A drive to open court is just a ball they have time to run down.",
+    "Taking a full backswing and losing the contact point behind the body.",
+    "Driving and then standing still, so the block lands at the feet of nobody.",
+    "Driving every third shot, which turns the whole match into a game the other team can plan for."
+  ],
+  "drills": [
+    {
+      "name": "Drive at the body",
+      "description": "Your partner stands at the kitchen with their paddle up and blocks. You drive from just inside the baseline, aiming at their paddle-side hip. Count only the drives that force a block above net height.",
+      "reps": "3 sets of 15",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              13,
+              2
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              10,
+              29.5
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "label": "body",
+            "at": [
+              10,
+              29
+            ],
+            "width": 3,
+            "depth": 3
+          }
+        ]
+      }
+    },
+    {
+      "name": "Drive or drop, called late",
+      "description": "Your partner feeds the return and calls \"drive\" or \"drop\" only as the ball bounces. You have to make the shot they called. It trains the shot selection, which is the part that actually goes wrong.",
+      "reps": "20 balls",
+      "players": 2
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          13,
+          2
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          6,
+          8
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          6,
+          29.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          14,
+          29.5
+        ]
+      }
+    ],
+    "shot": {
+      "from": [
+        13,
+        2
+      ],
+      "to": [
+        14,
+        29
+      ],
+      "peakAt": 0.45,
+      "peakHeight": 4
+    },
+    "mistake": {
+      "label": "Driven from behind the baseline into open court: it arrives late, waist high and comfortable, and comes back harder.",
+      "path": {
+        "from": [
+          13,
+          -2
+        ],
+        "to": [
+          4,
+          34
+        ],
+        "peakAt": 0.5,
+        "peakHeight": 6
+      }
+    },
+    "movement": [
+      {
+        "role": "partner",
+        "from": [
+          6,
+          8
+        ],
+        "to": [
+          6,
+          14.5
+        ]
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Drive or drop?",
+    "otherLabel": "Third Shot Drop",
+    "otherSlug": "third-shot-drop",
+    "rows": [
+      {
+        "label": "What it is for",
+        "self": "Forcing a weak block your partner can finish.",
+        "other": "Buying time to walk to the kitchen line."
+      },
+      {
+        "label": "Best when",
+        "self": "The return sat up short, or one of them is still moving.",
+        "other": "Both opponents are set at the kitchen and ready."
+      },
+      {
+        "label": "Where you aim",
+        "self": "At a person — hip, shoulder, backhand.",
+        "other": "At a space a few feet inside their kitchen."
+      },
+      {
+        "label": "If it goes wrong",
+        "self": "It comes back faster than you can recover for.",
+        "other": "It sits up and you get attacked."
+      },
+      {
+        "label": "Where you end up",
+        "self": "Often still back, hitting a fifth shot drop anyway.",
+        "other": "At the kitchen line, in the rally."
+      }
+    ]
+  },
+  "prerequisites": [
+    "return-and-advance"
+  ],
+  "leadsTo": [
+    "shake-and-bake"
+  ],
+  "relatedTerms": [
+    "third-shot",
+    "banger",
+    "pop-up"
+  ],
+  "videos": [],
+  "status": "draft",
+  "updatedAt": "2026-08-24"
+}

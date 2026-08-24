@@ -64,7 +64,9 @@ export default function SkillTree({ layout }: { layout: TreeLayout }) {
                     )}
                     {node.name}
                   </span>
-                  <span className="label mt-0.5 text-[9px] text-muted">
+                  {/* Not the .label utility: its 0.14em tracking is wide
+                      enough to wrap this onto a second line inside a node. */}
+                  <span className="mt-0.5 font-mono text-[9px] tracking-[0.06em] whitespace-nowrap text-muted uppercase">
                     {node.difficulty}
                     {!node.published && " · draft"}
                   </span>

@@ -33,8 +33,26 @@ slow-motion clip or a clear example from a real game.
 ## Where it stands
 
 - **P0 progress:** 1 of 19 published
-- **Waiting on you:** 8 technique(s) below
-- **Not drafted yet:** 21 (they appear here once I write them)
+- **Waiting on you:** 19 technique(s) below
+- **Not drafted yet:** 10 (they appear here once I write them)
+
+---
+
+## Volley Serve
+
+`volley-serve` · serve · beginner · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:volley-serve -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:volley-serve -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only volley-serve`._
 
 ---
 
@@ -68,6 +86,24 @@ slow-motion clip or a clear example from a real game.
 
 ---
 
+## Return and Advance
+
+`return-and-advance` · return · beginner · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:return-and-advance -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:return-and-advance -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only return-and-advance`._
+
+---
+
 ## Third Shot Drop
 
 `third-shot-drop` · transition · intermediate · **✅ ready**
@@ -88,6 +124,24 @@ Nothing needed. Add more only if you find something clearly better.
 <!-- /picks:third-shot-drop -->
 
 _No candidates fetched yet — run `npm run fetch:videos -- --only third-shot-drop`._
+
+---
+
+## Third Shot Drive
+
+`third-shot-drive` · transition · intermediate · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:third-shot-drive -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:third-shot-drive -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only third-shot-drive`._
 
 ---
 
@@ -118,6 +172,132 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only third-shot-dr
 | 6 | 6:57 | How to DINK like a PRO (Pickleball) | tanner.pickleball | https://youtu.be/XW3gyKe20f0 |
 
 </details>
+
+---
+
+## Dink (Cross-court)
+
+`dink-crosscourt` · soft-game · intermediate · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:dink-crosscourt -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:dink-crosscourt -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only dink-crosscourt`._
+
+---
+
+## Reset
+
+`reset` · defense · intermediate · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:reset -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:reset -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only reset`._
+
+---
+
+## Block / Counter
+
+`block-counter` · defense · intermediate · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:block-counter -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:block-counter -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only block-counter`._
+
+---
+
+## Punch Volley
+
+`punch-volley` · attack · beginner · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:punch-volley -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:punch-volley -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only punch-volley`._
+
+---
+
+## Speed-up
+
+`speed-up` · attack · intermediate · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:speed-up -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:speed-up -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only speed-up`._
+
+---
+
+## Overhead / Smash
+
+`overhead-smash` · attack · intermediate · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:overhead-smash -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:overhead-smash -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only overhead-smash`._
+
+---
+
+## Offensive Lob
+
+`offensive-lob` · specialty · advanced · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:offensive-lob -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:offensive-lob -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only offensive-lob`._
 
 ---
 
@@ -223,6 +403,24 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only shake-and-bak
 
 ---
 
+## Transition Zone Footwork
+
+`transition-zone-footwork` · movement · intermediate · **⏳ needs clips**
+
+**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+
+<!-- picks:transition-zone-footwork -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:transition-zone-footwork -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only transition-zone-footwork`._
+
+---
+
 ## Kitchen Line Positioning
 
 `kitchen-line-positioning` · movement · beginner · **⏳ needs clips**
@@ -258,24 +456,13 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only shake-and-bak
 These have no text yet, so there is nothing to attach clips to. They get a
 section above as each batch is written.
 
-- Volley Serve `volley-serve` · P0
 - Drop Serve `drop-serve` · P1
-- Return and Advance `return-and-advance` · P0
-- Third Shot Drive `third-shot-drive` · P0
-- Dink (Cross-court) `dink-crosscourt` · P0
 - Topspin Dink `topspin-dink` · P1
 - Dead Dink `dead-dink` · P1
-- Reset `reset` · P0
-- Block / Counter `block-counter` · P0
-- Punch Volley `punch-volley` · P0
 - Roll Volley `roll-volley` · P1
-- Speed-up `speed-up` · P0
 - Backhand Flick `backhand-flick` · P1
-- Overhead / Smash `overhead-smash` · P0
-- Offensive Lob `offensive-lob` · P0
 - Defensive Lob `defensive-lob` · P1
 - Poach `poach` · P1
 - Stacking `stacking` · P1
-- Transition Zone Footwork `transition-zone-footwork` · P0
 - Chicken Wing Defense `chicken-wing-defense` · P1
 - Lob Defense / Switching `lob-defense-switching` · P1

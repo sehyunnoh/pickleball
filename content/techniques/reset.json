@@ -1,0 +1,202 @@
+{
+  "slug": "reset",
+  "name": "Reset",
+  "aka": [
+    "soft block",
+    "reset to the kitchen"
+  ],
+  "category": "defense",
+  "difficulty": "intermediate",
+  "courtZone": [
+    "transition",
+    "kitchen"
+  ],
+  "situation": [
+    "defense",
+    "rally"
+  ],
+  "handedness": "both",
+  "summary": "A reset takes the pace off a hard ball and drops it softly into the opponents' kitchen, turning an attack back into a dinking rally. It is the shot that lets you survive the transition zone and the one that separates players who get pushed off the net from players who do not.",
+  "whenToUse": [
+    "A drive or speed-up is coming at you and counter-attacking is not on.",
+    "You are caught in the transition zone with a ball dropping at your feet.",
+    "You have just been lobbed or pushed back and want the rally neutral again.",
+    "Your partner is out of position and the team needs one slow ball to recover."
+  ],
+  "howTo": [
+    "Get low early — the paddle has to be under the ball, not on top of it.",
+    "Hold the grip loose. A tight grip is what makes a hard ball rebound.",
+    "Meet the ball out in front with the face slightly open and almost no swing.",
+    "Absorb rather than hit: let the paddle give a little on contact.",
+    "Aim high enough to clear the net and land in the first few feet of their kitchen.",
+    "Take one or two steps forward if the reset is good, and split-step again."
+  ],
+  "commonMistakes": [
+    "Swinging at it, which sends a fast ball back faster.",
+    "Gripping tightly, so the ball springs off the face and floats long.",
+    "Standing tall and blocking downward into the net.",
+    "Resetting and then rushing forward before the ball has landed.",
+    "Backing up to give yourself room, which puts you deeper in the transition zone every rally."
+  ],
+  "drills": [
+    {
+      "name": "Reset from the middle",
+      "description": "Stand in the transition zone. Your partner drives at you from the kitchen line, hard but at a catchable height. You reset every ball into their kitchen. No swinging is allowed — if the ball goes past the kitchen line, it does not count.",
+      "reps": "3 sets of 20",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              10,
+              10
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              10,
+              29.5
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "label": "land here",
+            "at": [
+              10,
+              25
+            ],
+            "width": 12,
+            "depth": 4
+          }
+        ]
+      }
+    },
+    {
+      "name": "Walk and reset",
+      "description": "Start at the baseline and walk toward the kitchen while your partner drives at you. Reset every ball on the way in, split-stepping each time. You are training the shot in the position you will actually need it.",
+      "reps": "10 trips",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              10,
+              1
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              10,
+              29.5
+            ]
+          }
+        ],
+        "movement": [
+          {
+            "role": "you",
+            "from": [
+              10,
+              1
+            ],
+            "to": [
+              10,
+              14
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          12,
+          10
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          5,
+          12
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          6,
+          29.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          14,
+          29.5
+        ]
+      }
+    ],
+    "shot": {
+      "from": [
+        12,
+        10
+      ],
+      "to": [
+        10,
+        25
+      ],
+      "peakAt": 0.4,
+      "peakHeight": 5
+    },
+    "mistake": {
+      "label": "Blocked with a firm grip: it rebounds off the face, sails past the kitchen and lands at a comfortable height.",
+      "path": {
+        "from": [
+          12,
+          10
+        ],
+        "to": [
+          10,
+          34
+        ],
+        "peakAt": 0.5,
+        "peakHeight": 6
+      }
+    },
+    "movement": [
+      {
+        "role": "you",
+        "from": [
+          12,
+          10
+        ],
+        "to": [
+          12,
+          13
+        ]
+      }
+    ]
+  },
+  "prerequisites": [
+    "dink-straight",
+    "third-shot-drop"
+  ],
+  "leadsTo": [
+    "block-counter"
+  ],
+  "relatedTerms": [
+    "transition-zone",
+    "kitchen",
+    "banger"
+  ],
+  "videos": [],
+  "status": "draft",
+  "updatedAt": "2026-08-24"
+}

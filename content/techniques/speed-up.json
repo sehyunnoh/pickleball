@@ -1,0 +1,173 @@
+{
+  "slug": "speed-up",
+  "name": "Speed-up",
+  "aka": [
+    "attack off the dink",
+    "flick"
+  ],
+  "category": "attack",
+  "difficulty": "intermediate",
+  "courtZone": [
+    "kitchen"
+  ],
+  "situation": [
+    "rally"
+  ],
+  "handedness": "both",
+  "summary": "A speed-up turns a dinking rally into a fast exchange by lifting one ball hard at an opponent. It is not a winner in itself — it is an invitation to a hands battle you think you will win. Choosing the right ball to speed up matters far more than how hard you hit it.",
+  "whenToUse": [
+    "A dink has come back slightly high, at or above the level of your knee.",
+    "You can take the ball in front of you rather than reaching for it.",
+    "Your partner is at the line and ready for the reply, because it is coming fast.",
+    "The opponent you are attacking has their paddle down or is still moving."
+  ],
+  "howTo": [
+    "Keep the same low stance you were dinking from — a change of posture announces it.",
+    "Take the ball early, in front, before it drops below net height.",
+    "Accelerate from the shoulder and wrist together, lifting through the ball rather than swiping down.",
+    "Aim at the shoulder of the paddle-side arm, which is the hardest place to defend.",
+    "Recover the paddle to your chest before the ball reaches them.",
+    "Expect it back — a speed-up that surprises you as well is a lost point."
+  ],
+  "commonMistakes": [
+    "Speeding up a ball below net height, which has to be lifted and arrives as a gift.",
+    "Telegraphing it by standing up or taking a backswing during the dink rally.",
+    "Aiming at the open court instead of at a body, where they simply block it back with the angle.",
+    "Speeding up when your partner is not ready, so the counter goes through the middle.",
+    "Doing it too often, which teaches the other team to keep their paddles up all rally."
+  ],
+  "drills": [
+    {
+      "name": "Only the high ones",
+      "description": "Dink cross-court with a partner. You may only speed up a ball that arrives above your knee. Every time you attack a lower one, you lose the rally on purpose. It trains the read rather than the swing.",
+      "reps": "10 minutes",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              14,
+              14.5
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              5,
+              29.5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Shoulder targets",
+      "description": "Your partner stands at the kitchen with their paddle up. Feed yourself dinks and speed up at their paddle-side shoulder only. Count only the ones that force a block above the net.",
+      "reps": "3 sets of 15",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              10,
+              14.5
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              10,
+              29.5
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "label": "shoulder",
+            "at": [
+              12,
+              29
+            ],
+            "width": 2,
+            "depth": 2
+          }
+        ]
+      }
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          14,
+          14.5
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          6,
+          14.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          6,
+          29.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          14,
+          29.5
+        ]
+      }
+    ],
+    "shot": {
+      "from": [
+        14,
+        14.5
+      ],
+      "to": [
+        14,
+        28
+      ],
+      "peakAt": 0.3,
+      "peakHeight": 4.5
+    },
+    "mistake": {
+      "label": "Attacked from below net height: it has to be lifted, so it arrives above their waist and comes straight back through you.",
+      "path": {
+        "from": [
+          14,
+          14.5
+        ],
+        "to": [
+          14,
+          30
+        ],
+        "peakAt": 0.55,
+        "peakHeight": 7
+      }
+    }
+  },
+  "prerequisites": [
+    "dink-straight"
+  ],
+  "leadsTo": [
+    "backhand-flick"
+  ],
+  "relatedTerms": [
+    "hands-battle",
+    "pop-up",
+    "kitchen-line"
+  ],
+  "videos": [],
+  "status": "draft",
+  "updatedAt": "2026-08-24"
+}

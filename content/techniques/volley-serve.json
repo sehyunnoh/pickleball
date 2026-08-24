@@ -1,0 +1,165 @@
+{
+  "slug": "volley-serve",
+  "name": "Volley Serve",
+  "aka": [
+    "standard serve"
+  ],
+  "category": "serve",
+  "difficulty": "beginner",
+  "courtZone": [
+    "baseline"
+  ],
+  "situation": [
+    "serve"
+  ],
+  "handedness": "forehand",
+  "summary": "The volley serve is the ordinary pickleball serve: you strike the ball out of the air, below your waist, with the paddle moving upward. It only has to go in, and in recreational play it is the shot people most often overcomplicate. Depth is worth far more than pace.",
+  "whenToUse": [
+    "Every service point, unless you have a reason to use a drop serve instead.",
+    "You want depth that pins the returner behind their baseline.",
+    "The returner has been standing on the baseline, so a deep serve jams them.",
+    "Early in a game, when a clean, boring serve is worth more than a clever one."
+  ],
+  "howTo": [
+    "Stand behind the baseline with your feet inside the imaginary lines of the service box you are serving to.",
+    "Hold the ball out in front and drop it — you are not tossing it up.",
+    "Contact it below your waist with the paddle head below your wrist.",
+    "Swing low to high in one motion, out toward your target rather than up at it.",
+    "Aim deep and toward the returner's backhand, three or four feet inside the baseline.",
+    "Recover to the baseline and split-step as they hit the return."
+  ],
+  "commonMistakes": [
+    "Serving short into the middle, which invites the returner to step in and drive it.",
+    "Contacting above the waist or with the paddle head above the wrist, both of which are faults.",
+    "Swinging hard for an ace that does not exist at this level — you cannot volley the return, so pace buys you nothing.",
+    "Stepping on or over the baseline before contact.",
+    "Standing still afterwards, when the return is coming back deep to the exact spot you are standing in."
+  ],
+  "drills": [
+    {
+      "name": "Ten deep in a row",
+      "description": "Tape a line three feet inside the opposite baseline. Serve until you land ten in a row between that line and the baseline. Restart the count on any that lands short or out.",
+      "reps": "3 rounds",
+      "players": 1,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              14,
+              -1
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "label": "deep third",
+            "at": [
+              6,
+              41
+            ],
+            "width": 9,
+            "depth": 5
+          }
+        ]
+      }
+    },
+    {
+      "name": "Backhand corner",
+      "description": "Same thing, but the target is only the backhand half of the service box. Serving to a backhand is the cheapest advantage available on this shot.",
+      "reps": "3 sets of 15",
+      "players": 1,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              14,
+              -1
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "label": "backhand",
+            "at": [
+              4,
+              40
+            ],
+            "width": 6,
+            "depth": 6
+          }
+        ]
+      }
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          14,
+          -1
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          5,
+          -1
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          5,
+          45
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          14,
+          14.5
+        ]
+      }
+    ],
+    "shot": {
+      "from": [
+        14,
+        -1
+      ],
+      "to": [
+        5,
+        41
+      ],
+      "peakAt": 0.5,
+      "peakHeight": 9
+    },
+    "mistake": {
+      "label": "Short and soft: they step inside the baseline and hit the return on the way forward.",
+      "path": {
+        "from": [
+          14,
+          -1
+        ],
+        "to": [
+          7,
+          31
+        ],
+        "peakAt": 0.45,
+        "peakHeight": 7
+      }
+    }
+  },
+  "prerequisites": [],
+  "leadsTo": [],
+  "relatedTerms": [
+    "baseline",
+    "two-bounce-rule",
+    "fault"
+  ],
+  "videos": [],
+  "status": "draft",
+  "updatedAt": "2026-08-24"
+}
