@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import AdSlot from "@/components/AdSlot";
 import ComparisonTable from "@/components/ComparisonTable";
 import CourtDiagram from "@/components/CourtDiagram";
 import LiteYouTube from "@/components/LiteYouTube";
@@ -205,6 +206,8 @@ export default async function TechniquePage({
             </ul>
           </Section>
 
+          <AdSlot placement="after-mistakes" />
+
           {technique.court && (
             <Section n={num()} title="The shape of the shot">
               <div className="grid gap-10 xl:grid-cols-2">
@@ -288,6 +291,8 @@ export default async function TechniquePage({
               />
             </Section>
           )}
+
+          <AdSlot placement="before-clips" />
 
           <Section n={num()} title="Watch it">
             <VideoGrid videos={technique.videos} />

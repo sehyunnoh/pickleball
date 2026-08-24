@@ -276,7 +276,7 @@ npm run add:video -- --technique atp --url "https://youtu.be/dQw4w9?t=95" --type
 | M6-4 | CI: 주 1회 `fetch:videos` → 변경 시 자동 PR | 🤖 | `.github/workflows/refresh-videos.yml` |
 | M6-5 | CI: 주 1회 `check:links` → 실패 시 이슈 자동 생성 | 🤖 | `.github/workflows/check-links.yml` |
 | M6-6 | GitHub Secrets에 `YOUTUBE_API_KEY` 등록 | 👤 | — |
-| M6-7 | Vercel Analytics 또는 Plausible 연결 | 👤 | — |
+| M6-7 | **GA4 + 동의 배너** — `NEXT_PUBLIC_GA_ID`를 Vercel의 Production 환경에만 등록. 배너 없이 켜면 EEA/영국 방문자에 대해 위법 | 🤝 | 배너 동작 + GA4 실시간 리포트에 방문 잡힘 |
 
 **브랜치 전략** (단순하게)
 - `main` = 프로덕션. Vercel 자동 배포
@@ -292,6 +292,7 @@ npm run add:video -- --technique atp --url "https://youtu.be/dQw4w9?t=95" --type
 | 항목 | 내용 |
 |---|---|
 | P1 기술 10개 추가 | Topspin Dink, Roll Volley, Backhand Flick, Bert, Poach, Stacking 등 |
+| **AdSense** | 콘텐츠 20개 이상 + 월 방문이 붙은 뒤 신청. 슬롯 위치는 이미 확보돼 있음(`components/AdSlot.tsx`), 승인 후 `NEXT_PUBLIC_ADS_ENABLED=true` + `<ins>` 태그 + 인증 CMP |
 | 학습 경로 (`/paths`) | "Get to the kitchen", "Stop getting attacked", "Win more third shots" |
 | 콘텐츠 유지보수 | 죽은 링크 교체, 신규 영상 반영 (월 1회 루틴) |
 | **Phase 2: 시합 정보** | 수집 방식 재논의 필요 → **별도 요구문서부터** 작성 |
