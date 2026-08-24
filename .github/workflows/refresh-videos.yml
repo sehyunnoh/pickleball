@@ -1,0 +1,81 @@
+name: Refresh video suggestions
+
+on:
+  schedule:
+    # Mondays, 06:00 UTC. Weekly is plenty: these are suggestions, not content.
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Without the key this job would fail every Monday and train everyone to
+      # ignore the notification. Skip loudly instead.
+      - name: Check for the API key
+        id: key
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: |
+          if [ -z "$YOUTUBE_API_KEY" ]; then
+            echo "::warning::YOUTUBE_API_KEY is not set — skipping. Add it under Settings → Secrets → Actions (M6-6)."
+            echo "present=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-node@v4
+        if: steps.key.outputs.present == 'true'
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+        if: steps.key.outputs.present == 'true'
+
+      - name: Fetch suggestions
+        if: steps.key.outputs.present == 'true'
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: npm run fetch:videos
+
+      # Every run rewrites fetchedAt, so a plain "did the file change" check
+      # would open a pull request every week saying nothing. Compare the
+      # results themselves.
+      - name: Check for real changes
+        if: steps.key.outputs.present == 'true'
+        id: diff
+        run: |
+          if git diff --quiet -- data/generated/videos-auto.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          elif [ -z "$(git diff -U0 -- data/generated/videos-auto.json | grep -E '^[+-]' | grep -vE '^[+-]{3}' | grep -v 'fetchedAt')" ]; then
+            echo "Only timestamps moved."
+            git checkout -- data/generated/videos-auto.json
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open a pull request
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="chore/refresh-videos-$(date -u +%Y-%m-%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add data/generated/videos-auto.json
+          git commit -m "chore: refresh auto video suggestions"
+          git push -u origin "$BRANCH"
+          gh pr create \
+            --title "Refresh auto video suggestions" \
+            --body "Weekly \`fetch:videos\` run. These are unverified suggestions shown under the curated clips — nobody has watched them. Merging changes nothing that is published." \
+            --base main \
+            --head "$BRANCH"

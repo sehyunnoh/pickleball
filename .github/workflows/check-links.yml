@@ -1,0 +1,58 @@
+name: Check curated clips
+
+on:
+  schedule:
+    # Thursdays, 06:00 UTC — offset from the refresh job so a bad week does not
+    # arrive as two notifications at once.
+    - cron: "0 6 * * 4"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      # Runs with or without the key: oEmbed answers "does this still exist",
+      # which is the question that matters. The key adds "may we still embed
+      # it", and check:links says which of the two it managed.
+      - name: Check clips
+        id: check
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: |
+          set +e
+          npm run check:links > report.txt 2>&1
+          echo "status=$?" >> "$GITHUB_OUTPUT"
+          cat report.txt
+
+      - name: Open or update an issue
+        if: steps.check.outputs.status != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BODY="$(printf 'A curated clip is no longer playable. The timestamp was the reason somebody visited that page, so this is worth fixing before the next content batch.\n\n```\n%s\n```\n\nReplace it with `npm run add:video`, then delete the dead entry from the technique JSON.\n\n_From the weekly check-links workflow._' "$(cat report.txt)")"
+
+          # One rolling issue rather than a new one every week.
+          EXISTING="$(gh issue list --label dead-clips --state open --limit 1 --json number --jq '.[0].number')"
+
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+          else
+            gh label create dead-clips --color B60205 --description "A curated clip is gone or no longer embeddable" --force
+            gh issue create \
+              --title "Dead curated clip(s)" \
+              --label dead-clips \
+              --body "$BODY"
+          fi

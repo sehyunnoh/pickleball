@@ -1,6 +1,8 @@
+import fs from "node:fs";
+import path from "node:path";
 import { loadAllTechniques, loadAllTerms, loadRoadmap } from "../lib/content";
-import type { Technique } from "../lib/schema";
-import { log, style } from "./_shared";
+import { AutoVideosFileSchema, type Technique } from "../lib/schema";
+import { GENERATED_DIR, log, style } from "./_shared";
 
 /**
  * `npm run validate`
@@ -154,6 +156,35 @@ for (const term of terms.values()) {
       techniques.has(slug),
       plannedTechniques.has(slug),
     );
+  }
+}
+
+// The weekly refresh opens its pull request with GITHUB_TOKEN, and pull
+// requests raised that way do not trigger other workflows — so CI never runs
+// on them. Checking the generated file here means the next build catches a
+// malformed one either way.
+const autoFile = path.join(GENERATED_DIR, "videos-auto.json");
+if (fs.existsSync(autoFile)) {
+  try {
+    const parsed = AutoVideosFileSchema.safeParse(
+      JSON.parse(fs.readFileSync(autoFile, "utf8")),
+    );
+    if (!parsed.success) {
+      for (const issue of parsed.error.issues) {
+        err("videos-auto.json", `${issue.path.join(".")}: ${issue.message}`);
+      }
+    } else {
+      for (const slug of Object.keys(parsed.data)) {
+        if (!techniques.has(slug)) {
+          warn(
+            "videos-auto.json",
+            `has suggestions for "${slug}", which no longer exists`,
+          );
+        }
+      }
+    }
+  } catch (cause) {
+    err("videos-auto.json", `is not valid JSON: ${(cause as Error).message}`);
   }
 }
 
