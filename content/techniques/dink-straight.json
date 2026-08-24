@@ -1,0 +1,213 @@
+{
+  "slug": "dink-straight",
+  "name": "Dink (Straight)",
+  "aka": [
+    "straight dink",
+    "down-the-line dink"
+  ],
+  "category": "soft-game",
+  "difficulty": "beginner",
+  "courtZone": [
+    "kitchen"
+  ],
+  "situation": [
+    "rally"
+  ],
+  "handedness": "both",
+  "summary": "A dink is a soft shot played from the kitchen that lands in the opponents' kitchen, low enough that they cannot hit down on it. The straight dink goes back down the line to the player in front of you. It is the most-played shot in the game above 3.0, and dinking rallies are usually decided by whoever runs out of patience first.",
+  "whenToUse": [
+    "Both teams are at the kitchen line and there is nothing attackable on either side.",
+    "The ball has dropped below the height of the net, so driving it is not an option.",
+    "You are taking the pace out of a rally that got fast and you want to reset it.",
+    "Your opponent has been pulled off the line and you want to keep them there."
+  ],
+  "howTo": [
+    "Bend your knees to get down to the ball \u2014 the paddle comes up to it, never down onto it.",
+    "Hold the grip loosely and open the paddle face slightly.",
+    "Contact the ball out in front of your body and below your waist.",
+    "Push through the ball with your shoulder and keep the wrist still.",
+    "Aim to land it in the first two feet of their kitchen, close to the net rather than deep.",
+    "Bring the paddle back up to chest height before they hit."
+  ],
+  "commonMistakes": [
+    "Standing tall and swinging down at the ball, which sends it into the net every time.",
+    "Aiming at the net tape instead of a spot on the floor beyond it \u2014 you have to clear the net, so aim past it.",
+    "Landing the dink deep, near their kitchen line, where it comes up at a comfortable height to attack.",
+    "Adding wrist to fine-tune the touch, which makes every dink land somewhere different.",
+    "Watching your own shot instead of resetting the paddle for the reply."
+  ],
+  "drills": [
+    {
+      "name": "Straight dink rally",
+      "description": "Both of you at the kitchen line, directly opposite each other, dinking straight ahead. Count consecutive dinks that stay below the height of the net on the way over. When one pops up, the count restarts.",
+      "reps": "3 attempts at a run of 30",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              13,
+              14.5
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              13,
+              29.5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dink to the towel",
+      "description": "Lay a towel two feet inside their kitchen, directly across from you. Your partner dinks to you and you dink back at the towel. Only balls that land on or touch it count.",
+      "reps": "3 sets of 20",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              13,
+              14.5
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              13,
+              29.5
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "label": "towel",
+            "at": [
+              13,
+              24
+            ],
+            "width": 4,
+            "depth": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wall dinks",
+      "description": "Stand seven feet from a wall with a line marked at net height. Dink into the wall above the line and keep the rally going with yourself. No partner needed, and the wall never mishits.",
+      "reps": "5 minutes",
+      "players": 1
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          13,
+          14.5
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          6,
+          14.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          6,
+          29.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          13,
+          29.5
+        ]
+      }
+    ],
+    "shot": {
+      "from": [
+        13,
+        14.5
+      ],
+      "to": [
+        13,
+        24
+      ],
+      "peakAt": 0.42,
+      "peakHeight": 4.5
+    },
+    "mistake": {
+      "label": "Deep and high: it lands near their kitchen line at a comfortable height, and the next ball comes back at your feet.",
+      "path": {
+        "from": [
+          13,
+          14.5
+        ],
+        "to": [
+          13,
+          28
+        ],
+        "peakAt": 0.6,
+        "peakHeight": 6.5
+      }
+    }
+  },
+  "comparison": {
+    "title": "Straight or cross-court?",
+    "otherLabel": "Dink (Cross-court)",
+    "otherSlug": "dink-crosscourt",
+    "rows": [
+      {
+        "label": "Distance",
+        "self": "The shortest path across, so the least room for error.",
+        "other": "The longest line on the court, which gives the ball more room to drop."
+      },
+      {
+        "label": "Net height",
+        "self": "You cross nearer the post, where the net is two inches higher.",
+        "other": "You cross near the middle, where the net is at its lowest."
+      },
+      {
+        "label": "What it does",
+        "self": "Keeps the ball in front of you and the rally simple.",
+        "other": "Pulls one opponent wide and opens the middle behind them."
+      },
+      {
+        "label": "How it fails",
+        "self": "Into the net, or long into their transition zone.",
+        "other": "Wide of the sideline, or short enough to give them an angle back."
+      },
+      {
+        "label": "Use it when",
+        "self": "You are recovering position and want the ball where you can see it.",
+        "other": "You are steady enough to control the angle and want to create one."
+      }
+    ]
+  },
+  "prerequisites": [
+    "kitchen-line-positioning"
+  ],
+  "leadsTo": [
+    "dink-crosscourt",
+    "speed-up",
+    "reset",
+    "third-shot-drop"
+  ],
+  "relatedTerms": [
+    "kitchen",
+    "kitchen-line"
+  ],
+  "videos": [],
+  "status": "draft",
+  "updatedAt": "2026-08-23"
+}

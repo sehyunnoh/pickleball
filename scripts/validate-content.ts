@@ -102,12 +102,23 @@ for (const t of techniques.values()) {
 
   // Edges are authored from both ends, so they can disagree. Not fatal — the
   // other half is often still unwritten — but it is almost always an oversight.
+  // Both directions have to be checked: an edge declared only as a prerequisite
+  // is just as one-sided as one declared only as a follow-up.
   for (const slug of t.leadsTo) {
     const other = techniques.get(slug);
     if (other && !other.prerequisites.includes(t.slug)) {
       warn(
         where,
         `leadsTo "${slug}", but ${slug}.json does not list "${t.slug}" as a prerequisite`,
+      );
+    }
+  }
+  for (const slug of t.prerequisites) {
+    const other = techniques.get(slug);
+    if (other && !other.leadsTo.includes(t.slug)) {
+      warn(
+        where,
+        `requires "${slug}", but ${slug}.json does not list "${t.slug}" in leadsTo`,
       );
     }
   }

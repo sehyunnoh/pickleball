@@ -1,0 +1,119 @@
+{
+  "slug": "split-step",
+  "name": "Split Step",
+  "aka": [],
+  "category": "movement",
+  "difficulty": "beginner",
+  "courtZone": [
+    "baseline",
+    "transition",
+    "kitchen"
+  ],
+  "situation": [
+    "return",
+    "rally",
+    "defense"
+  ],
+  "handedness": "n/a",
+  "summary": "The split step is a small hop you make just before your opponent hits the ball, landing on the balls of both feet at the moment of their contact. It puts you in a position to push off in any direction instead of being caught mid-stride. Every strong player does it on nearly every shot, and most players below 3.5 do not do it at all.",
+  "whenToUse": [
+    "Every time an opponent is about to make contact. This is a habit, not a situational choice.",
+    "You are walking forward behind a drop or a return and they are about to hit.",
+    "You are at the kitchen line and a speed-up could come at any moment.",
+    "You have just hit a ball and your feet want to keep travelling."
+  ],
+  "howTo": [
+    "Watch your opponent's paddle as they start their swing, not the ball.",
+    "Hop just enough to unweight both feet \u2014 an inch or two off the ground, not a jump.",
+    "Time the landing so both feet touch down as their paddle meets the ball.",
+    "Land about shoulder width apart, on the balls of your feet, with soft knees.",
+    "Push off the foot furthest from the ball and move."
+  ],
+  "commonMistakes": [
+    "Landing after they hit rather than as they hit, which leaves you in the air at the moment you need to push off.",
+    "Hopping too high, so you are still coming down when the ball is already past you.",
+    "Landing flat-footed or on your heels, which kills the push-off you split-stepped for.",
+    "Skipping it while running forward through the transition zone \u2014 that is exactly when you need it.",
+    "Landing with your feet together, which leaves you with no base to push against."
+  ],
+  "drills": [
+    {
+      "name": "Split on their contact",
+      "description": "Your partner feeds from the other side of the net. You do nothing but split-step on each feed and freeze \u2014 no swing. The point is to separate the timing from the shot so you can feel when you are late.",
+      "reps": "3 sets of 20 feeds",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              10,
+              14.5
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              10,
+              29.5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Split and go",
+      "description": "Same feed, but now your partner sends the ball to a random side without telling you. Split as they contact, push off, and touch the ball with your paddle. You are training the push-off, not the shot.",
+      "reps": "5 minutes",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              10,
+              14.5
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              10,
+              29.5
+            ]
+          }
+        ],
+        "movement": [
+          {
+            "role": "you",
+            "from": [
+              10,
+              14.5
+            ],
+            "to": [
+              16,
+              14.5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ladder of hops",
+      "description": "No ball. Stand at the kitchen line and split-step once every three seconds, checking each landing: shoulder width, balls of the feet, knees bent, paddle up. Quiet feet mean you are landing softly enough to move.",
+      "reps": "3 sets of 60 seconds",
+      "players": 1
+    }
+  ],
+  "prerequisites": [],
+  "leadsTo": [
+    "kitchen-line-positioning",
+    "deep-return"
+  ],
+  "relatedTerms": [
+    "kitchen-line"
+  ],
+  "videos": [],
+  "status": "draft",
+  "updatedAt": "2026-08-23"
+}

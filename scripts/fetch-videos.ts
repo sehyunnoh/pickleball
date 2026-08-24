@@ -16,7 +16,7 @@ import {
 } from "./_shared";
 
 /**
- * `npm run fetch:videos [-- --only <slug>] [--dry-run]`
+ * `npm run fetch:videos [-- --only <slug>] [--query "..."] [--dry-run]`
  *
  * Fills the gaps where curation has not caught up, and only there. Curated
  * clips are the product; these are a labelled "we have not checked these"
@@ -73,9 +73,15 @@ let quotaUnits = 0;
 
 async function main() {
   for (const technique of techniques) {
-    // The alias is often what people actually type into YouTube — "ATP" finds
-    // far more than "around the post" does.
-    const term = technique.aka[0] ?? technique.name;
+    // The canonical name, with any parenthetical qualifier flattened: "Dink
+    // (Straight)" searches as "Dink Straight". Aliases were tried first and
+    // were worse — a technique whose alias is loose ("holding the line") comes
+    // back with paddle-grip and rules videos. Use --query for the few names
+    // that search badly on their own.
+    const term =
+      typeof args.flags.query === "string"
+        ? args.flags.query
+        : technique.name.replace(/[()]/g, " ").replace(/\s+/g, " ").trim();
     const query = `pickleball ${term} tutorial`;
 
     const ids = await searchVideos(query, apiKey, RESULTS_PER_TECHNIQUE);
