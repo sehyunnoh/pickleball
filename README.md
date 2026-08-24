@@ -32,10 +32,38 @@ from production builds, so unfinished work is safe to commit.
 
 ```bash
 npm run dev
-npm run build
-npm run start
+npm run build          # validate, then next build
+npm run typecheck
 npm run lint
 ```
 
-Content tooling (`validate`, `new:technique`, `add:video`, `fetch:videos`,
-`check:links`) arrives in M2 — see the development plan.
+## Content tooling
+
+```bash
+# Start a technique from the roadmap. Writes a draft skeleton with every
+# field present, court diagram included.
+npm run new:technique -- --slug reset --category defense --difficulty intermediate
+
+# Curate a clip. The timestamp comes out of the URL — ?t=95 and ?t=1m35s both work.
+npm run add:video -- --technique reset --url "https://youtu.be/xxxx?t=95" --type slow-mo
+
+# Check every content file: schema, cross-references, skill-tree cycles.
+# Runs before every build.
+npm run validate
+
+# Are the curated clips still alive and still embeddable?
+npm run check:links
+
+# Refresh the unverified "more on YouTube" shelf. Needs YOUTUBE_API_KEY.
+npm run fetch:videos -- --only reset --dry-run
+```
+
+Only `fetch:videos` requires `YOUTUBE_API_KEY`. `add:video` and `check:links`
+fall back to YouTube's public oEmbed endpoint without one — that gives title
+and channel, but it cannot tell you whether a video may be embedded, and both
+scripts say so rather than assuming.
+
+`content/roadmap.json` lists everything Phase 1 intends to cover. It is what
+lets `validate` tell a typo from a technique nobody has written yet: the skill
+tree is deliberately authored ahead of its content, so an unresolved slug is a
+warning if it is planned and an error if it is not.

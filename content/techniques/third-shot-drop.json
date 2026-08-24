@@ -136,7 +136,7 @@
 
   "prerequisites": ["dink-straight"],
   "leadsTo": ["transition-zone-footwork", "reset"],
-  "relatedTerms": ["kitchen", "transition-zone", "shake-and-bake"],
+  "relatedTerms": ["kitchen", "transition-zone"],
 
   "videos": [
     {

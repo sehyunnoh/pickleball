@@ -265,6 +265,26 @@ export const TechniqueSchema = z
     }
   });
 
+/**
+ * `content/roadmap.json` — everything Phase 1 intends to cover.
+ *
+ * This exists so `validate` can tell a typo from a forward reference. The
+ * skill tree is authored before the techniques that fill it in, so a
+ * `prerequisites` slug that does not resolve yet is normal — but only if
+ * somebody actually planned it. A dangling slug that is not on this list is a
+ * mistake.
+ */
+export const RoadmapSchema = z.strictObject({
+  techniques: z.array(
+    z.strictObject({
+      slug,
+      name: z.string().min(1),
+      priority: z.enum(["P0", "P1"]),
+    }),
+  ),
+  terms: z.array(slug),
+});
+
 export const TermSchema = z.strictObject({
   slug,
   term: z.string().min(1),
@@ -307,3 +327,4 @@ export type CourtTarget = z.infer<typeof CourtTargetSchema>;
 export type ShotPath = z.infer<typeof ShotPathSchema>;
 export type Comparison = z.infer<typeof ComparisonSchema>;
 export type CourtRole = (typeof COURT_ROLES)[number];
+export type Roadmap = z.infer<typeof RoadmapSchema>;

@@ -1,0 +1,47 @@
+{
+  "techniques": [
+    { "slug": "volley-serve", "name": "Volley Serve", "priority": "P0" },
+    { "slug": "drop-serve", "name": "Drop Serve", "priority": "P1" },
+    { "slug": "deep-return", "name": "Deep Return", "priority": "P0" },
+    { "slug": "return-and-advance", "name": "Return and Advance", "priority": "P0" },
+    { "slug": "third-shot-drop", "name": "Third Shot Drop", "priority": "P0" },
+    { "slug": "third-shot-drive", "name": "Third Shot Drive", "priority": "P0" },
+    { "slug": "dink-straight", "name": "Dink (Straight)", "priority": "P0" },
+    { "slug": "dink-crosscourt", "name": "Dink (Cross-court)", "priority": "P0" },
+    { "slug": "topspin-dink", "name": "Topspin Dink", "priority": "P1" },
+    { "slug": "dead-dink", "name": "Dead Dink", "priority": "P1" },
+    { "slug": "reset", "name": "Reset", "priority": "P0" },
+    { "slug": "block-counter", "name": "Block / Counter", "priority": "P0" },
+    { "slug": "punch-volley", "name": "Punch Volley", "priority": "P0" },
+    { "slug": "roll-volley", "name": "Roll Volley", "priority": "P1" },
+    { "slug": "speed-up", "name": "Speed-up", "priority": "P0" },
+    { "slug": "backhand-flick", "name": "Backhand Flick", "priority": "P1" },
+    { "slug": "overhead-smash", "name": "Overhead / Smash", "priority": "P0" },
+    { "slug": "offensive-lob", "name": "Offensive Lob", "priority": "P0" },
+    { "slug": "defensive-lob", "name": "Defensive Lob", "priority": "P1" },
+    { "slug": "atp", "name": "Around the Post (ATP)", "priority": "P0" },
+    { "slug": "erne", "name": "Erne", "priority": "P0" },
+    { "slug": "bert", "name": "Bert", "priority": "P1" },
+    { "slug": "poach", "name": "Poach", "priority": "P1" },
+    { "slug": "stacking", "name": "Stacking", "priority": "P1" },
+    { "slug": "shake-and-bake", "name": "Shake and Bake", "priority": "P0" },
+    { "slug": "split-step", "name": "Split Step", "priority": "P0" },
+    { "slug": "transition-zone-footwork", "name": "Transition Zone Footwork", "priority": "P0" },
+    { "slug": "kitchen-line-positioning", "name": "Kitchen Line Positioning", "priority": "P0" },
+    { "slug": "chicken-wing-defense", "name": "Chicken Wing Defense", "priority": "P1" },
+    { "slug": "lob-defense-switching", "name": "Lob Defense / Switching", "priority": "P1" }
+  ],
+
+  "terms": [
+    "kitchen",
+    "kitchen-line",
+    "transition-zone",
+    "baseline",
+    "dupr",
+    "stacking",
+    "erne",
+    "banger",
+    "hands-battle",
+    "reset"
+  ]
+}

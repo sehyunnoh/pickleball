@@ -2,8 +2,10 @@ import fs from "node:fs";
 import path from "node:path";
 import { z } from "zod";
 import {
+  RoadmapSchema,
   TechniqueSchema,
   TermSchema,
+  type Roadmap,
   type Technique,
   type Term,
 } from "./schema";
@@ -114,6 +116,34 @@ let techniqueCache: Map<string, Technique> | null = null;
 let termCache: Map<string, Term> | null = null;
 
 const CACHE = process.env.NODE_ENV === "production";
+
+/**
+ * Every technique on disk, drafts included, regardless of environment.
+ *
+ * The site should not use this — it exists for `npm run validate` and the
+ * content CLIs, which have to check the files nobody is allowed to publish yet.
+ */
+export function loadAllTechniques(): Map<string, Technique> {
+  return parseAll(TECHNIQUES_DIR, TechniqueSchema, "technique");
+}
+
+export function loadAllTerms(): Map<string, Term> {
+  return parseAll(GLOSSARY_DIR, TermSchema, "glossary");
+}
+
+/** What Phase 1 plans to cover. See RoadmapSchema for why this exists. */
+export function loadRoadmap(): Roadmap {
+  const file = path.join(CONTENT_DIR, "roadmap.json");
+  const result = RoadmapSchema.safeParse(
+    JSON.parse(fs.readFileSync(file, "utf8")),
+  );
+  if (!result.success) {
+    throw new Error(
+      `content/roadmap.json is invalid:\n${formatIssues("roadmap.json", result.error)}`,
+    );
+  }
+  return result.data;
+}
 
 function allTechniquesIncludingDrafts(): Map<string, Technique> {
   if (!CACHE) return parseAll(TECHNIQUES_DIR, TechniqueSchema, "technique");
