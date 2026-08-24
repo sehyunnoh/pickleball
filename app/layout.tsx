@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Fraunces, Newsreader } from "next/font/google";
 import Link from "next/link";
+import SearchDialog from "@/components/SearchDialog";
+import { getTechniques, getTerms } from "@/lib/content";
+import { buildSearchIndex } from "@/lib/search";
 import "./globals.css";
 
 /**
@@ -38,6 +41,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // Built once at build time and shipped with every page — the whole corpus is
+  // a hundred short records, and search that only works after a round trip is
+  // search people stop using.
+  const searchIndex = buildSearchIndex(getTechniques(), getTerms());
+
   return (
     <html
       lang="en"
@@ -60,11 +68,17 @@ export default function RootLayout({
             >
               Pickleball Technique
             </Link>
-            <nav aria-label="Main">
+            <nav aria-label="Main" className="flex items-baseline gap-5">
               <Link href="/techniques" className="label hover:text-accent">
                 Index
               </Link>
-              {/* Glossary lands in M4-6, once there is content behind it. */}
+              <Link href="/skill-tree" className="label hover:text-accent">
+                Tree
+              </Link>
+              <Link href="/glossary" className="label hover:text-accent">
+                Glossary
+              </Link>
+              <SearchDialog index={searchIndex} />
             </nav>
           </div>
         </header>

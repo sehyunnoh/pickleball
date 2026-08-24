@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import ComparisonTable from "@/components/ComparisonTable";
 import CourtDiagram from "@/components/CourtDiagram";
 import LiteYouTube from "@/components/LiteYouTube";
+import ProgressToggle from "@/components/ProgressToggle";
 import ShotProfile from "@/components/ShotProfile";
 import VideoGrid from "@/components/VideoGrid";
 import {
@@ -293,6 +294,10 @@ export default async function TechniquePage({
           </Section>
 
           <Section n={num()} title="Where this fits" last>
+            <div className="mb-8">
+              <ProgressToggle slug={technique.slug} name={technique.name} />
+            </div>
+
             <div className="grid gap-8 border-t border-rule pt-5 sm:grid-cols-3">
               <RefColumn title="Comes after" refs={prerequisites} />
               <div>

@@ -100,8 +100,14 @@ export const VideoSchema = z
  * ------------------------------------------------------------------ */
 
 const PointSchema = z.tuple([
-  z.number().min(-3).max(COURT_WIDTH + 3),
-  z.number().min(-5).max(COURT_LENGTH + 5),
+  z
+    .number()
+    .min(-3)
+    .max(COURT_WIDTH + 3),
+  z
+    .number()
+    .min(-5)
+    .max(COURT_LENGTH + 5),
 ]);
 
 export const COURT_ROLES = ["you", "partner", "opponent", "feeder"] as const;
@@ -238,8 +244,7 @@ export const TechniqueSchema = z
           code: "custom",
           input: t.videos,
           path: ["videos"],
-          message:
-            "at least one curated video must be of type `instruction`",
+          message: "at least one curated video must be of type `instruction`",
         });
       }
     }
