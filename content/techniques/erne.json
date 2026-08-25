@@ -149,7 +149,26 @@
     "kitchen",
     "kitchen-line"
   ],
-  "videos": [],
-  "status": "draft",
-  "updatedAt": "2026-08-24"
+  "videos": [
+    {
+      "youtubeId": "ShAIo7efwyA",
+      "title": "Master the Erne: A MUST HAVE WEAPON in Your Pickleball Game",
+      "channel": "ThatPickleballGuy - Kyle Koszuta",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "HEStMD-dUxM",
+      "title": "Master the Pickleball Erne in Under 2 Minutes!",
+      "channel": "Josh J Pickleball",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }

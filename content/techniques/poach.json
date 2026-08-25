@@ -176,7 +176,26 @@
     "switching",
     "doubles"
   ],
-  "videos": [],
-  "status": "draft",
-  "updatedAt": "2026-08-24"
+  "videos": [
+    {
+      "youtubeId": "qQhYj1HRhRI",
+      "title": "How to Poach Like a Pro (Without Making Your Partner Hate You)",
+      "channel": "John Cincola Pickleball",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "LgS-Y3XmAEQ",
+      "title": "The PERFECT Poach in Pickleball! Win More Points at the Net",
+      "channel": "Richard Pickleball",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }

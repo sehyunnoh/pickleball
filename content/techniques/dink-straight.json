@@ -216,8 +216,17 @@
       "type": "instruction",
       "start": 0,
       "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "nRo0mvVA-DM",
+      "title": "NEVER Lose Another Dink Battle With These 8 Tips 🎯",
+      "channel": "Enhance Pickleball",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
     }
   ],
-  "status": "draft",
-  "updatedAt": "2026-08-23"
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }

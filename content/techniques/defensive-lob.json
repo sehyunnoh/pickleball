@@ -160,7 +160,26 @@
     "transition-zone",
     "neutral-ball"
   ],
-  "videos": [],
-  "status": "draft",
-  "updatedAt": "2026-08-24"
+  "videos": [
+    {
+      "youtubeId": "Kbl0Q0BorQk",
+      "title": "Sky Lob | The Defensive Skill Every Pickleball Player MUST Learn",
+      "channel": "ThatPickleballGuy - Kyle Koszuta",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "KCAjD1oS7jQ",
+      "title": "How & When to Lob in Pickleball!",
+      "channel": "Enhance Pickleball",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }

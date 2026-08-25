@@ -159,7 +159,26 @@
     "middle",
     "server-number"
   ],
-  "videos": [],
-  "status": "draft",
-  "updatedAt": "2026-08-24"
+  "videos": [
+    {
+      "youtubeId": "npCzByb7IUo",
+      "title": "What is Stacking? Pickleball Stacking Strategies Explained",
+      "channel": "ThatPickleballGuy - Kyle Koszuta",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "u7DKc_ftqnU",
+      "title": "Pickleball Stacking: When, Why, & How to Use Stacking on the Pickleball Court",
+      "channel": "PlayPickleball.com",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }

@@ -177,8 +177,17 @@
       "type": "instruction",
       "start": 0,
       "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "RjPwfV-IHts",
+      "title": "How to Hit a Forehand Dink Like a PRO!",
+      "channel": "The Pickleball Clinic",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
     }
   ],
-  "status": "draft",
-  "updatedAt": "2026-08-24"
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }

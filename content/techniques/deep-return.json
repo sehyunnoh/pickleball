@@ -199,8 +199,17 @@
       "type": "instruction",
       "start": 0,
       "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "OxNnewWzUC4",
+      "title": "The PERFECT Pickleball Return of Serve: Rules and Tips To Level Up",
+      "channel": "PlayPickleball.com",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
     }
   ],
-  "status": "draft",
-  "updatedAt": "2026-08-23"
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }

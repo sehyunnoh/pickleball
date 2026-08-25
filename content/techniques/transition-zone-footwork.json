@@ -167,7 +167,26 @@
     "kitchen-line",
     "baseline"
   ],
-  "videos": [],
-  "status": "draft",
-  "updatedAt": "2026-08-24"
+  "videos": [
+    {
+      "youtubeId": "mJr0ADEgb04",
+      "title": "How to Dominate the Transition Zone | The Pickleball Clinic",
+      "channel": "The Pickleball Clinic",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "jHHiQ49RKjI",
+      "title": "6 Pro Tips to Help You DOMINATE the Transition Zone",
+      "channel": "The Pickleball Clinic",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }

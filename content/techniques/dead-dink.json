@@ -145,7 +145,26 @@
     "neutral-ball",
     "soft-game"
   ],
-  "videos": [],
-  "status": "draft",
-  "updatedAt": "2026-08-24"
+  "videos": [
+    {
+      "youtubeId": "4Udvu59S-qE",
+      "title": "What is a \"dead\" dink VS a \"push\" dink in Pickleball?",
+      "channel": "tanner.pickleball",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "TQ8HyuTkGkQ",
+      "title": "LEARN What a Dead Dink in Pickleball is and HOW TO use it to Counterpunch",
+      "channel": "The Pickleball Pirates",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }

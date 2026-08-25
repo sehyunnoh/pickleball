@@ -2,6 +2,7 @@
 
 import { useId, useMemo, useRef, useState } from "react";
 import LiteYouTube from "./LiteYouTube";
+import UnverifiedBadge from "./UnverifiedBadge";
 import { formatSeconds } from "@/lib/format";
 import {
   VIDEO_TYPES,
@@ -44,8 +45,8 @@ export default function VideoGrid({ videos }: { videos: Video[] }) {
   if (videos.length === 0) {
     return (
       <p className="border-y border-border py-8 text-sm text-muted">
-        No curated clips yet. Every clip on this site is picked and timestamped
-        by hand, so this section stays empty until it is.
+        No clips for this technique yet — not even an unwatched one, which means
+        the search could not find anything that was plainly about it.
       </p>
     );
   }
@@ -109,6 +110,11 @@ export default function VideoGrid({ videos }: { videos: Video[] }) {
                 {" · "}
                 {clipLabel(v)}
               </span>
+              {v.verified === false && (
+                <span className="mt-1.5 block">
+                  <UnverifiedBadge />
+                </span>
+              )}
               {v.note && (
                 <span className="mt-2 block text-muted italic">{v.note}</span>
               )}

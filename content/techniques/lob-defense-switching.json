@@ -177,7 +177,26 @@
     "switching",
     "middle"
   ],
-  "videos": [],
-  "status": "draft",
+  "videos": [
+    {
+      "youtubeId": "_iapVvZS6oQ",
+      "title": "Best Lob Defense Strategies and Drills for Pickleball: Improve Your Pickleball Game.",
+      "channel": "Pickleball Instruction",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "qio99LF7uP0",
+      "title": "How to Defend Lobs with Ben Johns",
+      "channel": "Pickleball 360",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
   "updatedAt": "2026-08-24"
 }

@@ -114,7 +114,26 @@
   "relatedTerms": [
     "kitchen-line"
   ],
-  "videos": [],
-  "status": "draft",
-  "updatedAt": "2026-08-23"
+  "videos": [
+    {
+      "youtubeId": "wZ8rcXzxNIw",
+      "title": "How To Split Step | Pickleball Tips | The Picklr",
+      "channel": "The Picklr",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "wRFRSj0JI10",
+      "title": "Pickleball Split Step Basics - Footwork Drills",
+      "channel": "The One Infinite",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }

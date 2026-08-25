@@ -159,7 +159,8 @@ M3(콘텐츠)가 가장 길다. M2가 끝나는 즉시 M3 배치를 시작해서
   "new:technique":  "tsx scripts/new-technique.ts",
   "add:video":      "tsx scripts/add-video.ts",
   "fetch:videos":   "tsx scripts/fetch-videos.ts",
-  "check:links":    "tsx scripts/check-links.ts"
+  "check:links":    "tsx scripts/check-links.ts",
+  "auto:curate":    "tsx scripts/auto-curate.ts"
 }
 ```
 
@@ -226,6 +227,35 @@ npm run add:video -- --technique atp --url "https://youtu.be/dQw4w9?t=95" --type
 - [ ] `prerequisites` / `leadsTo`가 트리에서 말이 되는가
 
 **완료 기준**: P0 20개 `published`, `npm run validate` 통과, 용어 60개 등록.
+
+---
+
+### 6.1 계획 변경 — 타임스탬프 게이트 완화 (2026-08-24)
+
+**바꾼 이유.** §11 리스크 표의 "M3에서 동력 소진"이 실제로 발생했다. 다만 예측한
+형태와 달랐다 — 밀린 것은 텍스트 검수가 아니라 **영상 선정과 타임스탬프 지정**이었다.
+30개 기술의 텍스트가 다 나온 뒤에도 클립이 붙은 건 1개였다. 대응으로 준비해 둔
+"출시 기준을 20개 → 12개로 낮춘다"는 이 병목에 듣지 않는다. 12개도 손으로
+골라야 하는 건 똑같기 때문이다.
+
+**바꾼 것.** 영상 제목을 기술 이름과 매칭해서 클립을 자동으로 채우고
+(`npm run auto:curate`), 그렇게 채운 클립에는 `verified: false`를 박아 페이지에
+**Unverified** 라벨을 노출한다. 게이트(클립 2개, 그중 1개는 `instruction`)는
+그대로 두되, "타임스탬프를 직접 재생해서 확인했는가"는 published의 **선결 조건이
+아니라 사후 업그레이드**가 된다.
+
+**바꾸지 않은 것.** 손으로 고른 클립이 목표라는 것. 자동 클립은 그 자리를 비워두지
+않기 위한 **자리표시자**이고, 사이트가 그걸 숨기지 않는다. About·홈·메타 설명에서
+"모든 클립을 손으로 골랐다"고 하던 문구는 전부 사실에 맞게 고쳤다 — 라벨만 붙이고
+카피를 그대로 두면 라벨이 하는 일이 없다.
+
+**추측은 안 한다.** 매칭이 기술 이름의 절반을 못 채우면 그 기술은 건너뛰고 보고한다.
+`bert`가 그 사례다 — "pickleball bert" 검색은 Erne·ATP 영상만 돌려주므로,
+상위 결과를 그냥 쓰면 **Bert 페이지에 다른 샷 영상이 올라간다.** `bert`는 클립 없이
+draft로 남겨 두는 쪽이 맞다.
+
+**남은 일**: unverified 클립 47개를 타임스탬프가 있는 것으로 교체. 순서는
+`docs/CURATION.md`가 관리하고, 트래픽이 붙는 기술부터 한다.
 
 ---
 
