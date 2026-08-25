@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import TechniqueBrowser from "@/components/TechniqueBrowser";
+import TechniqueIndexView from "@/components/TechniqueIndexView";
 import { getTechniques } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -25,8 +26,14 @@ export default function TechniquesPage() {
 
       <div className="mt-10">
         {/* The browser reads searchParams on the client. Without this boundary
-            the whole route would opt out of static rendering. */}
-        <Suspense fallback={<p className="text-muted">Loading…</p>}>
+            the whole route would opt out of static rendering.
+
+            The fallback is the finished, unfiltered index rather than a
+            spinner, and that is the point of it: this is what ends up in the
+            prerendered HTML, so it is what a crawler sees and what paints
+            first. A "Loading…" line here cost the page every one of its
+            outbound links and 0.25 of CLS. */}
+        <Suspense fallback={<TechniqueIndexView techniques={techniques} />}>
           <TechniqueBrowser techniques={techniques} />
         </Suspense>
       </div>
