@@ -43,9 +43,9 @@ slow-motion clip or a clear example from a real game.
 ## Where it stands
 
 - **P0 progress:** 19 of 19 published
-- **Watched and timestamped:** 3 of 30 technique(s)
+- **Watched and timestamped:** 4 of 30 technique(s)
 - **Unverified clips awaiting a look:** 47
-- **Still short of the two-clip gate:** 1 technique(s)
+- **Still short of the two-clip gate:** 0 technique(s)
 - **Not drafted yet:** 0 (they appear here once I write them)
 
 ---
@@ -764,9 +764,16 @@ Already curated:
 
 ## Bert
 
-`bert` · specialty · advanced · **⏳ needs clips**
+`bert` · specialty · advanced · **✅ watched**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- What is a BERT in Pickleball — PicklewithGee · instruction
+- The Pickleball BERT 🤯 — Shea Underwood - Pickleball · instruction
+- Aggressive Pickleball Move Known as a “Bert” — The Dink Pickleball · instruction
+- Pickleball “Bert” shot by Jorge - FLY — Jorge Quintero · instruction
+
+Nothing needed. Add more only if you find something clearly better.
 
 <!-- picks:bert -->
 <!-- One line per clip:
