@@ -169,7 +169,26 @@
     "hands-battle",
     "pop-up"
   ],
-  "videos": [],
-  "status": "draft",
-  "updatedAt": "2026-08-24"
+  "videos": [
+    {
+      "youtubeId": "e-H2pxPiZ70",
+      "title": "Tired of Hitting into the Net? Roll and Punch Volley Masterclass from a Pickleball Pro",
+      "channel": "The Flying Pickle Academy",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "AW_qcxFlbvY",
+      "title": "How to Hit a Backhand PUNCH VOLLEY!",
+      "channel": "The Pickleball Clinic",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }

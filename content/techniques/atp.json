@@ -159,7 +159,26 @@
     "kitchen",
     "kitchen-line"
   ],
-  "videos": [],
-  "status": "draft",
-  "updatedAt": "2026-08-24"
+  "videos": [
+    {
+      "youtubeId": "oFrz13ngYrw",
+      "title": "Learn this Pickleball Shot to TRANSFORM Your Game | Around The Post (ATP)",
+      "channel": "ThatPickleballGuy - Kyle Koszuta",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "kw3djKxJL0I",
+      "title": "Around The Post (ATP) Defense | Stopping the Toughest Shot in Pickleball",
+      "channel": "ThatPickleballGuy - Kyle Koszuta",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }

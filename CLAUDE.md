@@ -88,7 +88,12 @@ be committed safely.
 - **Embeds use a facade** (`lite-youtube-embed`): thumbnail first, iframe only on
   click. A technique page carries up to 5 videos — raw iframes destroy LCP.
 - **Curated vs. auto-fetched videos must be visually distinct.** Auto results
-  carry a label saying they are unverified.
+  carry a label saying they are unverified. This is enforced in the content
+  itself, not just in the candidate lists: `Video.verified` is false for any
+  clip chosen by `auto:curate` or `add:video --unverified`, and
+  `components/UnverifiedBadge.tsx` puts that on the page. **Any copy claiming
+  every clip is hand-picked is a bug** — the About page, the home hero and the
+  site description all had to be corrected once already.
 - `add:video` must reject videos with `embeddable: false` and duplicate
   `youtubeId`s rather than writing them.
 - **Schema freezes when M3 (bulk content authoring) starts.** Schema gaps are
@@ -105,10 +110,17 @@ What it is → When to use it → How to hit it → Common mistakes → Drills �
 Authoring quality gates before flipping a technique to `published` are in
 `DEVELOPMENT_PLAN.md` §6 — notably: `howTo` is 4–6 steps written as *action
 instructions*, not descriptions; `commonMistakes` are specific, not general
-advice; ≥1 video of type `instruction`; timestamps verified by actually playing them.
+advice; ≥1 video of type `instruction`.
 
-Division of labor: Claude drafts text, the user reviews and approves, and the user
-selects videos and sets timestamps.
+**The timestamp gate was relaxed on 2026-08-24** (`DEVELOPMENT_PLAN.md` §6.1).
+Hand-picking a timestamp for thirty techniques was the thing that stalled, so a
+technique may now publish on title-matched clips as long as they are marked
+`verified: false` and labelled on the page. Verifying one is now an upgrade
+applied to a live page rather than a precondition for having one.
+
+Division of labor: Claude drafts text, the user reviews and approves. Videos are
+auto-filled by title match; the user replaces them with watched, timestamped
+picks through `docs/CURATION.md`, highest-traffic techniques first.
 
 ## Design constraints
 

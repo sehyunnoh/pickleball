@@ -25,6 +25,10 @@ export default function AboutPage() {
   const venues = getVenues();
   const published = techniques.filter((t) => t.status === "published");
   const clips = published.reduce((n, t) => n + t.videos.length, 0);
+  const watched = published.reduce(
+    (n, t) => n + t.videos.filter((v) => v.verified).length,
+    0,
+  );
   const lastChecked = venues
     .map((v) => v.checkedAt)
     .sort()
@@ -50,9 +54,18 @@ export default function AboutPage() {
           bit about the drop is in there somewhere.
         </p>
         <p>
-          So every clip here is picked by hand and timestamped to the second
-          that actually shows the thing. That is the whole idea. If a clip does
-          not start at the moment it is supposed to, it is a bug.
+          So the aim for every clip here is that it is picked by hand and
+          timestamped to the second that actually shows the thing. That is the
+          whole idea, and where a clip claims a timestamp and does not start
+          there, it is a bug.
+        </p>
+        <p>
+          Getting there takes longer than writing the pages did. Rather than
+          leave most techniques with no video at all while that happens, the
+          rest carry a clip chosen by matching the video&rsquo;s title against
+          the technique &mdash; nobody has watched those, they start at 0:00,
+          and every one of them says so on the page. They are a placeholder for
+          a hand-picked clip, not a substitute for one.
         </p>
       </Section>
 
@@ -60,8 +73,8 @@ export default function AboutPage() {
         <p>
           Each technique is drafted, then reviewed by somebody who plays before
           it is published. Nothing publishes itself: a technique needs at least
-          two hand-picked clips, one of which has to be actual instruction,
-          before the site will build with it marked as finished.
+          two clips, one of which has to be actual instruction, before the site
+          will build with it marked as finished.
         </p>
         <p>
           Diagrams show position and the path of the ball — where you are, where
@@ -71,7 +84,9 @@ export default function AboutPage() {
         </p>
         <p className="text-muted">
           {published.length} of {techniques.length} techniques published,{" "}
-          {clips} clips curated, {terms.length} terms in the glossary.
+          {clips} clips in total &mdash; {watched} watched and timestamped,{" "}
+          {clips - watched} still unverified. {terms.length} terms in the
+          glossary.
         </p>
       </Section>
 
@@ -83,6 +98,13 @@ export default function AboutPage() {
           <code className="text-sm">youtube-nocookie.com</code>, and they only
           load once you click play — so if you never press play, YouTube is
           never contacted.
+        </p>
+        <p>
+          A clip marked <em>Unverified</em> was found by searching YouTube for
+          the technique&rsquo;s name and taking a result whose title plainly
+          matched. That is all the checking it has had. It might open on an
+          introduction, or cover the shot only in passing. Clips without that
+          mark were watched, and start where they say they start.
         </p>
         <p>
           If you made one of these videos and would rather it were not linked

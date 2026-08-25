@@ -156,7 +156,24 @@
     "topspin",
     "baseline"
   ],
-  "videos": [],
-  "status": "draft",
+  "videos": [
+    {
+      "youtubeId": "_CAcBJyDJc8",
+      "title": "Pickleball Volley and Drop Serve Rules: Know the Difference!",
+      "channel": "pickleballmax",
+      "type": "instruction",
+      "start": 78,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "hWKOzYoeL90",
+      "title": "Which Pickleball Serve Should You Use? Drop Serve vs. Volley Serve Training",
+      "channel": "The Pickleball Clinic",
+      "type": "instruction",
+      "start": 14,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
   "updatedAt": "2026-08-24"
 }

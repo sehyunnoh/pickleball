@@ -36,7 +36,7 @@ import {
 const USAGE =
   "usage: npm run add:video -- --technique <slug> --url <youtube url> --type <" +
   VIDEO_TYPES.join("|") +
-  '> [--end 128] [--note "..."]';
+  '> [--end 128] [--note "..."] [--unverified]';
 
 const args = parseArgs();
 const slug = requireFlag(args, "technique", USAGE);
@@ -46,6 +46,13 @@ const type = requireFlag(args, "type", USAGE);
 if (!(VIDEO_TYPES as readonly string[]).includes(type)) {
   die(`--type must be one of: ${VIDEO_TYPES.join(", ")}`);
 }
+
+/**
+ * `--unverified` records that nobody has watched this clip — it was chosen off
+ * the title. The page says so next to it. Omitting the flag is a claim that
+ * you played it and the technique is on screen at `start`.
+ */
+const unverified = args.flags.unverified === true;
 
 const { youtubeId, start: parsedStart } = parseYouTubeUrl(url);
 const start = numberFlag("start") ?? parsedStart;
@@ -91,6 +98,7 @@ async function main() {
     start,
     ...(end !== undefined ? { end } : {}),
     ...(typeof args.flags.note === "string" ? { note: args.flags.note } : {}),
+    ...(unverified ? { verified: false } : {}),
     curatedAt: today(),
   };
 
@@ -120,6 +128,9 @@ async function main() {
     }`,
   );
   log.info(`  ${style.dim("type")}     ${type}`);
+  if (unverified) {
+    log.info(`  ${style.dim("checked")}  no — labelled unverified on the page`);
+  }
   log.info(
     `  ${style.dim("clips")}    ${updated.videos.length} on this technique`,
   );

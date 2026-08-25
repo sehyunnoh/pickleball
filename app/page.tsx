@@ -55,8 +55,8 @@ export default function Home() {
         </h1>
         <p className="mt-8 max-w-[54ch] text-lg leading-relaxed">
           What it is, when to use it, how to hit it, and what usually goes wrong
-          — with video clips picked by hand and timestamped to the second that
-          actually shows it.
+          — with a video clip on every page, and the good ones timestamped to
+          the second that actually shows it.
         </p>
         <p className="mt-4 max-w-[54ch] leading-relaxed text-muted">
           Written for players in Oakville, Ontario who know the rules and want

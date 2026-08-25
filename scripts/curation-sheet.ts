@@ -2,13 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { loadAllTechniques, loadRoadmap } from "../lib/content";
 import { VIDEO_TYPES, type Technique } from "../lib/schema";
-import {
-  GENERATED_DIR,
-  log,
-  parseIsoDuration,
-  ROOT,
-  style,
-} from "./_shared";
+import { GENERATED_DIR, log, parseIsoDuration, ROOT, style } from "./_shared";
 
 /**
  * `npm run curation:sheet`
@@ -66,7 +60,10 @@ type AutoVideo = {
   duration: string;
 };
 
-function loadCandidates(): Record<string, { query: string; results: AutoVideo[] }> {
+function loadCandidates(): Record<
+  string,
+  { query: string; results: AutoVideo[] }
+> {
   const file = path.join(GENERATED_DIR, "videos-auto.json");
   if (!fs.existsSync(file)) return {};
   try {
@@ -87,7 +84,10 @@ function gap(t: Technique): string[] {
   if (instruction === 0) {
     missing.push("at least one clip of type `instruction`");
   }
-  if (t.summary.startsWith("TODO") || t.howTo.some((s) => s.startsWith("TODO"))) {
+  if (
+    t.summary.startsWith("TODO") ||
+    t.howTo.some((s) => s.startsWith("TODO"))
+  ) {
     missing.push("the text is still a skeleton");
   }
   return missing;
@@ -116,6 +116,14 @@ const p0Published = p0.filter(
   (t) => byslug.get(t.slug)?.status === "published",
 );
 const needClips = techniques.filter((t) => gap(t).length > 0);
+// The backlog is no longer "pages with no video" — auto:curate filled those.
+// It is "clips nobody has watched", which is a different and longer list.
+const unverified = techniques.flatMap((t) =>
+  t.videos.filter((v) => v.verified === false).map((v) => ({ t, v })),
+);
+const fullyVerified = techniques.filter(
+  (t) => t.videos.length > 0 && t.videos.every((v) => v.verified),
+);
 const notDrafted = roadmap.techniques.filter((t) => !byslug.has(t.slug));
 
 const lines: string[] = [];
@@ -129,6 +137,16 @@ lines.push(
   "Fill this in whenever you have time. Tell me when there is anything in it and",
   "I will run `add:video`, verify each clip plays from the timestamp, and flip the",
   "technique to `published`.",
+  "",
+  "## What the backlog is now",
+  "",
+  "Every technique already has a clip, because `auto:curate` filled the empty ones",
+  "by matching video *titles* against the technique name. Nobody has watched those,",
+  "they start at 0:00, and the page labels each one **Unverified**.",
+  "",
+  "So the job here is no longer finding a video — it is replacing a guess with a",
+  "timestamp. A pick you add below supersedes nothing automatically: tell me and I",
+  "will drop the unverified clip it replaces.",
   "",
   "## How to fill it in",
   "",
@@ -156,7 +174,9 @@ lines.push(
   "## Where it stands",
   "",
   `- **P0 progress:** ${p0Published.length} of ${p0.length} published`,
-  `- **Waiting on you:** ${needClips.length} technique(s) below`,
+  `- **Watched and timestamped:** ${fullyVerified.length} of ${techniques.length} technique(s)`,
+  `- **Unverified clips awaiting a look:** ${unverified.length}`,
+  `- **Still short of the two-clip gate:** ${needClips.length} technique(s)`,
   `- **Not drafted yet:** ${notDrafted.length} (they appear here once I write them)`,
   "",
   "---",
@@ -165,7 +185,13 @@ lines.push(
 
 for (const t of techniques) {
   const missing = gap(t);
-  const status = missing.length === 0 ? "✅ ready" : "⏳ needs clips";
+  const guesses = t.videos.filter((v) => v.verified === false).length;
+  const status =
+    missing.length > 0
+      ? "⏳ needs clips"
+      : guesses > 0
+        ? `⚠️ ${guesses} unverified`
+        : "✅ watched";
 
   lines.push(
     `## ${t.name}`,
@@ -177,8 +203,12 @@ for (const t of techniques) {
   if (t.videos.length > 0) {
     lines.push("Already curated:", "");
     for (const v of t.videos) {
-      const at = v.start > 0 ? ` from ${Math.floor(v.start / 60)}:${String(v.start % 60).padStart(2, "0")}` : "";
-      lines.push(`- ${v.title} — ${v.channel} · ${v.type}${at}`);
+      const at =
+        v.start > 0
+          ? ` from ${Math.floor(v.start / 60)}:${String(v.start % 60).padStart(2, "0")}`
+          : "";
+      const mark = v.verified ? "" : " · **unverified, needs a timestamp**";
+      lines.push(`- ${v.title} — ${v.channel} · ${v.type}${at}${mark}`);
     }
     lines.push("");
   }
@@ -187,7 +217,11 @@ for (const t of techniques) {
     lines.push(`**Still needed:** ${missing.join("; ")}.`, "");
   } else {
     lines.push(
-      "Nothing needed. Add more only if you find something clearly better.",
+      guesses > 0
+        ? `**${guesses} of these was picked off its title and never watched.** ` +
+            "A timestamped replacement is the single most useful thing you can " +
+            "add here."
+        : "Nothing needed. Add more only if you find something clearly better.",
       "",
     );
   }
@@ -243,9 +277,7 @@ fs.writeFileSync(OUT, lines.join("\n"), "utf8");
 
 log.ok(`wrote ${style.cyan(path.relative(ROOT, OUT))}`);
 if (carried.size > 0) {
-  log.info(
-    style.dim(`  carried over picks for ${carried.size} technique(s)`),
-  );
+  log.info(style.dim(`  carried over picks for ${carried.size} technique(s)`));
 }
 log.info(
   style.dim(

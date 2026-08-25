@@ -170,7 +170,26 @@
     "kitchen-line",
     "pop-up"
   ],
-  "videos": [],
-  "status": "draft",
-  "updatedAt": "2026-08-24"
+  "videos": [
+    {
+      "youtubeId": "-nnYRxM87FA",
+      "title": "The Pickleball Counter Attack: The Most Ignored Pickleball Weapon",
+      "channel": "PlayPickleball.com",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "YV96lik_vuA",
+      "title": "How to Improve Your Counter Attack Game with Ben Johns",
+      "channel": "Pickleball 360",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }

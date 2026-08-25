@@ -197,7 +197,26 @@
     "kitchen",
     "banger"
   ],
-  "videos": [],
-  "status": "draft",
-  "updatedAt": "2026-08-24"
+  "videos": [
+    {
+      "youtubeId": "B2JYosKGZfs",
+      "title": "How to Master The Reset in Pickleball",
+      "channel": "Enhance Pickleball",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "hwirvU2N-k4",
+      "title": "HOW to Hit a RESET | The Pickleball Clinic",
+      "channel": "The Pickleball Clinic",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }

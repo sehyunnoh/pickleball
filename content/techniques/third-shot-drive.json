@@ -195,7 +195,25 @@
     "banger",
     "pop-up"
   ],
-  "videos": [],
-  "status": "draft",
-  "updatedAt": "2026-08-24"
+  "videos": [
+    {
+      "youtubeId": "JZpMT1h5L2k",
+      "title": "How to Hit a Third Shot Drive Like Collin Johns",
+      "channel": "Pickleball 360",
+      "type": "instruction",
+      "start": 0,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "WAP-wN5Wjjw",
+      "title": "A 3rd Shot Drive Strategy MasterClass",
+      "channel": "ThatPickleballGuy - Kyle Koszuta",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }
