@@ -321,9 +321,9 @@ draft로 남겨 두는 쪽이 맞다.
 
 | 항목 | 내용 |
 |---|---|
-| P1 기술 10개 추가 | Topspin Dink, Roll Volley, Backhand Flick, Bert, Poach, Stacking 등 |
+| ~~P1 기술 10개 추가~~ | **완료** — 11개 작성·published |
 | **AdSense** | 콘텐츠 20개 이상 + 월 방문이 붙은 뒤 신청. 슬롯 위치는 이미 확보돼 있음(`components/AdSlot.tsx`), 승인 후 `NEXT_PUBLIC_ADS_ENABLED=true` + `<ins>` 태그 + 인증 CMP |
-| 학습 경로 (`/paths`) | "Get to the kitchen", "Stop getting attacked", "Win more third shots" |
+| ~~학습 경로 (`/paths`)~~ | **완료** (2026-08-25). 3개: Get to the kitchen / Stop getting attacked / Win more third shots. `content/paths/*.json` + `PathSchema`. 증상으로 색인하고, `validate`가 각 단계의 slug 해석과 draft 참조를 막는다 |
 | 콘텐츠 유지보수 | 죽은 링크 교체, 신규 영상 반영 (월 1회 루틴) |
 | **Phase 2: 시합 정보** | 수집 방식 재논의 필요 → **별도 요구문서부터** 작성 |
 | Phase 3: 계정 | 진도 서버 동기화, 즐겨찾기 |

@@ -2,10 +2,12 @@ import fs from "node:fs";
 import path from "node:path";
 import { z } from "zod";
 import {
+  PathSchema,
   RoadmapSchema,
   TechniqueSchema,
   TermSchema,
   VenueSchema,
+  type Path,
   type Roadmap,
   type Technique,
   type Term,
@@ -27,6 +29,7 @@ const CONTENT_DIR = path.join(process.cwd(), "content");
 const TECHNIQUES_DIR = path.join(CONTENT_DIR, "techniques");
 const GLOSSARY_DIR = path.join(CONTENT_DIR, "glossary");
 const VENUES_DIR = path.join(CONTENT_DIR, "venues");
+const PATHS_DIR = path.join(CONTENT_DIR, "paths");
 
 /**
  * Drafts are excluded from production builds so unfinished techniques can be
@@ -146,6 +149,20 @@ export function getVenues(): Venue[] {
       (b.courts ?? 0) - (a.courts ?? 0) ||
       a.name.localeCompare(b.name),
   );
+}
+
+/**
+ * Learning paths, in the order the files sort.
+ *
+ * Deliberately not sorted by anything clever: there are three of them and the
+ * order they are offered in is an editorial decision, not a computed one.
+ */
+export function getPaths(): Path[] {
+  return [...parseAll(PATHS_DIR, PathSchema, "path").values()];
+}
+
+export function getPath(slug: string): Path | undefined {
+  return getPaths().find((p) => p.slug === slug);
 }
 
 /** What Phase 1 plans to cover. See RoadmapSchema for why this exists. */

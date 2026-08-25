@@ -1,0 +1,32 @@
+{
+  "slug": "get-to-the-kitchen",
+  "title": "Get to the kitchen",
+  "problem": "You spend most of the rally stuck near the baseline while the other team stands at the net hitting down at you. You know you are supposed to be up there. You just never seem to get there.",
+  "outcome": "You arrive at the kitchen line on most rallies, stopped and low, instead of arriving late or not at all.",
+  "steps": [
+    {
+      "technique": "split-step",
+      "why": "Everything else here is footwork, and this is the piece of footwork the rest is built on. Start here even though it feels too small to matter."
+    },
+    {
+      "technique": "deep-return",
+      "why": "As the returning team you get a free walk forward, but only if your return is deep enough to buy the seconds. A short return spends them before you have moved."
+    },
+    {
+      "technique": "return-and-advance",
+      "why": "The habit, not the shot. Most players hit a good return and then watch it land, which is where the free walk gets thrown away."
+    },
+    {
+      "technique": "third-shot-drop",
+      "why": "Serving is the disadvantage: you cannot walk in behind the serve. The drop is what buys the same seconds the return gave you for free."
+    },
+    {
+      "technique": "transition-zone-footwork",
+      "why": "The stretch between baseline and kitchen is where most of this goes wrong. Getting through it is a sequence of stops, not a run."
+    },
+    {
+      "technique": "kitchen-line-positioning",
+      "why": "Arriving is not the same as holding. A foot too far back hands the advantage straight back to the other team."
+    }
+  ]
+}

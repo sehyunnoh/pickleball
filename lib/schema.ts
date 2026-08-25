@@ -349,6 +349,38 @@ export const VenueSchema = z.strictObject({
   checkedAt: isoDate,
 });
 
+/**
+ * `content/paths/*.json` — a curated route through techniques that already
+ * exist, aimed at one complaint.
+ *
+ * The skill tree answers "what depends on what" and is derived from the
+ * technique files. A path answers something different and unavoidably
+ * editorial: "I keep getting pushed off the net, what do I read, in what
+ * order, and why that order." Nothing here can be derived, which is why it is
+ * authored rather than computed.
+ *
+ * `problem` is the entry point. Somebody arriving at this site can rarely name
+ * the shot they are missing — they can only name the thing that keeps
+ * happening to them, so that is what a path is indexed by.
+ */
+export const PathSchema = z.strictObject({
+  slug,
+  title: z.string().min(1),
+  /** The symptom, in the reader's words. Not the solution. */
+  problem: z.string().min(1),
+  /** What changes once the path is finished. */
+  outcome: z.string().min(1),
+  steps: z
+    .array(
+      z.strictObject({
+        technique: slug,
+        /** Why this one, here. A path without reasons is just a list. */
+        why: z.string().min(1),
+      }),
+    )
+    .min(3),
+});
+
 export const TermSchema = z.strictObject({
   slug,
   term: z.string().min(1),
@@ -392,6 +424,7 @@ export type ShotPath = z.infer<typeof ShotPathSchema>;
 export type Comparison = z.infer<typeof ComparisonSchema>;
 export type CourtRole = (typeof COURT_ROLES)[number];
 export type Roadmap = z.infer<typeof RoadmapSchema>;
+export type Path = z.infer<typeof PathSchema>;
 export type Venue = z.infer<typeof VenueSchema>;
 export type VenueKind = (typeof VENUE_KINDS)[number];
 export type VenueAccess = (typeof VENUE_ACCESS)[number];

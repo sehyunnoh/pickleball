@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getTechniques, getTerms, getVenues } from "@/lib/content";
+import { getPaths, getTechniques, getTerms, getVenues } from "@/lib/content";
 import { siteUrl } from "@/lib/seo";
 
 /**
@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const techniques = getTechniques();
   const terms = getTerms();
   const venues = getVenues();
+  const paths = getPaths();
 
   const newest = techniques
     .map((t) => t.updatedAt)
@@ -42,6 +43,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    {
+      // Paths are an entry point for people who cannot name the shot they
+      // need, which is most of the long tail this site is aiming at.
+      url: `${base}/paths`,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    ...paths.map((p) => ({
+      url: `${base}/paths/${p.slug}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
     {
       url: `${base}/about`,
       changeFrequency: "yearly",

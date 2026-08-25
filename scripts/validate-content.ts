@@ -1,6 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
-import { loadAllTechniques, loadAllTerms, loadRoadmap } from "../lib/content";
+import {
+  getPaths,
+  loadAllTechniques,
+  loadAllTerms,
+  loadRoadmap,
+} from "../lib/content";
 import { AutoVideosFileSchema, type Technique } from "../lib/schema";
 import { GENERATED_DIR, log, style } from "./_shared";
 
@@ -28,6 +33,7 @@ const warn = (where: string, msg: string) => warnings.push(`${where} → ${msg}`
 // Layer 1: the loaders throw with a formatted report if any file is malformed.
 const techniques = loadAllTechniques();
 const terms = loadAllTerms();
+const paths = getPaths();
 const roadmap = loadRoadmap();
 
 const plannedTechniques = new Set(roadmap.techniques.map((t) => t.slug));
@@ -198,6 +204,42 @@ const published = [...techniques.values()].filter(
   (t) => t.status === "published",
 );
 const clips = published.reduce((n, t) => n + t.videos.length, 0);
+
+/**
+ * A path is a hand-written route through techniques, so every step is a slug
+ * somebody typed. A broken one is worse here than in `prerequisites`: the
+ * skill tree renders a forward reference as an unlinked node and carries on,
+ * whereas a path step that resolves to nothing is a numbered instruction to
+ * go read a page that is not there.
+ *
+ * Published-only, because that is what a reader can actually follow. Pointing
+ * step three at a draft strands them halfway.
+ */
+for (const path of paths) {
+  const where = `paths/${path.slug}.json`;
+  const seen = new Set<string>();
+
+  for (const [i, step] of path.steps.entries()) {
+    const target = techniques.get(step.technique);
+    checkRef(
+      where,
+      `step ${i + 1}`,
+      step.technique,
+      target !== undefined,
+      plannedTechniques.has(step.technique),
+    );
+    if (target && target.status !== "published") {
+      err(
+        where,
+        `step ${i + 1} sends the reader to "${step.technique}", which is still a draft`,
+      );
+    }
+    if (seen.has(step.technique)) {
+      err(where, `"${step.technique}" appears twice in the same path`);
+    }
+    seen.add(step.technique);
+  }
+}
 
 const p0 = roadmap.techniques.filter((t) => t.priority === "P0");
 const p0Published = p0.filter(

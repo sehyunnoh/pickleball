@@ -52,6 +52,7 @@ deferred to Phase 7 (user accounts). Everything is SSG.
 ```
 content/techniques/*.json   one file per technique  (schema: REQUIREMENTS.md §7.1)
 content/glossary/*.json     one file per term       (§7.2)
+content/paths/*.json        curated routes through techniques — authored, not derived
 data/generated/            videos-auto.json — build-script output, IS committed
 lib/schema.ts              Zod schemas — single source of truth
 lib/content.ts             load + validate + derive the skill-tree graph

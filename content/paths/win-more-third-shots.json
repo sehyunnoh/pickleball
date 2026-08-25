@@ -1,0 +1,28 @@
+{
+  "slug": "win-more-third-shots",
+  "title": "Win more third shots",
+  "problem": "Your team holds serve badly. The rally starts fine, then the third shot either goes into the net or floats up and gets put away, and you never make it forward.",
+  "outcome": "You have two third shots rather than one, you can tell which the ball in front of you is asking for, and losing the point on it stops being the default.",
+  "steps": [
+    {
+      "technique": "return-and-advance",
+      "why": "Start on the other side of it. Understanding what the returning team gets for free is what makes the serving team's problem make sense."
+    },
+    {
+      "technique": "third-shot-drop",
+      "why": "The answer most of the time. It does not win the point — it takes the other team's advantage away and lets you walk in."
+    },
+    {
+      "technique": "third-shot-drive",
+      "why": "The other answer, for the ball the drop is wrong for. Aimed at a person rather than at space, and looking for a weak block rather than a winner."
+    },
+    {
+      "technique": "transition-zone-footwork",
+      "why": "Both shots are only worth something if you move behind them properly. This is where a good third shot still loses the point."
+    },
+    {
+      "technique": "shake-and-bake",
+      "why": "What the drive is actually for, once your partner knows to crash on it. It turns the drive from a hopeful shot into a play."
+    }
+  ]
+}
