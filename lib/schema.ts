@@ -85,6 +85,18 @@ export const VideoSchema = z
      *  the time it costs. See DEVELOPMENT_PLAN.md §11. */
     end: z.int().min(1).optional(),
     note: z.string().min(1).optional(),
+    /**
+     * Whether a human has actually watched this clip and confirmed that the
+     * technique is on screen at `start`.
+     *
+     * False means it was chosen by matching the video's *title* against the
+     * technique name — nobody has seen it. Those clips carry a label on the
+     * page saying so, because a site whose pitch is hand-picked timestamps
+     * cannot quietly mix in guesses. Flipping one to true is what watching it
+     * buys you. Defaults to true so the clips curated before this field
+     * existed keep their meaning.
+     */
+    verified: z.boolean().default(true),
     curatedAt: isoDate,
   })
   .refine((v) => v.end === undefined || v.end > v.start, {

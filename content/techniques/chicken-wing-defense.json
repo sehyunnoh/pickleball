@@ -165,7 +165,26 @@
     "ready-position",
     "pop-up"
   ],
-  "videos": [],
-  "status": "draft",
-  "updatedAt": "2026-08-24"
+  "videos": [
+    {
+      "youtubeId": "N0kiSLEyAFc",
+      "title": "The Pickleball Chicken Wing - And What They Don't Tell You (WTDTY)",
+      "channel": "PickleSmith Pickleball",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "2WmxGZoKVR0",
+      "title": "Helpful tips to block body shot and not get chicken winged in pickleball",
+      "channel": "Pickle ball 411",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }

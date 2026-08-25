@@ -164,7 +164,26 @@
     "baseline",
     "pop-up"
   ],
-  "videos": [],
-  "status": "draft",
-  "updatedAt": "2026-08-24"
+  "videos": [
+    {
+      "youtubeId": "Nv-uBitJ52c",
+      "title": "Ultimate Offensive Lob Drill | Pickleball",
+      "channel": "PrimeTime Pickleball",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "KCAjD1oS7jQ",
+      "title": "How & When to Lob in Pickleball!",
+      "channel": "Enhance Pickleball",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }

@@ -208,7 +208,25 @@
     "kitchen",
     "kitchen-line"
   ],
-  "videos": [],
-  "status": "draft",
-  "updatedAt": "2026-08-23"
+  "videos": [
+    {
+      "youtubeId": "5-ty-cyg6sI",
+      "title": "How To Dink In Pickleball, The RIGHT Way: The Definitive Beginner's Guide to Dinking",
+      "channel": "PlayPickleball.com",
+      "type": "instruction",
+      "start": 0,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "nRo0mvVA-DM",
+      "title": "NEVER Lose Another Dink Battle With These 8 Tips 🎯",
+      "channel": "Enhance Pickleball",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }

@@ -13,7 +13,8 @@
     "add:video": "tsx scripts/add-video.ts",
     "fetch:videos": "tsx scripts/fetch-videos.ts",
     "check:links": "tsx scripts/check-links.ts",
-    "curation:sheet": "tsx scripts/curation-sheet.ts"
+    "curation:sheet": "tsx scripts/curation-sheet.ts",
+    "auto:curate": "tsx scripts/auto-curate.ts"
   },
   "dependencies": {
     "@next/third-parties": "^16.3.2",

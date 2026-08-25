@@ -169,7 +169,25 @@
     "kitchen-line",
     "pop-up"
   ],
-  "videos": [],
-  "status": "draft",
-  "updatedAt": "2026-08-24"
+  "videos": [
+    {
+      "youtubeId": "o8i3o_ImVZ4",
+      "title": "Mastering the Pickleball Cross-Court Dink",
+      "channel": "Selkirk TV",
+      "type": "instruction",
+      "start": 0,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "RjPwfV-IHts",
+      "title": "How to Hit a Forehand Dink Like a PRO!",
+      "channel": "The Pickleball Clinic",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }

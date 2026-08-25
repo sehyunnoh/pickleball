@@ -1,23 +1,25 @@
 {
   "slug": "deep-return",
   "name": "Deep Return",
-  "aka": ["deep return of serve"],
-
+  "aka": [
+    "deep return of serve"
+  ],
   "category": "return",
   "difficulty": "beginner",
-  "courtZone": ["baseline"],
-  "situation": ["return"],
+  "courtZone": [
+    "baseline"
+  ],
+  "situation": [
+    "return"
+  ],
   "handedness": "both",
-
   "summary": "The deep return is the second shot of every rally: you send the serve back as close to the opponents' baseline as you safely can. Depth pins the serving team behind their baseline, makes their third shot harder, and buys you the seconds you need to walk to the kitchen line. A short return hands all of that back.",
-
   "whenToUse": [
     "Every serve. Depth is the default return, not a shot you choose occasionally.",
     "The serve lands short and you have time to step in and swing through it.",
     "The serving team is creeping forward and you want to push them back behind the baseline.",
     "You want to reach the kitchen line before the third shot arrives."
   ],
-
   "howTo": [
     "Start a step or two behind the baseline so a deep serve cannot jam you.",
     "Let the serve bounce — the return must bounce, so take it after it comes up.",
@@ -26,7 +28,6 @@
     "Start walking forward as soon as the ball leaves your paddle.",
     "Split-step as they make contact on the third shot."
   ],
-
   "commonMistakes": [
     "Returning short into the middle, which lets the serving team play a comfortable third shot from inside the baseline.",
     "Receiving with your feet on the baseline, so a deep serve arrives at your shoelaces.",
@@ -34,7 +35,6 @@
     "Watching the return land instead of moving — the depth is only worth something if you use the time it buys.",
     "Aiming so close to the baseline that you hand over free points on returns that sail long."
   ],
-
   "drills": [
     {
       "name": "Return to the deep third",
@@ -43,11 +43,31 @@
       "players": 2,
       "court": {
         "players": [
-          { "role": "you", "at": [13, -2] },
-          { "role": "feeder", "at": [7, 45] }
+          {
+            "role": "you",
+            "at": [
+              13,
+              -2
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              7,
+              45
+            ]
+          }
         ],
         "targets": [
-          { "label": "target", "at": [10, 41], "width": 16, "depth": 4 }
+          {
+            "label": "target",
+            "at": [
+              10,
+              41
+            ],
+            "width": 16,
+            "depth": 4
+          }
         ]
       }
     },
@@ -58,45 +78,138 @@
       "players": 2,
       "court": {
         "players": [
-          { "role": "you", "at": [13, -2] },
-          { "role": "feeder", "at": [7, 45] }
+          {
+            "role": "you",
+            "at": [
+              13,
+              -2
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              7,
+              45
+            ]
+          }
         ],
-        "movement": [{ "role": "you", "from": [13, -2], "to": [13, 13] }]
+        "movement": [
+          {
+            "role": "you",
+            "from": [
+              13,
+              -2
+            ],
+            "to": [
+              13,
+              13
+            ]
+          }
+        ]
       }
     }
   ],
-
   "court": {
     "players": [
-      { "role": "you", "at": [13, -2] },
-      { "role": "partner", "at": [6, 14.5] },
-      { "role": "opponent", "at": [7, 45] },
-      { "role": "opponent", "at": [14, 45] }
+      {
+        "role": "you",
+        "at": [
+          13,
+          -2
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          6,
+          14.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          7,
+          45
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          14,
+          45
+        ]
+      }
     ],
     "shot": {
-      "from": [13, -2],
-      "to": [11, 41],
+      "from": [
+        13,
+        -2
+      ],
+      "to": [
+        11,
+        41
+      ],
       "peakAt": 0.5,
       "peakHeight": 11
     },
     "mistake": {
       "label": "Short: they step inside the baseline, hit a comfortable third shot, and you are still walking.",
       "path": {
-        "from": [13, -2],
-        "to": [11, 32],
+        "from": [
+          13,
+          -2
+        ],
+        "to": [
+          11,
+          32
+        ],
         "peakAt": 0.45,
         "peakHeight": 7
       }
     },
-    "movement": [{ "role": "you", "from": [13, -2], "to": [13, 13] }]
+    "movement": [
+      {
+        "role": "you",
+        "from": [
+          13,
+          -2
+        ],
+        "to": [
+          13,
+          13
+        ]
+      }
+    ]
   },
-
-  "prerequisites": ["split-step"],
-  "leadsTo": ["return-and-advance"],
-  "relatedTerms": ["baseline", "kitchen-line"],
-
-  "videos": [],
-
-  "status": "draft",
-  "updatedAt": "2026-08-23"
+  "prerequisites": [
+    "split-step"
+  ],
+  "leadsTo": [
+    "return-and-advance"
+  ],
+  "relatedTerms": [
+    "baseline",
+    "kitchen-line"
+  ],
+  "videos": [
+    {
+      "youtubeId": "ZyeZown9rTc",
+      "title": "The Best Way to Return Serves in 2025",
+      "channel": "John Cincola Pickleball",
+      "type": "instruction",
+      "start": 0,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "OxNnewWzUC4",
+      "title": "The PERFECT Pickleball Return of Serve: Rules and Tips To Level Up",
+      "channel": "PlayPickleball.com",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }

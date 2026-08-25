@@ -164,7 +164,26 @@
     "grit",
     "dinking-rally"
   ],
-  "videos": [],
-  "status": "draft",
-  "updatedAt": "2026-08-24"
+  "videos": [
+    {
+      "youtubeId": "B5ItdwGVXxU",
+      "title": "How to Hit a Topspin Dink!",
+      "channel": "The Pickleball Clinic",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "marjWjAWfbk",
+      "title": "Forehand Cross Court Topspin Dink | How to put some action on your dink",
+      "channel": "PrimeTime Pickleball",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }

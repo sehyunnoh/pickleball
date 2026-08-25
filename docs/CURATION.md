@@ -7,6 +7,16 @@ Fill this in whenever you have time. Tell me when there is anything in it and
 I will run `add:video`, verify each clip plays from the timestamp, and flip the
 technique to `published`.
 
+## What the backlog is now
+
+Every technique already has a clip, because `auto:curate` filled the empty ones
+by matching video *titles* against the technique name. Nobody has watched those,
+they start at 0:00, and the page labels each one **Unverified**.
+
+So the job here is no longer finding a video — it is replacing a guess with a
+timestamp. A pick you add below supersedes nothing automatically: tell me and I
+will drop the unverified clip it replaces.
+
 ## How to fill it in
 
 Under each technique, between the `picks` comment markers, put **one line per clip**:
@@ -32,17 +42,25 @@ slow-motion clip or a clear example from a real game.
 
 ## Where it stands
 
-- **P0 progress:** 1 of 19 published
-- **Waiting on you:** 29 technique(s) below
+- **P0 progress:** 19 of 19 published
+- **Watched and timestamped:** 3 of 30 technique(s)
+- **Unverified clips awaiting a look:** 47
+- **Still short of the two-clip gate:** 1 technique(s)
 - **Not drafted yet:** 0 (they appear here once I write them)
 
 ---
 
 ## Volley Serve
 
-`volley-serve` · serve · beginner · **⏳ needs clips**
+`volley-serve` · serve · beginner · **✅ watched**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- Which Pickleball Serve Should You Use? Drop Serve vs. Volley Serve Training — The Pickleball Clinic · instruction from 2:16
+- Pickleball Volley and Drop Serve Rules: Know the Difference! — pickleballmax · instruction from 0:40
+- Pickleball Volley Serve: Where to Hold the Ball for Maximum Accuracy! 🎯 #pickleballtips #pickleball — We Play Pickleball · instruction
+
+Nothing needed. Add more only if you find something clearly better.
 
 <!-- picks:volley-serve -->
 <!-- One line per clip:
@@ -70,9 +88,14 @@ slow-motion clip or a clear example from a real game.
 
 ## Drop Serve
 
-`drop-serve` · serve · beginner · **⏳ needs clips**
+`drop-serve` · serve · beginner · **✅ watched**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- Pickleball Volley and Drop Serve Rules: Know the Difference! — pickleballmax · instruction from 1:18
+- Which Pickleball Serve Should You Use? Drop Serve vs. Volley Serve Training — The Pickleball Clinic · instruction from 0:14
+
+Nothing needed. Add more only if you find something clearly better.
 
 <!-- picks:drop-serve -->
 <!-- One line per clip:
@@ -88,9 +111,14 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only drop-serve`._
 
 ## Deep Return
 
-`deep-return` · return · beginner · **⏳ needs clips**
+`deep-return` · return · beginner · **⚠️ 1 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- The Best Way to Return Serves in 2025 — John Cincola Pickleball · instruction
+- The PERFECT Pickleball Return of Serve: Rules and Tips To Level Up — PlayPickleball.com · instruction · **unverified, needs a timestamp**
+
+**1 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:deep-return -->
 <!-- One line per clip:
@@ -118,9 +146,14 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only drop-serve`._
 
 ## Return and Advance
 
-`return-and-advance` · return · beginner · **⏳ needs clips**
+`return-and-advance` · return · beginner · **⚠️ 1 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- The SECRET to Returning Serves in Pickleball — The Pickleball Clinic · instruction
+- 5 Advanced Pickleball Return Strategies to Outplay Your Opponents — ThatPickleballGuy - Kyle Koszuta · instruction · **unverified, needs a timestamp**
+
+**1 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:return-and-advance -->
 <!-- One line per clip:
@@ -148,12 +181,16 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only drop-serve`._
 
 ## Third Shot Drop
 
-`third-shot-drop` · transition · intermediate · **✅ ready**
+`third-shot-drop` · transition · intermediate · **✅ watched**
 
 Already curated:
 
 - World #1 Ben Johns Teaches the Third Shot Drop! — The Pickleball Clinic · instruction from 0:20
 - 6 Ways to Hit a Third Shot Drop — PlayPickleball.com · instruction from 0:21
+- 3 Places to Hit Your Third-Shot Drop in Pickleball #pickleball #shorts — Max Kazijevs Pickleball · instruction
+- Do’s and Don’ts For Third Shot Drop! — Shea Underwood - Pickleball · instruction
+- How to hit a 3rd shot drop — Pickleball_Health · instruction
+- The 3rd Shot Drop is SO EASY When You Know This (Scientific Method) — Enhance Pickleball · instruction from 0:21
 
 Nothing needed. Add more only if you find something clearly better.
 
@@ -171,9 +208,14 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only third-shot-dr
 
 ## Third Shot Drive
 
-`third-shot-drive` · transition · intermediate · **⏳ needs clips**
+`third-shot-drive` · transition · intermediate · **⚠️ 1 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- How to Hit a Third Shot Drive Like Collin Johns — Pickleball 360 · instruction
+- A 3rd Shot Drive Strategy MasterClass — ThatPickleballGuy - Kyle Koszuta · instruction · **unverified, needs a timestamp**
+
+**1 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:third-shot-drive -->
 <!-- One line per clip:
@@ -201,9 +243,14 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only third-shot-dr
 
 ## Dink (Straight)
 
-`dink-straight` · soft-game · beginner · **⏳ needs clips**
+`dink-straight` · soft-game · beginner · **⚠️ 1 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- How To Dink In Pickleball, The RIGHT Way: The Definitive Beginner's Guide to Dinking — PlayPickleball.com · instruction
+- NEVER Lose Another Dink Battle With These 8 Tips 🎯 — Enhance Pickleball · instruction · **unverified, needs a timestamp**
+
+**1 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:dink-straight -->
 <!-- One line per clip:
@@ -231,9 +278,14 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only third-shot-dr
 
 ## Dink (Cross-court)
 
-`dink-crosscourt` · soft-game · intermediate · **⏳ needs clips**
+`dink-crosscourt` · soft-game · intermediate · **⚠️ 1 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- Mastering the Pickleball Cross-Court Dink — Selkirk TV · instruction
+- How to Hit a Forehand Dink Like a PRO! — The Pickleball Clinic · instruction · **unverified, needs a timestamp**
+
+**1 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:dink-crosscourt -->
 <!-- One line per clip:
@@ -260,9 +312,14 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only third-shot-dr
 
 ## Topspin Dink
 
-`topspin-dink` · soft-game · advanced · **⏳ needs clips**
+`topspin-dink` · soft-game · advanced · **⚠️ 2 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- How to Hit a Topspin Dink! — The Pickleball Clinic · instruction · **unverified, needs a timestamp**
+- Forehand Cross Court Topspin Dink | How to put some action on your dink — PrimeTime Pickleball · instruction · **unverified, needs a timestamp**
+
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:topspin-dink -->
 <!-- One line per clip:
@@ -272,15 +329,32 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only third-shot-dr
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:topspin-dink -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only topspin-dink`._
+<details>
+<summary>6 candidates from <code>pickleball Topspin Dink tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 4:45 | How to Hit a Topspin Dink! | The Pickleball Clinic | https://youtu.be/B5ItdwGVXxU |
+| 2 | 13:58 | How to Spin Your Dinks in Pickleball (3 Ways) | Enhance Pickleball | https://youtu.be/SiifS1MLrjg |
+| 3 | 3:43 | Learn Slice & Topspin Dinks With World #3 Player James Ignatowich | The Pickleball Clinic | https://youtu.be/LofTNjOIJTE |
+| 4 | 8:33 | Learn Topspin in Just 8 Minutes in Pickleball (BEST Explanation) | tanner.pickleball | https://youtu.be/zUsv0NIVD0c |
+| 5 | 5:17 | 3 Tips to Produce KILLER Topspin in Pickleball \| Pickleball Topspin Tutorial | High Five Pickleball | https://youtu.be/-AfWTK99j9Q |
+| 6 | 5:03 | Forehand Cross Court Topspin Dink \| How to put some action on your dink | PrimeTime Pickleball | https://youtu.be/marjWjAWfbk |
+
+</details>
 
 ---
 
 ## Dead Dink
 
-`dead-dink` · soft-game · intermediate · **⏳ needs clips**
+`dead-dink` · soft-game · intermediate · **⚠️ 2 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- What is a "dead" dink VS a "push" dink in Pickleball? — tanner.pickleball · instruction · **unverified, needs a timestamp**
+- LEARN What a Dead Dink in Pickleball is and HOW TO use it to Counterpunch — The Pickleball Pirates · instruction · **unverified, needs a timestamp**
+
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:dead-dink -->
 <!-- One line per clip:
@@ -290,15 +364,32 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only topspin-dink`
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:dead-dink -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only dead-dink`._
+<details>
+<summary>6 candidates from <code>pickleball Dead Dink tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 1:11 | What is a "dead" dink VS a "push" dink in Pickleball? | tanner.pickleball | https://youtu.be/4Udvu59S-qE |
+| 2 | 4:01 | LEARN What a Dead Dink in Pickleball is and HOW TO use it to Counterpunch | The Pickleball Pirates | https://youtu.be/TQ8HyuTkGkQ |
+| 3 | 9:39 | Stop Hitting Weak Dinks! Do This Instead | Zane Navratil Pickleball | https://youtu.be/5hLPc7GILEM |
+| 4 | 6:57 | How to DINK like a PRO (Pickleball) | tanner.pickleball | https://youtu.be/XW3gyKe20f0 |
+| 5 | 8:20 | NEVER Lose Another Dink Battle With These 8 Tips 🎯 | Enhance Pickleball | https://youtu.be/nRo0mvVA-DM |
+| 6 | 1:40 | Heard of the “Dead” Dink? Should you use it? Find out the answer | Tony Roig Pickleball (formerly In2Pickle) | https://youtu.be/w17NLCk2PQs |
+
+</details>
 
 ---
 
 ## Reset
 
-`reset` · defense · intermediate · **⏳ needs clips**
+`reset` · defense · intermediate · **⚠️ 2 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- How to Master The Reset in Pickleball — Enhance Pickleball · instruction · **unverified, needs a timestamp**
+- HOW to Hit a RESET | The Pickleball Clinic — The Pickleball Clinic · instruction · **unverified, needs a timestamp**
+
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:reset -->
 <!-- One line per clip:
@@ -325,9 +416,14 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only dead-dink`._
 
 ## Block / Counter
 
-`block-counter` · defense · intermediate · **⏳ needs clips**
+`block-counter` · defense · intermediate · **⚠️ 2 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- The Pickleball Counter Attack: The Most Ignored Pickleball Weapon — PlayPickleball.com · instruction · **unverified, needs a timestamp**
+- How to Improve Your Counter Attack Game with Ben Johns — Pickleball 360 · instruction · **unverified, needs a timestamp**
+
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:block-counter -->
 <!-- One line per clip:
@@ -355,9 +451,14 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only dead-dink`._
 
 ## Punch Volley
 
-`punch-volley` · attack · beginner · **⏳ needs clips**
+`punch-volley` · attack · beginner · **⚠️ 2 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- Tired of Hitting into the Net? Roll and Punch Volley Masterclass from a Pickleball Pro — The Flying Pickle Academy · instruction · **unverified, needs a timestamp**
+- How to Hit a Backhand PUNCH VOLLEY! — The Pickleball Clinic · instruction · **unverified, needs a timestamp**
+
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:punch-volley -->
 <!-- One line per clip:
@@ -385,9 +486,14 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only dead-dink`._
 
 ## Roll Volley
 
-`roll-volley` · attack · advanced · **⏳ needs clips**
+`roll-volley` · attack · advanced · **⚠️ 2 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- Learn How to Hit a Roll Volley | 4.0+ Shot and Drill — Pickleball Effect · instruction · **unverified, needs a timestamp**
+- Tired of Hitting into the Net? Roll and Punch Volley Masterclass from a Pickleball Pro — The Flying Pickle Academy · instruction · **unverified, needs a timestamp**
+
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:roll-volley -->
 <!-- One line per clip:
@@ -397,15 +503,32 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only dead-dink`._
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:roll-volley -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only roll-volley`._
+<details>
+<summary>6 candidates from <code>pickleball Roll Volley tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 3:42 | Learn How to Hit a Roll Volley \| 4.0+ Shot and Drill | Pickleball Effect | https://youtu.be/w7R6iIfrXU8 |
+| 2 | 7:15 | Tired of Hitting into the Net? Roll and Punch Volley Masterclass from a Pickleball Pro | The Flying Pickle Academy | https://youtu.be/e-H2pxPiZ70 |
+| 3 | 11:08 | Hit Your Roll Volley Like A Pro \| Easy Upgrades for Better Shots | John Cincola Pickleball | https://youtu.be/LhWd_m6kk6o |
+| 4 | 8:27 | The Roll Volley (4.0+) - Week #8 | Tyson McGuffin Pickleball | https://youtu.be/_OvUkiextu4 |
+| 5 | 5:23 | How to Hit the Perfect Backhand Roll, Poke, and Flick | Zane Navratil Pickleball | https://youtu.be/Do1JmLvTalo |
+| 6 | 6:25 | 3 Pickleball Tips for MASTERING the Roll Volley (THIS Shot Changes Your Game) | High Five Pickleball | https://youtu.be/hxlsmvWDHnI |
+
+</details>
 
 ---
 
 ## Speed-up
 
-`speed-up` · attack · intermediate · **⏳ needs clips**
+`speed-up` · attack · intermediate · **⚠️ 2 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- The Forehand Speed Up Secret: Hit LESS of the Ball — Richard Pickleball · instruction · **unverified, needs a timestamp**
+- Win More Points with the Off Bounce Forehand Speed Up — Richard Pickleball · instruction · **unverified, needs a timestamp**
+
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:speed-up -->
 <!-- One line per clip:
@@ -433,9 +556,14 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only roll-volley`.
 
 ## Backhand Flick
 
-`backhand-flick` · attack · advanced · **⏳ needs clips**
+`backhand-flick` · attack · advanced · **⚠️ 2 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- How to Hit a Backhand Flick in Pickleball Like the Pros! — tanner.pickleball · instruction · **unverified, needs a timestamp**
+- How to Hit the Perfect Backhand Roll, Poke, and Flick — Zane Navratil Pickleball · instruction · **unverified, needs a timestamp**
+
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:backhand-flick -->
 <!-- One line per clip:
@@ -445,15 +573,32 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only roll-volley`.
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:backhand-flick -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only backhand-flick`._
+<details>
+<summary>6 candidates from <code>pickleball Backhand Flick tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 8:10 | How to Hit a Backhand Flick in Pickleball Like the Pros! | tanner.pickleball | https://youtu.be/lwPY-1tSwyI |
+| 2 | 5:23 | How to Hit the Perfect Backhand Roll, Poke, and Flick | Zane Navratil Pickleball | https://youtu.be/Do1JmLvTalo |
+| 3 | 12:35 | How to Hit a Backhand Flick (The Ultimate Guide) | ThatPickleballGuy - Kyle Koszuta | https://youtu.be/6kRQFJomZwg |
+| 4 | 8:25 | How To Hit the Backhand Roll in Pickleball \| Ben Johns | Ben Johns  | https://youtu.be/pt3HWfs7YCs |
+| 5 | 4:23 | Fix Your Pickleball Backhand In 5 EASY STEPS - Enhance Pickleball | Enhance Pickleball | https://youtu.be/M-fU4cQz95Q |
+| 6 | 11:18 | The COMPLETE Guide To The Backhand Punch, Roll, & Flick In Pickleball! | Michael Oakson | https://youtu.be/DB1Ofdt4FTU |
+
+</details>
 
 ---
 
 ## Overhead / Smash
 
-`overhead-smash` · attack · intermediate · **⏳ needs clips**
+`overhead-smash` · attack · intermediate · **⚠️ 2 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- How to Hit a PERFECT Pickleball SMASH In 3 Easy Steps (Get More POWER & CONSISTENCY in 4 Minutes) — High Five Pickleball · instruction · **unverified, needs a timestamp**
+- How to hit an overhead smash in pickleball! #pickleballtips #pickleball — tanner.pickleball · instruction · **unverified, needs a timestamp**
+
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:overhead-smash -->
 <!-- One line per clip:
@@ -481,9 +626,14 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only backhand-flic
 
 ## Offensive Lob
 
-`offensive-lob` · specialty · advanced · **⏳ needs clips**
+`offensive-lob` · specialty · advanced · **⚠️ 2 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- Ultimate Offensive Lob Drill | Pickleball — PrimeTime Pickleball · instruction · **unverified, needs a timestamp**
+- How & When to Lob in Pickleball! — Enhance Pickleball · instruction · **unverified, needs a timestamp**
+
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:offensive-lob -->
 <!-- One line per clip:
@@ -511,9 +661,14 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only backhand-flic
 
 ## Defensive Lob
 
-`defensive-lob` · defense · intermediate · **⏳ needs clips**
+`defensive-lob` · defense · intermediate · **⚠️ 2 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- Sky Lob | The Defensive Skill Every Pickleball Player MUST Learn — ThatPickleballGuy - Kyle Koszuta · instruction · **unverified, needs a timestamp**
+- How & When to Lob in Pickleball! — Enhance Pickleball · instruction · **unverified, needs a timestamp**
+
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:defensive-lob -->
 <!-- One line per clip:
@@ -523,15 +678,32 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only backhand-flic
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:defensive-lob -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only defensive-lob`._
+<details>
+<summary>6 candidates from <code>pickleball Defensive Lob tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 16:53 | How & When to Lob in Pickleball! | Enhance Pickleball | https://youtu.be/KCAjD1oS7jQ |
+| 2 | 7:10 | Sky Lob \| The Defensive Skill Every Pickleball Player MUST Learn | ThatPickleballGuy - Kyle Koszuta | https://youtu.be/Kbl0Q0BorQk |
+| 3 | 2:58 | MASTERING the Art of the Pickleball Lob 🙌 (Players Never DO THIS)❗️ | Selkirk TV | https://youtu.be/NH3Hu6qwW1c |
+| 4 | 1:34 | how to lob like a pickleball pro like Anna Bright 😎 #pickleball #pickleballtips #pickleballers | Asia Pickleball TV | https://youtu.be/gD-dWO8hAxw |
+| 5 | 11:35 | 5 Steps to DEFEND the Pickleball Lob (Super Simple!) | Troy Akin Pickleball | https://youtu.be/pbegRlgVpxQ |
+| 6 | 6:20 | How to Defend the Pickleball Lob (As a Senior) | Selkirk TV | https://youtu.be/EWaUlEQxVoc |
+
+</details>
 
 ---
 
 ## Around the Post (ATP)
 
-`atp` · specialty · advanced · **⏳ needs clips**
+`atp` · specialty · advanced · **⚠️ 2 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- Learn this Pickleball Shot to TRANSFORM Your Game | Around The Post (ATP) — ThatPickleballGuy - Kyle Koszuta · instruction · **unverified, needs a timestamp**
+- Around The Post (ATP) Defense | Stopping the Toughest Shot in Pickleball — ThatPickleballGuy - Kyle Koszuta · instruction · **unverified, needs a timestamp**
+
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:atp -->
 <!-- One line per clip:
@@ -559,9 +731,14 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only defensive-lob
 
 ## Erne
 
-`erne` · specialty · advanced · **⏳ needs clips**
+`erne` · specialty · advanced · **⚠️ 2 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- Master the Erne: A MUST HAVE WEAPON in Your Pickleball Game — ThatPickleballGuy - Kyle Koszuta · instruction · **unverified, needs a timestamp**
+- Master the Pickleball Erne in Under 2 Minutes! — Josh J Pickleball · instruction · **unverified, needs a timestamp**
+
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:erne -->
 <!-- One line per clip:
@@ -600,12 +777,15 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only defensive-lob
 <!-- /picks:bert -->
 
 <details>
-<summary>2 candidates from <code>pickleball what is a bert tutorial</code> — titles only, nobody has watched these</summary>
+<summary>5 candidates from <code>pickleball pickleball bert vs erne explained tutorial</code> — titles only, nobody has watched these</summary>
 
 | | Length | Title | Channel | Link |
 |---|---|---|---|---|
 | 1 | 9:42 | Master the Erne: A MUST HAVE WEAPON in Your Pickleball Game | ThatPickleballGuy - Kyle Koszuta | https://youtu.be/ShAIo7efwyA |
-| 2 | 3:22 | Erne 101: What Every Pickleball Player Should Know | Curt In Motion | https://youtu.be/WG-g2L-am08 |
+| 2 | 14:28 | The Erne; In-Game Breakdown of Pickleball’s Coolest Shot | ThatPickleballGuy - Kyle Koszuta | https://youtu.be/JCiPxO2gwaQ |
+| 3 | 5:25 | Learn this Pickleball Shot to TRANSFORM Your Game \| Around The Post (ATP) | ThatPickleballGuy - Kyle Koszuta | https://youtu.be/oFrz13ngYrw |
+| 4 | 1:06 | The ONLY Erne Video You'll EVER NEED | Cori Elliott | https://youtu.be/cLhXFdB1pVQ |
+| 5 | 8:53 | Pro Pickleball Dinking Patterns Explained! - Play an Aggressive Right Side | Zane Navratil Pickleball | https://youtu.be/C_kSFztGCog |
 
 </details>
 
@@ -613,9 +793,14 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only defensive-lob
 
 ## Poach
 
-`poach` · strategy · intermediate · **⏳ needs clips**
+`poach` · strategy · intermediate · **⚠️ 2 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- How to Poach Like a Pro (Without Making Your Partner Hate You) — John Cincola Pickleball · instruction · **unverified, needs a timestamp**
+- The PERFECT Poach in Pickleball! Win More Points at the Net — Richard Pickleball · instruction · **unverified, needs a timestamp**
+
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:poach -->
 <!-- One line per clip:
@@ -625,15 +810,32 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only defensive-lob
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:poach -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only poach`._
+<details>
+<summary>6 candidates from <code>pickleball Poach tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 5:44 | How to Poach Like a Pro (Without Making Your Partner Hate You) | John Cincola Pickleball | https://youtu.be/qQhYj1HRhRI |
+| 2 | 10:05 | The PERFECT Poach in Pickleball! Win More Points at the Net | Richard Pickleball | https://youtu.be/LgS-Y3XmAEQ |
+| 3 | 1:00 | How to POACH in Pickleball #pickleball #pickleballtips #shorts | tanner.pickleball | https://youtu.be/VyQqx1Fuyw0 |
+| 4 | 15:36 | What is Stacking? Pickleball Stacking Strategies Explained | ThatPickleballGuy - Kyle Koszuta | https://youtu.be/npCzByb7IUo |
+| 5 | 2:01 | Pickleball Tutor Drills with Simone Jardim:  Master the Poach Volley | PickleballCentral | https://youtu.be/Y2zBO5LxSqc |
+| 6 | 9:39 | The EASIEST Way to Poach and SURPRISE Your Opponents | Briones Pickleball Academy | https://youtu.be/DF51rhLlvv4 |
+
+</details>
 
 ---
 
 ## Stacking
 
-`stacking` · strategy · intermediate · **⏳ needs clips**
+`stacking` · strategy · intermediate · **⚠️ 2 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- What is Stacking? Pickleball Stacking Strategies Explained — ThatPickleballGuy - Kyle Koszuta · instruction · **unverified, needs a timestamp**
+- Pickleball Stacking: When, Why, & How to Use Stacking on the Pickleball Court — PlayPickleball.com · instruction · **unverified, needs a timestamp**
+
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:stacking -->
 <!-- One line per clip:
@@ -643,15 +845,32 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only poach`._
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:stacking -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only stacking`._
+<details>
+<summary>6 candidates from <code>pickleball Stacking tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 15:36 | What is Stacking? Pickleball Stacking Strategies Explained | ThatPickleballGuy - Kyle Koszuta | https://youtu.be/npCzByb7IUo |
+| 2 | 8:02 | Pickleball Stacking: When, Why, & How to Use Stacking on the Pickleball Court | PlayPickleball.com | https://youtu.be/u7DKc_ftqnU |
+| 3 | 13:48 | Stacking 101: EVERYTHING You NEED To Know About Stacking \| Briones Pickleball | Briones Pickleball Academy | https://youtu.be/dXU16wHK8iE |
+| 4 | 8:04 | Stack the Right Way - Pickleball Doubles Strategy | Tony Roig Pickleball (formerly In2Pickle) | https://youtu.be/f0Ri0xON8zo |
+| 5 | 4:13 | Everything You Need To Know About Stacking In Pickleball | Catherine Parenteau | https://youtu.be/dLTvtNElhkY |
+| 6 | 4:48 | You’re Stacking Wrong in Pickleball... (A Pro’s Simple Guide) | Pickleball Hub | https://youtu.be/BEP_XUqAglw |
+
+</details>
 
 ---
 
 ## Shake and Bake
 
-`shake-and-bake` · strategy · intermediate · **⏳ needs clips**
+`shake-and-bake` · strategy · intermediate · **⚠️ 2 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- HOW TO Shake & Bake in Pickleball — The Pickleball Pirates · instruction · **unverified, needs a timestamp**
+- Learn The Deadliest Strategy in Pickleball (Shake & Bake) — Enhance Pickleball · instruction · **unverified, needs a timestamp**
+
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:shake-and-bake -->
 <!-- One line per clip:
@@ -662,7 +881,7 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only stacking`._
 <!-- /picks:shake-and-bake -->
 
 <details>
-<summary>1 candidates from <code>pickleball shake and bake tutorial</code> — titles only, nobody has watched these</summary>
+<summary>1 candidates from <code>pickleball pickleball shake and bake how to tutorial</code> — titles only, nobody has watched these</summary>
 
 | | Length | Title | Channel | Link |
 |---|---|---|---|---|
@@ -674,9 +893,14 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only stacking`._
 
 ## Split Step
 
-`split-step` · movement · beginner · **⏳ needs clips**
+`split-step` · movement · beginner · **⚠️ 2 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- How To Split Step | Pickleball Tips | The Picklr — The Picklr · instruction · **unverified, needs a timestamp**
+- Pickleball Split Step Basics - Footwork Drills — The One Infinite · instruction · **unverified, needs a timestamp**
+
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:split-step -->
 <!-- One line per clip:
@@ -704,9 +928,14 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only stacking`._
 
 ## Transition Zone Footwork
 
-`transition-zone-footwork` · movement · intermediate · **⏳ needs clips**
+`transition-zone-footwork` · movement · intermediate · **⚠️ 2 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- How to Dominate the Transition Zone | The Pickleball Clinic — The Pickleball Clinic · instruction · **unverified, needs a timestamp**
+- 6 Pro Tips to Help You DOMINATE the Transition Zone — The Pickleball Clinic · instruction · **unverified, needs a timestamp**
+
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:transition-zone-footwork -->
 <!-- One line per clip:
@@ -734,9 +963,14 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only stacking`._
 
 ## Kitchen Line Positioning
 
-`kitchen-line-positioning` · movement · beginner · **⏳ needs clips**
+`kitchen-line-positioning` · movement · beginner · **⚠️ 2 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- Perfect court positioning at the kitchen line! #pickleball #pickleballtips — tanner.pickleball · instruction · **unverified, needs a timestamp**
+- 7 Kitchen Strategies to Avoid Getting Crushed in Pickleball — ThatPickleballGuy - Kyle Koszuta · instruction · **unverified, needs a timestamp**
+
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:kitchen-line-positioning -->
 <!-- One line per clip:
@@ -747,16 +981,16 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only stacking`._
 <!-- /picks:kitchen-line-positioning -->
 
 <details>
-<summary>6 candidates from <code>pickleball Kitchen Line Positioning tutorial</code> — titles only, nobody has watched these</summary>
+<summary>6 candidates from <code>pickleball pickleball kitchen line positioning where to stand non volley zone tutorial</code> — titles only, nobody has watched these</summary>
 
 | | Length | Title | Channel | Link |
 |---|---|---|---|---|
-| 1 | 14:59 | 7 Kitchen Strategies to Avoid Getting Crushed in Pickleball | ThatPickleballGuy - Kyle Koszuta | https://youtu.be/JxVFdb1PixU |
-| 2 | 18:26 | Fix these 8 intermediate mistakes, improve MASSIVELY | Pickleball Kitchen | https://youtu.be/_exugE3GtJo |
-| 3 | 7:07 | The pickleball kitchen rule (non-volley zone) COMPLETELY explained | Pickleball Kitchen | https://youtu.be/5sKMsK2C-fY |
-| 4 | 4:21 | Perfecting the Pickleball Volley & Your Paddle Position with Catherine Parenteau | Selkirk TV | https://youtu.be/JxIaTSG7D8Q |
-| 5 | 1:16 | Perfect court positioning at the kitchen line! #pickleball #pickleballtips | tanner.pickleball | https://youtu.be/kKgO08SZgTg |
-| 6 | 8:20 | NEVER Lose Another Dink Battle With These 8 Tips 🎯 | Enhance Pickleball | https://youtu.be/nRo0mvVA-DM |
+| 1 | 7:07 | The pickleball kitchen rule (non-volley zone) COMPLETELY explained | Pickleball Kitchen | https://youtu.be/5sKMsK2C-fY |
+| 2 | 1:27 | The Pickleball Kitchen - What You Can and Can't Do | Pickleheads | https://youtu.be/cFMUZeqoFYU |
+| 3 | 5:12 | 4 Pickleball Kitchen Rules & Strategy To Make You a Better Player | PlayPickleball.com | https://youtu.be/oJaa2UZsk30 |
+| 4 | 14:59 | 7 Kitchen Strategies to Avoid Getting Crushed in Pickleball | ThatPickleballGuy - Kyle Koszuta | https://youtu.be/JxVFdb1PixU |
+| 5 | 2:45 | Rules to Remember at the Pickleball Kitchen (or Non-Volley Zone) | PlayPickleball.com | https://youtu.be/JCXWSDlDL38 |
+| 6 | 18:43 | Footwork Masterclass: How to Move & Where to Stand in Pickleball | Enhance Pickleball | https://youtu.be/YM9ozyidTY8 |
 
 </details>
 
@@ -764,9 +998,14 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only stacking`._
 
 ## Chicken Wing Defense
 
-`chicken-wing-defense` · defense · intermediate · **⏳ needs clips**
+`chicken-wing-defense` · defense · intermediate · **⚠️ 2 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- The Pickleball Chicken Wing - And What They Don't Tell You (WTDTY) — PickleSmith Pickleball · instruction · **unverified, needs a timestamp**
+- Helpful tips to block body shot and not get chicken winged in pickleball — Pickle ball 411 · instruction · **unverified, needs a timestamp**
+
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:chicken-wing-defense -->
 <!-- One line per clip:
@@ -776,15 +1015,31 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only stacking`._
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:chicken-wing-defense -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only chicken-wing-defense`._
+<details>
+<summary>5 candidates from <code>pickleball Chicken Wing Defense tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 3:49 | The Pickleball Chicken Wing - And What They Don't Tell You (WTDTY) | PickleSmith Pickleball | https://youtu.be/N0kiSLEyAFc |
+| 2 | 4:02 | Helpful tips to block body shot and not get chicken winged in pickleball | Pickle ball 411 | https://youtu.be/2WmxGZoKVR0 |
+| 3 | 1:00 | THIS is how you handle HEAVY slice #pickleball | tanner.pickleball | https://youtu.be/v8uSl7ZosEU |
+| 4 | 1:22 | Are You Chicken Winging? | Suzee Anderson Pickleball | https://youtu.be/t-62dBxl43I |
+| 5 | 1:05 | Stop Getting Chicken Winged (Easy Fix) 🐔 #pickleball #pickleballstrategy #pickleballcoach | Pickleball Daily | https://youtu.be/-i4i1N86JJc |
+
+</details>
 
 ---
 
 ## Lob Defense / Switching
 
-`lob-defense-switching` · defense · advanced · **⏳ needs clips**
+`lob-defense-switching` · defense · advanced · **⚠️ 2 unverified**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- Best Lob Defense Strategies and Drills for Pickleball: Improve Your Pickleball Game. — Pickleball Instruction · instruction · **unverified, needs a timestamp**
+- How to Defend Lobs with Ben Johns — Pickleball 360 · instruction · **unverified, needs a timestamp**
+
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:lob-defense-switching -->
 <!-- One line per clip:
@@ -794,6 +1049,18 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only chicken-wing-
      Add | end=128 if you also want the clip to stop. -->
 <!-- /picks:lob-defense-switching -->
 
-_No candidates fetched yet — run `npm run fetch:videos -- --only lob-defense-switching`._
+<details>
+<summary>6 candidates from <code>pickleball pickleball lob defense switching sides partner tutorial</code> — titles only, nobody has watched these</summary>
+
+| | Length | Title | Channel | Link |
+|---|---|---|---|---|
+| 1 | 1:15 | How to Beat a Lob Happy Team in Pickleball! 🦞 #pickleball #pickleballtips | tanner.pickleball | https://youtu.be/isTOZayIhkg |
+| 2 | 15:36 | What is Stacking? Pickleball Stacking Strategies Explained | ThatPickleballGuy - Kyle Koszuta | https://youtu.be/npCzByb7IUo |
+| 3 | 11:28 | Stop Letting the Lob Win | Richard Pickleball | https://youtu.be/NEQsSzY2L2M |
+| 4 | 6:20 | How to Defend the Pickleball Lob (As a Senior) | Selkirk TV | https://youtu.be/EWaUlEQxVoc |
+| 5 | 3:43 | How to Cover a Lob – Pickleball improvement - In2Pickle | Tony Roig Pickleball (formerly In2Pickle) | https://youtu.be/9ds8piXZnOc |
+| 6 | 1:59 | How to Defend Lobs with Ben Johns | Pickleball 360 | https://youtu.be/qio99LF7uP0 |
+
+</details>
 
 ---

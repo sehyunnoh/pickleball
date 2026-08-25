@@ -5,6 +5,7 @@ import AdSlot from "@/components/AdSlot";
 import ComparisonTable from "@/components/ComparisonTable";
 import CourtDiagram from "@/components/CourtDiagram";
 import LiteYouTube from "@/components/LiteYouTube";
+import UnverifiedBadge from "@/components/UnverifiedBadge";
 import ProgressToggle from "@/components/ProgressToggle";
 import ShotProfile from "@/components/ShotProfile";
 import VideoGrid from "@/components/VideoGrid";
@@ -134,6 +135,7 @@ export default async function TechniquePage({
                   </>
                 )}
               </figcaption>
+              {hero.verified === false && <UnverifiedBadge detailed />}
             </figure>
           ) : (
             <p className="border-y border-border py-10 text-center text-sm text-muted">

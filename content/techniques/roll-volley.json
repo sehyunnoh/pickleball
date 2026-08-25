@@ -179,7 +179,26 @@
     "grit",
     "transition-zone"
   ],
-  "videos": [],
-  "status": "draft",
-  "updatedAt": "2026-08-24"
+  "videos": [
+    {
+      "youtubeId": "w7R6iIfrXU8",
+      "title": "Learn How to Hit a Roll Volley | 4.0+ Shot and Drill",
+      "channel": "Pickleball Effect",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "e-H2pxPiZ70",
+      "title": "Tired of Hitting into the Net? Roll and Punch Volley Masterclass from a Pickleball Pro",
+      "channel": "The Flying Pickle Academy",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }

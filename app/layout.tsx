@@ -31,7 +31,7 @@ const newsreader = Newsreader({
 });
 
 const DESCRIPTION =
-  "Pickleball technique for players in Oakville, Ontario. One shot at a time — what it is, when to use it, how to hit it, with hand-picked video clips timestamped to the moment that shows it. Plus every indoor and outdoor court in town.";
+  "Pickleball technique for players in Oakville, Ontario. One shot at a time — what it is, when to use it, how to hit it, with video clips timestamped to the moment that shows it. Plus every indoor and outdoor court in town.";
 
 export const metadata: Metadata = {
   // Everything relative in a page's metadata resolves against this, so the

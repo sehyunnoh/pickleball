@@ -167,7 +167,26 @@
     "pop-up",
     "kitchen-line"
   ],
-  "videos": [],
-  "status": "draft",
-  "updatedAt": "2026-08-24"
+  "videos": [
+    {
+      "youtubeId": "Typnxn4TDLQ",
+      "title": "The Forehand Speed Up Secret: Hit LESS of the Ball",
+      "channel": "Richard Pickleball",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "7XJnsV6dNGY",
+      "title": "Win More Points with the Off Bounce Forehand Speed Up",
+      "channel": "Richard Pickleball",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }

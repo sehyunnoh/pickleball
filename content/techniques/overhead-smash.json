@@ -180,7 +180,26 @@
     "kitchen",
     "transition-zone"
   ],
-  "videos": [],
-  "status": "draft",
-  "updatedAt": "2026-08-24"
+  "videos": [
+    {
+      "youtubeId": "F_M5r7O5jjg",
+      "title": "How to Hit a PERFECT Pickleball SMASH In 3 Easy Steps (Get More POWER & CONSISTENCY in 4 Minutes)",
+      "channel": "High Five Pickleball",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "ms2q1LqCGsM",
+      "title": "How to hit an overhead smash in pickleball! #pickleballtips #pickleball",
+      "channel": "tanner.pickleball",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }
