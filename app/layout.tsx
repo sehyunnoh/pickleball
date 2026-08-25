@@ -100,6 +100,9 @@ export default function RootLayout({
               <Link href="/techniques" className="label hover:text-accent">
                 Index
               </Link>
+              <Link href="/paths" className="label hover:text-accent">
+                Paths
+              </Link>
               <Link href="/courts" className="label hover:text-accent">
                 Courts
               </Link>

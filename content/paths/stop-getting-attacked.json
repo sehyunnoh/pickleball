@@ -1,0 +1,32 @@
+{
+  "slug": "stop-getting-attacked",
+  "title": "Stop getting attacked",
+  "problem": "Every rally seems to end with somebody smashing a ball at you. It feels like they are just better, or hitting harder — but the ball they attacked was one you gave them.",
+  "outcome": "You stop feeding attackable balls, and when one does come at you, you have something to do about it other than flinch.",
+  "steps": [
+    {
+      "technique": "kitchen-line-positioning",
+      "why": "Standing too deep turns ordinary dinks into half-volleys off your shoelaces, and a half-volley pops up. A lot of what feels like being attacked starts here."
+    },
+    {
+      "technique": "dink-straight",
+      "why": "The shot that denies them anything to hit. Low, short, unattackable — that is the whole job."
+    },
+    {
+      "technique": "dead-dink",
+      "why": "A dink with no pace on it gives them nothing to borrow. They have to generate everything themselves, which is where their mistakes come from."
+    },
+    {
+      "technique": "reset",
+      "why": "The one that saves you when it has already gone wrong. It turns a ball being driven at you back into a dinking rally."
+    },
+    {
+      "technique": "block-counter",
+      "why": "For the speed-up you did not see coming. Both answers start from the same ready position, and having one is what stops the flinch."
+    },
+    {
+      "technique": "chicken-wing-defense",
+      "why": "Good players aim at the shoulder of your paddle arm on purpose. This is the one body position that has to be practised rather than reacted to."
+    }
+  ]
+}
