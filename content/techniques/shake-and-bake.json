@@ -87,6 +87,12 @@
       "description": "Your partner decides at the last moment whether to drive or drop, without telling you. You crash on the drive and stay back on the drop. Missing the read in either direction is the error being trained out.",
       "reps": "20 balls",
       "players": 3
+    },
+    {
+      "name": "Drive, crash, put away",
+      "description": "You drive from the baseline, then run in and put away your own rebound: your partner stands at the kitchen line and blocks every drive back rather than countering it. It removes the partner who normally drives, so you get the crash and the finish without needing a third player.",
+      "reps": "3 sets of 10 drives",
+      "players": 2
     }
   ],
   "court": {
