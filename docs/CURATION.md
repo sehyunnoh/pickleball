@@ -32,17 +32,23 @@ slow-motion clip or a clear example from a real game.
 
 ## Where it stands
 
-- **P0 progress:** 1 of 19 published
-- **Waiting on you:** 29 technique(s) below
+- **P0 progress:** 2 of 19 published
+- **Waiting on you:** 27 technique(s) below
 - **Not drafted yet:** 0 (they appear here once I write them)
 
 ---
 
 ## Volley Serve
 
-`volley-serve` · serve · beginner · **⏳ needs clips**
+`volley-serve` · serve · beginner · **✅ ready**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- Which Pickleball Serve Should You Use? Drop Serve vs. Volley Serve Training — The Pickleball Clinic · instruction from 2:16
+- Pickleball Volley and Drop Serve Rules: Know the Difference! — pickleballmax · instruction from 0:40
+- Pickleball Volley Serve: Where to Hold the Ball for Maximum Accuracy! 🎯 #pickleballtips #pickleball — We Play Pickleball · instruction
+
+Nothing needed. Add more only if you find something clearly better.
 
 <!-- picks:volley-serve -->
 <!-- One line per clip:
@@ -70,9 +76,14 @@ slow-motion clip or a clear example from a real game.
 
 ## Drop Serve
 
-`drop-serve` · serve · beginner · **⏳ needs clips**
+`drop-serve` · serve · beginner · **✅ ready**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- Pickleball Volley and Drop Serve Rules: Know the Difference! — pickleballmax · instruction from 1:18
+- Which Pickleball Serve Should You Use? Drop Serve vs. Volley Serve Training — The Pickleball Clinic · instruction from 0:14
+
+Nothing needed. Add more only if you find something clearly better.
 
 <!-- picks:drop-serve -->
 <!-- One line per clip:
@@ -90,7 +101,11 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only drop-serve`._
 
 `deep-return` · return · beginner · **⏳ needs clips**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- The Best Way to Return Serves in 2025 — John Cincola Pickleball · instruction
+
+**Still needed:** 1 more clip(s) — two is the minimum.
 
 <!-- picks:deep-return -->
 <!-- One line per clip:
@@ -120,7 +135,11 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only drop-serve`._
 
 `return-and-advance` · return · beginner · **⏳ needs clips**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- The SECRET to Returning Serves in Pickleball — The Pickleball Clinic · instruction
+
+**Still needed:** 1 more clip(s) — two is the minimum.
 
 <!-- picks:return-and-advance -->
 <!-- One line per clip:
@@ -154,6 +173,10 @@ Already curated:
 
 - World #1 Ben Johns Teaches the Third Shot Drop! — The Pickleball Clinic · instruction from 0:20
 - 6 Ways to Hit a Third Shot Drop — PlayPickleball.com · instruction from 0:21
+- 3 Places to Hit Your Third-Shot Drop in Pickleball #pickleball #shorts — Max Kazijevs Pickleball · instruction
+- Do’s and Don’ts For Third Shot Drop! — Shea Underwood - Pickleball · instruction
+- How to hit a 3rd shot drop — Pickleball_Health · instruction
+- The 3rd Shot Drop is SO EASY When You Know This (Scientific Method) — Enhance Pickleball · instruction from 0:21
 
 Nothing needed. Add more only if you find something clearly better.
 
@@ -173,7 +196,11 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only third-shot-dr
 
 `third-shot-drive` · transition · intermediate · **⏳ needs clips**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- How to Hit a Third Shot Drive Like Collin Johns — Pickleball 360 · instruction
+
+**Still needed:** 1 more clip(s) — two is the minimum.
 
 <!-- picks:third-shot-drive -->
 <!-- One line per clip:
@@ -203,7 +230,11 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only third-shot-dr
 
 `dink-straight` · soft-game · beginner · **⏳ needs clips**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- How To Dink In Pickleball, The RIGHT Way: The Definitive Beginner's Guide to Dinking — PlayPickleball.com · instruction
+
+**Still needed:** 1 more clip(s) — two is the minimum.
 
 <!-- picks:dink-straight -->
 <!-- One line per clip:
@@ -233,7 +264,11 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only third-shot-dr
 
 `dink-crosscourt` · soft-game · intermediate · **⏳ needs clips**
 
-**Still needed:** 2 more clip(s) — two is the minimum; at least one clip of type `instruction`.
+Already curated:
+
+- Mastering the Pickleball Cross-Court Dink — Selkirk TV · instruction
+
+**Still needed:** 1 more clip(s) — two is the minimum.
 
 <!-- picks:dink-crosscourt -->
 <!-- One line per clip:

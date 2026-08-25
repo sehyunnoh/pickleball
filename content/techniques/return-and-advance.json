@@ -169,7 +169,16 @@
     "transition-zone",
     "kitchen-line"
   ],
-  "videos": [],
+  "videos": [
+    {
+      "youtubeId": "aBG-mIYNP2E",
+      "title": "The SECRET to Returning Serves in Pickleball",
+      "channel": "The Pickleball Clinic",
+      "type": "instruction",
+      "start": 0,
+      "curatedAt": "2026-08-25"
+    }
+  ],
   "status": "draft",
   "updatedAt": "2026-08-24"
 }

@@ -161,7 +161,32 @@
     "two-bounce-rule",
     "fault"
   ],
-  "videos": [],
-  "status": "draft",
+  "videos": [
+    {
+      "youtubeId": "hWKOzYoeL90",
+      "title": "Which Pickleball Serve Should You Use? Drop Serve vs. Volley Serve Training",
+      "channel": "The Pickleball Clinic",
+      "type": "instruction",
+      "start": 136,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "_CAcBJyDJc8",
+      "title": "Pickleball Volley and Drop Serve Rules: Know the Difference!",
+      "channel": "pickleballmax",
+      "type": "instruction",
+      "start": 40,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "aaK5uyKf9aE",
+      "title": "Pickleball Volley Serve: Where to Hold the Ball for Maximum Accuracy! 🎯 #pickleballtips #pickleball",
+      "channel": "We Play Pickleball",
+      "type": "instruction",
+      "start": 0,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
   "updatedAt": "2026-08-24"
 }

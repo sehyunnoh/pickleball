@@ -195,7 +195,16 @@
     "banger",
     "pop-up"
   ],
-  "videos": [],
+  "videos": [
+    {
+      "youtubeId": "JZpMT1h5L2k",
+      "title": "How to Hit a Third Shot Drive Like Collin Johns",
+      "channel": "Pickleball 360",
+      "type": "instruction",
+      "start": 0,
+      "curatedAt": "2026-08-25"
+    }
+  ],
   "status": "draft",
   "updatedAt": "2026-08-24"
 }
