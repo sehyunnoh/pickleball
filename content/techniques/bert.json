@@ -165,7 +165,40 @@
     "kitchen",
     "kitchen-line"
   ],
-  "videos": [],
-  "status": "draft",
-  "updatedAt": "2026-08-24"
+  "videos": [
+    {
+      "youtubeId": "C0VemGEbYVU",
+      "title": "What is a BERT in Pickleball",
+      "channel": "PicklewithGee",
+      "type": "instruction",
+      "start": 0,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "dbbZRYVWmpM",
+      "title": "The Pickleball BERT 🤯",
+      "channel": "Shea Underwood - Pickleball",
+      "type": "instruction",
+      "start": 0,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "7sjJNNvSKqw",
+      "title": "Aggressive Pickleball Move Known as a “Bert”",
+      "channel": "The Dink Pickleball",
+      "type": "instruction",
+      "start": 0,
+      "curatedAt": "2026-08-25"
+    },
+    {
+      "youtubeId": "RGT-wpBX0w8",
+      "title": "Pickleball “Bert” shot by Jorge - FLY",
+      "channel": "Jorge Quintero",
+      "type": "instruction",
+      "start": 0,
+      "curatedAt": "2026-08-25"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-08-25"
 }
