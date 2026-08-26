@@ -87,8 +87,18 @@ export default function RootLayout({
           Skip to content
         </a>
 
-        {/* A running head with a rule under it, the way a manual opens a page. */}
-        <header className="border-b border-rule">
+        {/* A running head with a rule under it, the way a manual opens a page —
+            and it stays there, so the way back is always one tap away on a
+            phone at the side of a court.
+
+            Opaque `bg-bg` rather than a blur or a shadow: the page underneath
+            would otherwise show through the rule, and a drop shadow is the one
+            thing that would make this read as a web app rather than a printed
+            head. Below the consent bar's z-40 by design — they sit at opposite
+            ends and the bar is the more important of the two. The search modal
+            is a native <dialog>, which the browser puts in the top layer, so it
+            clears this without needing a z-index at all. */}
+        <header className="sticky top-0 z-30 border-b border-rule bg-bg">
           <div className="mx-auto flex max-w-[78rem] items-baseline justify-between gap-6 px-6 py-5">
             <Link
               href="/"

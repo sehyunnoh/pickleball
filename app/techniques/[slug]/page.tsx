@@ -146,7 +146,7 @@ export default async function TechniquePage({
 
         {/* The rail stays put while the prose scrolls past it. On a phone it
           folds into a strip above the sections. */}
-        <aside className="mt-12 lg:sticky lg:top-10 lg:col-start-1 lg:row-start-3 lg:mt-16 lg:self-start">
+        <aside className="mt-12 lg:sticky lg:top-[calc(var(--header-h)+2.5rem)] lg:col-start-1 lg:row-start-3 lg:mt-16 lg:self-start">
           <dl className="grid grid-cols-2 gap-x-6 gap-y-5 border-t border-rule pt-4 sm:grid-cols-4 lg:grid-cols-1 lg:gap-y-6">
             <Meta label="Zone" values={technique.courtZone} />
             <Meta label="Situation" values={technique.situation} />
