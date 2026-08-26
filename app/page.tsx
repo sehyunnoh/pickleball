@@ -47,7 +47,15 @@ export default function Home() {
 
   return (
     <div className="mx-auto max-w-[64rem] px-6">
-      <section className="border-b border-rule py-20 md:py-28">
+      {/* No bottom rule. Every division further down this page is carried by
+          the underline on a section's label, and a rule here as well put two
+          of them 64px apart with nothing in between.
+
+          Less padding underneath than above, too: the rule used to sit in the
+          middle of that space and hold it open. Without one, the full py-28
+          against the next section's py-16 reads as a gap rather than as a
+          margin. */}
+      <section className="pt-20 pb-10 md:pt-28 md:pb-14">
         <h1 className="font-display max-w-[14ch] text-[clamp(2.75rem,8vw,5.5rem)] leading-[0.92] font-medium">
           One shot at a time.
         </h1>
