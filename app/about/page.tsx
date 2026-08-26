@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getTechniques, getTerms, getVenues } from "@/lib/content";
+import { getTechniques, getTerms } from "@/lib/content";
 import { CONTACT_EMAIL, SITE_NAME } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -22,17 +22,12 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   const techniques = getTechniques();
   const terms = getTerms();
-  const venues = getVenues();
   const published = techniques.filter((t) => t.status === "published");
   const clips = published.reduce((n, t) => n + t.videos.length, 0);
   const watched = published.reduce(
     (n, t) => n + t.videos.filter((v) => v.verified).length,
     0,
   );
-  const lastChecked = venues
-    .map((v) => v.checkedAt)
-    .sort()
-    .at(-1);
 
   return (
     <article className="mx-auto max-w-[64rem] px-6 py-12 md:py-16">
@@ -40,9 +35,9 @@ export default function AboutPage() {
         About
       </h1>
       <p className="mt-6 max-w-[var(--measure)] text-lg leading-relaxed">
-        {SITE_NAME} is a technique reference for people who play here in
-        Oakville, Ontario. One page per shot — what it is, when to use it, how
-        to hit it, what usually goes wrong — and a list of every court in town.
+        {SITE_NAME} is a reference for people who already play and want one
+        specific shot to start working. One page per shot — what it is, when to
+        use it, how to hit it, and what usually goes wrong.
       </p>
 
       <Section title="Why it exists">
@@ -109,36 +104,6 @@ export default function AboutPage() {
         <p>
           If you made one of these videos and would rather it were not linked
           here, say so and it comes down.
-        </p>
-      </Section>
-
-      <Section title="The court listings">
-        <p>
-          The court information comes from what the{" "}
-          <a
-            href="https://www.oakville.ca/parks-recreation-culture/programs-activities/pickleball/"
-            className="text-accent underline decoration-accent/30 underline-offset-4 hover:decoration-accent"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Town of Oakville publishes
-          </a>
-          . This site is not run by the town and is not affiliated with it in
-          any way.
-        </p>
-        <p>
-          It is a copy, and copies go stale. Gyms get rebooked, outdoor nets
-          come down for the winter, and drop-in schedules change without anyone
-          telling us. Every venue on the{" "}
-          <Link
-            href="/courts"
-            className="text-accent underline decoration-accent/30 underline-offset-4 hover:decoration-accent"
-          >
-            courts page
-          </Link>{" "}
-          shows the date it was last checked
-          {lastChecked && ` — currently ${lastChecked}`}. Check the town&rsquo;s
-          own schedule before you drive over.
         </p>
       </Section>
 

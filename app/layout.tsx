@@ -31,7 +31,7 @@ const newsreader = Newsreader({
 });
 
 const DESCRIPTION =
-  "Pickleball technique for players in Oakville, Ontario. One shot at a time — what it is, when to use it, how to hit it, with video clips timestamped to the moment that shows it. Plus every indoor and outdoor court in town.";
+  "One pickleball shot at a time — what it is, when to use it, how to hit it, and what usually goes wrong, with video clips timestamped to the moment that shows it.";
 
 export const metadata: Metadata = {
   // Everything relative in a page's metadata resolves against this, so the
@@ -72,7 +72,6 @@ export const metadata: Metadata = {
 const NAV = [
   { href: "/techniques", label: "Index" },
   { href: "/paths", label: "Paths" },
-  { href: "/courts", label: "Courts" },
   { href: "/skill-tree", label: "Tree" },
   { href: "/glossary", label: "Glossary" },
 ] as const;
@@ -177,9 +176,7 @@ export default function RootLayout({
           <div className="mx-auto flex max-w-[78rem] flex-wrap justify-between gap-x-12 gap-y-6 px-6 py-10">
             <p className="max-w-[46ch] text-sm leading-relaxed text-muted">
               Videos are embedded from YouTube and remain the property of their
-              creators. Nothing here is hosted or re-uploaded. Court listings
-              come from the Town of Oakville; this site is not affiliated with
-              the town.
+              creators. Nothing here is hosted or re-uploaded.
             </p>
             <nav
               aria-label="Secondary"
@@ -190,9 +187,6 @@ export default function RootLayout({
               </Link>
               <Link href="/privacy" className="label hover:text-accent">
                 Privacy
-              </Link>
-              <Link href="/courts" className="label hover:text-accent">
-                Courts
               </Link>
               <Link href="/glossary" className="label hover:text-accent">
                 Glossary

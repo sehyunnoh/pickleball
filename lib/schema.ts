@@ -302,53 +302,6 @@ export const RoadmapSchema = z.strictObject({
   terms: z.array(slug),
 });
 
-/* ------------------------------------------------------------------ *
- * Places to play
- *
- * Court listings age badly: gyms get rebooked, outdoor nets come down for the
- * winter, a facility opens and the town page is updated a month later. So
- * every venue carries `checkedAt` and a `sourceUrl`, and the page shows both.
- * Sending somebody across town to a locked gym is worse than telling them
- * nothing.
- * ------------------------------------------------------------------ */
-
-export const VENUE_KINDS = ["indoor", "outdoor"] as const;
-
-/** How you get on a court, which is the thing people actually need to know. */
-export const VENUE_ACCESS = [
-  "drop-in",
-  "program",
-  "permit",
-  "membership",
-  "first-come",
-] as const;
-
-export const VENUE_ACCESS_LABELS: Record<VenueAccess, string> = {
-  "drop-in": "Drop-in",
-  program: "Registered programs",
-  permit: "Permit or booking",
-  membership: "Membership",
-  "first-come": "First come, first served",
-};
-
-export const VenueSchema = z.strictObject({
-  slug,
-  name: z.string().min(1),
-  kind: z.enum(VENUE_KINDS),
-  /** Number of pickleball courts. Omitted when the source does not say. */
-  courts: z.int().min(1).optional(),
-  /** Painted lines and dedicated nets, rather than lines shared with tennis. */
-  dedicated: z.boolean().default(false),
-  access: z.array(z.enum(VENUE_ACCESS)).min(1),
-  address: z.string().min(1).optional(),
-  /** Outdoor only: are there lights for evening play. */
-  lights: z.boolean().optional(),
-  notes: z.string().min(1).optional(),
-  /** Where this was read from, shown on the page so anyone can re-check it. */
-  sourceUrl: z.url(),
-  checkedAt: isoDate,
-});
-
 /**
  * `content/paths/*.json` — a curated route through techniques that already
  * exist, aimed at one complaint.
@@ -425,6 +378,3 @@ export type Comparison = z.infer<typeof ComparisonSchema>;
 export type CourtRole = (typeof COURT_ROLES)[number];
 export type Roadmap = z.infer<typeof RoadmapSchema>;
 export type Path = z.infer<typeof PathSchema>;
-export type Venue = z.infer<typeof VenueSchema>;
-export type VenueKind = (typeof VENUE_KINDS)[number];
-export type VenueAccess = (typeof VENUE_ACCESS)[number];
