@@ -29,7 +29,21 @@ export function siteUrl(): string {
   return "http://localhost:3000";
 }
 
-export const SITE_NAME = "Pickleball Technique";
+/**
+ * The name, and the locality is deliberately in it.
+ *
+ * This string is not just the masthead: it is the tail of every page title via
+ * the template in the root layout, the OpenGraph site name, and the publisher
+ * on every VideoObject. Putting "Oakville" here puts it on all hundred-odd
+ * pages at once, which is worth more for somebody searching "oakville
+ * pickleball" than any amount of prose further down a page.
+ *
+ * "Technique" comes out of the name and stays in the description, where it has
+ * room to say what it means. It also happens to be the shorter of the two on a
+ * phone — the masthead had 169px to spend at 320px and the old name wanted
+ * 174 of it.
+ */
+export const SITE_NAME = "Oakville Pickleball";
 
 /**
  * Where corrections go. Empty by default and the About page simply omits the

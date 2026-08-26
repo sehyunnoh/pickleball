@@ -40,9 +40,9 @@ export default function AboutPage() {
         About
       </h1>
       <p className="mt-6 max-w-[var(--measure)] text-lg leading-relaxed">
-        {SITE_NAME} is a reference for people who play pickleball in Oakville,
-        Ontario. One page per shot — what it is, when to use it, how to hit it,
-        what usually goes wrong — and a list of every court in town.
+        {SITE_NAME} is a technique reference for people who play here in
+        Oakville, Ontario. One page per shot — what it is, when to use it, how
+        to hit it, what usually goes wrong — and a list of every court in town.
       </p>
 
       <Section title="Why it exists">
