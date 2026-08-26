@@ -76,7 +76,6 @@
 /skill-tree             기술 선후관계 그래프
 /glossary               용어 사전 (A–Z + 검색)
 /glossary/[slug]        용어 상세 (짧음. 관련 기술로 유도)
-/courts                 옥빌에서 칠 수 있는 곳 (실내/실외)
 /paths/[slug]           학습 경로 (예: "Get to the kitchen") — Phase 1 후반
 /about                  사이트 소개, 데이터 출처, 기여 방법
 ```
@@ -249,32 +248,6 @@ Phase 2에서 `/tours`, `/tours/[slug]`, `/calendar` 추가 예정.
   "relatedTechniques": ["dink-crosscourt", "reset"]
 }
 ```
-
-### 7.2.1 Venue (`content/venues/*.json`) — v0.3에서 추가
-
-```jsonc
-{
-  "slug": "sixteen-mile-community-centre",
-  "name": "Sixteen Mile Community Centre",
-  "kind": "indoor",              // indoor | outdoor
-  "courts": 6,
-  "dedicated": false,            // 전용 라인/네트인가, 테니스와 공용인가
-  "access": ["drop-in", "program"],  // drop-in | program | permit | membership | first-come
-  "address": "...",              // 선택 — 확인된 것만
-  "lights": true,                // 선택, 실외 전용
-  "notes": "...",                // 선택
-  "sourceUrl": "https://www.oakville.ca/...",
-  "checkedAt": "2026-08-24"
-}
-```
-
-**설계 의도**
-
-- `sourceUrl`과 `checkedAt`은 **필수**다. 코트 정보는 계절·예약 상황에 따라
-  금방 낡는다. 잠긴 체육관으로 사람을 보내는 건 아무것도 안 알려주는 것보다 나쁘다.
-- 우리는 **출처가 아니라 사본**이다. 페이지에 그렇게 명시하고 타운 페이지로 링크한다.
-- 드롭인 시간표는 담지 않는다. 타운 시스템이 이미 하고 있고, 우리가 복제하면
-  반드시 틀린다.
 
 ### 7.3 자동 수집 영상 (`data/generated/videos-auto.json`)
 
@@ -499,6 +472,25 @@ pickleball/
 M3 → M6 배포 → **GA4 켜고 트래픽 관찰** → 월 방문이 붙고 콘텐츠가 20개 이상 쌓이면 AdSense 신청 → 승인 후 슬롯 활성화.
 
 광고를 트래픽보다 먼저 붙이지 않는 이유: 신규 사이트는 승인이 안 나고, 나더라도 초기 수익이 무의미한 반면 페이지마다 서드파티 요청이 늘어난다.
+
+### 방향 전환 (2026-08-26)
+
+| 항목 | 이전 | 이후 |
+|---|---|---|
+| 대상 | 옥빌 거주 Improver | **피클볼을 배우려는 누구나** |
+| 코트 정보 (`/courts`, `content/venues/`) | 있음 | **제거** |
+| 사이트 이름 | `Oakville Pickleball` (하루) | `Pickleball Technique` (원복) |
+
+**이유.** 코트 목록은 옥빌에서만 쓸모가 있는데, 사이트의 실제 자산인 기술 30개와
+용어 72개는 어디서 치든 똑같이 쓸모가 있다. 지역에 묶어두면 그 자산이 닿을 수 있는
+범위를 시가 관리하는 시설 정보의 수명에 맞춰 잘라내는 셈이 된다.
+
+**따라온 것.** `VenueSchema`와 로더·사이트맵 항목·`check:links`의 출처 확인이 전부
+빠졌다. 헤더 내비게이션은 5개에서 4개로 줄었고, 그만큼 모바일 헤더에 여유가 생겼다.
+용어 `ladder-league`의 "옥빌 리그" 예시는 일반 표현으로 교체.
+
+**남은 흔적.** `/courts`는 사이트맵과 Search Console에 며칠 올라가 있었으므로 당분간
+404가 잡힐 수 있다. 색인된 지 얼마 안 됐고 리다이렉트할 대상도 없어 그대로 둔다.
 
 ### 아직 열린 것
 
