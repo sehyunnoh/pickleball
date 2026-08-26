@@ -64,6 +64,19 @@ export const metadata: Metadata = {
   verification: { google: "dLBy72eyWw7-c-JzBmybHnh7mWpXTHSzTkqzTdtfmS0" },
 };
 
+/**
+ * The sections, in one place. The header renders this twice — once inline for
+ * `sm` and up, once in the row below for phones — and a list that lived in two
+ * literals would eventually disagree with itself.
+ */
+const NAV = [
+  { href: "/techniques", label: "Index" },
+  { href: "/paths", label: "Paths" },
+  { href: "/courts", label: "Courts" },
+  { href: "/skill-tree", label: "Tree" },
+  { href: "/glossary", label: "Glossary" },
+] as const;
+
 export default function RootLayout({
   children,
 }: {
@@ -87,9 +100,22 @@ export default function RootLayout({
           Skip to content
         </a>
 
-        {/* A running head with a rule under it, the way a manual opens a page —
-            and it stays there, so the way back is always one tap away on a
-            phone at the side of a court.
+        {/* A running head with a rule under it, the way a manual opens a page.
+
+            Two rows on a phone, and only the first of them sticks. Sticking the
+            whole thing cost 97px of every screen — the six nav items will not
+            fit on one line at that width — on a site whose main scenario is a
+            phone at the side of a court. So the masthead and the search stay,
+            because they are the two things you reach for mid-rally, and the
+            list of sections scrolls away like any other content. From `sm` up
+            it is one row again and all of it sticks, because there the whole
+            thing costs 69px and nothing has to give.
+
+            The nav is rendered twice rather than moved, since a sticky element
+            cannot escape its own parent's box — the row that scrolls away has
+            to be a sibling of the row that does not. NAV is the single list
+            both read from, so adding a section cannot update one and miss the
+            other.
 
             Opaque `bg-bg` rather than a blur or a shadow: the page underneath
             would otherwise show through the rule, and a drop shadow is the one
@@ -99,33 +125,49 @@ export default function RootLayout({
             is a native <dialog>, which the browser puts in the top layer, so it
             clears this without needing a z-index at all. */}
         <header className="sticky top-0 z-30 border-b border-rule bg-bg">
-          <div className="mx-auto flex max-w-[78rem] items-baseline justify-between gap-6 px-6 py-5">
+          <div className="mx-auto flex max-w-[78rem] items-baseline justify-between gap-6 px-6 py-3.5 sm:py-5">
             <Link
               href="/"
-              className="font-display text-lg font-medium hover:text-accent"
+              className="font-display text-lg font-medium whitespace-nowrap hover:text-accent"
             >
               Pickleball Technique
             </Link>
-            <nav aria-label="Main" className="flex items-baseline gap-5">
-              <Link href="/techniques" className="label hover:text-accent">
-                Index
-              </Link>
-              <Link href="/paths" className="label hover:text-accent">
-                Paths
-              </Link>
-              <Link href="/courts" className="label hover:text-accent">
-                Courts
-              </Link>
-              <Link href="/skill-tree" className="label hover:text-accent">
-                Tree
-              </Link>
-              <Link href="/glossary" className="label hover:text-accent">
-                Glossary
-              </Link>
+            <div className="flex items-baseline gap-5">
+              <nav
+                aria-label="Main"
+                className="hidden items-baseline gap-5 sm:flex"
+              >
+                {NAV.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="label hover:text-accent"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </nav>
               <SearchDialog index={searchIndex} />
-            </nav>
+            </div>
           </div>
         </header>
+
+        {/* The sections, on a phone only. Deliberately outside the header so it
+            scrolls away with the page rather than pinning another 45px to the
+            top of every screen. */}
+        <nav aria-label="Sections" className="border-b border-border sm:hidden">
+          <div className="mx-auto flex max-w-[78rem] flex-wrap gap-x-5 gap-y-2 px-6 py-3">
+            {NAV.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="label hover:text-accent"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
+        </nav>
 
         <main id="main" className="flex-1">
           {children}

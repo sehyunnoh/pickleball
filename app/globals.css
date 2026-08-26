@@ -39,11 +39,11 @@
      640px — measured, not assumed. Keep this matching the rendered header: if
      a nav item is ever added, re-measure rather than hoping. Getting it wrong
      is quiet, and shows up only as anchors landing slightly under the rule. */
-  --header-h: 6.0625rem; /* 97px — nav on two lines */
+  --header-h: 3.5625rem; /* 57px — masthead only; the sections row scrolls away */
 }
 
-/* The nav fits on one line from here up; this is Tailwind's `sm`, which the
-   wrap point happens to coincide with. */
+/* From here up the sections come back into the masthead as one row, and all of
+   it sticks. This is Tailwind's `sm`, which the layout switches on. */
 @media (min-width: 640px) {
   :root {
     --header-h: 4.3125rem; /* 69px */
