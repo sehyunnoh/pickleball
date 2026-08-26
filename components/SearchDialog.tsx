@@ -92,7 +92,9 @@ export default function SearchDialog({ index }: { index: SearchRecord[] }) {
       <button
         type="button"
         onClick={open}
-        className="label cursor-pointer text-muted hover:text-accent"
+        // Wraps to two lines at 320px otherwise, which quietly makes the
+        // sticky header taller on exactly the phones with least room.
+        className="label cursor-pointer whitespace-nowrap text-muted hover:text-accent"
       >
         Search <span aria-hidden="true">⌘K</span>
       </button>
