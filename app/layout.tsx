@@ -130,7 +130,7 @@ export default function RootLayout({
               href="/"
               className="font-display text-lg font-medium whitespace-nowrap hover:text-accent"
             >
-              Pickleball Technique
+              {SITE_NAME}
             </Link>
             <div className="flex items-baseline gap-5">
               <nav

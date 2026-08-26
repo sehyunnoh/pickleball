@@ -24,7 +24,7 @@ import {
   type Point,
 } from "@/lib/court";
 import { formatSeconds } from "@/lib/format";
-import { JsonLd, techniqueJsonLd } from "@/lib/seo";
+import { JsonLd, SITE_NAME, techniqueJsonLd } from "@/lib/seo";
 import type { Drill, ShotPath, Technique } from "@/lib/schema";
 
 type Params = { slug: string };
@@ -49,6 +49,13 @@ export async function generateMetadata({
     description: technique.summary,
     alternates: { canonical: `/techniques/${technique.slug}` },
     openGraph: {
+      // siteName and locale are repeated from the root layout rather than
+      // inherited: Next replaces the parent `openGraph` wholesale instead of
+      // merging into it, so defining any of it here drops the rest. These are
+      // the pages most likely to be shared, and they were the ones losing the
+      // site's name off the card.
+      siteName: SITE_NAME,
+      locale: "en",
       title: `${technique.name} — how to hit it`,
       description: technique.summary,
       type: "article",
