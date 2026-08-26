@@ -30,6 +30,24 @@
 
   /* The site is long-form explanation; line length matters more than width. */
   --measure: 66ch;
+
+  /* The running head is sticky, so two other things have to know how tall it
+     is: the anchor landing offset below, and the sticky metadata rail on a
+     technique page. One number rather than two guesses that drift apart.
+
+     It is two numbers, though, because the nav wraps to a second line below
+     640px — measured, not assumed. Keep this matching the rendered header: if
+     a nav item is ever added, re-measure rather than hoping. Getting it wrong
+     is quiet, and shows up only as anchors landing slightly under the rule. */
+  --header-h: 6.0625rem; /* 97px — nav on two lines */
+}
+
+/* The nav fits on one line from here up; this is Tailwind's `sm`, which the
+   wrap point happens to coincide with. */
+@media (min-width: 640px) {
+  :root {
+    --header-h: 4.3125rem; /* 69px */
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -69,12 +87,18 @@
      is indistinguishable from a downloaded one and costs nothing. */
   --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
   --font-body: var(--font-newsreader), Georgia, "Times New Roman", serif;
-  --font-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas,
-    "Liberation Mono", monospace;
+  --font-mono:
+    ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono",
+    monospace;
 }
 
 html {
   scroll-behavior: smooth;
+  /* Without this every in-page link lands underneath the running head — the
+     skip link, the glossary cross-references, the "Why" on an unverified clip.
+     scroll-padding is the browser's own fix for a fixed header and needs no
+     per-anchor markup. */
+  scroll-padding-top: calc(var(--header-h) + 1.5rem);
 }
 
 @media (prefers-reduced-motion: reduce) {
