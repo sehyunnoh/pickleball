@@ -4,15 +4,19 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project status
 
-**Pre-code.** The repo contains only `docs/` and has no commits yet. There is no
-`package.json`, no `app/`, no `content/`. Everything below is the plan that
-`docs/REQUIREMENTS.md` (what to build) and `docs/DEVELOPMENT_PLAN.md` (in what
-order, with completion gates) lock in — read both before starting implementation
-work. They are written in Korean; **all site-facing content is English only.**
+**Built and deployed.** 30 techniques, 72 glossary terms, 3 learning paths, 67
+clips, deployed to Vercel from `main`. Phase 1 is complete apart from a custom
+domain; the work left is human — 47 of the 67 clips are title-matched rather
+than watched, and carry an `Unverified` label saying so.
 
-Bootstrap sequence is M0 → M1 in `docs/DEVELOPMENT_PLAN.md`: `git init`, then
-`create-next-app` (TS strict, Tailwind v4, App Router, ESLint), then a single
-technique page working end to end.
+Four documents, all in Korean; **all site-facing content is English only.**
+
+| | |
+|---|---|
+| `docs/ARCHITECTURE.md` | **how it deploys and runs** — start here |
+| `docs/REQUIREMENTS.md` | what to build, and the content schemas |
+| `docs/DEVELOPMENT_PLAN.md` | in what order, with completion gates |
+| `docs/CURATION.md` | generated worksheet for picking clips |
 
 ## What this site is
 
