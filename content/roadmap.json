@@ -149,6 +149,16 @@
       "slug": "lob-defense-switching",
       "name": "Lob Defense / Switching",
       "priority": "P1"
+    },
+    {
+      "slug": "the-kyle",
+      "name": "The Kyle",
+      "priority": "P1"
+    },
+    {
+      "slug": "houdini",
+      "name": "Houdini",
+      "priority": "P1"
     }
   ],
   "terms": [
