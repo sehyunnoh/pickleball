@@ -44,7 +44,7 @@ slow-motion clip or a clear example from a real game.
 
 - **P0 progress:** 19 of 19 published
 - **Watched and timestamped:** 4 of 32 technique(s)
-- **Unverified clips awaiting a look:** 53
+- **Unverified clips awaiting a look:** 52
 - **Still short of the two-clip gate:** 0 technique(s)
 - **Not drafted yet:** 0 (they appear here once I write them)
 
@@ -1098,15 +1098,15 @@ _No candidates fetched yet — run `npm run fetch:videos -- --only the-kyle`._
 
 ## Houdini
 
-`houdini` · specialty · advanced · **⚠️ 3 unverified**
+`houdini` · specialty · advanced · **⚠️ 2 unverified**
 
 Already curated:
 
-- HOW TO HIT THE HOUDINI IN PICKLEBALL #pickleball #pickleballtips #enhancepickleball — Enhance Pickleball · instruction · **unverified, needs a timestamp**
+- HOW TO HIT THE HOUDINI IN PICKLEBALL #pickleball #pickleballtips #enhancepickleball — Enhance Pickleball · instruction
 - The Houdini pickleball glitch shot. Genius or Useless? 🧐🎬: EnhancePickleball — Effective Pickleball Training · instruction · **unverified, needs a timestamp**
 - The Coveted Pickleball Houdini — We Play, You Rate Pickleball! · gameplay · **unverified, needs a timestamp**
 
-**3 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
 
 <!-- picks:houdini -->
 <!-- One line per clip:
