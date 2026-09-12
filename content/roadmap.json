@@ -159,6 +159,11 @@
       "slug": "houdini",
       "name": "Houdini",
       "priority": "P1"
+    },
+    {
+      "slug": "scorpion",
+      "name": "Scorpion",
+      "priority": "P1"
     }
   ],
   "terms": [

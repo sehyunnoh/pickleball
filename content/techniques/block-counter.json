@@ -3,7 +3,9 @@
   "name": "Block / Counter",
   "aka": [
     "counter-attack",
-    "block"
+    "block",
+    "forehand counter",
+    "backhand counter"
   ],
   "category": "defense",
   "difficulty": "intermediate",
@@ -163,7 +165,8 @@
     "reset"
   ],
   "leadsTo": [
-    "chicken-wing-defense"
+    "chicken-wing-defense",
+    "scorpion"
   ],
   "relatedTerms": [
     "hands-battle",

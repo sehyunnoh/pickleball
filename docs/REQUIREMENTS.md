@@ -339,6 +339,7 @@ npm run add:video -- --technique atp --url "https://youtu.be/xxxx?t=95" --type s
 | 30 | Lob Defense / Switching | defense | advanced | P1 |
 | 31 | The Kyle | attack | advanced | P1 |
 | 32 | Houdini | specialty | advanced | P1 |
+| 33 | Scorpion | defense | advanced | P1 |
 
 P0 = 20개. **출시 기준은 P0 20개 전부 published + 각각 큐레이션 영상 최소 2개.**
 
