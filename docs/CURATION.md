@@ -43,8 +43,8 @@ slow-motion clip or a clear example from a real game.
 ## Where it stands
 
 - **P0 progress:** 19 of 19 published
-- **Watched and timestamped:** 4 of 30 technique(s)
-- **Unverified clips awaiting a look:** 47
+- **Watched and timestamped:** 4 of 33 technique(s)
+- **Unverified clips awaiting a look:** 55
 - **Still short of the two-clip gate:** 0 technique(s)
 - **Not drafted yet:** 0 (they appear here once I write them)
 
@@ -1069,5 +1069,77 @@ Already curated:
 | 6 | 1:59 | How to Defend Lobs with Ben Johns | Pickleball 360 | https://youtu.be/qio99LF7uP0 |
 
 </details>
+
+---
+
+## The Kyle
+
+`the-kyle` · attack · advanced · **⚠️ 3 unverified**
+
+Already curated:
+
+- The Kyle | Pickleball Tips | The Picklr — The Picklr · instruction · **unverified, needs a timestamp**
+- 5 Deceptive Pickleball Shots That FOOL EVERYONE — tanner.pickleball · instruction from 0:12 · **unverified, needs a timestamp**
+- How To Hit The Kyle Yates Pickleball Trickshot! #shorts #pickleball #pickleballtips — Enhance Pickleball · instruction · **unverified, needs a timestamp**
+
+**3 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
+
+<!-- picks:the-kyle -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:the-kyle -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only the-kyle`._
+
+---
+
+## Houdini
+
+`houdini` · specialty · advanced · **⚠️ 2 unverified**
+
+Already curated:
+
+- HOW TO HIT THE HOUDINI IN PICKLEBALL #pickleball #pickleballtips #enhancepickleball — Enhance Pickleball · instruction
+- The Houdini pickleball glitch shot. Genius or Useless? 🧐🎬: EnhancePickleball — Effective Pickleball Training · instruction · **unverified, needs a timestamp**
+- The Coveted Pickleball Houdini — We Play, You Rate Pickleball! · gameplay · **unverified, needs a timestamp**
+
+**2 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
+
+<!-- picks:houdini -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:houdini -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only houdini`._
+
+---
+
+## Scorpion
+
+`scorpion` · defense · advanced · **⚠️ 3 unverified**
+
+Already curated:
+
+- The Scorpion 🦂 - How to Punish Pickleball Attacks — Zane Navratil Pickleball · instruction · **unverified, needs a timestamp**
+- How to Hit a SCORPION with Collin Johns! (#1 Doubles Player in the World) — The Pickleball Clinic · instruction · **unverified, needs a timestamp**
+- How to hit a scorpion in pickleball — tanner.pickleball · instruction · **unverified, needs a timestamp**
+
+**3 of these was picked off its title and never watched.** A timestamped replacement is the single most useful thing you can add here.
+
+<!-- picks:scorpion -->
+<!-- One line per clip:
+     URL | type | optional note
+     type is one of: instruction, slow-mo, gameplay, drill
+     Put the timestamp in the URL. On YouTube: Share → tick “Start at”.
+     Add | end=128 if you also want the clip to stop. -->
+<!-- /picks:scorpion -->
+
+_No candidates fetched yet — run `npm run fetch:videos -- --only scorpion`._
 
 ---

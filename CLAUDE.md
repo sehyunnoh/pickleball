@@ -4,9 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project status
 
-**Built and deployed.** 30 techniques, 72 glossary terms, 3 learning paths, 67
+**Built and deployed.** 33 techniques, 72 glossary terms, 3 learning paths, 76
 clips, deployed to Vercel from `main`. Phase 1 is complete apart from a custom
-domain; the work left is human — 47 of the 67 clips are title-matched rather
+domain; the work left is human — 55 of the 76 clips are title-matched rather
 than watched, and carry an `Unverified` label saying so.
 
 Four documents, all in Korean; **all site-facing content is English only.**

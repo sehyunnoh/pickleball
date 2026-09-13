@@ -1,0 +1,204 @@
+{
+  "slug": "the-kyle",
+  "name": "The Kyle",
+  "aka": [
+    "Kyle Yates",
+    "forehand flip"
+  ],
+  "category": "attack",
+  "difficulty": "advanced",
+  "courtZone": [
+    "kitchen"
+  ],
+  "situation": [
+    "rally"
+  ],
+  "handedness": "forehand",
+  "summary": "The Kyle is a speed-up disguised as a backhand dink. You set up for the cross-court backhand dink everyone has been expecting, then at the last moment roll the paddle over and push the ball with your forehand instead, usually up the line. It is named after Kyle Yates, the early pro who made it famous, and it works only because the fake is indistinguishable from the real thing.",
+  "whenToUse": [
+    "You are in a cross-court dink rally and the ball keeps coming to your backhand.",
+    "The ball arrives at or above knee height, high enough to attack rather than lift.",
+    "The opponent across from you has settled into dinking and is not watching for a speed-up.",
+    "You have not shown it yet this game — the second time, they are waiting for it."
+  ],
+  "howTo": [
+    "Set up exactly as you would for a cross-court backhand dink: same bend, same paddle, same body angle.",
+    "Take the paddle back on the backhand side and hold it there longer than feels comfortable.",
+    "As the ball reaches its peak, let the backhand swing go past without touching it.",
+    "Roll your wrist over so the forehand face comes through, and push the ball forward.",
+    "Aim just below the shoulder of the straight-on opponent, or up the line past them.",
+    "Get the paddle back up in front of you — a good block sends it straight back."
+  ],
+  "commonMistakes": [
+    "Turning your shoulders for the forehand before the ball arrives, which gives the fake away.",
+    "Rolling over too early, so it is just a forehand the opponent saw coming a beat ago.",
+    "Trying it on a ball below the knee, where the forehand has to lift it and it floats.",
+    "Aiming it cross-court, where the opponent you just dinked to is already set.",
+    "Using it every rally. Once they know it exists they stop biting on the backhand."
+  ],
+  "drills": [
+    {
+      "name": "Fake to the peak",
+      "description": "Your partner dinks cross-court to your backhand. Take the backhand back and freeze it at the top as the ball peaks, then let the ball drop and catch it. No hitting at all — you are training the hold, which is the whole shot.",
+      "reps": "3 sets of 15",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              6,
+              14.5
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              15,
+              29.5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Call the roll",
+      "description": "Cross-court backhand dinks with a partner. Once in every four or five, roll over and push it up the line. Your partner shouts the moment they read it; if the shout comes before contact, you are turning too early.",
+      "reps": "10 minutes",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              6,
+              14.5
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              15,
+              29.5
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "label": "up the line",
+            "at": [
+              4,
+              31
+            ],
+            "width": 4,
+            "depth": 4
+          }
+        ]
+      }
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          6,
+          14.5
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          14,
+          14.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          6,
+          29.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          15,
+          29.5
+        ]
+      }
+    ],
+    "shot": {
+      "from": [
+        6,
+        14.5
+      ],
+      "to": [
+        5,
+        29
+      ],
+      "peakAt": 0.3,
+      "peakHeight": 4.5
+    },
+    "mistake": {
+      "label": "Rolled over on a ball that had already dropped: the forehand has to lift it, so it sits up at their chest.",
+      "path": {
+        "from": [
+          6,
+          14.5
+        ],
+        "to": [
+          6,
+          31
+        ],
+        "peakAt": 0.55,
+        "peakHeight": 7
+      }
+    }
+  },
+  "prerequisites": [
+    "speed-up",
+    "dink-crosscourt"
+  ],
+  "leadsTo": [
+    "houdini"
+  ],
+  "relatedTerms": [
+    "dinking-rally",
+    "hands-battle",
+    "pop-up"
+  ],
+  "videos": [
+    {
+      "youtubeId": "zTDAfzbnk2I",
+      "title": "The Kyle | Pickleball Tips | The Picklr",
+      "channel": "The Picklr",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-09-11"
+    },
+    {
+      "youtubeId": "MWZye_HXIQg",
+      "title": "5 Deceptive Pickleball Shots That FOOL EVERYONE",
+      "channel": "tanner.pickleball",
+      "type": "instruction",
+      "start": 12,
+      "end": 109,
+      "note": "The Kyle Yates chapter, per the video's own timestamps.",
+      "verified": false,
+      "curatedAt": "2026-09-11"
+    },
+    {
+      "youtubeId": "_McuIDpNSH8",
+      "title": "How To Hit The Kyle Yates Pickleball Trickshot! #shorts #pickleball #pickleballtips",
+      "channel": "Enhance Pickleball",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-09-11"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-09-11"
+}

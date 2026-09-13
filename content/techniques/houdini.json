@@ -1,0 +1,153 @@
+{
+  "slug": "houdini",
+  "name": "Houdini",
+  "aka": [
+    "the Houdini"
+  ],
+  "category": "specialty",
+  "difficulty": "advanced",
+  "courtZone": [
+    "kitchen"
+  ],
+  "situation": [
+    "rally"
+  ],
+  "handedness": "both",
+  "summary": "The Houdini is a trick shot in which the paddle changes hands in the middle of the stroke. You set up a two-handed backhand dink, fake the swing with your dominant hand, then let go and play the ball with your other hand as an off-hand forehand. It is legal — the rules do not care which hand holds the paddle — and it is rare, because it asks your weaker hand to win a point.",
+  "whenToUse": [
+    "A dink has come to your backhand side at or above knee height.",
+    "The opponent is reading your backhand and leaning on where it usually goes.",
+    "You have already rehearsed the handover until it happens without looking.",
+    "You are far enough ahead to spend a point on it."
+  ],
+  "howTo": [
+    "Set up for a two-handed backhand dink, with both hands on the handle so the handover is already half made.",
+    "Start the backhand with your dominant hand leading, exactly as you would for the real dink.",
+    "Just before contact, let go with your dominant hand and let your other hand take the paddle.",
+    "Meet the ball in front with a short push off the off-hand forehand — no big swing.",
+    "Aim at the opponent who was set for your backhand, or up the line past them.",
+    "Pass the paddle back to your dominant hand straight away; the next ball will not wait."
+  ],
+  "commonMistakes": [
+    "Switching hands before the ball arrives, which turns the trick into an off-hand forehand they saw coming.",
+    "Setting up one-handed, so the other hand has to reach across for the paddle and fumbles it.",
+    "Swinging hard with the weak hand, which sends the ball long or into the tape.",
+    "Trying it on a ball below the knee, where the off hand has to lift it and it floats.",
+    "Leaving the paddle in the off hand afterwards and meeting the next ball with it."
+  ],
+  "drills": [
+    {
+      "name": "Handover, no ball",
+      "description": "Stand at the kitchen line in a two-handed backhand setup. Start the backhand swing and pass the paddle into your other hand at the point where contact would be, then back again. Do it until you stop looking at the handle.",
+      "reps": "3 sets of 20",
+      "players": 1
+    },
+    {
+      "name": "Off-hand pushes",
+      "description": "Your partner dinks gently to your backhand side. Every ball, set up two-handed, switch, and push it back off the off-hand forehand. Only count balls that land in the kitchen — this is about control, not pace.",
+      "reps": "4 sets of 10",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              6,
+              14.5
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              6,
+              29.5
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          6,
+          14.5
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          14,
+          14.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          6,
+          29.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          15,
+          29.5
+        ]
+      }
+    ],
+    "shot": {
+      "from": [
+        6,
+        14.5
+      ],
+      "to": [
+        6,
+        28
+      ],
+      "peakAt": 0.3,
+      "peakHeight": 4.5
+    }
+  },
+  "prerequisites": [
+    "the-kyle"
+  ],
+  "leadsTo": [],
+  "relatedTerms": [
+    "dinking-rally",
+    "kitchen-line"
+  ],
+  "videos": [
+    {
+      "youtubeId": "KX053Ug31ig",
+      "title": "HOW TO HIT THE HOUDINI IN PICKLEBALL #pickleball #pickleballtips #enhancepickleball",
+      "channel": "Enhance Pickleball",
+      "type": "instruction",
+      "start": 0,
+      "verified": true,
+      "curatedAt": "2026-09-11"
+    },
+    {
+      "youtubeId": "CDU4KzfUB3A",
+      "title": "The Houdini pickleball glitch shot. Genius or Useless? 🧐🎬: EnhancePickleball",
+      "channel": "Effective Pickleball Training",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-09-11"
+    },
+    {
+      "youtubeId": "GDEVxkJpqsc",
+      "title": "The Coveted Pickleball Houdini",
+      "channel": "We Play, You Rate Pickleball!",
+      "type": "gameplay",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-09-11"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-09-11"
+}
