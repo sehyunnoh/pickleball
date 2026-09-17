@@ -119,16 +119,18 @@ export default function AboutPage() {
           browser clears it.
         </p>
         <p>
-          Visits are counted with Google Analytics, but only if you agree to it
-          first &mdash; the bar at the foot of the page asks once, the default
-          is no, and until you say yes nothing is loaded and no cookie is set.{" "}
+          Visits are counted with Vercel Web Analytics, which sets no cookie
+          and stores nothing that identifies you &mdash; which is why there is
+          no banner here asking you to accept one. It records the page, the
+          site you came from, the country and the browser, and that is the
+          whole list.{" "}
           <Link
             href="/privacy"
             className="text-accent underline decoration-accent/30 underline-offset-4 hover:decoration-accent"
           >
             Privacy
           </Link>{" "}
-          spells out what it records and lets you change your mind.
+          spells it out.
         </p>
       </Section>
 

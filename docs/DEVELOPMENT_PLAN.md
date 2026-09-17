@@ -306,7 +306,7 @@ draft로 남겨 두는 쪽이 맞다.
 | M6-4 | CI: 주 1회 `fetch:videos` → 변경 시 자동 PR | 🤖 | `.github/workflows/refresh-videos.yml` |
 | M6-5 | CI: 주 1회 `check:links` → 실패 시 이슈 자동 생성 | 🤖 | `.github/workflows/check-links.yml` |
 | M6-6 | GitHub Secrets에 `YOUTUBE_API_KEY` 등록 | 👤 | — |
-| M6-7 | **GA4 + 동의 배너** — 배너는 완료(`components/ConsentBanner.tsx`, `/privacy`). 남은 일은 `NEXT_PUBLIC_GA_ID`를 Vercel의 **Production 환경에만** 등록하는 것 | 🤝 | 배너 동작 + GA4 실시간 리포트에 방문 잡힘 |
+| M6-7 | **애널리틱스** — GA4와 동의 배너를 걷어내고 Vercel Web Analytics로 교체(2026-09-17, REQUIREMENTS §16). 남은 일은 Vercel 대시보드에서 Web Analytics를 **Enable** 하는 것뿐 | 🤝 | 대시보드에 방문이 잡힘 |
 
 **브랜치 전략** (단순하게)
 - `main` = 프로덕션. Vercel 자동 배포

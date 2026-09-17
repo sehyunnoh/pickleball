@@ -1,28 +1,28 @@
-"use client";
-
-import { GoogleAnalytics } from "@next/third-parties/google";
-import { GA_ID, useConsent } from "@/lib/consent";
+import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
 
 /**
- * Google Analytics 4, or nothing at all.
+ * Vercel Web Analytics.
  *
- * Two gates, both of which have to open:
+ * It replaced GA4 on 2026-09-17, and the reason was the consent bar. GA4 sets
+ * cookies and processes personal data, so for EEA and UK visitors the tag
+ * cannot fire until someone presses Allow — and almost nobody presses Allow.
+ * The numbers were not low, they were empty: the only thing GA4 measured was
+ * how many people answered a question they had no reason to care about.
  *
- * 1. `NEXT_PUBLIC_GA_ID` is set. It is set only on the production deployment,
- *    so dev servers and previews cannot pollute the numbers.
- * 2. The reader has said yes. GA4 sets cookies and processes personal data,
- *    and for EEA and UK visitors that requires consent *before* the tag fires
- *    (REQUIREMENTS.md §16). Consent Mode with denied defaults would still put
- *    gtag.js on the page; not rendering it at all is simpler to reason about
- *    and matches how the video embeds already behave — if you never click,
- *    the third party is never contacted.
+ * This counts everybody instead, because there is nothing to consent to. No
+ * cookie is set and no identifier is stored: a visitor is a hash of the
+ * incoming request, thrown away after 24 hours, and what is kept is the
+ * aggregate — path, referrer, country, browser, device type. That is the whole
+ * list, and it is already more than the one question this site asks of it,
+ * which is which shots to write about and verify clips for next.
  *
- * `@next/third-parties` loads the script after hydration rather than blocking
- * first paint, and GA4 counts a pageview on every history change, so
- * client-side navigation between technique pages needs no wiring of our own.
+ * No env var gates it. The script is only served on Vercel deployments, so a
+ * `npm run dev` or a preview cannot pollute the numbers whether it renders or
+ * not — one fewer thing to get wrong than the `NEXT_PUBLIC_GA_ID` it replaces.
+ *
+ * Route changes are tracked without wiring of our own, so client-side
+ * navigation between technique pages counts the way a fresh load does.
  */
 export default function Analytics() {
-  const { consent } = useConsent();
-  if (!GA_ID || consent !== "granted") return null;
-  return <GoogleAnalytics gaId={GA_ID} />;
+  return <VercelAnalytics />;
 }

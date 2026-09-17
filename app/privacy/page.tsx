@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import ConsentControl from "@/components/ConsentControl";
 import { CONTACT_EMAIL, SITE_NAME } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Privacy",
   description:
-    "What this site stores, what it does not, the one third-party script it can load, and how to switch that off.",
+    "What this site stores, what it does not, and why there is no cookie banner to dismiss.",
   alternates: { canonical: "/privacy" },
 };
 
@@ -16,8 +15,8 @@ export const metadata: Metadata = {
  * Short on purpose. Every claim on this page is one a reader could check by
  * opening devtools, so none of it is written to be technically survivable —
  * if a sentence here stops matching what the site does, the sentence is the
- * bug. The consent control is on this page rather than buried in a preference
- * screen because withdrawal has to cost what granting cost.
+ * bug. There is no consent control any more because there is nothing left to
+ * consent to; see components/Analytics.tsx.
  */
 export default function PrivacyPage() {
   return (
@@ -33,43 +32,38 @@ export default function PrivacyPage() {
 
       <Section title="What stays in your browser">
         <p>
-          Two things, both in your own browser&rsquo;s local storage, neither of
-          which is sent anywhere or readable by us:
+          One thing, in your own browser&rsquo;s local storage, which is not
+          sent anywhere and is not readable by us:
         </p>
         <ul className="space-y-2 border-t border-border pt-4">
           <Item label="Learned marks">
             Which techniques you have ticked off. Clearing your browser clears
             them, and they do not follow you to another device.
           </Item>
-          <Item label="Your analytics answer">
-            Whether you said yes or no below, so you are not asked twice.
-          </Item>
         </ul>
       </Section>
 
       <Section title="Analytics">
         <p>
-          If it is switched on for this deployment, the site can load Google
-          Analytics 4 — and only after you say so. Until then no script is
-          fetched and no cookie is set. It records the usual: which pages get
-          opened, roughly where in the world from, which browser, and how people
-          arrived. It is used for one thing, which is knowing which shots to
-          write about next.
+          Visits are counted with Vercel Web Analytics. It sets no cookie and
+          stores no identifier, which is why this site has no banner asking you
+          to accept one. A visit is a hash of the request that is thrown away
+          after 24 hours; what is kept is the total, not you.
         </p>
         <p>
-          What Google does with that data afterwards is between you and Google,
-          and their{" "}
-          <a
-            href="https://policies.google.com/privacy"
-            className="text-accent underline decoration-accent/30 underline-offset-4 hover:decoration-accent"
-            target="_blank"
-            rel="noreferrer"
-          >
-            privacy policy
-          </a>{" "}
-          covers it. That is precisely why the default is no.
+          What is recorded, in full: the page, the site you arrived from, the
+          country, the browser and whether you are on a phone. There is nothing
+          in that list that could be traced back to a person, and nothing that
+          follows you to another site. It is used for one thing, which is
+          knowing which shots to write about next, and which pages deserve
+          a hand-picked clip first.
         </p>
-        <ConsentControl />
+        <p>
+          Until 2026 this site used Google Analytics behind a consent bar.
+          Almost nobody answered the bar, so almost nothing was counted &mdash;
+          a question in everyone&rsquo;s way for data that never arrived. The
+          bar and the cookies are both gone.
+        </p>
       </Section>
 
       <Section title="The video clips">
@@ -94,7 +88,9 @@ export default function PrivacyPage() {
         <p>
           Nothing is sold, shared with advertisers or joined up with anything
           else. There are no ads on the site today. If that ever changes, this
-          page changes first, and the consent question changes with it.
+          page changes first &mdash; and ads would bring a consent question
+          back with them, because ad cookies are the kind you do have to be
+          asked about.
         </p>
       </Section>
 
