@@ -39,7 +39,9 @@ export default function AdSlot({ placement }: { placement: AdPlacement }) {
         does nothing useful and puts a third-party request on every page.
 
         An approved account also needs a Google-certified consent platform
-        before serving to EEA or UK visitors. See components/Analytics.tsx.
+        before serving to EEA or UK visitors. That is a cost of the ads, not of
+        the analytics — the site dropped its consent bar when it dropped GA4
+        (REQUIREMENTS.md §16), and switching ads on brings the question back.
       */}
     </aside>
   );

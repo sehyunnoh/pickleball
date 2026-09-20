@@ -43,7 +43,7 @@ flowchart LR
     subgraph runtime["🌐 방문자 브라우저"]
         direction TB
         HTML["정적 HTML/CSS/JS<br/>CDN에서 전달"]
-        CLIENT["하이드레이션 후:<br/>검색 · 필터 · 진도 · 동의"]
+        CLIENT["하이드레이션 후:<br/>검색 · 필터 · 진도 · 집계"]
         HTML --> CLIENT
     end
 
@@ -131,7 +131,7 @@ sequenceDiagram
     GH->>CI: ci.yml 실행
     CI->>CI: validate → typecheck → lint → next build
     GH->>V: 프리뷰 배포
-    Note over V: X-Robots-Tag: noindex<br/>NEXT_PUBLIC_GA_ID 없음<br/>→ 배너도 태그도 안 뜸
+    Note over V: X-Robots-Tag: noindex<br/>애널리틱스 스크립트 없음<br/>→ 프리뷰는 집계에 안 잡힘
 
     Dev->>GH: PR 머지 (squash)
     GH->>V: 프로덕션 배포
@@ -144,7 +144,6 @@ sequenceDiagram
 | 변수 | 어디에 | 없으면 |
 |---|---|---|
 | `YOUTUBE_API_KEY` | 로컬 `.env.local`, GitHub Secrets | 저작 스크립트만 못 씀. **빌드에는 불필요** |
-| `NEXT_PUBLIC_GA_ID` | Vercel **Production만** | 동의 배너도 GA도 렌더되지 않음 |
 | `NEXT_PUBLIC_SITE_URL` | (미설정) | `VERCEL_PROJECT_PRODUCTION_URL`로 폴백 |
 | `NEXT_PUBLIC_CONTACT_EMAIL` | (미설정) | About·Privacy의 문의 섹션이 숨겨짐 |
 
@@ -164,37 +163,40 @@ flowchart TD
     HYD --> S["SearchDialog<br/>Fuse · 네이티브 dialog"]
     HYD --> F["TechniqueBrowser<br/>URL 쿼리로 필터"]
     HYD --> P["useProgress<br/>localStorage"]
-    HYD --> C{"동의 상태"}
-
-    C -->|unset| BANNER["동의 바 표시"]
-    C -->|granted| GA["gtag.js 로드"]
-    C -->|denied| NONE["아무것도 안 함"]
+    HYD --> VA["Vercel Web Analytics<br/>쿠키 없음 · 동의 불필요"]
 
     LOAD --> FACADE["영상: 썸네일만"]
     FACADE -->|클릭해야| IFRAME["youtube-nocookie iframe"]
 
-    style GA fill:#2c6b47,color:#fff
+    style VA fill:#2c6b47,color:#fff
     style IFRAME fill:#2c6b47,color:#fff
 ```
 
-### 두 개의 파사드
+### 파사드
 
-이 사이트는 **제3자를 두 번 막는다.** 둘 다 같은 원칙이다 — 누르기 전엔 연결하지 않는다.
+무거운 제3자는 하나 남았고, 원칙은 그대로다 — 누르기 전엔 연결하지 않는다.
 
 | | 막는 것 | 푸는 조건 |
 |---|---|---|
 | `LiteYouTube` | YouTube iframe (수 MB) | 재생 버튼 클릭 |
-| `Analytics` | gtag.js + 쿠키 | 동의 바에서 Allow |
 
-동의 전에는 `googletagmanager` 요청이 **0건**이다. Consent Mode의 "denied 기본값"과
-달리 스크립트 자체가 페이지에 없다.
+애널리틱스는 막을 것이 없어서 목록에서 빠졌다. **2026-09-17에 GA4를 걷어내고
+Vercel Web Analytics로 바꿨다.** GA4는 쿠키를 심으므로 EEA·영국에서는 동의 바가
+선행돼야 했는데, 바를 누르는 사람이 거의 없어 집계가 사실상 0이었다. 바가 모두의
+앞을 가로막고 얻은 데이터가 없었던 셈이다.
+
+지금은 쿠키도 식별자도 없다. 방문자는 요청에서 만든 해시이고 24시간 뒤 폐기되며,
+남는 것은 경로·리퍼러·국가·브라우저·기기 종류의 집계뿐이다. 그래서 동의 바가
+없고, `ConsentBanner`·`ConsentControl`·`lib/consent.ts`도 함께 삭제됐다.
+광고를 붙이는 날에는 인증 CMP와 함께 동의 질문이 돌아온다 — 광고 쿠키는 물어봐야
+하는 쪽이기 때문이다.
 
 ### 상태는 어디에 사는가
 
 ```mermaid
 flowchart LR
     URL["URL 쿼리<br/>?category=soft-game"] -->|공유 가능| SHARE["필터된 목록을<br/>링크로 보낼 수 있음"]
-    LS["localStorage<br/>진도 · 동의"] -->|기기 한정| DEVICE["계정 없음<br/>UI가 그렇다고 명시"]
+    LS["localStorage<br/>진도"] -->|기기 한정| DEVICE["계정 없음<br/>UI가 그렇다고 명시"]
     NONE2["서버 상태"] --> ZERO["없음"]
 
     style ZERO stroke-dasharray: 3 3
@@ -248,7 +250,7 @@ flowchart LR
         l2["content.ts<br/>로드·검증·캐시"]
         l3["skill-tree · search · seo"]
         l4["court.ts<br/>코트 기하 (피트)"]
-        l5["progress · consent<br/>localStorage"]
+        l5["progress<br/>localStorage"]
     end
     subgraph cm["components/"]
         cm1["CourtDiagram · ShotProfile<br/>데이터 → 인라인 SVG"]
@@ -299,6 +301,6 @@ Lighthouse 모바일 96 / 92 / 98 · 접근성 100
 | 콘텐츠를 고쳤는데 빌드가 깨짐 | `validate`가 관문이다. 메시지가 파일과 필드를 지목한다 |
 | 새 기술이 사이트에 안 보임 | `status: "draft"`이거나 클립이 2개 미만 |
 | 환경변수를 바꿨는데 그대로 | `NEXT_PUBLIC_*`은 빌드에 박힌다. **재배포 필요** |
-| 프리뷰에 동의 배너가 없음 | 의도된 동작. `NEXT_PUBLIC_GA_ID`가 Production 전용 |
+| 로컬·프리뷰에서 방문이 안 잡힘 | 의도된 동작. 애널리틱스 스크립트는 Vercel 배포에서만 제공된다 |
 | `next dev`에서 필터가 안 먹힘 | 스트리밍이 두 사본을 남긴다. `next build && next start`가 정확한 테스트 |
 | 앵커가 헤더에 가림 | `--header-h`가 실제 헤더 높이와 어긋난 것. 재측정할 것 |
