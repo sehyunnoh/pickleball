@@ -45,16 +45,30 @@ export default function PrivacyPage() {
 
       <Section title="Analytics">
         <p>
-          None. Nothing about your visit is recorded anywhere — no cookie, no
-          identifier, no server log line kept beyond what GitHub Pages needs to
-          serve the request. There is no banner asking you to accept anything
-          because there is nothing to accept.
+          Visits are counted with{" "}
+          <a
+            href="https://www.goatcounter.com/"
+            className="text-accent underline decoration-accent/30 underline-offset-4 hover:decoration-accent"
+          >
+            GoatCounter
+          </a>
+          , which sets no cookie and stores no identifier &mdash; which is why
+          there is no banner here asking you to accept one. A visit is
+          matched against a same-day hash of your IP address and browser, and
+          that hash is never written down; what is kept is the total, not
+          you.
+        </p>
+        <p>
+          What is recorded, in full: the page, the site you arrived from, the
+          country, the browser and the operating system. Your IP address is
+          used once, to look up that country, and then discarded &mdash; it
+          is never logged alongside the rest.
         </p>
         <p>
           Until 2026 this site used Google Analytics behind a consent bar.
           Almost nobody answered the bar, so almost nothing was counted &mdash;
           a question in everyone&rsquo;s way for data that never arrived. The
-          bar and the cookies are both gone, and nothing replaced them.
+          bar and the cookies are both gone.
         </p>
       </Section>
 

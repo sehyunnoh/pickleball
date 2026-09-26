@@ -7,11 +7,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 **Built and deployed.** 33 techniques, 72 glossary terms, 3 learning paths, 76
 clips, deployed to GitHub Pages from `main` at
 `https://sehyunnoh.github.io/pickleball/` (migrated off Vercel on 2026-09-25 —
-Vercel's free tier didn't have room for this alongside other projects, and a
-static site needs nothing Vercel offers over free static hosting apart from
-Vercel Web Analytics, which was dropped along with it: this site now runs no
-analytics at all). Phase 1 is complete apart from a custom domain; the work
-left is human — 55 of the 76 clips are title-matched rather than watched, and
+Vercel's free tier didn't have room for this alongside other projects). Vercel
+Web Analytics went with it; the site ran with no analytics for two days, then
+picked up GoatCounter on 2026-09-27 (`components/Analytics.tsx`) — same
+cookie-less shape as before, just a different vendor. Phase 1 is complete
+apart from a custom domain; the work left is human — 55 of the 76 clips are
+title-matched rather than watched, and
 carry an `Unverified` label saying so.
 
 Four documents, all in Korean; **all site-facing content is English only.**

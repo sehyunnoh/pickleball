@@ -119,9 +119,11 @@ export default function AboutPage() {
           browser clears it.
         </p>
         <p>
-          Nothing about your visit is recorded &mdash; no analytics, no
-          cookie, no identifier &mdash; which is why there is no banner here
-          asking you to accept one.{" "}
+          Visits are counted with GoatCounter, which sets no cookie and
+          stores nothing that identifies you &mdash; which is why there is
+          no banner here asking you to accept one. It records the page, the
+          site you came from, the country and the browser, and that is the
+          whole list.{" "}
           <Link
             href="/privacy"
             className="text-accent underline decoration-accent/30 underline-offset-4 hover:decoration-accent"
