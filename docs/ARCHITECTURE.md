@@ -163,10 +163,12 @@ flowchart TD
     HYD --> S["SearchDialog<br/>Fuse · 네이티브 dialog"]
     HYD --> F["TechniqueBrowser<br/>URL 쿼리로 필터"]
     HYD --> P["useProgress<br/>localStorage"]
+    HYD --> GC["GoatCounter<br/>쿠키 없음 · 동의 불필요<br/>프로덕션 빌드에서만"]
 
     LOAD --> FACADE["영상: 썸네일만"]
     FACADE -->|클릭해야| IFRAME["youtube-nocookie iframe"]
 
+    style GC fill:#2c6b47,color:#fff
     style IFRAME fill:#2c6b47,color:#fff
 ```
 
@@ -178,16 +180,17 @@ flowchart TD
 |---|---|---|
 | `LiteYouTube` | YouTube iframe (수 MB) | 재생 버튼 클릭 |
 
-애널리틱스는 더 이상 존재하지 않는다. **2026-09-17에 GA4를 걷어내고 Vercel Web
-Analytics로 바꿨다가, 2026-09-25에 Vercel을 떠나면서 그마저 없앴다.** Vercel Web
-Analytics는 Vercel 배포에서만 스크립트가 서빙되는 구조라 GitHub Pages로는 그대로
-들고 올 수 없었고, 대체할 서드파티(GA4 등)를 다시 들이는 대신 애널리틱스 없음을
-택했다 — GA4 시절 쿠키 동의 바를 거의 아무도 누르지 않아 집계가 사실상 0이었던
-경험이 있어서, "적게라도 재는 것"보다 "아무것도 안 재는 것"의 트레이드오프가
-크지 않다고 판단했다.
+애널리틱스는 세 번째 벤더를 쓰고 있다. **GA4(~2026-09-17) → Vercel Web
+Analytics(2026-09-17~2026-09-25) → 이틀간 없음 → GoatCounter(2026-09-27~).**
+Vercel Web Analytics는 Vercel 배포에서만 스크립트가 서빙되는 구조라 GitHub
+Pages로는 그대로 들고 올 수 없었다. 대체 없이 며칠 두어봤지만, "어떤 기술을
+사람들이 실제로 읽는지"를 알 방법이 아예 없어지는 게 아쉬워 GoatCounter로
+채워 넣었다 — 오픈소스에 쿠키·식별자를 안 쓴다는 조건은 그대로 지키는 대안.
 
-지금은 방문 관련 데이터가 전혀 수집되지 않는다. 동의 바도 없고,
-`ConsentBanner`·`ConsentControl`·`lib/consent.ts`도 진작에 삭제됐다. 광고를
+지금도 쿠키나 영속 식별자는 없다. 방문자는 IP+브라우저를 그날 하루짜리 해시로
+묶어 "새 방문인가"만 구분하고, 그 해시 자체는 저장되지 않는다 — 남는 건 경로·
+리퍼러·국가·브라우저·OS의 집계뿐이다. 그래서 동의 바가 없고,
+`ConsentBanner`·`ConsentControl`·`lib/consent.ts`도 진작에 삭제된 채다. 광고를
 붙이는 날에는 인증 CMP와 함께 동의 질문이 돌아온다 — 광고 쿠키는 물어봐야 하는
 쪽이기 때문이다.
 

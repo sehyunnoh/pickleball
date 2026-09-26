@@ -467,7 +467,7 @@ pickleball/
 |---|---|---|
 | **콘텐츠 작성** | 텍스트 초안 = Claude / 검수·승인 = 사용자 / 영상 선정·타임스탬프 = 사용자 | 계획서 §0 |
 | **디자인 톤** | 코칭 교본 (서적 타이포, 비대칭 2단, 괘선 구조). v0.1의 "차분한 학습자료"를 유지하되 카드 UI를 걷어냄 | v0.2 |
-| **애널리틱스** | ~~Vercel Web Analytics~~ → **없음.** Vercel을 떠나며 함께 뗐고, 대체 서드파티는 들이지 않기로 함 | 2026-09-25 (그 전엔 2026-09-17에 GA4→Vercel Web Analytics) |
+| **애널리틱스** | ~~Vercel Web Analytics~~ → (이틀간 없음) → **GoatCounter.** `components/Analytics.tsx`. 쿠키 없음 → 동의 배너 없음, 프로덕션 빌드에서만 로드 | 2026-09-27 (그 전엔 2026-09-25 제거, 2026-09-17 GA4→Vercel Web Analytics) |
 | **수익화** | **AdSense를 나중에 붙인다.** 지금은 광고 자리만 확보(`components/AdSlot.tsx`) — 기술 상세 페이지의 "What goes wrong" 다음과 "Watch it" 앞 두 곳 | v0.2 |
 | **레포 공개** | GitHub **공개** (GitHub Pages 무료 호스팅 조건) | 2026-09-25, 그 전엔 비공개 (계획서 §0) |
 | **배포처** | ~~Vercel~~ → **GitHub Pages** (`output: export`, `/pickleball` basePath) | 2026-09-25 |
@@ -528,8 +528,9 @@ GA4는 쿠키를 심고 개인정보를 처리한다. 영어권 글로벌 타겟
 
 **남은 숙제.** AdSense를 붙이면 광고 쿠키 때문에 EEA·영국용 Google 인증 CMP가
 정책상 의무가 된다. 그때 동의 질문이 돌아오지만, 그건 **광고의 비용**이지
-애널리틱스의 비용이 아니었다 — 다만 아래 2026-09-25 항목대로 애널리틱스 자체가
-없어졌으므로, 이 문단이 가정한 "그 시점에도 계속 집계"는 더 이상 사실이 아니다.
+애널리틱스의 비용이 아니다 — 2026-09-25에 잠깐 없어졌던 애널리틱스는
+2026-09-27에 GoatCounter로 다시 채워졌고(아래 항목), 여전히 쿠키를 안 쓰므로
+이 문단의 전제는 그대로 유효하다.
 
 ### Vercel에서 GitHub Pages로 이전 (2026-09-25)
 
@@ -551,7 +552,27 @@ GA4는 쿠키를 심고 개인정보를 처리한다. 영어권 글로벌 타겟
 - `components/Analytics.tsx` 삭제, `@vercel/analytics` 의존성 제거,
   `/privacy`·`/about`의 애널리틱스 문구를 "수집 없음"으로 교체.
 
-**남은 숙제.** Search Console 검증 메타 태그가 옛 `pickleball-livid.vercel.app`
-프로퍼티용이라 무효해졌다. `sehyunnoh.github.io/pickleball` 프로퍼티를 새로
-등록하고 `app/layout.tsx`의 `metadata.verification`에 새 값을 넣어야 한다.
+**남은 숙제.** ~~Search Console 검증 메타 태그가 옛
+`pickleball-livid.vercel.app` 프로퍼티용이라 무효해졌다.~~ →
+`sehyunnoh.github.io/pickleball`을 새 프로퍼티로 등록하고
+`app/layout.tsx`의 `metadata.verification`에 새 값을 넣어 해결(2026-09-26).
 커스텀 도메인은 여전히 미정 — 나중에 붙이면 `NEXT_PUBLIC_SITE_URL`만 바꾸면 된다.
+
+### GoatCounter 도입 (2026-09-27)
+
+**이유.** GitHub Pages 이전 이후 애널리틱스가 이틀간 없었는데, "어떤 기술
+페이지를 사람들이 실제로 읽는지" 알 방법이 아예 사라지는 게 아쉬웠다.
+오픈소스, 쿠키 없음, GitHub Pages 같은 정적 호스팅에서도 그대로 쓸 수 있다는
+조건에 맞아 GoatCounter(`https://pickleball.goatcounter.com/`)를 골랐다.
+
+**바뀐 것.**
+- `components/Analytics.tsx` 신규 — `next/script`로 GoatCounter 카운터 스크립트
+  로드, `process.env.NODE_ENV !== "production"`일 때는 렌더하지 않음(로컬
+  `next dev`가 집계에 안 잡히도록).
+- `app/layout.tsx`에 `<Analytics />` 재연결.
+- `/privacy`·`/about` 문구를 GoatCounter 기준으로 갱신 — 쿠키 없음, IP는
+  국가 조회 후 즉시 폐기, 방문 식별은 그날 하루짜리 해시로만.
+
+**Vercel Web Analytics와의 차이.** 동작 방식은 비슷하지만(쿠키 없음, 집계만
+보관) Vercel 배포 여부에 묶여 있지 않다 — GitHub Pages를 포함해 어디서든
+정적 스크립트 태그 하나로 붙는다.
