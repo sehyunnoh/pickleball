@@ -26,24 +26,26 @@ flowchart LR
         CLI -->|쓰기| JSON
     end
 
-    subgraph git["📦 GitHub (private)"]
+    subgraph git["📦 GitHub (public)"]
         direction TB
         BR["feat/… · content/… 브랜치"]
         MAIN["main = 프로덕션"]
         BR -->|PR| MAIN
     end
 
-    subgraph build["🔨 Vercel 빌드"]
+    subgraph build["🔨 GitHub Actions 빌드+배포<br/>(deploy.yml)"]
         direction TB
         VAL["npm run validate<br/>Zod + 참조 무결성"]
-        NEXT["next build<br/>SSG"]
+        NEXT["next build<br/>output: export"]
+        PAGES["actions/deploy-pages"]
         VAL -->|통과해야만| NEXT
+        NEXT --> PAGES
     end
 
     subgraph runtime["🌐 방문자 브라우저"]
         direction TB
-        HTML["정적 HTML/CSS/JS<br/>CDN에서 전달"]
-        CLIENT["하이드레이션 후:<br/>검색 · 필터 · 진도 · 집계"]
+        HTML["정적 HTML/CSS/JS<br/>GitHub Pages CDN에서 전달"]
+        CLIENT["하이드레이션 후:<br/>검색 · 필터 · 진도"]
         HTML --> CLIENT
     end
 
@@ -51,7 +53,6 @@ flowchart LR
     authoring -->|커밋| git
     YT -.->|빌드 시점에만| CLI
     MAIN -->|push 훅| build
-    BR -.->|PR 프리뷰| build
     build --> runtime
 
     style YT stroke-dasharray: 5 5
@@ -113,7 +114,7 @@ flowchart LR
 ```
 
 `npm run build`는 `validate && next build`다. **검증이 빌드의 관문이고**, CI와
-Vercel이 같은 명령을 쓰므로 로컬에서 통과한 것만 배포된다.
+배포 워크플로우(`deploy.yml`)가 같은 명령을 쓰므로 로컬에서 통과한 것만 배포된다.
 
 ---
 
@@ -123,20 +124,19 @@ Vercel이 같은 명령을 쓰므로 로컬에서 통과한 것만 배포된다.
 sequenceDiagram
     participant Dev as 로컬
     participant GH as GitHub
-    participant CI as GitHub Actions
-    participant V as Vercel
+    participant CI as GitHub Actions (ci.yml)
+    participant DP as GitHub Actions (deploy.yml)
     participant U as 방문자
 
     Dev->>GH: push (feat/… 브랜치)
-    GH->>CI: ci.yml 실행
-    CI->>CI: validate → typecheck → lint → next build
-    GH->>V: 프리뷰 배포
-    Note over V: X-Robots-Tag: noindex<br/>애널리틱스 스크립트 없음<br/>→ 프리뷰는 집계에 안 잡힘
+    GH->>CI: validate → typecheck → lint → next build
+    Note over CI: PR에는 프리뷰 배포가 없다.<br/>여기서 통과하면 머지해도 안전하다는 뜻
 
-    Dev->>GH: PR 머지 (squash)
-    GH->>V: 프로덕션 배포
-    V->>V: npm run build
-    V->>U: CDN에서 정적 파일 전달
+    Dev->>GH: PR 머지
+    GH->>DP: main 푸시 훅
+    DP->>DP: npm run build (output: export)
+    DP->>DP: actions/deploy-pages
+    DP->>U: GitHub Pages CDN에서 정적 파일 전달
 ```
 
 ### 환경변수
@@ -144,7 +144,7 @@ sequenceDiagram
 | 변수 | 어디에 | 없으면 |
 |---|---|---|
 | `YOUTUBE_API_KEY` | 로컬 `.env.local`, GitHub Secrets | 저작 스크립트만 못 씀. **빌드에는 불필요** |
-| `NEXT_PUBLIC_SITE_URL` | (미설정) | `VERCEL_PROJECT_PRODUCTION_URL`로 폴백 |
+| `NEXT_PUBLIC_SITE_URL` | (미설정) | `https://sehyunnoh.github.io/pickleball`로 폴백 (커스텀 도메인 붙을 때만 설정) |
 | `NEXT_PUBLIC_CONTACT_EMAIL` | (미설정) | About·Privacy의 문의 섹션이 숨겨짐 |
 
 > `NEXT_PUBLIC_*`은 **빌드 시점에 번들에 문자열로 박힌다.** 값만 바꾸고 재배포하지
@@ -163,12 +163,10 @@ flowchart TD
     HYD --> S["SearchDialog<br/>Fuse · 네이티브 dialog"]
     HYD --> F["TechniqueBrowser<br/>URL 쿼리로 필터"]
     HYD --> P["useProgress<br/>localStorage"]
-    HYD --> VA["Vercel Web Analytics<br/>쿠키 없음 · 동의 불필요"]
 
     LOAD --> FACADE["영상: 썸네일만"]
     FACADE -->|클릭해야| IFRAME["youtube-nocookie iframe"]
 
-    style VA fill:#2c6b47,color:#fff
     style IFRAME fill:#2c6b47,color:#fff
 ```
 
@@ -180,16 +178,18 @@ flowchart TD
 |---|---|---|
 | `LiteYouTube` | YouTube iframe (수 MB) | 재생 버튼 클릭 |
 
-애널리틱스는 막을 것이 없어서 목록에서 빠졌다. **2026-09-17에 GA4를 걷어내고
-Vercel Web Analytics로 바꿨다.** GA4는 쿠키를 심으므로 EEA·영국에서는 동의 바가
-선행돼야 했는데, 바를 누르는 사람이 거의 없어 집계가 사실상 0이었다. 바가 모두의
-앞을 가로막고 얻은 데이터가 없었던 셈이다.
+애널리틱스는 더 이상 존재하지 않는다. **2026-09-17에 GA4를 걷어내고 Vercel Web
+Analytics로 바꿨다가, 2026-09-25에 Vercel을 떠나면서 그마저 없앴다.** Vercel Web
+Analytics는 Vercel 배포에서만 스크립트가 서빙되는 구조라 GitHub Pages로는 그대로
+들고 올 수 없었고, 대체할 서드파티(GA4 등)를 다시 들이는 대신 애널리틱스 없음을
+택했다 — GA4 시절 쿠키 동의 바를 거의 아무도 누르지 않아 집계가 사실상 0이었던
+경험이 있어서, "적게라도 재는 것"보다 "아무것도 안 재는 것"의 트레이드오프가
+크지 않다고 판단했다.
 
-지금은 쿠키도 식별자도 없다. 방문자는 요청에서 만든 해시이고 24시간 뒤 폐기되며,
-남는 것은 경로·리퍼러·국가·브라우저·기기 종류의 집계뿐이다. 그래서 동의 바가
-없고, `ConsentBanner`·`ConsentControl`·`lib/consent.ts`도 함께 삭제됐다.
-광고를 붙이는 날에는 인증 CMP와 함께 동의 질문이 돌아온다 — 광고 쿠키는 물어봐야
-하는 쪽이기 때문이다.
+지금은 방문 관련 데이터가 전혀 수집되지 않는다. 동의 바도 없고,
+`ConsentBanner`·`ConsentControl`·`lib/consent.ts`도 진작에 삭제됐다. 광고를
+붙이는 날에는 인증 CMP와 함께 동의 질문이 돌아온다 — 광고 쿠키는 물어봐야 하는
+쪽이기 때문이다.
 
 ### 상태는 어디에 사는가
 
@@ -301,6 +301,6 @@ Lighthouse 모바일 96 / 92 / 98 · 접근성 100
 | 콘텐츠를 고쳤는데 빌드가 깨짐 | `validate`가 관문이다. 메시지가 파일과 필드를 지목한다 |
 | 새 기술이 사이트에 안 보임 | `status: "draft"`이거나 클립이 2개 미만 |
 | 환경변수를 바꿨는데 그대로 | `NEXT_PUBLIC_*`은 빌드에 박힌다. **재배포 필요** |
-| 로컬·프리뷰에서 방문이 안 잡힘 | 의도된 동작. 애널리틱스 스크립트는 Vercel 배포에서만 제공된다 |
+| 배포가 안 됨 | Settings → Pages에서 Source가 "GitHub Actions"인지 확인. `deploy.yml`이 main 푸시에서 실행됐는지 Actions 탭 확인 |
 | `next dev`에서 필터가 안 먹힘 | 스트리밍이 두 사본을 남긴다. `next build && next start`가 정확한 테스트 |
 | 앵커가 헤더에 가림 | `--header-h`가 실제 헤더 높이와 어긋난 것. 재측정할 것 |

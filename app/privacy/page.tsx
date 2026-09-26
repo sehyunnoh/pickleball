@@ -16,7 +16,7 @@ export const metadata: Metadata = {
  * opening devtools, so none of it is written to be technically survivable —
  * if a sentence here stops matching what the site does, the sentence is the
  * bug. There is no consent control any more because there is nothing left to
- * consent to; see components/Analytics.tsx.
+ * consent to.
  */
 export default function PrivacyPage() {
   return (
@@ -45,24 +45,16 @@ export default function PrivacyPage() {
 
       <Section title="Analytics">
         <p>
-          Visits are counted with Vercel Web Analytics. It sets no cookie and
-          stores no identifier, which is why this site has no banner asking you
-          to accept one. A visit is a hash of the request that is thrown away
-          after 24 hours; what is kept is the total, not you.
-        </p>
-        <p>
-          What is recorded, in full: the page, the site you arrived from, the
-          country, the browser and whether you are on a phone. There is nothing
-          in that list that could be traced back to a person, and nothing that
-          follows you to another site. It is used for one thing, which is
-          knowing which shots to write about next, and which pages deserve
-          a hand-picked clip first.
+          None. Nothing about your visit is recorded anywhere — no cookie, no
+          identifier, no server log line kept beyond what GitHub Pages needs to
+          serve the request. There is no banner asking you to accept anything
+          because there is nothing to accept.
         </p>
         <p>
           Until 2026 this site used Google Analytics behind a consent bar.
           Almost nobody answered the bar, so almost nothing was counted &mdash;
           a question in everyone&rsquo;s way for data that never arrived. The
-          bar and the cookies are both gone.
+          bar and the cookies are both gone, and nothing replaced them.
         </p>
       </Section>
 
@@ -79,11 +71,11 @@ export default function PrivacyPage() {
 
       <Section title="Hosting">
         <p>
-          The site is served by Vercel, which keeps request logs the way every
-          web host does — IP address, page, timestamp — for operations and abuse
-          handling. That happens below this site and cannot be consented away by
-          a banner; it is the same thing that happens when you load any web
-          page.
+          The site is served by GitHub Pages, which keeps request logs the way
+          every web host does — IP address, page, timestamp — for operations
+          and abuse handling. That happens below this site and cannot be
+          consented away by a banner; it is the same thing that happens when
+          you load any web page.
         </p>
         <p>
           Nothing is sold, shared with advertisers or joined up with anything

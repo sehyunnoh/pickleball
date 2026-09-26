@@ -24,7 +24,7 @@
 | 타겟 / 언어 | **온타리오주 옥빌에서 피클볼을 하는 사람들.** 언어는 영어 단일 (v0.3에서 글로벌 → 로컬로 변경) |
 | Phase 1 범위 | **기술 라이브러리 + 용어 사전 + 옥빌 코트 정보.** 시합 정보는 Phase 2로 미룸 |
 | 영상 수집 | **수동 큐레이션이 원칙**, YouTube Data API는 "더 보기" 보조용 |
-| 스택 | **Next.js (App Router) + TypeScript + Tailwind CSS**, Vercel 배포 |
+| 스택 | **Next.js (App Router) + TypeScript + Tailwind CSS**, GitHub Pages 배포 (`output: export`; 2026-09-25 이전에는 Vercel) |
 | 데이터 저장 | Phase 1은 **DB 없음.** 레포 내 JSON 파일 + SSG |
 
 ---
@@ -391,7 +391,8 @@ Tailwind CSS v4
 폰트: Fraunces(디스플레이) + Newsreader(본문), next/font 셀프 호스팅
       ※ v0.1의 "웹폰트 없음" 결정은 v0.2에서 뒤집음. 디자인 톤을 타이포로
         만들기로 했고, next/font는 외부 요청이 없어 LCP 비용이 크지 않다.
-배포: Vercel (main 브랜치 자동 배포)
+배포: GitHub Pages (main 브랜치 자동 배포, `.github/workflows/deploy.yml`;
+      2026-09-25 이전에는 Vercel)
 CI: GitHub Actions — 스키마 검증, 링크 체크, 주 1회 fetch:videos → PR 자동 생성
 ```
 
@@ -466,9 +467,10 @@ pickleball/
 |---|---|---|
 | **콘텐츠 작성** | 텍스트 초안 = Claude / 검수·승인 = 사용자 / 영상 선정·타임스탬프 = 사용자 | 계획서 §0 |
 | **디자인 톤** | 코칭 교본 (서적 타이포, 비대칭 2단, 괘선 구조). v0.1의 "차분한 학습자료"를 유지하되 카드 UI를 걷어냄 | v0.2 |
-| **애널리틱스** | **Vercel Web Analytics.** GA4에서 교체(`components/Analytics.tsx`). 쿠키 없음 → 동의 배너 없음 | 2026-09-17 |
+| **애널리틱스** | ~~Vercel Web Analytics~~ → **없음.** Vercel을 떠나며 함께 뗐고, 대체 서드파티는 들이지 않기로 함 | 2026-09-25 (그 전엔 2026-09-17에 GA4→Vercel Web Analytics) |
 | **수익화** | **AdSense를 나중에 붙인다.** 지금은 광고 자리만 확보(`components/AdSlot.tsx`) — 기술 상세 페이지의 "What goes wrong" 다음과 "Watch it" 앞 두 곳 | v0.2 |
-| **레포 공개** | GitHub **비공개** | 계획서 §0 |
+| **레포 공개** | GitHub **공개** (GitHub Pages 무료 호스팅 조건) | 2026-09-25, 그 전엔 비공개 (계획서 §0) |
+| **배포처** | ~~Vercel~~ → **GitHub Pages** (`output: export`, `/pickleball` basePath) | 2026-09-25 |
 
 ### 순서 (결정됨)
 
@@ -526,4 +528,30 @@ GA4는 쿠키를 심고 개인정보를 처리한다. 영어권 글로벌 타겟
 
 **남은 숙제.** AdSense를 붙이면 광고 쿠키 때문에 EEA·영국용 Google 인증 CMP가
 정책상 의무가 된다. 그때 동의 질문이 돌아오지만, 그건 **광고의 비용**이지
-애널리틱스의 비용이 아니다. 애널리틱스는 그 시점에도 계속 100% 집계한다.
+애널리틱스의 비용이 아니었다 — 다만 아래 2026-09-25 항목대로 애널리틱스 자체가
+없어졌으므로, 이 문단이 가정한 "그 시점에도 계속 집계"는 더 이상 사실이 아니다.
+
+### Vercel에서 GitHub Pages로 이전 (2026-09-25)
+
+**이유.** Vercel 무료 티어 용량을 다른 프로젝트에 쓰기 위해 이 정적 사이트를
+내렸다. 정적 export만으로 되는 사이트라 서버가 필요한 이유가 없었다.
+
+**바뀐 것.**
+- `next.config.ts`: `output: "export"`, `basePath: "/pickleball"`,
+  `images.unoptimized: true`.
+- `lib/seo.tsx`의 `siteUrl()`: `VERCEL_PROJECT_PRODUCTION_URL` 폴백 제거,
+  `https://sehyunnoh.github.io/pickleball` 폴백으로 교체.
+- 배포: `.github/workflows/deploy.yml` (GitHub Actions → `actions/deploy-pages`)
+  신규 추가. PR 프리뷰 배포는 없어짐.
+- 레포: 비공개 → **공개** (GitHub Pages 무료 티어는 비공개 레포를 지원하지 않음).
+- **Vercel Web Analytics도 함께 제거.** GitHub Pages에서는 쓸 수 없는 기능이고,
+  대체 서드파티(GA4 등)를 다시 들이는 대신 애널리틱스 없음을 택했다 — GA4 시절
+  동의 배너를 거의 아무도 누르지 않아 집계가 사실상 0이었던 경험(위 2026-09-17
+  항목)에 비춰, 잃는 것이 크지 않다고 판단.
+- `components/Analytics.tsx` 삭제, `@vercel/analytics` 의존성 제거,
+  `/privacy`·`/about`의 애널리틱스 문구를 "수집 없음"으로 교체.
+
+**남은 숙제.** Search Console 검증 메타 태그가 옛 `pickleball-livid.vercel.app`
+프로퍼티용이라 무효해졌다. `sehyunnoh.github.io/pickleball` 프로퍼티를 새로
+등록하고 `app/layout.tsx`의 `metadata.verification`에 새 값을 넣어야 한다.
+커스텀 도메인은 여전히 미정 — 나중에 붙이면 `NEXT_PUBLIC_SITE_URL`만 바꾸면 된다.

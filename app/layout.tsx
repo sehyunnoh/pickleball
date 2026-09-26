@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Newsreader } from "next/font/google";
 import Link from "next/link";
-import Analytics from "@/components/Analytics";
 import SearchDialog from "@/components/SearchDialog";
 import { getTechniques, getTerms } from "@/lib/content";
 import { buildSearchIndex } from "@/lib/search";
@@ -49,16 +48,20 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
   },
   twitter: { card: "summary_large_image" },
-  // Proves the site to Google Search Console. Public by design — it is a
-  // <meta> tag on every page, and it grants nothing on its own.
-  //
-  // The tag is the method here because the usual shortcuts are closed: the
-  // DNS option needs records on vercel.app, which Vercel owns, and the Google
-  // Analytics option needs a GA4 property, which this site no longer has.
-  //
-  // Tied to the pickleball-livid.vercel.app property. A custom domain later
-  // needs its own property; this tag carries over and verifies that one too.
-  verification: { google: "dLBy72eyWw7-c-JzBmybHnh7mWpXTHSzTkqzTdtfmS0" },
+  // The auto-discovered icon.svg / apple-icon.tsx convention links come out
+  // missing the basePath prefix under `output: export` (a Next bug, not a
+  // config choice), and setting `icons` at all replaces auto-discovery
+  // rather than patching one entry — so both are spelled out here, in full,
+  // built on siteUrl() rather than a bare basePath string.
+  icons: {
+    icon: `${siteUrl()}/icon.svg`,
+    apple: `${siteUrl()}/apple-icon`,
+  },
+  // The old value here verified the pickleball-livid.vercel.app property in
+  // Search Console, which stopped being the live site when this moved to
+  // GitHub Pages. Search Console verifies per-property, so that tag is dead —
+  // a new sehyunnoh.github.io/pickleball property needs its own verification
+  // added here before Search Console will pick it up.
 };
 
 /**
@@ -190,8 +193,6 @@ export default function RootLayout({
             </nav>
           </div>
         </footer>
-
-        <Analytics />
       </body>
     </html>
   );

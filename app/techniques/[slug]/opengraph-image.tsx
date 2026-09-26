@@ -17,6 +17,9 @@ import { SITE_NAME } from "@/lib/seo";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
+// Required by `output: export` — there is no server to generate this on
+// request, so it has to be nailed down as static at build time.
+export const dynamic = "force-static";
 
 export function generateStaticParams() {
   return getTechniques().map((t) => ({ slug: t.slug }));
