@@ -13,9 +13,9 @@
 |---|---|
 | 언어 / 타겟 | 영어 단일, 글로벌 Improver(3.0–4.0) |
 | Phase 1 범위 | 기술 라이브러리 + 용어 사전. 시합 정보 제외 |
-| 스택 | Next.js 15 App Router + TS(strict) + Tailwind v4, Vercel |
+| 스택 | Next.js 15 App Router + TS(strict) + Tailwind v4, GitHub Pages (`output: export`, 2026-09-25에 Vercel에서 이전) |
 | 콘텐츠 분담 | **텍스트 초안 = Claude / 검수·승인 = 사용자 / 영상 선정·타임스탬프 = 사용자** |
-| 레포 | GitHub **비공개** 레포 + GitHub Actions |
+| 레포 | GitHub **공개** 레포 (GitHub Pages 무료 호스팅 조건, 2026-09-25에 비공개→공개) + GitHub Actions |
 | 디자인 톤 | 차분한 학습자료 톤 (화이트 베이스, 코트 그린 액센트, 가독성 우선) |
 | 일정 | **기간 미설정.** 마일스톤은 날짜가 아니라 완료 기준으로 관리 |
 
@@ -309,8 +309,9 @@ draft로 남겨 두는 쪽이 맞다.
 | M6-7 | **애널리틱스** — GA4와 동의 배너를 걷어내고 Vercel Web Analytics로 교체(2026-09-17, REQUIREMENTS §16). 남은 일은 Vercel 대시보드에서 Web Analytics를 **Enable** 하는 것뿐 | 🤝 | 대시보드에 방문이 잡힘 |
 
 **브랜치 전략** (단순하게)
-- `main` = 프로덕션. Vercel 자동 배포
-- 기능/콘텐츠 작업은 `feat/…`, `content/…` 브랜치 → PR → Vercel preview로 확인 후 머지
+- `main` = 프로덕션. `.github/workflows/deploy.yml`이 GitHub Pages로 자동 배포
+  (2026-09-25 Vercel에서 이전 — PR 프리뷰 배포는 없어졌다)
+- 기능/콘텐츠 작업은 `feat/…`, `content/…` 브랜치 → PR → `npm run dev`로 로컬 확인 후 머지
 - 콘텐츠 PR은 preview URL에서 영상 재생까지 확인하고 머지
 
 **완료 기준**: main push → 자동 배포 성공. 주간 워크플로 수동 실행(`workflow_dispatch`) 1회 성공.

@@ -14,6 +14,9 @@ import { ImageResponse } from "next/og";
 
 export const size = { width: 180, height: 180 };
 export const contentType = "image/png";
+// Required by `output: export` — there is no server to generate this on
+// request, so it has to be nailed down as static at build time.
+export const dynamic = "force-static";
 
 const GREEN = "#2c6b47";
 const PAPER = "#fbfaf7";

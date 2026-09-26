@@ -15,18 +15,20 @@ import type { Technique, Term } from "./schema";
  */
 
 /**
- * The canonical origin. Vercel exposes the production domain at build time, so
- * previews describe themselves correctly and production does too, without
- * anyone hard-coding a domain before it is chosen (REQUIREMENTS.md §16).
+ * The canonical origin, basePath included — everything that builds an
+ * absolute URL by hand (sitemap, robots, JSON-LD) just concatenates a path
+ * onto this, so it has to already end where GitHub Pages actually serves the
+ * site: sehyunnoh.github.io/pickleball, not the domain root. A custom domain
+ * later is just NEXT_PUBLIC_SITE_URL pointing somewhere with no /pickleball
+ * suffix (REQUIREMENTS.md §16).
  */
 export function siteUrl(): string {
   const explicit = process.env.NEXT_PUBLIC_SITE_URL;
   if (explicit) return explicit.replace(/\/$/, "");
 
-  const vercel = process.env.VERCEL_PROJECT_PRODUCTION_URL;
-  if (vercel) return `https://${vercel}`;
+  if (process.env.NODE_ENV !== "production") return "http://localhost:3000";
 
-  return "http://localhost:3000";
+  return "https://sehyunnoh.github.io/pickleball";
 }
 
 /**

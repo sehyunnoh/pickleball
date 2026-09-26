@@ -5,9 +5,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Project status
 
 **Built and deployed.** 33 techniques, 72 glossary terms, 3 learning paths, 76
-clips, deployed to Vercel from `main`. Phase 1 is complete apart from a custom
-domain; the work left is human — 55 of the 76 clips are title-matched rather
-than watched, and carry an `Unverified` label saying so.
+clips, deployed to GitHub Pages from `main` at
+`https://sehyunnoh.github.io/pickleball/` (migrated off Vercel on 2026-09-25 —
+Vercel's free tier didn't have room for this alongside other projects, and a
+static site needs nothing Vercel offers over free static hosting apart from
+Vercel Web Analytics, which was dropped along with it: this site now runs no
+analytics at all). Phase 1 is complete apart from a custom domain; the work
+left is human — 55 of the 76 clips are title-matched rather than watched, and
+carry an `Unverified` label saying so.
 
 Four documents, all in Korean; **all site-facing content is English only.**
 
@@ -160,6 +165,9 @@ i18n. Don't add them; text fields are kept separable so i18n can be bolted on la
 
 ## Repo conventions
 
-- GitHub **private** repo. `main` is production, auto-deployed by Vercel.
-- Work on `feat/…` or `content/…` branches → PR → check the Vercel preview
-  (play the videos on content PRs) → merge.
+- GitHub **public** repo (made public 2026-09-25 for free GitHub Pages
+  hosting — Pages on a private repo needs a paid plan). `main` is production,
+  auto-deployed to GitHub Pages by `.github/workflows/deploy.yml` on every
+  push. There is no PR preview deployment any more — check content changes
+  with `npm run dev` locally before merging (play the videos on content PRs).
+- Work on `feat/…` or `content/…` branches → PR → merge.

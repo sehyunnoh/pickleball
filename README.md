@@ -16,9 +16,7 @@ npm run dev      # http://localhost:3000
 
 No environment variables are needed to run the site — see `.env.example` for
 what the optional ones do. `YOUTUBE_API_KEY` is used only by the build-time
-curation scripts, never at runtime. Analytics needs no key at all: Vercel Web
-Analytics is switched on in the Vercel dashboard, and its script is served only
-on Vercel deployments, so local runs stay out of the numbers.
+curation scripts, never at runtime. There is no analytics of any kind.
 
 ## Content
 

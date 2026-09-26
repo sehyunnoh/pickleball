@@ -2,6 +2,10 @@ import type { MetadataRoute } from "next";
 import { getPaths, getTechniques, getTerms } from "@/lib/content";
 import { siteUrl } from "@/lib/seo";
 
+// Required by `output: export` — there is no server to generate this on
+// request, so it has to be nailed down as static at build time.
+export const dynamic = "force-static";
+
 /**
  * Every page that should be indexed. Drafts are excluded automatically,
  * because in a production build the loaders never return them.
