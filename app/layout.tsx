@@ -57,11 +57,12 @@ export const metadata: Metadata = {
     icon: `${siteUrl()}/icon.svg`,
     apple: `${siteUrl()}/apple-icon`,
   },
-  // The old value here verified the pickleball-livid.vercel.app property in
-  // Search Console, which stopped being the live site when this moved to
-  // GitHub Pages. Search Console verifies per-property, so that tag is dead —
-  // a new sehyunnoh.github.io/pickleball property needs its own verification
-  // added here before Search Console will pick it up.
+  // Proves https://sehyunnoh.github.io/pickleball/ as its own Search Console
+  // property (URL-prefix, not Domain — github.io itself belongs to GitHub).
+  // Replaced the pickleball-livid.vercel.app value on 2026-09-26 after the
+  // move to GitHub Pages; Search Console verifies per-property, so the old
+  // tag could not just carry over.
+  verification: { google: "b6ZUrFva2Rg41gdVhtstA3MdOOjZfrld8tBxLsiZI3g" },
 };
 
 /**
