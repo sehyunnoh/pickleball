@@ -1265,5 +1265,46 @@
         "duration": "PT5M3S"
       }
     ]
+  },
+  "tweener": {
+    "fetchedAt": "2026-10-09T10:53:00.959Z",
+    "query": "pickleball Tweener tutorial",
+    "results": [
+      {
+        "youtubeId": "TvO8FPO1eQE",
+        "title": "Pickleball Tweener Tutorial",
+        "channel": "Find Your Game",
+        "publishedAt": "2024-12-15T12:48:42Z",
+        "duration": "PT4M11S"
+      },
+      {
+        "youtubeId": "Or-VM2d5g9s",
+        "title": "Learning How To Hit a Tweener in Pickleball",
+        "channel": "Eddie and Webby Pickleball",
+        "publishedAt": "2024-06-09T19:07:40Z",
+        "duration": "PT17M39S"
+      },
+      {
+        "youtubeId": "CpHf8zUzb5k",
+        "title": "How to Hit a Tweener in Pickleball | Step-by-Step for Any Level",
+        "channel": "Universal Rackets",
+        "publishedAt": "2025-12-19T00:07:54Z",
+        "duration": "PT10M31S"
+      },
+      {
+        "youtubeId": "VlaDvNHaUaw",
+        "title": "Pickleball: How To Hit The Tweener",
+        "channel": "Third Shot Sports",
+        "publishedAt": "2016-02-16T11:45:47Z",
+        "duration": "PT1M25S"
+      },
+      {
+        "youtubeId": "iNOnMT0vfzM",
+        "title": "The Secrets of the Pickleball Tweener Shot REVEALED!!!",
+        "channel": "All Things Pickleball",
+        "publishedAt": "2023-08-16T20:12:53Z",
+        "duration": "PT5M48S"
+      }
+    ]
   }
 }

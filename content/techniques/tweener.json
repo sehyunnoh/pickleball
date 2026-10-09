@@ -1,0 +1,188 @@
+{
+  "slug": "tweener",
+  "name": "Tweener",
+  "aka": [
+    "between the legs",
+    "between-the-legs shot",
+    "tweener lob"
+  ],
+  "category": "specialty",
+  "difficulty": "advanced",
+  "courtZone": [
+    "baseline",
+    "transition"
+  ],
+  "situation": [
+    "defense",
+    "rally"
+  ],
+  "handedness": "both",
+  "summary": "A tweener is a shot hit between your own legs, with your back to the net. You reach for it when a lob has gone over your head and you have already turned and sprinted to the baseline — there is no time to spin around and no room to hit it in front of you. It is a last-resort rescue rather than a shot to plan for, but a lob that would have been a lost point becomes a ball your opponents still have to deal with.",
+  "whenToUse": [
+    "A lob has gone over your head and you have run it down with your back to the net.",
+    "The ball is dropping toward you, and you arrived too late to stop, turn and hit it in front of you.",
+    "Your opponents are up at the kitchen line, so a high, deep reply still gets back over them.",
+    "The alternative is letting it bounce and conceding the point, which makes a low-percentage attempt worth taking."
+  ],
+  "howTo": [
+    "Run the lob down early, facing the baseline. If you can get around it and hit it normally, do that instead.",
+    "Stop with your feet wider than your shoulders and bend your knees, so the ball has a gap to pass through.",
+    "Keep your eyes on the ball and let it drop to knee height or lower, in line with your body.",
+    "Reach the paddle back between your legs with a loose wrist and the face open, pointing toward the other end of the court.",
+    "Swing the paddle forward and up through the ball, lifting it rather than driving it.",
+    "Turn around as soon as it is hit and get back to your partner's side, because the reply may come straight back."
+  ],
+  "commonMistakes": [
+    "Attempting it when you had time to turn and hit a normal defensive lob. The tweener is for when you are out of options, not for when you want to be flashy.",
+    "Standing with your feet too close together, so the paddle has nowhere to go and the ball hits your leg.",
+    "Swinging flat and hard, which sends it into the net or straight into a waiting volley. The shot needs height.",
+    "Taking your eye off the ball to look at the opponents, then mistiming the contact.",
+    "Staying turned away after you hit it and getting caught out by the next ball."
+  ],
+  "drills": [
+    {
+      "name": "Fed lobs, back to the net",
+      "description": "Your partner stands at the kitchen line and tosses a soft lob over your head. You run it down, set your feet wide, and hit it back between your legs. Count only the ones that clear the net and land in. Start with an easy underhand toss, then ask for deeper ones.",
+      "reps": "3 sets of 10",
+      "players": 2,
+      "court": {
+        "players": [
+          {
+            "role": "you",
+            "at": [
+              10,
+              4
+            ]
+          },
+          {
+            "role": "feeder",
+            "at": [
+              10,
+              29.5
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "label": "deep target",
+            "at": [
+              10,
+              38
+            ],
+            "width": 8,
+            "depth": 6
+          }
+        ]
+      }
+    },
+    {
+      "name": "Stationary reps",
+      "description": "Drop the ball from your own hand with your feet wide and your back to the net, and hit it between your legs after the bounce. This is only to learn the feel of the reach and the lift before you add any running.",
+      "reps": "5 minutes",
+      "players": 1
+    }
+  ],
+  "court": {
+    "players": [
+      {
+        "role": "you",
+        "at": [
+          10,
+          5
+        ]
+      },
+      {
+        "role": "partner",
+        "at": [
+          15,
+          15
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          5,
+          29.5
+        ]
+      },
+      {
+        "role": "opponent",
+        "at": [
+          15,
+          29.5
+        ]
+      }
+    ],
+    "shot": {
+      "from": [
+        10,
+        5
+      ],
+      "to": [
+        10,
+        38
+      ],
+      "peakAt": 0.5,
+      "peakHeight": 14
+    },
+    "mistake": {
+      "label": "Swung flat and hard. It barely clears the net and sits up for a volley.",
+      "path": {
+        "from": [
+          10,
+          5
+        ],
+        "to": [
+          8,
+          25
+        ],
+        "peakAt": 0.5,
+        "peakHeight": 6
+      }
+    },
+    "movement": [
+      {
+        "role": "you",
+        "from": [
+          10,
+          5
+        ],
+        "to": [
+          14,
+          10
+        ]
+      }
+    ]
+  },
+  "prerequisites": [
+    "defensive-lob",
+    "lob-defense-switching"
+  ],
+  "leadsTo": [],
+  "relatedTerms": [
+    "lob",
+    "pop-up"
+  ],
+  "videos": [
+    {
+      "youtubeId": "TvO8FPO1eQE",
+      "title": "Pickleball Tweener Tutorial",
+      "channel": "Find Your Game",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-10-09"
+    },
+    {
+      "youtubeId": "Or-VM2d5g9s",
+      "title": "Learning How To Hit a Tweener in Pickleball",
+      "channel": "Eddie and Webby Pickleball",
+      "type": "instruction",
+      "start": 0,
+      "verified": false,
+      "curatedAt": "2026-10-09"
+    }
+  ],
+  "status": "published",
+  "updatedAt": "2026-10-09"
+}
